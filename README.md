@@ -1,3 +1,29 @@
-# My Awesome Book
+# 前端面试
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+1、面试小技巧，页面布局
+
+  
+
+
+2、HTTP协议
+
+  
+
+
+3、css盒模型，DOM事件
+
+  
+
+
+4、js基础、原型链
+
+  
+
+
+5、面向对象、通信
+
+  
+
+
+6、安全、算法
+
