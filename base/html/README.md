@@ -1,6 +1,6 @@
 # HTML
 
-## DOCTYPE 作用
+## DOCTYPE 作用？
 
 
 
