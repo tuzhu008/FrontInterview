@@ -24,13 +24,11 @@
 
 1、业务能力、自己做过的项目描述
 
-  
-
-
 2、团队协作能力
 
-  
-
-
 3、带人能力
+
+
+
+[http://www.imooc.com/article/details/id/286054](http://www.imooc.com/article/details/id/286054)
 
