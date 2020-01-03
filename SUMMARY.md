@@ -20,6 +20,5 @@
 ## Others
 
 * [TDD、BDD](/others/tdd.md)
-
-
+* 函数式编程
 
