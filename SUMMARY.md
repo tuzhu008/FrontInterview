@@ -9,6 +9,7 @@
 * [协议](/base/protocol/README.md)
 * [HTML](/base/html/README.md)
 * [JavaScript](/base/javascript/README.md)
+  * [异步](/base/javascript/async.md)
 
 ## Vue
 
