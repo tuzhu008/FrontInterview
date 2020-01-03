@@ -11,6 +11,7 @@
 * [JavaScript](/base/javascript/README.md)
   * [异步](/base/javascript/async.md)
   * [Typescript](base/javascript/typescript.md)
+  * [Babel](base/javascript/babel.md)
 
 ## Vue
 
