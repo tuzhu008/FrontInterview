@@ -10,6 +10,7 @@
 * [HTML](/base/html/README.md)
 * [JavaScript](/base/javascript/README.md)
   * [异步](/base/javascript/async.md)
+  * [Typescript](base/javascript/typescript.md)
 
 ## Vue
 
@@ -21,6 +22,4 @@
 
 * [TDD、BDD](/others/tdd.md)
 * [函数式编程](/others/functional.md)
-
-
 
