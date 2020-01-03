@@ -28,7 +28,11 @@
 
 3、带人能力
 
-
-
 [http://www.imooc.com/article/details/id/286054](http://www.imooc.com/article/details/id/286054)
+
+
+
+想做的、能做的与公司业务和架构矛盾
+
+想要的、正在做的事不匹配
 
