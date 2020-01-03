@@ -23,5 +23,7 @@
 
 * [TDD、BDD](/others/tdd.md)
 * [函数式编程](/others/functional.md)
-* 设计模式
+* [设计模式](/others/design_mode.md)
+
+
 
