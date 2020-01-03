@@ -14,9 +14,9 @@
   * [Babel](base/javascript/babel.md)
   * [ECMA](base/javascript/ecma.md)
 
-## Vue
-
 ## Node
+
+## Vue
 
 ## React
 
@@ -32,4 +32,6 @@
 * [设计模式](/others/design_mode.md)
 * [面向对象](/others/oop.md)
 * [测试](/others/test.md)
+
+
 
