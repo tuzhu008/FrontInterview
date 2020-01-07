@@ -41,4 +41,5 @@
 * [Tencent](Company/tencent.md)
 * [MeiTuan](Company/meituan.md)
 * [DiDi](Company/didi.md)
+* [JD](Company/jd.md)
 
