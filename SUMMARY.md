@@ -37,6 +37,8 @@
 ## Company
 
 * [Alibaba](/Company/Alibaba.md)
-
-
+* [Baidu](Company/baidu.md)
+* [Tencent](Company/tencent.md)
+* [MeiTuan](Company/meituan.md)
+* [DiDi](Company/didi.md)
 
