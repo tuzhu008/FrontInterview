@@ -42,4 +42,6 @@
 * [MeiTuan](Company/meituan.md)
 * [DiDi](Company/didi.md)
 * [JD](Company/jd.md)
+* [360](Company/360.md)
+* [XiaoMi](Company/xiaomi.md)
 
