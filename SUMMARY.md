@@ -14,6 +14,10 @@
   * [Babel](base/javascript/babel.md)
   * [ECMA](base/javascript/ecma.md)
 
+## 算法
+
+* [插入排序](suan-fa/cha-ru-pai-xu.md)
+
 ## Node
 
 * MQ
@@ -52,6 +56,4 @@
 * [360](Company/360.md)
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
-
-
 
