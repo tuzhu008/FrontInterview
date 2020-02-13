@@ -17,6 +17,7 @@
 ## 算法
 
 * [插入排序](suan-fa/cha-ru-pai-xu.md)
+* [希尔排序](suan-fa/xi-er-pai-xu.md)
 
 ## Node
 
