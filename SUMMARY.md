@@ -19,6 +19,7 @@
 * [插入排序](suan-fa/cha-ru-pai-xu.md)
 * [希尔排序](suan-fa/xi-er-pai-xu.md)
 * [堆排序](suan-fa/dui-pai-xu.md)
+* [归并排序](suan-fa/gui-bing-pai-xu.md)
 
 ## Node
 
