@@ -17,7 +17,7 @@
 ## 算法
 
 * [冒泡排序](suan-fa/mao-pao-pai-xu.md)
-* 选择排序
+* [选择排序](suan-fa/xuan-ze-pai-xu.md)
 * [插入排序](suan-fa/cha-ru-pai-xu.md)
 * [希尔排序](suan-fa/xi-er-pai-xu.md)
 * [归并排序](suan-fa/gui-bing-pai-xu.md)
