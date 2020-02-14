@@ -22,7 +22,7 @@
 * [归并排序](suan-fa/gui-bing-pai-xu.md)
 * [快速排序](suan-fa/kuai-su-pai-xu.md)
 * [计数排序](suan-fa/ji-shu-pai-xu.md)
-* [基数排序](suan-fa/ji-shu-pai-xu.md)
+* [基数排序](/suan-fa/RadixSort.md)
 
 ## Node
 
@@ -62,4 +62,6 @@
 * [360](Company/360.md)
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
+
+
 
