@@ -2,7 +2,12 @@
 
 ## 算法思想
 
-* ## 算法动画演示
+* 设置一个标志位，遍历数组，将大小元素分置于标志位两侧。
+* 对标志位两侧子数组进行快速排序迭代，直到子数组为空。
+
+## 算法动画演示
+
+![](/assets/快速排序.gif)
 
 ## 实现
 
@@ -10,15 +15,24 @@
 
 ```js
 function sort (arr) {
-  for (let i = 1; i < arr.length; i++) {
-    let curr = arr[i];
-    let j = i;
+  if (arr.length > 1) {
+    const smaller = [];
+    const same = [];
+    const larger = [];
 
-    for (j; curr < arr[j - 1]; j--) {
-      arr[j] = arr[j - 1];
+    const chooseItem = arr[parseInt(arr.length / 2)];
+
+    for (i of arr) {
+      if (i < chooseItem) {
+        smaller.push(i);
+      } else if (i > chooseItem) {
+        larger.push(i);
+      } else {
+        same.push(i);
+      }
     }
 
-    arr[j] = curr;
+    arr = [].concat(sort(smaller), same, sort(larger));
   }
 
   return arr;
