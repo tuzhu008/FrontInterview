@@ -67,14 +67,11 @@ function swap (arr, i, j) {
   arr[i] = arr[j];
   arr[j] = tmp;
 }
-
 ```
 
 ## 优化
 
 快速排序在针对少量元素的数组时效率不佳，因此可以考虑在数组元素过少时采用其他算法。
-
-
 
 ```js
 const CUTOFF = 20;
@@ -98,11 +95,12 @@ function quickSort (arr, left, right) {
 
     quickSort(arr, left, i - 1);
     quickSort(arr, i + 1, right);
+  } else {
+    insertSort(arr);
   }
 
   return arr;
 }
-
 ```
 
 
