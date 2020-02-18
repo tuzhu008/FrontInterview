@@ -15,28 +15,94 @@
 
 ```js
 function sort (arr) {
-  if (arr.length > 1) {
-    const smaller = [];
-    const same = [];
-    const larger = [];
+  return quickSort(arr, 0, arr.length - 1);
+}
 
-    const chooseItem = arr[parseInt(arr.length / 2)];
+function quickSort (arr, left, right) {
+  if (left < right) {
+    var pivot = media(arr, left, right);
 
-    for (i of arr) {
-      if (i < chooseItem) {
-        smaller.push(i);
-      } else if (i > chooseItem) {
-        larger.push(i);
-      } else {
-        same.push(i);
+    var i = left;
+    var j = right - 1;
+
+    while (i < j) {
+      while (arr[++i] < pivot) {}
+      while (arr[--j] > pivot) {}
+      if (i < j) {
+        swap(arr, i, j);
       }
     }
 
-    arr = [].concat(sort(smaller), same, sort(larger));
+    swap(arr, i, right - 1);
+
+    quickSort(arr, left, i - 1);
+    quickSort(arr, i + 1, right);
   }
 
   return arr;
 }
+
+function media (arr, left, right) {
+
+  var center = parseInt((left + right) / 2);
+
+  if (arr[center] < arr[left]) {
+    swap(arr, left, center);
+  }
+
+  if (arr[right] < arr[left]) {
+    swap(arr, left, right);
+  }
+
+  if (arr[right] < arr[center]) {
+    swap(arr, center, right);
+  }
+
+  swap(arr, center, right - 1);
+  return arr[right - 1];
+}
+
+function swap (arr, i, j) {
+  var tmp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = tmp;
+}
+
+```
+
+## 优化
+
+快速排序在针对少量元素的数组时效率不佳，因此可以考虑在数组元素过少时采用其他算法。
+
+
+
+```js
+const CUTOFF = 20;
+
+function quickSort (arr, left, right) {
+  if (left + CUTOFF < right) {
+    var pivot = media(arr, left, right);
+
+    var i = left;
+    var j = right - 1;
+
+    while (i < j) {
+      while (arr[++i] < pivot) {}
+      while (arr[--j] > pivot) {}
+      if (i < j) {
+        swap(arr, i, j);
+      }
+    }
+
+    swap(arr, i, right - 1);
+
+    quickSort(arr, left, i - 1);
+    quickSort(arr, i + 1, right);
+  }
+
+  return arr;
+}
+
 ```
 
 
