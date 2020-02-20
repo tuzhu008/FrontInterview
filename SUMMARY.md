@@ -24,8 +24,9 @@
 * [快速排序](suan-fa/kuai-su-pai-xu.md)
 * [计数排序](suan-fa/ji-shu-pai-xu.md)
 * [基数排序](/suan-fa/RadixSort.md)
+* [外部排序](suan-fa/wai-bu-pai-xu.md)
 * [桶排序](suan-fa/tong-pai-xu.md)
-* [堆排序](suan-fa/dui-pai-xu.md)
+* 外部排序
 
 ## Node
 
