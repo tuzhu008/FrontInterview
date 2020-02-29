@@ -22,7 +22,7 @@ function isPalindromic(str) {
 function longestPalindrome (str) {
   let longestSub = '';
 
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length - 1; i++) {
     if (longestSub.length >= str.length - i) {
       break;
     }
