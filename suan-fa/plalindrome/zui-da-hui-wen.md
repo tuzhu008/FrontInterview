@@ -44,5 +44,64 @@ function longestPalindrome (str) {
 
 ### 动态规划
 
+#### 思路
+
+若长度为 L 的字符串为回文，则去掉首尾的字符，长度为 L-2 的字符串也为回文。  
+即全局最优解包含局部最优解。
+
+#### 最小子问题
+
+1. 单个字符独立成为一个回文字符串
+2. 相邻的两个相同字符，是一个回文字符串
+
+#### 递推方程
+
+设置一个 L\*L 的矩阵 D，D\[i\]\[j\] 的值为 ture 或 false， 表示从 i 起始 j 终止的字符串是否为回文。
+
+则有：
+
+> D\[i\]\[j\] = \(D\[i\] === D\[j\]\) && D\[i+1\]\[j-1\]
+>
+> （若第 i 个字符与第 j 个字符相同，且从 i+1 起始 j-1 终止的字符串为回文，则有从 i 起始 j 终止的字符串也为回文）
+
+```js
+function longestPalindrome (str) {
+  const L = str.length;
+  const d = [];
+
+  for (let i = 0; i < L; i++) { // 初始化矩阵D，且先将最小子问题 1 的情况都设置为 true，d[i][i] 标示单个字母
+    let arr = [];
+    arr[i] = true;
+    d[i] = arr;
+  }
+
+  for (let i = 0; i < L; i++) { // 再将最小子问题 2 的情况都设置为true
+    if (str[i] === str[i + 1]) {
+      d[i][i + 1] = true;
+    }
+  }
+
+  let maxLen = 1;
+  let resIndex = 0;
+
+  for (let len = 3; len <= L; len++) { // len 为回文子串长度
+    for (let i = 0; i < L - len + 1; i++) { // 从第0个位置开始，依据最小子问题1、2来依次检查回文字符串
+      const lastIndex = i + len - 1;
+
+      if (str[i] === str[lastIndex] && d[i + 1][lastIndex - 1]) {
+        d[i][lastIndex] = true;
+
+        if (len > maxLen) { // 满足条件时，保存回文字符串长度和起始位置
+          maxLen = len;
+          resIndex = i;
+        }
+      }
+    }
+  }
+
+  return str.substr(resIndex, maxLen)
+}
+```
+
 
 
