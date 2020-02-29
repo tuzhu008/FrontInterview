@@ -27,7 +27,7 @@
 * [桶排序](suan-fa/tong-pai-xu.md)
 * 外部排序
 * 回文
-  * [构造回文](//suan-fa/gou-zao-hui-wen.md)
+  * [构造回文](/suan-fa/plalindrome/gou-zao-hui-wen.md)
   * 最大回文
 
 ## Node
