@@ -42,3 +42,7 @@ function longestPalindrome (str) {
 
 三层嵌套循环，时间复杂度为 O\(n^3\)，空间复杂度为 O\(1\)
 
+### 动态规划
+
+
+
