@@ -85,7 +85,7 @@ function longestPalindrome (str) {
   let maxLen = 1;
   let resIndex = 0;
 
-  
+
   for (let len = 2; len <= L; len++) { // len 为回文子串长度
     for (let i = 0; i < L - len + 1; i++) { // 从第0个位置开始，依据最小子问题1、2来依次检查回文字符串
       const lastIndex = i + len - 1;
