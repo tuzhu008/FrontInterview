@@ -152,8 +152,6 @@ function longestPalindrome (s) {
 }
 ```
 
-
-
 ## 参考
 
 * [Leetcode](https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode/)
