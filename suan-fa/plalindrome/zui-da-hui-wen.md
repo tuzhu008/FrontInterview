@@ -105,9 +105,50 @@ function longestPalindrome (str) {
 }
 ```
 
-
-
 ### Manachers算法
+
+```js
+function longestPalindrome (s) {
+  if (s == null || s.length <= 1) {
+    return s;
+  }
+
+  let sb = '$#';
+
+  for (let i = 0; i < s.length; i++) {
+    sb += s[i];
+    sb += '#';
+  }
+
+
+
+  let str = sb.split('');
+  let r = new Array(str.length);
+
+  let mx = 0;
+  let id = 0;
+  let ansR = 0;
+  let ansCenter = 0;
+
+  for (let i = 1; i < str.length; i++) {
+    r[i] = mx - i > r[i] ? Math.min(r[2 * id - i], mx - i) : 1;
+    while (i - r[i] >= 0 && i + r[i] < str.length && str[i - r[i]] == str[i + r[i]]) {
+      r[i]++;
+    }
+    
+    if (i + r[i] > mx) {
+      mx = i + r[i];
+      id = i;
+    }
+    if (ansR < r[i]) {
+      ansR = r[i];
+      ansCenter = i;
+    }
+  }
+  let maxStart = (ansCenter - ansR + 1) / 2;
+  return s.substring(maxStart, maxStart + ansR - 1);
+}
+```
 
 
 
