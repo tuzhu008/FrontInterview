@@ -105,6 +105,10 @@ function longestPalindrome (str) {
 }
 ```
 
+### 
+
+### 中心扩展算法
+
 ### Manachers算法
 
 ```js
