@@ -26,6 +26,8 @@
 * [基数排序](/suan-fa/RadixSort.md)
 * [桶排序](suan-fa/tong-pai-xu.md)
 * 外部排序
+* 回文
+  * [构造回文](/suan-fa/gou-zao-hui-wen.md)
 
 ## Node
 
@@ -65,4 +67,6 @@
 * [360](Company/360.md)
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
+
+
 
