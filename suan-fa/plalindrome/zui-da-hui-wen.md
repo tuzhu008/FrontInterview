@@ -107,3 +107,7 @@ function longestPalindrome (str) {
 
 
 
+### Manachers算法
+
+
+
