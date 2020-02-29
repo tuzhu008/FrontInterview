@@ -69,22 +69,24 @@ function longestPalindrome (str) {
   const L = str.length;
   const d = [];
 
-  for (let i = 0; i < L; i++) { // 初始化矩阵D，且先将最小子问题 1 的情况都设置为 true，d[i][i] 标示单个字母
+  for (let i = 0; i < L; i++) { // 初始化矩阵D，且先将最小子问题 1 的情况都设置为 true
     let arr = [];
     arr[i] = true;
     d[i] = arr;
   }
 
+
   for (let i = 0; i < L; i++) { // 再将最小子问题 2 的情况都设置为true
     if (str[i] === str[i + 1]) {
-      d[i][i + 1] = true;
+      d[i][i + 1] = d[i+1][i] = true;
     }
   }
 
   let maxLen = 1;
   let resIndex = 0;
 
-  for (let len = 3; len <= L; len++) { // len 为回文子串长度，由于 len = 2 的相邻子串已经处理过
+  
+  for (let len = 2; len <= L; len++) { // len 为回文子串长度
     for (let i = 0; i < L - len + 1; i++) { // 从第0个位置开始，依据最小子问题1、2来依次检查回文字符串
       const lastIndex = i + len - 1;
 
