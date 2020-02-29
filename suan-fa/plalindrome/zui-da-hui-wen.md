@@ -120,8 +120,6 @@ function longestPalindrome (s) {
     sb += '#';
   }
 
-
-
   let str = sb.split('');
   let r = new Array(str.length);
 
@@ -135,7 +133,7 @@ function longestPalindrome (s) {
     while (i - r[i] >= 0 && i + r[i] < str.length && str[i - r[i]] == str[i + r[i]]) {
       r[i]++;
     }
-    
+
     if (i + r[i] > mx) {
       mx = i + r[i];
       id = i;
