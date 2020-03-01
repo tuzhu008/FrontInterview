@@ -52,7 +52,7 @@
 | \[attribute\] | 属性 |  |  |  |
 | \[attribute=value\] | 属性值相等 |  |  |  |
 | \[attribute~=value\] | 属性值包含.. |  |  |  |
-| \[attribute|=value\] | 属性值以..开头 |  |  |  |
+| \[attribute\|=value\] | 属性值以..开头 |  |  |  |
 | \[attribute^=value\] | 属性值以..开头 |  |  |  |
 | \[attribute$=value\] | 属性值以..结尾 |  |  |  |
 | \[attribute$=value\] | 属性值以..结尾 |  |  |  |
