@@ -46,7 +46,7 @@
 
   （1）dom 深度尽量浅。
 
-  （2） 减少inline javascript、css的数量。使用现代合法的css属性。
+  （2） 减少 inline javascript、css 的数量。使用现代合法的css属性。
 
   （3） 不要为id选择器指定类名或是标签，因为id可以唯一确定一个元素。
 
