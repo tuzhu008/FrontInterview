@@ -21,5 +21,5 @@
 * 页面被加载时，`link` 会同时被加载，而 `@import` 引用的 CSS 会等到页面加载完成再加载
 * `@import` 只在 IE5 以上才能识别，而 link 是 HTML 标签，无兼容问题。
 
-
+## `position` 的 `absolute` 与 `fixed` 共同点与不同点？
 
