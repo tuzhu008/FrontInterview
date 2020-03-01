@@ -39,5 +39,11 @@
 1. 盒子模型：margin、border、padding、content
 2. 有两种：IE 盒子模型、标准 W3C 盒子模型；IE 的 content 部分包括了 border 和 padding。CSS3 中可以通过 `box-sizing` 进行设置
 
+## CSS 的选择符有哪些？哪些属性可以继承？优先级算法如何计算？CSS3 新增伪类有哪些？
+
+| 选择符 | 是否可继承 | 优先级 | 版本 |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
+
 
 
