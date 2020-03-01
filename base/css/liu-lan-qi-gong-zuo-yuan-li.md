@@ -12,5 +12,13 @@
 8. **浏览器开始显示HTML**
 9. **浏览器发送请求，以获取嵌入在HTML中的对象**
 
+## **浏览器的渲染过程：**
+
+1. **处理html生成Dom（Document Object Model） Tree**
+2. **处理css生成CSSOM（CSS Object Model） Tree**
+3. **在文档对象模型和CSS对象模型之上，创建一棵由一组待生成渲染的对象组成的渲染树，即RenderTree**
+4. **对Render树进行布局计算，即对渲染树上的每个元素，计算它的坐标，称之为布局。**
+5. **.绘制即Painting,渲染树上的元素最终展示在浏览器里**
+
 
 
