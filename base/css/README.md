@@ -37,7 +37,7 @@
 ## 介绍一下盒子模型？
 
 1. 盒子模型：margin、border、padding、content
-2. 有两种：IE 盒子模型、标准 W3C 盒子模型；IE 的 content 部分包括了 border 和 padding。
+2. 有两种：IE 盒子模型、标准 W3C 盒子模型；IE 的 content 部分包括了 border 和 padding。可以通过 `box-sizing` 进行设置
 
 
 
