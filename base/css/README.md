@@ -34,5 +34,10 @@
 * absolute 是可以进行设置的，而 fixed 的定位元素固定为浏览器窗口
 * 页面滚动时，fixed 元素与浏览器窗口之间的距离是不变的
 
+## 介绍一下盒子模型？
+
+1. 盒子模型：margin、border、padding、content
+2. 有两种：IE 盒子模型、标准 W3C 盒子模型；IE 的 content 部分包括了 border 和 padding。
+
 
 
