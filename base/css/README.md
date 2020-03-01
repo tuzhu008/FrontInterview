@@ -53,37 +53,37 @@
 | \[attribute=value\] | 属性值相等 |  |  |  |
 | \[attribute~=value\] | 属性值包含.. |  |  |  |
 | \[attribute\|=value\] | 属性值以..开头 |  |  |  |
-| \[attribute^=value\] | 属性值以..开头 |  |  |  |
-| \[attribute$=value\] | 属性值以..结尾 |  |  |  |
-| \[attribute$=value\] | 属性值以..结尾 |  |  |  |
-| :link | |  |  |  |
-| :visited | |  |  |  |
-| :active | |  |  |  |
-| :hover | |  |  |  |
-| :focus | |  |  |  |
-| :first-letter | |  |  |  |
-| :first-line | |  |  |  |
-| :first-child | |  |  |  |
-| :before| |  |  |  |
-| :after | |  |  |  |
+| \[attribute^=value\] | 属性值以..开头 |  |  | 3 |
+| \[attribute$=value\] | 属性值以..结尾 |  |  | 3 |
+| \[attribute$=value\] | 属性值以..结尾 |  |  | 3 |
+| :link | 违背访问的链接 |  |  |  |
+| :visited | 访问过的链接 |  |  |  |
+| :active | 活动的链接 |  |  |  |
+| :hover | 鼠标位于其上的链接 |  |  |  |
+| :focus | 获得焦点的 input 元素 |  |  |  |
+| :first-letter |  |  |  |  |
+| :first-line |  |  |  |  |
+| :first-child |  |  |  |  |
+| :before |  |  |  |  |
+| :after |  |  |  |  |
 | :lang |  |  |  |  |
 | ~ |  |  |  |  |
 | :first-of-type |  |  |  |  |
 | :last-of-type |  |  |  |  |
 | :only-of-type |  |  |  |  |
 | :only-child |  |  |  |  |
-| :nth-child(n) |  |  |  |  |
-| :nth-last-child(n) |  |  |  |  |
-| :nth-of-type(n) |  |  |  |  |
-| :nth-last-of-type(n) |  |  |  |  |
+| :nth-child\(n\) |  |  |  |  |
+| :nth-last-child\(n\) |  |  |  |  |
+| :nth-of-type\(n\) |  |  |  |  |
+| :nth-last-of-type\(n\) |  |  |  |  |
 | :last-child |  |  |  |  |
-| :root|  |  |  |  |
+| :root |  |  |  |  |
 | :empty |  |  |  |  |
 | :target |  |  |  |  |
 | :enabled |  |  |  |  |
 | :disabled |  |  |  |  |
 | :checked |  |  |  |  |
-| :not(selector) |  |  |  |  |
+| :not\(selector\) |  |  |  |  |
 | ::selection |  |  |  |  |
 
 
