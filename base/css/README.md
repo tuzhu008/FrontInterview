@@ -178,12 +178,12 @@
 
 ### 所有元素可以继承的属性：
 
-1、元素可见性：visibility、opacity   
+1、元素可见性：visibility、opacity  
 2、光标属性：cursor
 
 ### 内联元素可以继承的属性:
 
-1、字体系列属性   
+1、字体系列属性  
 2、除text-indent、text-align之外的文本系列属性
 
 ### 块级元素可以继承的属性:
@@ -228,12 +228,13 @@
 
 | 取值 | 描述 |
 | :--- | :--- |
+| none |  |
 | block |  |
 | inline |  |
 | inline-block |  |
 | flex |  |
 | grid |  |
-| list-item	 |  |
+| list-item |  |
 | run-in |  |
 | table |  |
 | inline-table |  |
@@ -246,7 +247,6 @@
 | table-cell |  |
 | table-caption |  |
 | inherit | 规定应该从父元素继承 display 属性的值。 |
-
 
 ## position 的 relative 和 absolute fen 分别是对于谁定位的？
 
