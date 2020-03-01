@@ -62,9 +62,9 @@
 
 （3）采用无阻塞下载 JavaScript 脚本的方法： 
 
-        a.使用script标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）； 
+  * 使用script标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）； 
 
-        b.使用动态创建的script元素来下载并执行代码；
+  * 使用动态创建的script元素来下载并执行代码；
 
 (4) 减少http请求的次数
 
