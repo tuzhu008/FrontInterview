@@ -17,5 +17,10 @@
 
 ## `link` 和 `@import` 的区别？
 
+* `link` 属于 HTML 标签，而 `@import`  是 CSS 提供的。
+* 页面被加载时，link 会同时被加载，而 @import 引用的 CSS 会等到页面加载完成再加载
+
+
+
 
 
