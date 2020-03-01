@@ -226,6 +226,26 @@
 
 ## 列出 display 的值，说明他们的作用？
 
+| 取值 | 描述 |
+| :--- | :--- |
+| block |  |
+| inline |  |
+| inline-block |  |
+| flex |  |
+| grid |  |
+| list-item	 |  |
+| run-in |  |
+| table |  |
+| inline-table |  |
+| table-row-group |  |
+| table-header-group |  |
+| table-footer-group |  |
+| table-row |  |
+| table-column-group |  |
+| table-column |  |
+| table-cell |  |
+| table-caption |  |
+| inherit | 规定应该从父元素继承 display 属性的值。 |
 
 
 ## position 的 relative 和 absolute fen 分别是对于谁定位的？
