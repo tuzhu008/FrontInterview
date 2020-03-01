@@ -231,11 +231,9 @@ display属性有两个作用：
 * 一是定义元素的类型（块级元素或行内元素），规定元素的流式布局；
 * 二是控制其子元素的布局（`grid` 或 `flex`）。
 
-grid:
+grid：网格布局
 
 flex：弹性布局
-
-
 
 ```css
 /* <display-outside> values
