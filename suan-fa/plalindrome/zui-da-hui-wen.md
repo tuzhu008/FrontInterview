@@ -128,7 +128,7 @@ function longestPalindrome (s) {
     const len2 = expandAroundCenter(s, i, i + 1);
     const len = Math.max(len1, len2);
     if (len > end - start) {
-      start = i - parseInt((len - 1) / 2);
+      start = i - parseInt((len - 1) / 2); // 减去 i 本身
       end = i + parseInt(len / 2);
     }
   }
