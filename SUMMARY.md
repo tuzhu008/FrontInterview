@@ -13,7 +13,7 @@
   * [Typescript](base/javascript/typescript.md)
   * [Babel](base/javascript/babel.md)
   * [ECMA](base/javascript/ecma.md)
-* [CSS](/base/css/README.md)
+* [HTML/CSS](/base/css/README.md)
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
 
 ## 算法
