@@ -148,23 +148,77 @@
   
 * 光标属性：cursor
 
-* 表格布局属性
+* 页面样式属性
   
   | 属性 | 描述 |
   | :--- | :--- |
-  |  caption-side |  |
-  |  border-collapse |  |
-  |  border-spacing |  |
-  |  empty-cells |  |
-  |  table-layout |  |
+  |  page |  |
+  |  page-break-inside |  |
+  |  windows |  |
+  |  orphans |  |
 
-* 表格布局属性
+* 声音样式属性
   
   | 属性 | 描述 |
   | :--- | :--- |
-  |  caption-side |  |
-  |  border-collapse |  |
-  |  border-spacing |  |
-  |  empty-cells |  |
-  |  table-layout |  |
+  |  speak |  |
+  |  speak-punctuation |  |
+  |  speak-numeral |  |
+  |  speak-header |  |
+  |  speech-rate |  |
+  |  volume |  |
+  |  voice-family |  |
+  |  pitch |  |
+  |  pitch-range |  |
+  |  stress |  |
+  |  richness |  |
+  |  azimuth |  |
+  |  elevation |  |
 
+### 所有元素可以继承的属性：
+
+1、元素可见性：visibility、opacity 
+2、光标属性：cursor
+
+### 内联元素可以继承的属性:
+
+1、字体系列属性 
+2、除text-indent、text-align之外的文本系列属性
+
+### 块级元素可以继承的属性:
+
+1、text-indent、text-align
+
+### 无继承性的属性
+
+* *display
+
+* 文本系列属性
+  
+  | 属性 | 描述 |
+  | :--- | :--- |
+  |  vertical-align |  |
+  |  text-decoration |  |
+  |  text-shadow |  |
+  |  white-space |  |
+  |  unicode-bidi |  |
+
+* 盒子模型的属性：宽度、高度、内外边距、边框等
+
+* 背景属性：背景图片、颜色、位置等
+
+* 定位属性：浮动、清除浮动、定位position等
+
+* 生成内容属性：content、counter-reset、counter-increment
+
+* 轮廓样式属性：utline-style、outline-width、outline-color、outline
+
+* 页面样式属性：size、page-break-before、page-break-after
+
+### 继承中比较特殊的几点
+
+* a 标签的字体颜色不能被继承
+
+* h1-h6 标签字体的大小也是不能被继承的
+
+因为它们都有一个默认值
