@@ -123,3 +123,12 @@
   |  text-transform |  |
   |  direction |  |
   |  color|  |
+
+* 元素可见性：visibility
+* 表格布局属性
+  
+  | 属性 | 描述 |
+  | :--- | :--- |
+  |  caption-side |  |
+  |  border-collapse |  |
+  |  border-spacing |  |
