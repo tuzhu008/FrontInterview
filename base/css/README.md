@@ -43,15 +43,15 @@
 
 | 选择符 | 描述 | 选择器类型 | 权重 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| \*  | 通配符 |  |  | 2 |
+| \* | 通配符 |  | 0 | 2 |
 | .class | 类 |  | 10 | 1 |
 | \#id | id |  | 100 | 1 |
 | element | 元素 |  | 1 | 1 |
-| element, element | 多目标 |  |  | 1 |
-| element element | 后代 |  |  | 1 |
-| element &gt; element | 子 |  |  | 2 |
-| element + element | 相邻 |  |  | 2 |
-| element1 ~ element2 | 选择前面有 element1 的每个 element2 元素 |  |  | 3 |
+| element, element | 多目标 |  | 0 | 1 |
+| element element | 后代 |  | 0 | 1 |
+| element &gt; element | 子 |  | 0 | 2 |
+| element + element | 相邻 |  | 0 | 2 |
+| element1 ~ element2 | 选择前面有 element1 的每个 element2 元素 |  | 0 | 3 |
 | \[attribute\] | 属性 |  |  | 2 |
 | \[attribute=value\] | 属性值相等 | 属性选择器 | 10 | 2 |
 | \[attribute~=value\] | 属性值包含.. | 属性选择器 | 10 | 2 |
@@ -88,18 +88,13 @@
 | :not\(selector\) | 非 |  | 10 | 3 |
 | ::selection | 选择被用户选取的元素部分。 |  | 10 | 3 |
 
-
-
 权重规则：
 
 * 代表内联样式，如: style=””，权值为1000。
-* 代表ID选择器，如：#content，权值为0100。
+* 代表ID选择器，如：\#content，权值为0100。
 * 代表类，伪类和属性选择器，如.content，权值为0010。
 * 代表类型选择器和伪元素选择器，如div p，权值为0001。
-* 通配符、子选择器、相邻选择器等的。如*、>、+,权值为0000。
-
-
-
+* 通配符、子选择器、相邻选择器等的。如\*、&gt;、+,权值为0000。
 
 
 
