@@ -98,9 +98,16 @@
 
 ## 哪些属性可以继承？
 
-|  |  |
-| :--- | :--- |
-|  |  |
-
-
+* 字体系列属性
+  
+  | 属性 | 描述 |
+  | :--- | :--- |
+  |  font |  |
+  |  font-family |  |
+  |  font-weight |  |
+  |  font-size |  |
+  |  font-style |  |
+  |  font-variant |  |
+  |  font-stretch |  |
+  |  font-size-adjust |  |
 
