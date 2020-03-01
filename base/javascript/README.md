@@ -41,9 +41,26 @@ HTTP 协议本身是无状态的。什么是无状态呢，即服务器无法判
 
 ### 本地存储
 
-* Cookie
-* localStorage
-* SessionStorage
+#### Cookie
+
+#### localStorage
+
+用于持久化的本地存储，除非主动删除数据，否则数据永远不会过期。
+
+访问 localStorage 具有同源策略。
+
+优点：
+
+* 容量大，可以达到 5M
+* 易用，强大，原生支持
+
+缺点：
+
+#### sessionStorage
+
+用于本地存储一个会话中的数据，这些数据只有在同一个会话中的页面才能访问，会话结束后数据随之销毁。sessionStorage 不是一种持久化的本地存储，仅仅是会话级别的存储。
+
+访问 sessionStorage 具有同源策略。
 
 
 
