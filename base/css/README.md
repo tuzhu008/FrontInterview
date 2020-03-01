@@ -46,9 +46,10 @@
 | .class | 类 |  |  |  |
 | \#id | id |  |  |  |
 | element | 元素 |  |  |  |
-| " " | 后代 |  |  |  |
-| &gt; | 子 |  |  |  |
-| + | 相邻 |  |  |  |
+| element element | 后代 |  |  |  |
+| element &gt; element | 子 |  |  |  |
+| element + element | 相邻 |  |  |  |
+| element1 ~ element2 | 选择前面有 element1 的每个 element2 元素 |  |  | 3 |
 | \[attribute\] | 属性 |  |  |  |
 | \[attribute=value\] | 属性值相等 |  |  |  |
 | \[attribute~=value\] | 属性值包含.. |  |  |  |
@@ -61,15 +62,14 @@
 | :active | 活动的链接 |  |  |  |
 | :hover | 鼠标位于其上的链接 |  |  |  |
 | :focus | 获得焦点的 input 元素 |  |  |  |
-| :first-letter |  |  |  |  |
-| :first-line |  |  |  |  |
-| :first-child |  |  |  |  |
-| :before |  |  |  |  |
-| :after |  |  |  |  |
-| :lang |  |  |  |  |
-| ~ |  |  |  |  |
-| :first-of-type |  |  |  |  |
-| :last-of-type |  |  |  |  |
+| :first-letter | 首字母 |  |  |  |
+| :first-line | 首行 |  |  |  |
+| :first-child | 第一个子元素 |  |  | 2 |
+| :before | 内容之前的内容 |  |  | 2 |
+| :after | 内容之后的内容 |  |  | 2 |
+| :lang\(language\) | lang 属性以..开头 |  |  | 2 |
+| :first-of-type | 类型的第一个 |  |  |  |
+| :last-of-type | 类型的最后一个 |  |  |  |
 | :only-of-type |  |  |  |  |
 | :only-child |  |  |  |  |
 | :nth-child\(n\) |  |  |  |  |
