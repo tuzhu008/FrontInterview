@@ -231,27 +231,72 @@ display属性有两个作用：
 * 一是定义元素的类型（块级元素或行内元素），规定元素的流式布局；
 * 二是控制其子元素的布局（`grid` 或 `flex`）。
 
-| 取值 | 描述 |
-| :--- | :--- |
-| none | 此元素不会被显示。 |
-| block | 此元素将显示为块级元素，此元素前后会带有换行符。 |
-| inline | 默认。此元素会被显示为内联元素，元素前后没有换行符。 |
-| inline-block | 行内块元素。（CSS2.1 新增的值） |
-| flex |  |
-| grid |  |
-| list-item | 此元素会作为列表显示。 |
-| run-in | 此元素会根据上下文作为块级元素或内联元素显示。 |
-| table | 此元素会作为块级表格来显示（类似 `<table>`），表格前后带有换行符。 |
-| inline-table | 此元素会作为内联表格来显示（类似 `<table>`），表格前后没有换行符。 |
-| table-row-group | 此元素会作为一个或多个行的分组来显示（类似 `<tbody>`）。 |
-| table-header-group | 此元素会作为一个或多个行的分组来显示（类似 `<thead>`）。 |
-| table-footer-group | 此元素会作为一个或多个行的分组来显示（类似 `<tfoot>`）。 |
-| table-row | 此元素会作为一个表格行显示（类似 `<tr>`）。 |
-| table-column-group | 此元素会作为一个或多个列的分组来显示（类似 `<colgroup>`）。 |
-| table-column | 此元素会作为一个单元格列显示（类似 `<col>`） |
-| table-cell | 此元素会作为一个表格单元格显示（类似 `<td>` 和 `<th>`） |
-| table-caption | 此元素会作为一个表格标题显示（类似 `<caption>`） |
-| inherit | 规定应该从父元素继承 display 属性的值。 |
+grid:
+
+flex：弹性布局
+
+
+
+```css
+/* <display-outside> values
+外部显示类型 */
+display: block;
+display: inline;
+display: run-in;
+
+/* <display-inside> values
+内部显示类型 */
+display: flow;
+display: flow-root;
+display: table;
+display: flex;
+display: grid;
+display: ruby;
+
+/* <display-outside> plus <display-inside> values */
+display: block flow;
+display: inline table;
+display: flex run-in;
+
+/* <display-listitem> values */
+display: list-item;
+display: list-item block;
+display: list-item inline;
+display: list-item flow;
+display: list-item flow-root;
+display: list-item block flow;
+display: list-item block flow-root;
+display: flow list-item block;
+
+/* <display-internal> values */
+display: table-row-group;
+display: table-header-group;
+display: table-footer-group;
+display: table-row;
+display: table-cell;
+display: table-column-group;
+display: table-column;
+display: table-caption;
+display: ruby-base;
+display: ruby-text;
+display: ruby-base-container;
+display: ruby-text-container;
+
+/* <display-box> values */
+display: contents;
+display: none; /* 此元素不会被显示 */
+
+/* <display-legacy> values */
+display: inline-block;
+display: inline-table;
+display: inline-flex;
+display: inline-grid;
+
+/* Global values */
+display: inherit;
+display: initial;
+display: unset;
+```
 
 ## position 的 relative 和 absolute fen 分别是对于谁定位的？
 
