@@ -298,7 +298,25 @@ display: unset;
 
 ## position 的 relative 和 absolute 分别是对于谁定位的？
 
-relative：自身
+relative：相对于在标准文档流中的位置定位，标准文档流。
 
-absolute：最近非 static 的父级元素
+absolute：绝对定位，最近非 static 的祖先元素
 
+fixed：绝对定位，窗口
+
+static：没有定位，标准文档流。
+
+## CSS3 新特性
+
+* 新增结构伪类元素
+* 圆角（border-radius）
+* 边框图案：border-image
+* 阴影（box-shadow）
+* 文字特效：text-shadow
+* 线性渐变：gradient
+* 旋转：rotate
+* 变化：transform
+* 动画：transition
+* 媒体查询：@media
+* 字体：@font-face
+* 关键帧：@keyframes
