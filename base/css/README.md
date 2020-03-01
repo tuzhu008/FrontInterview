@@ -99,90 +99,91 @@
 ## 哪些属性可以继承？
 
 * 字体系列属性
-  
+
   | 属性 | 描述 |
   | :--- | :--- |
-  |  font |  |
-  |  font-family |  |
-  |  font-weight |  |
-  |  font-size |  |
-  |  font-style |  |
-  |  font-variant |  |
-  |  font-stretch |  |
-  |  font-size-adjust |  |
+  | font |  |
+  | font-family |  |
+  | font-weight |  |
+  | font-size |  |
+  | font-style |  |
+  | font-variant |  |
+  | font-stretch |  |
+  | font-size-adjust |  |
 
 * 文本系列属性
-  
+
   | 属性 | 描述 |
   | :--- | :--- |
-  |  text-indent |  |
-  |  text-align |  |
-  |  line-height |  |
-  |  word-spacing |  |
-  |  letter-spacing |  |
-  |  text-transform |  |
-  |  direction |  |
-  |  color|  |
+  | text-indent |  |
+  | text-align |  |
+  | line-height |  |
+  | word-spacing |  |
+  | letter-spacing |  |
+  | text-transform |  |
+  | direction |  |
+  | color |  |
 
 * 元素可见性：visibility
+
 * 表格布局属性
-  
+
   | 属性 | 描述 |
   | :--- | :--- |
-  |  caption-side |  |
-  |  border-collapse |  |
-  |  border-spacing |  |
-  |  empty-cells |  |
-  |  table-layout |  |
+  | caption-side |  |
+  | border-collapse |  |
+  | border-spacing |  |
+  | empty-cells |  |
+  | table-layout |  |
 
 * 列表属性
-  
+
   | 属性 | 描述 |
   | :--- | :--- |
-  |  list-style-type |  |
-  |  list-style-image |  |
-  |  list-style-position |  |
-  |  list-style |  |
+  | list-style-type |  |
+  | list-style-image |  |
+  | list-style-position |  |
+  | list-style |  |
 
 * 生成内容属性：quotes
-  
+
 * 光标属性：cursor
 
 * 页面样式属性
-  
+
   | 属性 | 描述 |
   | :--- | :--- |
-  |  page |  |
-  |  page-break-inside |  |
-  |  windows |  |
-  |  orphans |  |
+  | page |  |
+  | page-break-inside |  |
+  | windows |  |
+  | orphans |  |
 
 * 声音样式属性
-  
+
   | 属性 | 描述 |
   | :--- | :--- |
-  |  speak |  |
-  |  speak-punctuation |  |
-  |  speak-numeral |  |
-  |  speak-header |  |
-  |  speech-rate |  |
-  |  volume |  |
-  |  voice-family |  |
-  |  pitch |  |
-  |  pitch-range |  |
-  |  stress |  |
-  |  richness |  |
-  |  azimuth |  |
-  |  elevation |  |
+  | speak |  |
+  | speak-punctuation |  |
+  | speak-numeral |  |
+  | speak-header |  |
+  | speech-rate |  |
+  | volume |  |
+  | voice-family |  |
+  | pitch |  |
+  | pitch-range |  |
+  | stress |  |
+  | richness |  |
+  | azimuth |  |
+  | elevation |  |
 
 ### 所有元素可以继承的属性：
 
-1、元素可见性：visibility、opacity 
+1、元素可见性：visibility、opacity   
 2、光标属性：cursor
 
 ### 内联元素可以继承的属性:
 
-1、字体系列属性 
+1、字体系列属性   
 2、除text-indent、text-align之外的文本系列属性
 
 ### 块级元素可以继承的属性:
@@ -191,17 +192,17 @@
 
 ### 无继承性的属性
 
-* *display
+* \*display
 
 * 文本系列属性
-  
+
   | 属性 | 描述 |
   | :--- | :--- |
-  |  vertical-align |  |
-  |  text-decoration |  |
-  |  text-shadow |  |
-  |  white-space |  |
-  |  unicode-bidi |  |
+  | vertical-align |  |
+  | text-decoration |  |
+  | text-shadow |  |
+  | white-space |  |
+  | unicode-bidi |  |
 
 * 盒子模型的属性：宽度、高度、内外边距、边框等
 
@@ -222,3 +223,12 @@
 * h1-h6 标签字体的大小也是不能被继承的
 
 因为它们都有一个默认值
+
+## 列出 display 的值，说明他们的作用？
+
+
+
+## position 的 relative 和 absolute fen 分别是对于谁定位的？
+
+
+
