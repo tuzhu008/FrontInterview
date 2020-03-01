@@ -41,50 +41,60 @@
 
 ## CSS 的选择符有哪些？哪些属性可以继承？优先级算法如何计算？CSS3 新增伪类有哪些？
 
-| 选择符 | 描述 | 是否可继承 | 优先级 | 版本 |
+| 选择符 | 描述 | 选择器类型 | 权重 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| .class | 类 |  |  |  |
-| \#id | id |  |  |  |
-| element | 元素 |  |  |  |
-| element element | 后代 |  |  |  |
-| element &gt; element | 子 |  |  |  |
-| element + element | 相邻 |  |  |  |
+| \*  | 通配符 |  |  | 2 |
+| .class | 类 |  | 10 | 1 |
+| \#id | id |  | 100 | 1 |
+| element | 元素 |  | 1 | 1 |
+| element, element | 多目标 |  |  | 1 |
+| element element | 后代 |  |  | 1 |
+| element &gt; element | 子 |  |  | 2 |
+| element + element | 相邻 |  |  | 2 |
 | element1 ~ element2 | 选择前面有 element1 的每个 element2 元素 |  |  | 3 |
-| \[attribute\] | 属性 |  |  |  |
-| \[attribute=value\] | 属性值相等 |  |  |  |
-| \[attribute~=value\] | 属性值包含.. |  |  |  |
-| \[attribute\|=value\] | 属性值以..开头 |  |  |  |
-| \[attribute^=value\] | 属性值以..开头 |  |  | 3 |
-| \[attribute$=value\] | 属性值以..结尾 |  |  | 3 |
-| \[attribute$=value\] | 属性值以..结尾 |  |  | 3 |
-| :link | 违背访问的链接 |  |  |  |
-| :visited | 访问过的链接 |  |  |  |
-| :active | 活动的链接 |  |  |  |
-| :hover | 鼠标位于其上的链接 |  |  |  |
-| :focus | 获得焦点的 input 元素 |  |  |  |
-| :first-letter | 首字母 |  |  |  |
-| :first-line | 首行 |  |  |  |
-| :first-child | 第一个子元素 |  |  | 2 |
-| :before | 内容之前的内容 |  |  | 2 |
-| :after | 内容之后的内容 |  |  | 2 |
-| :lang\(language\) | lang 属性以..开头 |  |  | 2 |
-| :first-of-type | 类型的第一个 |  |  |  |
-| :last-of-type | 类型的最后一个 |  |  |  |
-| :only-of-type |  |  |  |  |
-| :only-child |  |  |  |  |
-| :nth-child\(n\) |  |  |  |  |
-| :nth-last-child\(n\) |  |  |  |  |
-| :nth-of-type\(n\) |  |  |  |  |
-| :nth-last-of-type\(n\) |  |  |  |  |
-| :last-child |  |  |  |  |
-| :root |  |  |  |  |
-| :empty |  |  |  |  |
-| :target |  |  |  |  |
-| :enabled |  |  |  |  |
-| :disabled |  |  |  |  |
-| :checked |  |  |  |  |
-| :not\(selector\) |  |  |  |  |
-| ::selection |  |  |  |  |
+| \[attribute\] | 属性 |  |  | 2 |
+| \[attribute=value\] | 属性值相等 | 属性选择器 | 10 | 2 |
+| \[attribute~=value\] | 属性值包含.. | 属性选择器 | 10 | 2 |
+| \[attribute\|=value\] | 属性值以..开头 | 属性选择器 | 10 | 2 |
+| \[attribute^=value\] | 属性值以..开头 | 属性选择器 | 10 | 3 |
+| \[attribute$=value\] | 属性值以..结尾 | 属性选择器 | 10 | 3 |
+| \[attribute$=value\] | 属性值以..结尾 | 属性选择器 | 10 | 3 |
+| :link | 违背访问的链接 |  | 10 | 1 |
+| :visited | 访问过的链接 |  | 10 | 1 |
+| :active | 活动的链接 |  | 10 | 1 |
+| :hover | 鼠标位于其上的链接 |  | 10 | 1 |
+| :focus | 获得焦点的元素 |  | 10 | 2 |
+| :first-letter | 首字母 |  | 10 | 1 |
+| :first-line | 首行 |  | 10 | 1 |
+| :first-child | 第一个子元素 |  | 10 | 2 |
+| :before | 内容之前的内容 |  | 10 | 2 |
+| :after | 内容之后的内容 |  | 10 | 2 |
+| :lang\(language\) | lang 属性以..开头 |  | 10 | 2 |
+| :first-of-type | 类型的第一个 |  | 10 | 3 |
+| :last-of-type | 类型的最后一个 |  | 10 | 3 |
+| :only-of-type | 仅出现一次的类型 |  | 10 | 3 |
+| :only-child | 仅有一个子元素 |  | 10 | 3 |
+| :nth-child\(n\) | 第几个子元素 |  | 10 | 3 |
+| :nth-last-child\(n\) | 倒数第几个子元素 |  | 10 | 3 |
+| :nth-of-type\(n\) | 类型的第几个 |  | 10 | 3 |
+| :nth-last-of-type\(n\) | 类型的倒数几个 |  | 10 | 3 |
+| :last-child | 最后一个 |  | 10 | 3 |
+| :root | 文档的根元素 |  | 10 | 3 |
+| :empty | 空元素 |  | 10 | 3 |
+| :target | 当前活动的 |  | 10 | 3 |
+| :enabled | 启用的 |  | 10 | 3 |
+| :disabled | 禁用的 |  | 10 | 3 |
+| :checked | 选择的 |  | 10 | 3 |
+| :not\(selector\) | 非 |  | 10 | 3 |
+| ::selection | 选择被用户选取的元素部分。 |  | 10 | 3 |
+
+
+
+权重规则：
+
+
+
+
 
 
 
