@@ -133,7 +133,7 @@ function longestPalindrome (s) {
     }
   }
 
-  return s.substring(start, end + 1);
+  return s.substring(start, end + 1); // 由于 substring 是一个半闭半开区间，所以加 1
 }
 
 function expandAroundCenter (s, left, right) {
