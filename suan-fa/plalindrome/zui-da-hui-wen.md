@@ -109,6 +109,11 @@ function longestPalindrome (str) {
 
 ### 中心扩展算法
 
+中心有两种：
+
+* 单个元素为中心，向两边扩展。得到的结果为基数长度。
+* 相邻元素的中间为中心，向两边扩展。也可以认为是相邻元素组成的集合为中心。得到的结果为偶数长度。
+
 ```js
 function longestPalindrome (s) {
   if (s == null || s === '') {
