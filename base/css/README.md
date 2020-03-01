@@ -51,8 +51,40 @@
 | + | 相邻 |  |  |  |
 | \[attribute\] | 属性 |  |  |  |
 | \[attribute=value\] | 属性值相等 |  |  |  |
-| \[attribute~=value\] | 属性值包含 |  |  |  |
-|  |  |  |  |  |
+| \[attribute~=value\] | 属性值包含.. |  |  |  |
+| \[attribute|=value\] | 属性值以..开头 |  |  |  |
+| \[attribute^=value\] | 属性值以..开头 |  |  |  |
+| \[attribute$=value\] | 属性值以..结尾 |  |  |  |
+| \[attribute$=value\] | 属性值以..结尾 |  |  |  |
+| :link | |  |  |  |
+| :visited | |  |  |  |
+| :active | |  |  |  |
+| :hover | |  |  |  |
+| :focus | |  |  |  |
+| :first-letter | |  |  |  |
+| :first-line | |  |  |  |
+| :first-child | |  |  |  |
+| :before| |  |  |  |
+| :after | |  |  |  |
+| :lang |  |  |  |  |
+| ~ |  |  |  |  |
+| :first-of-type |  |  |  |  |
+| :last-of-type |  |  |  |  |
+| :only-of-type |  |  |  |  |
+| :only-child |  |  |  |  |
+| :nth-child(n) |  |  |  |  |
+| :nth-last-child(n) |  |  |  |  |
+| :nth-of-type(n) |  |  |  |  |
+| :nth-last-of-type(n) |  |  |  |  |
+| :last-child |  |  |  |  |
+| :root|  |  |  |  |
+| :empty |  |  |  |  |
+| :target |  |  |  |  |
+| :enabled |  |  |  |  |
+| :disabled |  |  |  |  |
+| :checked |  |  |  |  |
+| :not(selector) |  |  |  |  |
+| ::selection |  |  |  |  |
 
 
 
