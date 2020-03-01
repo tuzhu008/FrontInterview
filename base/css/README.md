@@ -132,3 +132,5 @@
   |  caption-side |  |
   |  border-collapse |  |
   |  border-spacing |  |
+  |  empty-cells |  |
+  |  table-layout |  |
