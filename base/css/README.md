@@ -43,16 +43,16 @@
 
 | 选择符 | 描述 | 选择器类型 | 权重 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| \* | 通配符 |  | 0 | 2 |
+| \* | 通配符 | 其他 | 0 | 2 |
 | .class | 类 | 类选择器 | 10 | 1 |
 | \#id | id | id 选择器 | 100 | 1 |
 | element | 元素 | 元素选择器 | 1 | 1 |
-| element, element | 多目标 |  | 0 | 1 |
-| element element | 后代 |  | 0 | 1 |
-| element &gt; element | 子 |  | 0 | 2 |
-| element + element | 相邻 |  | 0 | 2 |
-| element1 ~ element2 | 选择前面有 element1 的每个 element2 元素 |  | 0 | 3 |
-| \[attribute\] | 属性 |  |  | 2 |
+| element, element | 多目标 | 其他 | 0 | 1 |
+| element element | 后代 | 其他 | 0 | 1 |
+| element &gt; element | 子 | 其他 | 0 | 2 |
+| element + element | 相邻 | 其他 | 0 | 2 |
+| element1 ~ element2 | 选择前面有 element1 的每个 element2 元素 | 其他 | 0 | 3 |
+| \[attribute\] | 属性 | 属性选择器 | 10 | 2 |
 | \[attribute=value\] | 属性值相等 | 属性选择器 | 10 | 2 |
 | \[attribute~=value\] | 属性值包含.. | 属性选择器 | 10 | 2 |
 | \[attribute\|=value\] | 属性值以..开头 | 属性选择器 | 10 | 2 |
@@ -64,29 +64,29 @@
 | :active | 活动的链接 | 动态伪类选择器 | 10 | 1 |
 | :hover | 鼠标位于其上的链接 | 动态伪类选择器 | 10 | 1 |
 | :focus | 获得焦点的元素 | 动态伪类选择器 | 10 | 2 |
-| :first-letter | 首字母 | 伪元素选择器 | 10 | 1 |
-| :first-line | 首行 | 伪元素选择器 | 10 | 1 |
+| :first-letter | 首字母 | 伪元素选择器 | 1 | 1 |
+| :first-line | 首行 | 伪元素选择器 | 1 | 1 |
 | :first-child | 第一个子元素 |  | 10 | 2 |
 | :before | 内容之前的内容 | 伪元素选择器 | 1 | 2 |
 | :after | 内容之后的内容 | 伪元素选择器 | 1 | 2 |
 | :lang\(language\) | lang 属性以..开头 |  | 10 | 2 |
-| :first-of-type | 类型的第一个 |  | 10 | 3 |
-| :last-of-type | 类型的最后一个 |  | 10 | 3 |
-| :only-of-type | 仅出现一次的类型 |  | 10 | 3 |
-| :only-child | 仅有一个子元素 |  | 10 | 3 |
-| :nth-child\(n\) | 第几个子元素 |  | 10 | 3 |
-| :nth-last-child\(n\) | 倒数第几个子元素 |  | 10 | 3 |
-| :nth-of-type\(n\) | 类型的第几个 |  | 10 | 3 |
-| :nth-last-of-type\(n\) | 类型的倒数几个 |  | 10 | 3 |
-| :last-child | 最后一个 |  | 10 | 3 |
-| :root | 文档的根元素 |  | 10 | 3 |
+| :first-of-type | 类型的第一个 | 结构伪类选择器 | 10 | 3 |
+| :last-of-type | 类型的最后一个 | 结构伪类选择器 | 10 | 3 |
+| :only-of-type | 仅出现一次的类型 | 结构伪类选择器 | 10 | 3 |
+| :only-child | 仅有一个子元素 | 结构伪类选择器 | 10 | 3 |
+| :nth-child\(n\) | 第几个子元素 | 结构伪类选择器 | 10 | 3 |
+| :nth-last-child\(n\) | 倒数第几个子元素 | 结构伪类选择器 | 10 | 3 |
+| :nth-of-type\(n\) | 类型的第几个 | 结构伪类选择器 | 10 | 3 |
+| :nth-last-of-type\(n\) | 类型的倒数几个 | 结构伪类选择器 | 10 | 3 |
+| :last-child | 最后一个 | 结构伪类选择器 | 10 | 3 |
+| :root | 文档的根元素 | 伪元素选择器 | 1 | 3 |
 | :empty | 空元素 |  | 10 | 3 |
 | :target | 当前活动的 |  | 10 | 3 |
 | :enabled | 启用的 | 状态伪类选择器 | 10 | 3 |
 | :disabled | 禁用的 | 状态伪类选择器 | 10 | 3 |
 | :checked | 选择的 | 状态伪类选择器 | 10 | 3 |
 | :not\(selector\) | 非 |  | 10 | 3 |
-| ::selection | 选择被用户选取的元素部分。 | 伪元素选择器 | 10 | 3 |
+| ::selection | 选择被用户选取的元素部分。 | 伪元素选择器 | 1 | 3 |
 
 权重规则：
 
