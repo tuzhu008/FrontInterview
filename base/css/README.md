@@ -300,5 +300,5 @@ display: unset;
 
 relative：自身
 
-absolute：非 static 的父级元素
+absolute：最近非 static 的父级元素
 
