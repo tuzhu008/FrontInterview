@@ -111,3 +111,15 @@
   |  font-stretch |  |
   |  font-size-adjust |  |
 
+* 文本系列属性
+  
+  | 属性 | 描述 |
+  | :--- | :--- |
+  |  text-indent |  |
+  |  text-align |  |
+  |  line-height |  |
+  |  word-spacing |  |
+  |  letter-spacing |  |
+  |  text-transform |  |
+  |  direction |  |
+  |  color|  |
