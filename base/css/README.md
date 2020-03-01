@@ -296,7 +296,9 @@ display: initial;
 display: unset;
 ```
 
-## position 的 relative 和 absolute fen 分别是对于谁定位的？
+## position 的 relative 和 absolute 分别是对于谁定位的？
 
+relative：自身
 
+absolute：非 static 的父级元素
 
