@@ -454,7 +454,9 @@ XHTML 文档必须拥有根元素
 
 * 获取属性方式：IE 可以使用获取常规属性方式获取自定义属性，也可以使用 `getAttribute()` 方法，但 firefox 下，只能使用 `getAttribute()`。
 
-* IE 下，event 对象有 x、y 属性，但是没有 pageX、pageY firefox 有 pageX、pageY 属性，没有  x、y 属性。使用条件注释，引入对应的代码。
+* IE 下，event 对象有 x、y 属性，但是没有 pageX、pageY firefox 有 pageX、pageY 属性，没有  x、y 属性。
+
+  解决方案：使用条件注释，引入对应的代码。
 
 * Chrome 中文见面下默认会将小雨 12px 的文本强制按照 12 px 显示
 
@@ -463,3 +465,28 @@ XHTML 文档必须拥有根元素
   ```css
   html{ -webkit-text-size-adjust: none; }
   ```
+
+* 超链接样式顺序导致效果
+
+  解决方案：按一下顺序书写
+
+  ```css
+  a:link {}
+  a:visited {}
+  a:hover {}
+  a:active {}
+  ```
+
+## 解释下浮动和它的工作原理？清除浮动的技巧？
+
+使用浮动的元素会脱离标准文档流，不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。
+
+清除浮动：
+
+* 使用 `clear: both|left|right`
+   此方法是通过自动为清除元素加上外边距实现的
+* 使用空标签清除
+* 使用 overflow
+* 使用 after 伪元素
+
+这些清除的本质都是使用 BFC。
