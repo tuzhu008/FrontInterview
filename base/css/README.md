@@ -341,10 +341,10 @@ BFC，Block Formatting Context，块级格式化上下文。BFC 是 Web 页面�
 ### 创建 BFC
 
 * 根元素或包含根元素的元素
-* 浮动元素 float = left | right 或 inherit(≠null)
+* 浮动元素 float = left \| right 或 inherit\(≠null\)
 * 绝对定位元素 position = absolute 或 fixed
-* display = inline-block | flex | inline-flex | table-cell 或 table-caption
-* overflow = hidden | auto 或 scroll(≠visible)
+* display = inline-block \| flex \| inline-flex \| table-cell 或 table-caption
+* overflow = hidden \| auto 或 scroll\(≠visible\)
 
 ### BFC 的特性
 
@@ -396,6 +396,16 @@ Doctype 可以声明三种 DTD 类型，分别表示严格版本、过渡版本�
   * Stric
   * Transitional
   * Frameset
-  
+
 Standards 模式用于呈现遵循最新标准的网页，而 Quirks 模式用于呈现为传统浏览器而设计的网页
-  
+
+
+
+* html5
+
+```html
+
+```
+
+
+
