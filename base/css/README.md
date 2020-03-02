@@ -438,5 +438,28 @@ Standards 模式用于呈现遵循最新标准的网页，而 Quirks 模式用�
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
   ```
 
+## HTML 和 XHTML 有什么区别？
 
+XHTML 元素必须被正确的嵌套
 
+XHTML 元素必须被关闭
+
+XHTML 标签必须用小写字母
+
+XHTML 文档必须拥有根元素
+
+## html 常见兼容性问题？
+
+* 浏览器默认的 `margin` 和 `padding` 不同
+
+* 获取属性方式：IE 可以使用获取常规属性方式获取自定义属性，也可以使用 `getAttribute()` 方法，但 firefox 下，只能使用 `getAttribute()`。
+
+* IE 下，event 对象有 x、y 属性，但是没有 pageX、pageY firefox 有 pageX、pageY 属性，没有  x、y 属性。使用条件注释，引入对应的代码。
+
+* Chrome 中文见面下默认会将小雨 12px 的文本强制按照 12 px 显示
+
+  解决方案：
+
+  ```css
+  html{ -webkit-text-size-adjust: none; }
+  ```
