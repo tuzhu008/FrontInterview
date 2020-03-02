@@ -484,7 +484,9 @@ XHTML 文档必须拥有根元素
 清除浮动：
 
 * 使用 `clear: both|left|right`
+  
    此方法是通过自动为清除元素加上外边距实现的
+   
 * 使用空标签清除
 * 使用 overflow
 * 使用 after 伪元素
