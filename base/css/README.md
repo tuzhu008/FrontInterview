@@ -403,9 +403,40 @@ Standards 模式用于呈现遵循最新标准的网页，而 Quirks 模式用�
 
 * html5
 
-```html
+  ```html
+  <!DOCTYPE html>
+  ```
+* html4.01
 
-```
+  ```html
+  <!-- Strict -->
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+  <!-- Transitional -->
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+  <!-- Frameset -->
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+  ```
+
+* XHTML 1.0
+
+  ```html
+  <!-- Strict -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+  <!-- Transitional -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+  <!-- Frameset -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+  ```
+* XHTML 1.0
+
+  ```html
+  <!-- Strict -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  ```
 
 
 
