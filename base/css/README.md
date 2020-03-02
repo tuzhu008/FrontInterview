@@ -399,13 +399,12 @@ Doctype 可以声明三种 DTD 类型，分别表示严格版本、过渡版本�
 
 Standards 模式用于呈现遵循最新标准的网页，而 Quirks 模式用于呈现为传统浏览器而设计的网页
 
-
-
 * html5
 
   ```html
   <!DOCTYPE html>
   ```
+
 * html4.01
 
   ```html
@@ -431,6 +430,7 @@ Standards 模式用于呈现遵循最新标准的网页，而 Quirks 模式用�
   <!-- Frameset -->
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
   ```
+
 * XHTML 1.0
 
   ```html
@@ -489,4 +489,5 @@ XHTML 文档必须拥有根元素
 * 使用 overflow
 * 使用 after 伪元素
 
-这些清除的本质都是使用 BFC。
+后面这三种清除的本质都是使用 BFC。
+
