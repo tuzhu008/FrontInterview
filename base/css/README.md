@@ -508,33 +508,33 @@ XHTML 文档必须拥有根元素
 
 * 创建节点
 
-```js
-document.createDocumentFragement() // 创建一个 DOM 片段
-document.createElement() // 创建一个具体的元素
-document.createTextNode() // 创建一个文本节点
-```
+  ```js
+  document.createDocumentFragement() // 创建一个 DOM 片段
+  document.createElement() // 创建一个具体的元素
+  document.createTextNode() // 创建一个文本节点
+  ```
 
 * 添加、移除、替换、插入、复制
 
-```js
-ParentNode.append()
-ParentNode.appendChild()
+  ```js
+  ParentNode.append()
+  ParentNode.appendChild()
 
-ParentNode.replaceChild()
+  ParentNode.replaceChild()
 
-ParentNode.insertBefore()
+  ParentNode.insertBefore()
 
-Node.cloneNode()
+  Node.cloneNode()
 
-```
+  ```
 
 * 查找
 
-```js
-element.getElementsByTagName()
-element.getElementsByClass()
-element.getElementById()
+  ```js
+  element.getElementsByTagName()
+  element.getElementsByClass()
+  element.getElementById()
 
-element.querySelector()
-element.querySelectorAll()
-```
+  element.querySelector()
+  element.querySelectorAll()
+  ```
