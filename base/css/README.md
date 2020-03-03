@@ -509,9 +509,9 @@ XHTML 文档必须拥有根元素
 * 创建节点
 
   ```js
-  document.createDocumentFragement() // 创建一个 DOM 片段
   document.createElement() // 创建一个具体的元素
   document.createTextNode() // 创建一个文本节点
+  document.createDocumentFragement() // 创建一个 DOM 片段
   ```
 
 * 添加、移除、替换、插入、复制
@@ -538,3 +538,105 @@ XHTML 文档必须拥有根元素
   element.querySelector()
   element.querySelectorAll()
   ```
+
+## HTML5 有哪些新特性、移除了哪些元素？如何处理 HTML5 新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
+
+新特性：
+
+HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加
+
+* 拖拽释放 API
+* 语义化更好的内容标签：`<header>`、`<footer>`、`<nav>`、`<aside>`、`<article>`、`<section>`
+* 音频、视频 API
+* 画布：Canvas API
+* 地址位置：Geolocation API
+* localStorage、sessionStorage
+* 表单控件：calendar、date、time、email、url、search
+* 新的技术：webworker、websocket、Geolocation
+
+移除的元素：
+
+* 纯表现的元素：basefont、big、center、font、s、sticke、tt、u
+* 对可用性产生负面影响的元素：frame、frameset、noframes
+
+支持 HTML 新标签：
+
+IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以利用这一特性让这些浏览器支持 HTML5 新标签，浏览器支持新标签后，还需要添加默认的样式。
+
+有现成插件可用：`html5shiv`
+
+如何区分：
+
+从 DOCTYPE 文档声明、新增的结构元素、功能元素都可以区分
+
+## iframe 的优缺点
+
+优点：
+
+* 解决加载缓慢的第三方内容，如图标和广告的加载问题
+* Security sandbox(安全沙箱)
+* 并行加载脚本
+
+缺点：
+
+* iframe 会阻塞主页面的 onload 事件
+* 即使内容为空，加载也需要时间
+* 没有语义
+* 产生很多页面，不易管理
+* 不容易打印
+* 浏览器的后退按钮无效
+* 代码复杂，不利于代码 SEO
+* 增加不必要的 http 请求
+
+## 如何实现浏览器多个标签页之间的通信？
+
+localStorage（storage 事件）、cookie
+
+## webSocket 如何兼容低浏览器？
+
+* Adobe Flash Socket
+* ActiveX HTMLFile（IE)
+* 轮询
+
+## 线程与进程的区别
+
+* 进程是资源分配的最小单位，线程是程序执行的最小单位
+* 进程有自己的独立地址空间，没启动一个进程，系统就会为它分配地址空间，建立数据表来维护代码段、堆栈段和数据段，这种操作非常昂贵。而线程是共享进程中的数据的，使用相同的地址空间，因此 CPU 切换一个线程的花费远比进程小很多，同时创建一个线程的开销也比进程小很多
+* 线程之间的通信更方便，统一进程下的线程共享全局变量、静态变量等数据，而进程之间的通信则需要以通信的方式（IPC）进行。不过如何处理好同步与互斥是便携多线程程序的难点。
+* 但是多进程程序更健壮，多线程程序只需要有一个线程死掉，整个进程也死掉了，而一个进程死掉并不会对另一个进程造成影响，因为进程有自己独立的地址空间。
+* 从逻辑上来说，多线程的意义在于一个应用程序中，有多个执行部分可以同时执行。但是操作系统并没有将多个线程看作多个独立的应用，来实现进程调度和管理以及资源分配。这就是进程与线程的重要区别。
+
+## 如何对网站的文件和资源进行优化？
+
+* 文件合并，减少 http 请求次数
+* 压缩：文件压缩、响应压缩
+* CDN 托管，降低通信距离
+* 缓存
+* CSS 放最上面，script 放最上面
+* 避免在 CSS 使用表达式
+* 结构、样式、行为分离
+* 减少 DNS 查询
+* 避免重定向
+* 正确选用图片格式
+
+## 你都使用哪些工具来测试代码的性能？
+
+* Profile
+* JSPerf
+* Dromaeo
+
+没做过
+
+## 什么是 FOUC（无样式内容闪烁）？如何来避免？
+
+FOUC：Flash Of Unstyled Content 无样式内容闪烁
+
+引起该问题的罪魁祸首就是 `@import`，它会在文档加载完成后再去加载，将其替换为 `link` 标签
+
+## document.write 和 innerHTML 的区别？
+
+document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部分
+
+## .call 和 .apply 的作用？
+
+动态改变某个类的某个方法的运行环境

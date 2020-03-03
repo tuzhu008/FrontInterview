@@ -100,3 +100,54 @@ WebSQL 是一个在浏览器客户端的结构关系数据库，这是浏览器�
 
 * 兼容性差，当前只有谷歌支持，ie 和火狐均不支持。
 
+## null 和 undefined 的区别
+
+* 意义不同
+  
+  `null` 是一个表示空对象
+
+  `undefined` 是一个表示无的原始值
+
+* 数值转换
+
+  `null` 可以转为数值 0
+
+  `undefined` 可以转为数值 NaN
+
+* `null` 是一个 JavaScript 保留关键字，`undefined` 不是
+
+## new 操作符都干了什么？
+
+* 创建了一个空对象，
+* 链接到原型：将该对象的 `__proto__` 属性指向构造函数的 `prototype` 属性
+* 绑定 this 指向：将 this 变量引用指向该对象
+* 执行构造函数，返回对象
+  
+### 实现一个 new
+
+```js
+function _new (fn, ...args) {
+  const obj = Object.create(fn.prototype);
+  const result = fn.apply(obj, args);
+  return result instanceOf Object ? result : obj;
+}
+```
+
+## 对 JSON 的了解
+
+JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个子集。数据格式简单，易于读写，占用带宽小。
+
+## JS 延迟加载的方式有哪些？
+
+1. defer：开启新县城下载脚本，并使脚本在文档解析完成后执行
+2. async：HTML5 新增属性，用于异步下载脚本文件，下载完成立即解释执行代码
+3. 动态创建 DOM 方式
+4. 按需异步载入
+
+## 如何解决跨域问题
+
+* jsonp：其原理是动态插入 script 标签
+* document.domain + iframe
+* window.name、window.postMessage
+* 服务器设置代理
+* CORS：设置 http 头，Access-Control-Allow-Origin
