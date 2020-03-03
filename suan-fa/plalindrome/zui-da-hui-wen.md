@@ -151,6 +151,8 @@ function expandAroundCenter (s, left, right) {
 
 ### Manachers 算法
 
+个人认为，该算法是
+
 ```js
 function longestPalindrome (s) {
   if (s == null || s.length <= 1) {
@@ -168,16 +170,31 @@ function longestPalindrome (s) {
   // 回文半径数组
   let radiusArr = new Array(strArr.length);
 
+  // 右边界
+  let max = 0;
+  // 右边界索引
+  let maxIndex = 0;
+
   // 最大回文半径
   let maxRadius = 0;
   let maxRadiusIndex = 0;
 
   for (let i = 1; i < strArr.length; i++) {
-    radiusArr[i] = 1;
+    // 2 * maxIndex - i 找到一个 i 在 maxIndex 左边的对称点 i‘
+    // i' 的 radius 与 max - i 的大小不知，因此将其置为其中的较小值
+    // 这个最小值也许不能满足当前 i 的回文规则，
+    radiusArr[i] = max > i
+      ? Math.min(radiusArr[2 * maxIndex - i], max - i) : 1;
+
     while (i - radiusArr[i] >= 0 &&
       i + radiusArr[i] < strArr.length &&
       strArr[i - radiusArr[i]] === strArr[i + radiusArr[i]]) {
       radiusArr[i]++;
+    }
+
+    if (i + radiusArr[i] > max) {
+      max = i + radiusArr[i];
+      maxIndex = i;
     }
 
     if (maxRadius < radiusArr[i]) {
