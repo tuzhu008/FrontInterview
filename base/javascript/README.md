@@ -61,9 +61,9 @@ HTTP 协议本身是无状态的。什么是无状态呢，即服务器无法判
   ![](/assets/localStorage浏览器兼容性.png)
 
 * 存储内容类型限制：只能为 String 类型
-  
+
 * 隐私模式下不可读取：可读写，但不可永远保存；正常模式和隐私模式是隔离的，隐私模式无法访问正常模式存储的东西；。
-  
+
 * 不能被爬虫提取
 
 ### sessionStorage
@@ -72,29 +72,31 @@ HTTP 协议本身是无状态的。什么是无状态呢，即服务器无法判
 
 访问 sessionStorage 具有同源策略。
 
-###  localStorage与sessionStroage区别
+### localStorage与sessionStroage区别
 
 * localStroage 是将信息存储在硬件设备中的，关闭浏览器或网页也不会消失；
 * sessionStroage 有效期只是网页在浏览器打开到关闭的时间段
 
 ### IndexedDB
 
-IndexedDB 是一种低级 API，用于客户端存储大量结构化数据(包括, 文件/ blobs)。该 API 使用索引来实现对该数据的高性能搜索。
+IndexedDB 是一种低级 API，用于客户端存储大量结构化数据\(包括, 文件/ blobs\)。该 API 使用索引来实现对该数据的高性能搜索。
 
 IndexedDB 是一个事务型数据库系统，是一个基于 JavaScript 的面向对象的数据库。IndexedDB 允许您存储和检索用键索引的对象；可以存储结构化克隆算法支持的任何对象。
 
 优点：
+
 * 存储内容类型多样
 * 可以存储大量数据
 
 缺点:
+
 * 兼容性差，IE10
 
 ### WebSQL
 
 WebSQL 是前端的一个独立模块，是 web 存储方式的一种。
 
-WebSQL 是一个在浏览器客户端的结构关系数据库，这是浏览器内的本地RDBMS(关系型数据库系统)，你可以使用 SQL 查询
+WebSQL 是一个在浏览器客户端的结构关系数据库，这是浏览器内的本地RDBMS\(关系型数据库系统\)，你可以使用 SQL 查询
 
 缺点：
 
@@ -103,7 +105,7 @@ WebSQL 是一个在浏览器客户端的结构关系数据库，这是浏览器�
 ## null 和 undefined 的区别
 
 * 意义不同
-  
+
   `null` 是一个表示空对象
 
   `undefined` 是一个表示无的原始值
@@ -122,7 +124,7 @@ WebSQL 是一个在浏览器客户端的结构关系数据库，这是浏览器�
 * 链接到原型：将该对象的 `__proto__` 属性指向构造函数的 `prototype` 属性
 * 绑定 this 指向：将 this 变量引用指向该对象
 * 执行构造函数，返回对象
-  
+
 ### 实现一个 new
 
 ```js
@@ -146,8 +148,11 @@ JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个�
 
 ## 如何解决跨域问题
 
-* jsonp：其原理是动态插入 script 标签
+* jsonp：其原理是利用带有 `src` 的元素具有跨域的性质，以动态插入 script 标签的方式进行请求
 * document.domain + iframe
 * window.name、window.postMessage
 * 服务器设置代理
 * CORS：设置 http 头，Access-Control-Allow-Origin
+
+
+
