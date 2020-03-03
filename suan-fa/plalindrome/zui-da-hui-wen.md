@@ -149,7 +149,7 @@ function expandAroundCenter (s, left, right) {
 }
 ```
 
-### Manachers算法
+### Manachers 算法
 
 ```js
 function longestPalindrome (s) {
