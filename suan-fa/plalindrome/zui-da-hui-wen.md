@@ -164,31 +164,29 @@ function longestPalindrome (s) {
     sb += '#';
   }
 
-  let str = sb.split('');
-  let r = new Array(str.length);
+  let strArr = sb.split('');
+  // 回文半径数组
+  let radiusArr = new Array(strArr.length);
 
-  let mx = 0;
-  let id = 0;
-  let ansR = 0;
-  let ansCenter = 0;
+  // 最大回文半径
+  let maxRadius = 0;
+  let maxRadiusIndex = 0;
 
-  for (let i = 1; i < str.length; i++) {
-    r[i] = mx - i > r[i] ? Math.min(r[2 * id - i], mx - i) : 1;
-    while (i - r[i] >= 0 && i + r[i] < str.length && str[i - r[i]] == str[i + r[i]]) {
-      r[i]++;
+  for (let i = 1; i < strArr.length; i++) {
+    radiusArr[i] = 1;
+    while (i - radiusArr[i] >= 0 &&
+      i + radiusArr[i] < strArr.length &&
+      strArr[i - radiusArr[i]] === strArr[i + radiusArr[i]]) {
+      radiusArr[i]++;
     }
 
-    if (i + r[i] > mx) {
-      mx = i + r[i];
-      id = i;
-    }
-    if (ansR < r[i]) {
-      ansR = r[i];
-      ansCenter = i;
+    if (maxRadius < radiusArr[i]) {
+      maxRadius = radiusArr[i];
+      maxRadiusIndex = i;
     }
   }
-  let maxStart = (ansCenter - ansR + 1) / 2;
-  return s.substring(maxStart, maxStart + ansR - 1);
+  let maxStart = (maxRadiusIndex - maxRadius + 1) / 2;
+  return s.substring(maxStart, maxStart + maxRadius - 1);
 }
 ```
 
