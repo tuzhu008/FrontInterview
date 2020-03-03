@@ -503,3 +503,37 @@ XHTML 文档必须拥有根元素
 * 同级元素布局改变
 
 清除浮动
+
+## DOM 操作——怎样添加、移动、移除、复制、创建和查找节点
+
+1. 创建节点
+
+```js
+document.createDocumentFragement() // 创建一个 DOM 片段
+document.createElement() // 创建一个具体的元素
+document.createTextNode() // 创建一个文本节点
+```
+
+1. 添加、移除、替换、插入、复制
+
+```js
+ParentNode.append()
+ParentNode.appendChild()
+
+ParentNode.replaceChild()
+
+ParentNode.insertBefore()
+
+Node.cloneNode()
+
+```
+1. 查找
+
+```js
+element.getElementsByTagName()
+element.getElementsByClass()
+element.getElementById()
+
+element.querySelector()
+element.querySelectorAll()
+```
