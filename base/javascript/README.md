@@ -196,3 +196,21 @@ JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个�
 * 组合继承
 * 寄生式继承
 * 寄生组合式继承
+
+## typeof 和 instanceof 区别？举例说明
+
+## 说说 Object.assign() 和 Object.create()
+
+## Object.prototype.toString.call() 具体做了什么
+
+## javascript 类型哪几种？es6 新增的 symbol 对象，有什么作用？
+
+## 怎么检查对象类型？
+
+## es6 的解构赋值和深度 clone 了解嘛？
+
+## 了解 作用域和原型链嘛？实现一个原型链
+
+## 闭包的问题？es6闭包的问题？
+
+## javascript为什么是单线程？知道event loop吗？实现一个
