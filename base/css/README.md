@@ -657,3 +657,7 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 * 减少全局变量，缓存 DOM 节点查找结果
 * 避免使用 CSS Expression
 * css 网顶部，脚本放底部
+
+## 一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？
+
+
