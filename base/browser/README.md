@@ -306,7 +306,67 @@ setTimeout
 
 ![](/assets/microtask.png)
 
+```js
+setTimeout(function () {
+  console.log(1);
+}, 0);
 
+new Promise(function (resolve) {
+  console.log(2);
+
+  for (let i = 0; i < 10000; i++) {
+    i === 9999 && resolve();
+  }
+
+  console.log(3);
+}).then(function () {
+  console.log(4);
+});
+
+console.log(5);
+
+输出：
+
+2
+3
+5
+4
+1
+
+```
+
+`new Promise` 里的函数是直接执行的算做主程序里，而且 `.then` 后面的才会放到微任务中。
+
+
+另外，请注意下 Promise 的 polyfill 与官方版本的区别：
+
+* 官方版本中，是标准的 microtask 形式
+* polyfill，一般都是通过 setTimeout 模拟的，所以是 macrotask 形式
+
+**请特别注意这两点区别**
+
+注意，有一些浏览器执行结果不一样（因为它们可能把microtask当成macrotask来执行了），但是为了简单，这里不描述一些不标准的浏览器下的场景（但记住，有些浏览器可能并不标准）
+
+Mutation Observer可以用来实现microtask（它属于microtask，优先级小于Promise，一般是Promise不支持时才会这样做）
+
+它是HTML5中的新特性，作用是：监听一个DOM变动，当DOM对象树发生任何变动时，Mutation Observer会得到通知
+
+像以前的Vue源码中就是利用它来模拟nextTick的，具体原理是，创建一个TextNode并监听内容变化，然后要nextTick的时候去改一下这个节点的文本内容，如下：（Vue的源码，未修改）
+
+```js
+var counter = 1;
+var observer = newMutationObserver(nextTickHandler);
+var textNode = document.createTextNode(String(counter));
+observer.observe(textNode, { characterData: true });
+timerFunc = () => {
+  counter = (counter + 1) % 2;
+  textNode.data = String(counter);
+}
+```
+
+不过，现在的Vue（2.5+）的nextTick实现移除了Mutation Observer的方式（据说是兼容性原因），取而代之的是使用MessageChannel（当然，默认情况仍然是Promise，不支持才兼容的）。
+
+MessageChannel属于宏任务，优先级是：setImmediate->MessageChannel->setTimeout，所以Vue（2.5+）内部的nextTick与2.4及之前的实现是不一样的，需要注意下。
 
 ## 参考
 
