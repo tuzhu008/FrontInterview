@@ -81,3 +81,5 @@
 * 最后 Render 渲染进程将结果传递给 Browser 主进程
 * Browser 主进程接收到结果并将结果绘制出来
 
+![](/assets/浏览器渲染.png)
+
