@@ -17,7 +17,6 @@
 * Node.js
 * Mongodb
 * MVVM
-* Maven
 * Flutter
 
 网站：
