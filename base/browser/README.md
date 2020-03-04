@@ -205,6 +205,7 @@ webkit CSS3中，如果这个元素添加了硬件加速，并且index层级比�
 主线程在运行时会产生执行栈，栈中的代码调用某些api时，它们会在事件队列中添加各种事件（当满足触发条件后，如ajax请求完毕）。而当栈中的代码执行完毕，就会去读取事件队列中的事件，去执行那些回调，如此循环。
 
 ## 定时器
+
 上面事件循环机制的核心是：JS引擎线程和事件触发线程
 
 调用 `setTimeout` 后，是由定时器线程控制等到特定时间后添加到事件队列的，因为JS引擎是单线程的，如果处于阻塞线程状态就会影响计时准确，因此很有必要另开一个线程用来计时。
@@ -273,17 +274,17 @@ promise2
 setTimeout
 ```
 
-因为promise有一个新的概念 microtask.或者可以说JS中分为两种任务：macrotask 和 microtask;
+因为promise有一个新的概念 microtask.或者可以说JS中分为两种任务：macrotask 和 microtask;  
 理解如下：
 
-* macrotask(又叫宏任务),主代码块，setTimeout,setInterval等（可以看到，事件队列中的每一个事件都是一个macrotask）
+* macrotask\(又叫宏任务\),主代码块，setTimeout,setInterval等（可以看到，事件队列中的每一个事件都是一个macrotask）
 * 可以理解是每次执行的代码就是一个宏任务（包括每次从事件队列中获取一个事件回调并放到执行栈中执行）
 * 第一个macrotask会从头到尾将这个任务执行完毕，不会执行其它
-* 浏览器为了能够使得JS内部macrotask与DOM任务能够有序的执行，会在一个macrotask执行结束后，在下一个macrotask执行开始前，对页面进行重新渲染（task->渲染->task->...）
+* 浏览器为了能够使得JS内部macrotask与DOM任务能够有序的执行，会在一个macrotask执行结束后，在下一个macrotask执行开始前，对页面进行重新渲染（task-&gt;渲染-&gt;task-&gt;...）
 * microtask（又叫微任务），Promise,process.nextTick等。
 * 可以理解是在当前macrotask执行结束后立即执行的任务
 * 也就是说在当前macrotask任务后，下一个macrotask之前，在渲染之前
-* 所以它的响应速度相比setTimeout(setTimeout是macrotask)会更快因为无需等待渲染
+* 所以它的响应速度相比setTimeout\(setTimeout是macrotask\)会更快因为无需等待渲染
 * 也就是说，在某一个macrotask执行完成后，就会将在它执行期间产生的所有microtask都执行完毕（在渲染前）
 
 注意：在 Node 环境下，`process.nextTick` 的优先级高于 `promise`.也就是：在宏任务结束后会先执行微任务队列中的 `nextTick` 部分，然后才会执行微任务中的 `promise` 部分。
@@ -302,6 +303,8 @@ setTimeout
 * 宏任务执行完毕后，立即执行当前微任务队列中的所有微任务（依次执行）
 * 当前宏任务执行完毕，开始检查渲染，然后GUI线程接管渲染
 * 渲染完毕后，JS线程继续接管，开始下一个宏任务（从事件队列中获取）
+
+![](/assets/microtask.png)
 
 ## 参考
 
