@@ -154,7 +154,6 @@ JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个�
 * 服务器设置代理
 * CORS：设置 http 头，Access-Control-Allow-Origin
 
-
 ## 哪些操作会造成内存泄漏？
 
 内存泄漏是指任何对象在您不再拥有或者需要它之后仍然存在。
@@ -188,6 +187,8 @@ JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个�
 * new Object
 * Object.create
 
+## Ajax 的过程是怎样的
+
 ## 继承的 6 中方式
 
 * 原型链继承
@@ -199,9 +200,9 @@ JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个�
 
 ## typeof 和 instanceof 区别？举例说明
 
-## 说说 Object.assign() 和 Object.create()
+## 说说 Object.assign\(\) 和 Object.create\(\)
 
-## Object.prototype.toString.call() 具体做了什么
+## Object.prototype.toString.call\(\) 具体做了什么
 
 ## javascript 类型哪几种？es6 新增的 symbol 对象，有什么作用？
 
@@ -214,3 +215,6 @@ JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个�
 ## 闭包的问题？es6闭包的问题？
 
 ## javascript为什么是单线程？知道event loop吗？实现一个
+
+
+
