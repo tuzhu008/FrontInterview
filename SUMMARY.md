@@ -17,6 +17,7 @@
 * [HTML/CSS](/base/css/README.md)
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
 * [其他](/base/others/README.md)
+* [重点](base/security/zhong-dian.md)
 
 ## 算法
 
@@ -72,6 +73,4 @@
 * [360](Company/360.md)
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
-
-
 
