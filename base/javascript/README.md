@@ -189,6 +189,66 @@ JSON 是一种轻量级的数据交换格式，它是基于 JavaSript 的一个�
 
 ## Ajax 的过程是怎样的
 
+1. 创建 XMLHttpRequest 对象，也就是创建一个异步调用对象
+2. 创建一个新的 HTTP 请求，并指定该 HTTP 请求的方法，URL 以及验证信息
+3. 设置 响应 HTTP 请求状态变化的函数
+4. 发送 HTTP 请求
+5. 获取异步调用返回的数据
+6. 使用 JavaScript 和 DOM 实现局部刷新
+
+```js
+const xhr = new XMLHttpRequest();
+
+// 请求成功回调函数
+xhr.onload = (e) => {
+  console.log(request success);
+}
+
+// 请求结束
+xhr.onloaded = (e) => {
+  console.log(request loadend);
+}
+
+// 请求超时
+xhr.ontimeout = (e) => {
+    console.log('request timeout');
+};
+
+
+xhr.timeout = 0; // 设置超时时间,0表示永不超时
+// 初始化请求
+xhr.open('GET/POST/DELETE/...', '/url', true || false);
+// 设置期望的返回数据类型 'json' 'text' 'document' ...
+xhr.responseType = '';
+// 设置请求头
+xhr.setRequestHeader('', '');
+// 发送请求
+xhr.send(null || new FormData || 'a=1&b=2' || 'json字符串');
+```
+
+## 异步加载和延迟加载
+
+异步：
+
+* 动态插入 `script` 标签
+* ajax 获取 js 代码，使用 `eval` 执行
+* `script` 标签加上 `defer` 属性或者 `async` 属性：`defer` 是推迟执行，`async` 是加载完就执行
+* 创建并插入 iframe
+
+延迟加载：
+
+有些代码在初始化页面的时候并不需要，因此可以延迟加载它
+
+## 前端的安全问题
+
+* XSS
+* SQL 注入
+* CSRF
+* OS 命令攻击
+* HTTP 首部注入攻击
+* 会话劫持
+* DDoS
+
 ## 继承的 6 中方式
 
 * 原型链继承
