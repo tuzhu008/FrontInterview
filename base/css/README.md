@@ -667,3 +667,6 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 * 远程服务器找到资源并使用 HTTP 响应返回资源
 * 此时，Web 服务器提供资源服务，客户端开始下载资源
 * 浏览器解析返回的 HTML 文档，生成一个 DOM 树，根据下载的 CSS 生成 CSS 规则树，然后浏览器经过计算将 DOM 树和 CSS 树以一定规则生成 render 树。DOM 树和 CSS 树是不会相互阻塞的。
+
+
+## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？
