@@ -6,5 +6,11 @@
 
 ## 如何解决跨域问题?
 
+jsonp
+
+iframe
+
+window.name、window.postMessage
+
 
 
