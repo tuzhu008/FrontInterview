@@ -17,6 +17,7 @@
   * [ECMA](/base/javascript/ecma.md)
 * [HTML/CSS](/base/css/README.md)
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
+  * Ajax
 * [其他](/base/others/README.md)
 * [重点](base/security/zhong-dian.md)
 
