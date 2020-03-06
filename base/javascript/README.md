@@ -409,6 +409,28 @@ MyEvent = {
 
 ## 深度克隆
 
+```js
+functin clone (origin) {
+	var buf;
+	if (origin instanceof Array) {
+		buf = [];
+		for (let i = 0; i < origin.length; i++) {
+			buf[i] = clone(origin[i]);
+		}
+		return buf;
+	} else if (origin instanceof Object) {
+		buf = {};
+		for (let k in origin) {
+			buf[k] = clone(origin[k]);
+		}
+
+		retrun buf;
+	} else {
+		return origin;
+	}
+}
+```
+
 ## typeof 和 instanceof 区别？举例说明
 
 ## 说说 Object.assign\(\) 和 Object.create\(\)
