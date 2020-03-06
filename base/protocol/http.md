@@ -27,3 +27,7 @@
 
 ## http2 和 http 有什么区别？
 
+## cache-control
+
+
+
