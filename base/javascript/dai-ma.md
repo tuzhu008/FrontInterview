@@ -106,5 +106,34 @@ function clone (origin) {
 }
 ```
 
+## 数组去重
 
+重点在于去重算法：
 
+* Set
+
+    ```js
+    function uniqArray = function (arr) {
+        retrun Array.from(new Set(arr));
+    }
+    ```
+
+* filter
+
+    ```js
+    function uniqArray = function (arr) {
+        retrun arr.filter((item, index) => arr.indexOf(item) === index);
+    }
+    ```
+
+```js
+if (!Array.prototype.uniqArray) {
+    Array.prototype.uniqArray = function () {
+        const newArr = uniqArray(this);
+        this.length = 0;
+        for (let i = 0; i < newArr.length; i++) {
+            this[i] = newArr[i];
+        }
+    }
+}
+```

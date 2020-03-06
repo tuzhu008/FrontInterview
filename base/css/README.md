@@ -707,4 +707,8 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 * e.stopPropagation()
 * e.cancelBubble = true;
 
+## 如何获取 UA？
+
+使用 `navigator` 对象
+
 ## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？

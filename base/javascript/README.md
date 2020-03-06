@@ -1,6 +1,5 @@
 # JavaScript
 
-
 ## null 和 undefined 的区别
 
 * 意义不同
