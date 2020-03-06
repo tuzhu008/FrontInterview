@@ -20,8 +20,6 @@
 4. **对Render树进行布局计算，即对渲染树上的每个元素，计算它的坐标，称之为布局。**
 5. **.绘制即Painting,渲染树上的元素最终展示在浏览器里**
 
-
-
 ## 引用
 
 [How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
