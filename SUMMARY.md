@@ -17,7 +17,7 @@
   * [ECMA](/base/javascript/ecma.md)
   * [原型、继承](base/javascript/yuan-xing-3001-ji-cheng.md)
   * [ES6](base/javascript/es6.md)
-  * 代码
+  * [代码](base/javascript/dai-ma.md)
 * [HTML/CSS](/base/css/README.md)
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
   * [Ajax](base/css/ajax.md)
