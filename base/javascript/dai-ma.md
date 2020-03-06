@@ -85,7 +85,7 @@ MyEvent = {
 ## 深度克隆
 
 ```js
-functin clone (origin) {
+function clone (origin) {
     var buf;
     if (origin instanceof Array) {
         buf = [];
