@@ -12,5 +12,5 @@ iframe
 
 window.name、window.postMessage
 
-
+代理
 
