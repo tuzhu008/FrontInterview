@@ -1,4 +1,8 @@
-# CSS
+# CSS/HTML
+
+## 对 Web 标准以及 W3C 的理解与认识？
+
+Web 标准：它不是某一个标准，而是一系列标准的集合。网页主要由三部分组成：结构、表现、行为。对应的标准也分三方面，结构化标准语言主要包括 XHTML 和 XML，表现标准语言主要包括 CSS，行为标准语言主要包括对象模型、ECMAScript 等等。这些标准大部分由万维网联盟起草和发布，也有一些是其他标准组织制定的。比如 ECMA 的 ECMAScript 标准。
 
 ## `display: none;` 和 `visibility: hidden` 的区别?
 
@@ -539,36 +543,6 @@ XHTML 文档必须拥有根元素
   element.querySelectorAll()
   ```
 
-## HTML5 有哪些新特性、移除了哪些元素？如何处理 HTML5 新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
-
-新特性：
-
-HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加
-
-* 拖拽释放 API
-* 语义化更好的内容标签：`<header>`、`<footer>`、`<nav>`、`<aside>`、`<article>`、`<section>`
-* 音频、视频 API
-* 画布：Canvas API
-* 地址位置：Geolocation API
-* localStorage、sessionStorage
-* 表单控件：calendar、date、time、email、url、search
-* 新的技术：webworker、websocket、Geolocation
-
-移除的元素：
-
-* 纯表现的元素：basefont、big、center、font、s、sticke、tt、u
-* 对可用性产生负面影响的元素：frame、frameset、noframes
-
-支持 HTML 新标签：
-
-IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以利用这一特性让这些浏览器支持 HTML5 新标签，浏览器支持新标签后，还需要添加默认的样式。
-
-有现成插件可用：`html5shiv`
-
-如何区分：
-
-从 DOCTYPE 文档声明、新增的结构元素、功能元素都可以区分
-
 ## iframe 的优缺点
 
 优点：
@@ -636,10 +610,6 @@ FOUC：Flash Of Unstyled Content 无样式内容闪烁
 ## document.write 和 innerHTML 的区别？
 
 document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部分
-
-## .call 和 .apply 的作用？
-
-动态改变某个类的某个方法的运行环境
 
 ## 什么叫优雅降级和渐进增强？
 

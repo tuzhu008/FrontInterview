@@ -184,6 +184,10 @@ ES5 添加了第二种运行模式，严格模式，这种模式使得 Javascrip
 
 在代码中绝不应该使用该函数，非常不安全，也很耗时，因为要调用 js 解释器
 
+## .call 和 .apply 的作用？
+
+动态改变某个类的某个方法的运行环境
+
 ## typeof 和 instanceof 区别？举例说明
 
 ## 说说 Object.assign\(\) 和 Object.create\(\)
