@@ -89,23 +89,23 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 
 | 元素 | 版本 |
 | :--- | :---: |
-| `<area>` |  | 
-| `<base>` |  | 
-| `<br>` |  | 
-| `<col>` |  | 
-| `<colgroup>` |  | 
-| `<command>` |  | 
-| `<embed>` |  | 
-| `<hr>` |  | 
 | `<img>` |  | 
 | `<input>` |  | 
-| `<keygen>` |  | 
+| `<hr>` |  | 
+| `<br>` |  | 
+| `<col>` |  | 
 | `<link>` |  | 
 | `<meta>` |  | 
+| `<colgroup>` |  | 
+| `<area>` |  | 
+| `<base>` |  | 
+| `<command>` |  | 
+| `<keygen>`（废弃） |  | 
 | `<param>` |  | 
-| `<source>` |  | 
-| `<track>` |  | 
 | `<wbr>` |  | 
+| `<embed>` | 5 | 
+| `<source>` | 5 | 
+| `<track>` | 5 | 
 
 
 
