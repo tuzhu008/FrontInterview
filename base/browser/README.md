@@ -8,5 +8,15 @@
 | IE7+ | 6 |
 | Firfox、Chrome | 6 |
 
+## 浏览器内核
+
+| 浏览器 | 内核 |
+| :--- | :--- |
+| IE | trident |
+| Firefox | gecko |
+| Safari | webkit |
+| Opera | Chrome 的 Blink |
+| Chrome | Blink |
+
 
 
