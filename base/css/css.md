@@ -414,3 +414,21 @@ CSS Sprite 俗称精灵图，或者雪碧图。来自于动漫，我们将很多
 * 其他 position、transform 方式
 * z-index
 * opacity
+
+## 页面布局的方式有哪些？
+
+* 双飞翼
+* 多栏
+* 弹性
+* 流式
+* 瀑布式
+* 响应式
+
+## `overflow: hidden` 是否形成新的块级格式化上下文？
+
+会形成，触发了 BFC。触发 BFC 的条件有：
+
+* float 的值不为 none
+* overflow 的值不为 visible
+* dipaly 的值为 table-cell,table-caption,inline-block 中的任何一个
+* position 的值不为 relative 和 static
