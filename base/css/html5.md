@@ -44,14 +44,14 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 
 ## HTML 行内元素有哪些，块级元素有哪些，空元素有哪些？
 
-行内元素：
+### 行内元素：
 
 * b, big, i, small, tt
 * abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var
 * a, bdo, br, img, map, object, q, script, span, sub, sup
 * button, input, label, select, textarea\* 
 
-块级元素：
+### 块级元素：
 
 | 元素 | 版本 |
 | :--- | :---: |
@@ -85,7 +85,7 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 | `<figure>` | 5 |
 
 
-空元素：
+### 空元素：
 
 | 元素 | 版本 |
 | :--- | :---: |
