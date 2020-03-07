@@ -41,7 +41,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   ```
 
-* 第二种：fastclick
+* 第二种：[fastclick](https://github.com/ftlabs/fastclick)
 
   原理：检测到 touchend 事件后，立刻触发模拟 click 事件，并且把浏览器 300ms 之后真正触发的事件给组断掉
 
