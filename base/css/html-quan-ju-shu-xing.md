@@ -9,6 +9,26 @@ accesskey, autocapitalize, class, contenteditable, contextmenu, data-\*, dir, dr
 | 属性 | 描述 |
 | :--- | :--- |
 |  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 除了基本的HTML全局属性之外，还存在以下全局属性:
 
