@@ -45,3 +45,14 @@ TODO:
 
 缓存分为两种：强缓存和协商缓存，根据响应的 header 内容来决定
 
+| 类型 | 获取资源形式 | 状态码 | 发送请求到服务器 |
+| :--- | :--- | :--- | :--- |
+| 强缓存 | 从缓存获取 | 200（from cache\) | 否，直接从缓存读取 |
+| 协商缓存 | 从缓存获取 | 304（not modified\) | 是，通过服务器来告知缓存是否可用 |
+
+
+
+强缓存相关字段有：expired, cache-control。如果 cache-control 与 expired 同时存在的话，cache-control 优先级高于 expired
+
+协商缓存相关字段有：Last-Modified/if-Modified-since, Etag/if-None-Match
+
