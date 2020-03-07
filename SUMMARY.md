@@ -23,7 +23,7 @@
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
   * [Ajax](base/css/ajax.md)
   * [存储](base/css/storage.md)
-  * HTML 全局属性
+  * [HTML 全局属性](base/css/html-quan-ju-shu-xing.md)
   * [HTML5](base/css/html5.md)
     * [新增元素](base/css/html5/xin-zeng-yuan-su.md)
 * [其他](/base/others/README.md)
