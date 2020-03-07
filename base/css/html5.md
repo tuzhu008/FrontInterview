@@ -118,6 +118,8 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 * Constraint Validation API
 * History API
 
+TODO:展开
+
 ## HTML5 应用程序缓存和浏览器缓存有什么区别？
 
 应用程序缓存是 HTML5 的重要特性之一，提供了离线使用的功能，让应用程序可以获取本地的网站内容，

@@ -17,3 +17,5 @@
 * HTTP 首部注入攻击
 * 会话劫持
 * DDoS
+
+## cookie 如何防范 XSS 攻击

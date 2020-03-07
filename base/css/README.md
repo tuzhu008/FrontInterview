@@ -172,6 +172,39 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 
 `innerHTML`，`innerText`
 
+## 一个图片 url 访问后直接下载怎样实现？
+
+请求的返回头里面，用于浏览器解析的虫咬参数就是 OSS 的 API 文档里面返回的 http 头，决定用户下载行为的参数。
+
+下载的情况：
+
+```
+x-oss-object-type: Normal
+x-oss-request-id: 1ejdhdusydahd
+x-oss-storage-class: Standard
+```
+
+## web Quality (无障碍)
+
+能够被残障人士使用的网站才能称得上一个易用的（易访问的）网站。
+
+残障人士指的是那些带有残疾或者身体不健康的用户。
+
+## fetch 发送 2次请求的原因？
+
+fetch 发送 post 请求的时候，总是发送两次，第一次状态是204，第二次才成功。
+
+原因很简单，因为用 fetch 的 post 请求的时候导致 fetch 第一次发送一个 Options 请求，询问服务器是否支持修改的请求头，如果服务器支持，则在第二次中发送真正的请求。
+
+## 说一下 web woker
+
+在 HTML 页面中，如果在执行脚本时，页面的状态是不可响应的，知道脚本执行完成后，页面才变成可响应的。因为 js 是单线程的，执行会阻塞后面代码的执行。
+
+通过使用 Web Workers，Web应用程序可以在独立于主线程的后台线程中，运行一个脚本操作。这样做的好处是可以在独立线程中执行费时的处理任务，从而允许主线程（通常是UI线程）不会因此被阻塞/放慢。
+
+主线程和 worker 线程之间通过 `postMessage` 传递消息。
+
+
 ## 参考文档
 
 [MDN: HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)

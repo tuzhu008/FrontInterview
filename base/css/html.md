@@ -234,3 +234,9 @@ JS 可以通过 `getAttribute` 和 `dataset` 获取
 * 有利于 SEO：与搜索引起建立良好的沟通，有助于爬虫抓取更多有效信息
 * 有助于无障碍模式
 * 便于团队开发和维护，语义化使代码更具可读性。
+
+## 实用的 BOM 对象？
+
+* history
+* location
+* navigator
