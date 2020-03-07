@@ -204,6 +204,9 @@ fetch 发送 post 请求的时候，总是发送两次，第一次状态是204�
 
 主线程和 worker 线程之间通过 `postMessage` 传递消息。
 
+## 讲讲 viewport 和移动端布局？
+
+TODO:
 
 ## 参考文档
 
