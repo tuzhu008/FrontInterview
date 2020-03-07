@@ -346,3 +346,28 @@ CSS Sprite 俗称精灵图，或者雪碧图。来自于动漫，我们将很多
 * 同级元素布局改变
 
 清除浮动
+
+## 如何居中 div，如何居中一个浮动元素？
+
+* 非浮动元素
+
+  `margin: 0 auto;` 、flex 布局、`position` 等等
+
+* 浮动元素
+
+  解决思路就是利用定位外边距来实现。
+
+  ```css
+  position: relative;
+  left: -250px;
+  margin-left: 50%;
+  ```
+
+  或
+  
+  ```css
+  margin-left: 50%;
+  transform: translateX(-50%);
+  ````
+
+ 
