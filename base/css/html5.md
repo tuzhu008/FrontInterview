@@ -107,5 +107,28 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 | `<source>` | 5 | 
 | `<track>` | 5 | 
 
+## HTML5 标准提供了哪些新的 API?
+
+* Media API
+* Text Track API
+* Application Cache API
+* User Interaction
+* Data Transfer API
+* Command API
+* Constraint Validation API
+* History API
+
+## HTML5 应用程序缓存和浏览器缓存有什么区别？
+
+应用程序缓存是 HTML5 的重要特性之一，提供了离线使用的功能，让应用程序可以获取本地的网站内容，
+如 HTML，CSS，图片以及 JavaScript。这个特性可以提高网站性能，它的实现借助于 mainfest 文件。
+
+与传统的浏览器缓存相比，比不强制缓存用户访问的网站内容。
+
+应用程序缓存的优点：
+
+* 离线缓存：用户可在离线时使用它们
+* 速度：加载速度更快
+* 减少服务器负载：浏览器只从服务器下载更新的或者更改过的资源
 
 
