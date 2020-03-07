@@ -35,23 +35,6 @@
 | `<keygen>` | 定义页面内容之外的内容。 |
 | `<output>` | 定义与其他文本不同的文本方向。 |
 
-## 新的输入框类型
-
-| 类型 | 描述 |
-| :--- | :--- |
-| color |  |
-| date |  |
-| datetime |  |
-| datetime-local |  |
-| email |  |
-| month |  |
-| number |  |
-| range |  |
-| search |  |
-| tel |  |
-| time |  |
-| url |  |
-| week |  |
 
 ## HTML5 图像
 
@@ -70,6 +53,23 @@
 | `<track>` | 定义 `<video>` 和 `<audio>` 的轨道。 |
 | `<embed>` | 定义外部应用程序的容器（比如插件）。 |
 
+## 新的输入框类型
+
+| 类型 | 描述 |
+| :--- | :--- |
+| color |  |
+| date |  |
+| datetime |  |
+| datetime-local |  |
+| email |  |
+| month |  |
+| number |  |
+| range |  |
+| search |  |
+| tel |  |
+| time |  |
+| url |  |
+| week |  |
 
 
 
