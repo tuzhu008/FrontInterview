@@ -28,3 +28,5 @@
   a:hover {}
   a:active {}
   ```
+
+## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？

@@ -198,9 +198,9 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 * `border-radius`
 * 纯 js 实现，根据点击点的坐标来计算
 
+## 要动态改变层中内容可使用的方法？
 
-## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？
-
+`innerHTML`，`innerText`
 
 ## 参考文档
 
