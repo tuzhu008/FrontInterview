@@ -1,5 +1,101 @@
 # HTML
 
+## HTML 和 XHTML 有什么区别？
+
+XHTML 元素必须被正确的嵌套
+
+XHTML 元素必须被关闭
+
+XHTML 标签必须用小写字母
+
+XHTML 文档必须拥有根元素
+
+
+## Doctype 的作用？严格模式和混杂模式如何区分？它们有何意义？
+
+`<!Doctype>` 用来进行文档声明，处于 `<html>` 标签之前，用来告知浏览器以何种模式来渲染文档。
+
+严格模式的排版和 JS 运作模式是以该浏览器支持的最高标准执行的，而混杂模式则以宽容的向后兼容的方式显示，它会模拟老式浏览器的行为，以防止站点无法工作。
+
+`<!Doctype>` 不存在或格式不正确会导致文档以混杂模式呈现。
+
+
+## 你知道几种 Doctype 文档声明？
+
+Doctype 可以声明三种 DTD 类型，分别表示严格版本、过渡版本以及基于框架的 HTML 文档。
+
+* HTML 4.01 规定了三种文档类型：
+
+  * Stric
+  * Transitional
+  * Frameset
+
+* HTML 1.0 规定了三种文档类型：
+
+  * Stric
+  * Transitional
+  * Frameset
+
+Standards 模式用于呈现遵循最新标准的网页，而 Quirks 模式用于呈现为传统浏览器而设计的网页
+
+* html5
+
+  ```html
+  <!DOCTYPE html>
+  ```
+
+* html4.01
+
+  ```html
+  <!-- Strict -->
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+  <!-- Transitional -->
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+  <!-- Frameset -->
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+  ```
+
+* XHTML 1.0
+
+  ```html
+  <!-- Strict -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+  <!-- Transitional -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+  <!-- Frameset -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+  ```
+
+* XHTML 1.0
+
+  ```html
+  <!-- Strict -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  ```
+
+## `link` 和 `@import` 的区别？
+
+* `link` 属于 HTML 标签，而 `@import`  是 CSS 提供的。
+* 页面被加载时，`link` 会同时被加载，而 `@import` 引用的 CSS 会等到页面加载完成再加载
+* `@import` 只在 IE5 以上才能识别，而 link 是 HTML 标签，无兼容问题。
+
+## `position` 的 `absolute` 与 `fixed` 共同点与不同点？
+
+共同点：
+
+* 改变元素的呈现方式，让元素以 `inline-block` 方法呈现
+* 让元素脱离文档流，不占据空间
+* 默认会覆盖到非定位元素上
+
+不同点：
+
+* absolute 是可以进行设置的，而 fixed 的定位元素固定为浏览器窗口
+* 页面滚动时，fixed 元素与浏览器窗口之间的距离是不变的
+
 ## img 的 title 和 alt 有什么区别？
 
 `alt` 屏幕阅读器会将这些描述读给需要使用阅读器的使用者听，让他们知道图像的含义。如果由于某种原因无法加载图像，普通浏览器也会在页面上显示 `alt` 属性中的备用文本。
@@ -110,3 +206,10 @@ JS 可以通过 `getAttribute` 和 `dataset` 获取
 * 代码复杂，不利于代码 SEO
 * 增加不必要的 http 请求
 * iframe 和主页面共享连接池，而浏览器对连接数有限制，所以会影响页面并行加载。
+
+## 说说你对语义化的理解？
+
+* 用正确的标签做正确的事，有利于在浏览器中显示清晰的结构
+* 有利于 SEO：与搜索引起建立良好的沟通，有助于爬虫抓取更多有效信息
+* 有助于无障碍模式
+* 便于团队开发和维护，语义化使代码更具可读性。
