@@ -4,20 +4,18 @@
 
 我们可以在所有的HTML元素上指定全局属性，甚至是在标准里没有指定的元素。这意味着任何非标准元素仍必须能够应用这些属性，即使使用这些元素意味着文档不再是html5兼容的。
 
-accesskey, autocapitalize, class, contenteditable, contextmenu, data-\*, dir, draggable, dropzone, hidden,
-
 | 属性 | 描述 |
 | :--- | :--- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| `accesskey` |  |
+| `autocapitalize` |  |
+| `class` |  |
+| `contenteditable`|  |
+| `contextmenu` |  |
+| `data-\*` |  |
+| `dir` |  |
+| `draggable` |  |
+| `dropzone` |  |
+| `hidden` |  |
 |  |  |
 |  |  |
 |  |  |
