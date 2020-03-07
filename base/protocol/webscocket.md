@@ -14,3 +14,8 @@ WebSocket 是 HTML5 开始提供的一种浏览器与服务器间进行全双工
 * Adobe Flash Socket
 * ActiveX HTMLFile（IE\)
 * 轮询
+
+## WebSocket 的实现和应用
+
+
+
