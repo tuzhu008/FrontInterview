@@ -29,4 +29,20 @@
   a:active {}
   ```
 
+## click 在 ios 上有300ms 的延迟，原因及如何解决？
+
+原因：ios 上有双击缩放的功能，点击屏幕浏览器无法判断用户是想要进行单击操作还是双击操作，所以要等待 300ms 内是否有第二次点击。
+
+解决办法：
+
+* 第一种：禁止缩放
+
+  ```html
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  ```
+
+* 第二种：fastclick
+
+  原理：检测到 touchend 事件后，立刻触发模拟 click 事件，并且把浏览器 300ms 之后真正触发的事件给组断掉
+
 ## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？
