@@ -132,3 +132,27 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 * 减少服务器负载：浏览器只从服务器下载更新的或者更改过的资源
 
 
+## audio 和 video 支持的文件格式？
+
+* audio：Mp3、Wav、Ogg
+* video：MP4、WebM、Ogg
+
+## HTML 文档类型和字符集是？
+
+```html
+<!-- 文档类型 -->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- 字符集 -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+```
