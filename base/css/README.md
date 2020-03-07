@@ -797,7 +797,6 @@ i 内容展示内容为斜体，em 表示强调的文本。
 ## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？
 
 
-
 ## 参考文档
 
 [MDN: HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
