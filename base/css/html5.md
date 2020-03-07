@@ -43,5 +43,7 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 
 从 DOCTYPE 文档声明、新增的结构元素、功能元素都可以区分
 
+## 
+
 
 
