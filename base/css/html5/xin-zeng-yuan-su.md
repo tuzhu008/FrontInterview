@@ -39,7 +39,19 @@
 
 | 类型 | 描述 |
 | :--- | :--- |
-| 1 |  |
+| color |  |
+| date |  |
+| datetime |  |
+| datetime-local |  |
+| email |  |
+| month |  |
+| number |  |
+| range |  |
+| search |  |
+| tel |  |
+| time |  |
+| url |  |
+| week |  |
 
 
 
