@@ -56,33 +56,33 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 | 元素 | 版本 |
 | :--- | :--- |
 | `<address>` |  |
-| `<article>` |  |
-| `<aside>` |  |
-| `<audio>` |  |
+| `<article>` | 5 |
+| `<aside>` | 5 |
+| `<audio>` | 5 |
 | `<blockquote>` |  |
-| `<canvas>` |  |
+| `<canvas>` | 5 |
 | `<dd>` |  |
 | `<div>` |  |
 | `<dl>` |  |
 | `<fieldset>` |  |
-| `<figcaption>` |  |
-| `<figure>` |  |
-| `<footer>` |  |
+| `<figcaption>` | 5 |
+| `<figure>` | 5 |
+| `<footer>` | 5 |
 | `<form>` |  |
 | `<h1>, <h2>, <h3>, <h4>, <h5>, <h6>` |  |
-| `<header>` |  |
-| `<hgroup>` |  |
+| `<header>` | 5 |
+| `<hgroup>` | 5 |
 | `<hr>` |  |
 | `<noscript>` |  |
 | `<ol>` |  |
-| `<output>` |  |
+| `<output>` | 5 |
 | `<p>` |  |
 | `<pre>` |  |
-| `<section>` |  |
+| `<section>` | 5 |
 | `<table>` |  |
 | `<tfoot>` |  |
 | `<ul>` |  |
-| `<video>` |  |
+| `<video>` | 5 |
 
 
 
