@@ -10,6 +10,7 @@ Web 标准：它不是某一个标准，而是一系列标准的集合。网页�
 
 我们可以在所有的HTML元素上指定全局属性，甚至是在标准里没有指定的元素。这意味着任何非标准元素仍必须能够应用这些属性，即使使用这些元素意味着文档不再是html5兼容的。
 
+accesskey, autocapitalize, class, contenteditable, contextmenu, data-*, dir, draggable, dropzone, hidden, 
 
 除了基本的HTML全局属性之外，还存在以下全局属性:
 
