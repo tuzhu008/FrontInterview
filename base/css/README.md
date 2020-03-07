@@ -713,6 +713,8 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 
 * framename
 
+  在指定的框架中打开被链接文档。
+  
 ## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？
 
 
