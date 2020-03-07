@@ -72,6 +72,21 @@
 | week |  |
 
 
+## 移除的元素
 
+**纯表现元素：**
+* <acronym>
+* <applet>
+* <basefont>
+* <big>
+* <center>
+* <dir>
+* <font>
+* <strike>
+* <tt>
 
+**框架集：**
 
+* <frame>
+* <frameset>
+* <noframes>
