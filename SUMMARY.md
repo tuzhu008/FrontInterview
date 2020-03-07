@@ -29,6 +29,7 @@
 * [其他](/base/others/README.md)
   * [WebGL](base/others/webgl.md)
   * [SVG](base/others/svg.md)
+  * Canvas
 * [重点](base/security/zhong-dian.md)
 
 ## 算法
