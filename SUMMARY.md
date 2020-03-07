@@ -24,7 +24,7 @@
   * [Ajax](base/css/ajax.md)
   * [存储](base/css/storage.md)
   * [HTML5](base/css/html5.md)
-    * 新增元素
+    * [新增元素](base/css/html5/xin-zeng-yuan-su.md)
 * [其他](/base/others/README.md)
 * [重点](base/security/zhong-dian.md)
 
