@@ -56,33 +56,33 @@ IE8/7/6支持通过 `document.createElement` 方法产生的新标签，可以�
 | 元素 | 版本 |
 | :--- | :---: |
 | `<address>` |  |
-| `<article>` | 5 |
-| `<aside>` | 5 |
-| `<audio>` | 5 |
 | `<blockquote>` |  |
-| `<canvas>` | 5 |
 | `<dd>` |  |
 | `<div>` |  |
 | `<dl>` |  |
 | `<fieldset>` |  |
-| `<figcaption>` | 5 |
-| `<figure>` | 5 |
-| `<footer>` | 5 |
 | `<form>` |  |
 | `<h1>, <h2>, <h3>, <h4>, <h5>, <h6>` |  |
-| `<header>` | 5 |
-| `<hgroup>` | 5 |
 | `<hr>` |  |
 | `<noscript>` |  |
 | `<ol>` |  |
-| `<output>` | 5 |
 | `<p>` |  |
 | `<pre>` |  |
-| `<section>` | 5 |
 | `<table>` |  |
 | `<tfoot>` |  |
 | `<ul>` |  |
+| `<footer>` | 5 |
+| `<header>` | 5 |
+| `<aside>` | 5 |
+| `<section>` | 5 |
+| `<article>` | 5 |
 | `<video>` | 5 |
+| `<audio>` | 5 |
+| `<hgroup>` | 5 |
+| `<output>` | 5 |
+| `<canvas>` | 5 |
+| `<figcaption>` | 5 |
+| `<figure>` | 5 |
 
 
 
