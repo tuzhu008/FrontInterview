@@ -370,4 +370,47 @@ CSS Sprite 俗称精灵图，或者雪碧图。来自于动漫，我们将很多
   transform: translateX(-50%);
   ````
 
- 
+ ## block，inline 和 inline-block 细节对比？
+
+ * block
+
+  * block 元素会独占一行，对个 block 元素会各自新起一行。默认情况下，block 元素宽度自动填满其父元素宽度。
+  * block 元素可以设置 width, height 属性。块级元素即使设置了宽度，仍然独占一行。
+  * block 元素可以设置 margin 和 padding 属性
+
+ * inline
+
+  * inline 元素不会独占一行，多个相邻的行内元素会排列在同一行里，知道一行排列不下，才会新换一行，其宽度随元素的内容而变化
+  * inline 元素设置 width, height 属性无效
+  * inline 元素的 margin 和padding 属性，水平方向有效，垂直方向无效
+
+ * inline-block
+
+  * 将对象呈现为 inline 对象，但是对象的内容作为 block 对象呈现。之后的内联对象会被排列在同一行内。
+
+
+## 谈谈你对 CSS 中刻度的认识？
+
+在 CSS 中刻度是用于设置元素尺寸的单位。
+
+* 特殊值 0 可以省略单位。
+* 一些属性可能允许有负值，或者有一定的范围限制。
+* 长度单位包括：相对单位和绝对单位
+  * 相对长度单位：em、ex、ch、rem、vw、vh、vmax、vmin
+  * 绝对长度单位：cm、mm、q、in、pt、pc、px
+* 文本相对长度单位：em
+
+  相对长度单位是相对与单签对象没得文本的字体尺寸，如当前对行内文本的字体为被人为设置，则相对于与浏览器的默认字体尺寸。
+
+* 文本相对长度单位：rem
+
+  rem 是 CSS3 新增的一个相对单位(root em)，相对与根元素（html) font-size 计算值的倍数值相对于根元素的大小。
+
+## 隐藏元素的方式有哪些？
+
+* `display: none`，不会占有原来的位置
+* `visibility: hidden`，会占有原来的位置
+* `hidden` 属性，不会占有原来的位置
+* 其他 position、transform 方式
+* z-index
+* opacity
