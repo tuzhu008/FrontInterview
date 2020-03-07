@@ -75,18 +75,18 @@
 ## 移除的元素
 
 **纯表现元素：**
-* <acronym>
-* <applet>
-* <basefont>
-* <big>
-* <center>
-* <dir>
-* <font>
-* <strike>
-* <tt>
+* `<acronym>`
+* `<applet>`
+* `<basefont>`
+* `<big>`
+* `<center>`
+* `<dir>`
+* `<font>`
+* `<strike>`
+* `<tt>`
 
 **框架集：**
 
-* <frame>
-* <frameset>
-* <noframes>
+* `<frame>`
+* `<frameset>`
+* `<noframes>`
