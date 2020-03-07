@@ -6,27 +6,32 @@
 
 | 属性 | 描述 |
 | :--- | :--- |
+| `id` |  |
+| `class` |  |
+| `data-\*` |  |
+| `style` |  |
+| `title` |  |
+| `tabindex` |  |
+| `is` |  |
+| `dir` |  |
+| `lang` |  |
+| `slot` |  |
+| `hidden` |  |
+| `draggable` |  |
 | `accesskey` |  |
 | `autocapitalize` |  |
-| `class` |  |
 | `contenteditable`|  |
 | `contextmenu` |  |
-| `data-\*` |  |
-| `dir` |  |
-| `draggable` |  |
+| `inputmode` |  |
+| `itemid` |  |
+| `itemprop` |  |
+| `itemref` |  |
+| `itemscope` |  |
+| `itemtype` |  |
+| `part` |  |
 | `dropzone` |  |
-| `hidden` |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| `spellcheck` |  |
+| `translate`  |  |
 
 除了基本的HTML全局属性之外，还存在以下全局属性:
 
