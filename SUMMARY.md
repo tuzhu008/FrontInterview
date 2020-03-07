@@ -27,7 +27,7 @@
     * [新增元素](base/css/html5/xin-zeng-yuan-su.md)
 * [其他](/base/others/README.md)
   * [WebGL](base/others/webgl.md)
-  * SVG
+  * [SVG](base/others/svg.md)
 * [重点](base/security/zhong-dian.md)
 
 ## 算法
