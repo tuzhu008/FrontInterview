@@ -494,6 +494,7 @@ XHTML 文档必须拥有根元素
 * 使用空标签清除
 
 * 使用 overflow
+
 * 使用 after 伪元素
 
 后面这三种清除的本质都是使用 BFC。
@@ -529,7 +530,6 @@ XHTML 文档必须拥有根元素
   ParentNode.insertBefore()
 
   Node.cloneNode()
-
   ```
 
 * 查找
@@ -548,7 +548,7 @@ XHTML 文档必须拥有根元素
 优点：
 
 * 解决加载缓慢的第三方内容，如图标和广告的加载问题
-* Security sandbox(安全沙箱)
+* Security sandbox\(安全沙箱\)
 * 并行加载脚本
 
 缺点：
@@ -569,7 +569,7 @@ localStorage（storage 事件）、cookie
 ## webSocket 如何兼容低浏览器？
 
 * Adobe Flash Socket
-* ActiveX HTMLFile（IE)
+* ActiveX HTMLFile（IE\)
 * 轮询
 
 ## 线程与进程的区别
@@ -638,7 +638,6 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 * 此时，Web 服务器提供资源服务，客户端开始下载资源
 * 浏览器解析返回的 HTML 文档，生成一个 DOM 树，根据下载的 CSS 生成 CSS 规则树，然后浏览器经过计算将 DOM 树和 CSS 树以一定规则生成 render 树。DOM 树和 CSS 树是不会相互阻塞的。
 
-
 ## 如何进行页面重构？
 
 页面重构的概念：根据原有内容和结构的基础上，通过 div + css 写出更满足产品需求，更符合 web 标准的页面结构。
@@ -658,7 +657,6 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 * 过时页面的重构：使用的是过时的代码和标签，跟不上时代的发展。
 * 代码重构：代码质量、SEO优化、页面性能、更好的语义化、浏览器兼容、CSS优化。
 
-
 ## web 应用从服务器主动推送 Data 到客户端的方式有哪些？
 
 * html5 websocket
@@ -669,12 +667,12 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 
 ## 事件、IE 与火狐的事件机制有什么区别？如何阻止冒泡？
 
-事件：用户在网页元素进行的操作，导致发生的事情。
+事件：用户在网页元素进行的操作，导致发生的事情。  
 处理机制：IE 是事件冒泡，firefox 同事支持冒泡和捕获。
 
 阻止冒泡：
 
-* e.stopPropagation()
+* e.stopPropagation\(\)
 * e.cancelBubble = true;
 
 ## 如何获取 UA？
@@ -695,4 +693,11 @@ document.write 只能重绘整个页面，innerHTML 可以重绘页面的一部�
 
 ## 超链接 target 属性的取值和作用？
 
+| 取值 | 作用 |
+| :--- | :--- |
+|  |  |
+
 ## 说说你对 retina屏，pc，ipad，手机端的适配经验和方案？
+
+
+
