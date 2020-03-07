@@ -18,6 +18,8 @@
 * Mongodb
 * MVVM
 * Flutter
+* WebAssembly
+* Serverless
 
 网站：
 
@@ -25,6 +27,7 @@
 * github
 * stackoverflow
 * 掘金
+* MDN
 
 ## 对网站重构的理解？
 
