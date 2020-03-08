@@ -258,3 +258,5 @@ JS 的垃圾回收机制有两种：标记清除、引用计数
 > [几种垃圾回收算法](https://www.jianshu.com/p/a8a04fd00c3c)
 > [V8 之旅： 垃圾回收器](http://newhtml.net/v8-garbage-collection/)
 
+## `==`、`===` 和 `Object.is` 之间的区别
+
