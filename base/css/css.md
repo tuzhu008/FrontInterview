@@ -432,3 +432,18 @@ CSS Sprite 俗称精灵图，或者雪碧图。来自于动漫，我们将很多
 * overflow 的值不为 visible
 * dipaly 的值为 table-cell,table-caption,inline-block 中的任何一个
 * position 的值不为 relative 和 static
+
+## 如何画一个三角形
+
+利用边框均分原则
+
+```css
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 10 solid red;
+  border-right: 10 solid transparent;
+  border-bottom: 10 solid transparent;
+  border-left: 10 solid transparent;
+}
+```
