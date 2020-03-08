@@ -50,3 +50,85 @@
   border-left: 10 solid transparent;
 }
 ```
+
+## 正方向
+
+```html
+<div class="wrapper">
+  <div class="cube">
+    <div class="side front">1</div>
+    <div class="side back">6</div>
+    <div class="side right">4</div>
+    <div class="side left">3</div>
+    <div class="side top">5</div>
+    <div class="side bottom">2</div>
+  </div>
+</div>
+```
+
+
+
+
+```css
+@keyframes flash {
+  0%{ transform: rotateX(0) rotateY(0); }
+  50%{ transform: rotateX(-180deg) rotateY(-90deg); }
+  100%{ transform: rotate(360deg) rotateY(360deg); }
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 50%;
+  
+  .cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 100px auto 0;
+    transform-style: preserve-3d;
+    animation: flash 3s linear infinite;
+    
+    .side {
+      position: absolute;
+      border: 1px solide rgba(0, 0, 0, .5);
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #fff;
+    }
+    
+    .front {
+      background: red;
+      transform: translateZ(-50px); 
+    }
+    
+    .bottom {
+      background: blue;
+      transform: rotateX(90deg) translateZ(50px);
+    }
+    
+    .top {
+      background: green;
+      transform: rotateX(90deg) translateZ(-50px);
+    }
+    
+    .left {
+      background: orange;
+      transform: rotateY(90deg) translateZ(50px);
+      
+    }
+    
+    .right {
+      background: brown;
+      transform: rotateY(90deg) translateZ(-50px);
+    }
+    
+    .back {
+      background: purple;
+      transform: translateZ(50px);
+    }
+  }
+}
+```
