@@ -280,5 +280,6 @@ JS 的垃圾回收机制有两种：标记清除、引用计数
 | `+0` 与 `-0` | true | true | false |
 | `NaN` 与 `NaN` | false | false | true |
 
+## setTimeout、setInterval 和 requetAnimationFrame 之间的区别
 
 
