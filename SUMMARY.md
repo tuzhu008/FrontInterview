@@ -40,6 +40,7 @@
 * [ES6](/base/es6/README.md)
   * Proxy
   * Module
+  * Promise
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
