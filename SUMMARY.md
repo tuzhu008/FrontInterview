@@ -41,8 +41,8 @@
 
 ## 实现
 
-* [CSS](shi-xian/css.md)
-* JavaScript
+* [CSS](/code/CSS/README.md)
+* [JavaScript](/code/JavaScript/README.md)
 
 ## 算法
 
@@ -102,4 +102,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
