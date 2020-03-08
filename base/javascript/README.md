@@ -262,6 +262,7 @@ JS 的垃圾回收机制有两种：标记清除、引用计数
   * 计数器需要占用很多位
 
   * 实现繁琐复杂， 每个赋值操作都得替换成引用更新操作
+
   * 循环引用无法回收
 
 > [几种垃圾回收算法](https://www.jianshu.com/p/a8a04fd00c3c)  
@@ -274,7 +275,7 @@ JS 的垃圾回收机制有两种：标记清除、引用计数
 | `null` 与 `undefined` | true | false | false |
 | `''` 等于 `0` | true | false | false |
 | `''` 不等于 `'0'` | false | false | false |
-| `'0'` 与 `0` | true | false |  |
+| `'0'` 与 `0` | true | false | false |
 | `'123'` 与 `123` | true | false | false |
 | `+0` 与 `-0` | true | true | false |
 | `NaN` 与 `NaN` | false | false | true |
