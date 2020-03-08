@@ -48,7 +48,7 @@
 ## 思想
 
 * [模块化](/thinking/modularity/README.md)
-  * CommonJS
+  * [CommonJS](thinking/modularity/commonjs.md)
   * AMD
   * CMD
   * ES6 Module
