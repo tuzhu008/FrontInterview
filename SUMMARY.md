@@ -18,7 +18,6 @@
   * [事件循环](base/javascript/shi-jian-xun-huan.md)
   * [原型、继承](base/javascript/yuan-xing-3001-ji-cheng.md)
   * [异步](/base/javascript/async.md)
-  * [ES6](base/javascript/es6.md)
   * [Typescript](/base/javascript/typescript.md)
   * [ECMA](/base/javascript/ecma.md)
   * [Babel](/base/javascript/babel.md)
@@ -38,6 +37,7 @@
   * [WebGL](base/others/webgl.md)
   * [SVG](base/others/svg.md)
   * [Canvas](base/others/canvas.md)
+* [ES6](base/javascript/es6.md)
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
