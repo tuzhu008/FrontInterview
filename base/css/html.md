@@ -275,3 +275,28 @@ elem.addEventListener('click', function () {
 
 * `mouseover` 和 `mouseout` 是一组事件。它们分别在鼠标移入、移出元素或者其子元素都会触发，事件会进行冒泡，所以会重复触发。
 * `mouseenter` 和 `mouseleave` 是一组事件。它们分别在鼠标移入、移出元素本身触发，子元素**不会**触发，事件**不会**进行冒泡，所以**不会**重复触发。
+
+## JS 的各种位置
+
+TODO:
+
+## 拖拽实现
+
+* click：单击事件。
+* dblclick：双击事件。
+* mousedown：按下鼠标键时触发。
+* mouseup：释放按下的鼠标键时触发。
+* mousemove：鼠标移动事件。
+* mouseover：移入事件。
+* mouseout：移出事件。
+* mouseenter：移入事件。
+* mouseleave：移出事件。
+* contextmenu：右键事件。
+
+TODO:
+
+## defer 和 async 的区别
+
+defer：异步下载，等待文档解析完成后再执行
+
+async：异步下载，下载文立即执行。

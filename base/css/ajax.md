@@ -58,3 +58,9 @@ xhr.send(null || new FormData || 'a=1&b=2' || 'json字符串');
 Http 协议并未规定 GET 和 POST 的长度限制
 
 GET 长度限制是由浏览器和web 服务器做出的限制，且各有区别。
+
+## 解决 ajax 缓存问题
+
+* 设置Header：`If-Modified-Since: 0`
+* 设置Header：`Cache-Control: no-cache`
+* URL 拼接随机参数
