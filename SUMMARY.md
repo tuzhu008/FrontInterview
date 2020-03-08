@@ -50,7 +50,7 @@
 * [模块化](/thinking/modularity/README.md)
 * [工程化](/thinking/engineering/README.md)
   * [Webpack](thinking/engineering/webpack.md)
-  * Gulp
+  * [Gulp](thinking/engineering/gulp.md)
 * [自动化](/thinking/automation/README.md)
 
 ## 算法
