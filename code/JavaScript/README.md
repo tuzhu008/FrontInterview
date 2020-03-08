@@ -184,7 +184,7 @@ function ajax (options) {
                 } else {
                     reject();
                 }
-                
+
             }
         }
 
@@ -201,39 +201,43 @@ function ajax (options) {
 
 * 在 ES5 中可以用过 `Object.defineProperty` 来实现已有属性的监听
 
-    ```js
+  ```js
     Object.defineProperty(user, 'name', {
         set: function (key, value) {}
     });
-    ```
+  ```
 
-    缺点：如果 id 不再 user 对象中，则不能监听 id 的变化
+  缺点：如果 id 不再 user 对象中，则不能监听 id 的变化
 
 * 在 ES6 中可以通过 Proxy 来实现
 
-    ```js
+  ```js
     var user = new Proxy({}, {
         set: function (target, key, value, receiver) {
 
         }
     })
-    ```
+  ```
 
-    这样即使有属性 user 中不存在，通过 user.id 来定义同样也可以这样监听到这个属性的变化哦
+  这样即使有属性 user 中不存在，通过 user.id 来定义同样也可以这样监听到这个属性的变化哦
 
 ## 如何实现一个私有变量，用 getName 方法可以访问，不能直接访问
 
 * 闭包
 
-    ```js
+  ```js
     function User (name) {
         const name = name;
-        
+
         this.getName = function () {
             return name;
         }
     }
-    ```
+  ```
+
+## 实现 sleep 的效果？
+
+## 
 
 ## JS 操作获取和设置 cookie
 
@@ -242,3 +246,4 @@ function ajax (options) {
 防抖：抖动停止后操作设定的时间时执行一次函数。
 
 节流：按照设定的时间间隔执行函数
+
