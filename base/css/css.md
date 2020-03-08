@@ -447,3 +447,13 @@ CSS Sprite 俗称精灵图，或者雪碧图。来自于动漫，我们将很多
   border-left: 10 solid transparent;
 }
 ```
+
+## `display: table;` 和 table 本身有什么区别？
+
+`display: table;` 和 table 是想对应的，区别在于，`display: table;` 的 CSS 声明能够让一个 html 元素和它的子节点像 table 元素一样，使用基于表格的 css 布局，是我们能够轻松定义一个单元格的边界，背景等央视，而不会产生因为使用 table 那样的制表标签导致的语义化问题。
+
+之所以现在逐渐淘汰了 table 系表格元素，是因为用 div + css 边写出来的文件比用 table 边写出来的文件小，而且 table 必须在页面完全加载后才显示，div 则是逐行显示， table 的嵌套性套多，没有 div 简洁
+
+## `line-height` 和 `height` 的区别
+
+`line-height` 一般是指布局里面一段文字上下行之间的高度，是针对字体来设置的，`height` 一般是指容器的整体高度。
