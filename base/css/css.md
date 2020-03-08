@@ -433,21 +433,6 @@ CSS Sprite 俗称精灵图，或者雪碧图。来自于动漫，我们将很多
 * dipaly 的值为 table-cell,table-caption,inline-block 中的任何一个
 * position 的值不为 relative 和 static
 
-## 如何画一个三角形
-
-利用边框均分原则
-
-```css
-.triangle {
-  width: 0;
-  height: 0;
-  border-top: 10 solid red;
-  border-right: 10 solid transparent;
-  border-bottom: 10 solid transparent;
-  border-left: 10 solid transparent;
-}
-```
-
 ## `display: table;` 和 table 本身有什么区别？
 
 `display: table;` 和 table 是想对应的，区别在于，`display: table;` 的 CSS 声明能够让一个 html 元素和它的子节点像 table 元素一样，使用基于表格的 css 布局，是我们能够轻松定义一个单元格的边界，背景等央视，而不会产生因为使用 table 那样的制表标签导致的语义化问题。
@@ -487,38 +472,3 @@ CSS 能对可替换元素产生的唯一影响在于，部分属性支持控制�
 * `<object>`
 * `<applet>`
 
-## CSS 实现一个硬币旋转的效果
-
-```css
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg);
-  }
-  
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-.coin {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #f5f5f5;
-  transform-style: preserve-3d;
-  animation: spin linear infinite 2.5s;
-  
-  &:after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    display: block;
-    margin-left: -1px;
-    width: 2px;
-    height: 100%;
-    background: red;
-  }
-}
-```
