@@ -237,7 +237,46 @@ function ajax (options) {
 
 ## 实现 sleep 的效果？
 
-## 
+* while
+   
+    ```js
+    function sleep (time) {
+        const start = Date.now();
+        const expired = start + time;
+
+        while (Date.now() > expired) {
+            return;
+        }
+    }
+    ```
+
+* promise
+
+    ```js
+    function sleep (time) {
+        return new Promise((reslove) => setTimeout(reslove, time));
+    }
+    ```
+
+* async
+
+    ```js
+    async function sleep (time) {
+        const result = await new Promise((reslove) => setTimeout(reslove, time));
+        return result;
+    }
+    ```
+
+* generate
+
+    ```js
+    function* sleep (time) {
+        yield new Promise((reslove) => setTimeout(reslove, time));
+    }
+
+    sleep(500).next().value.then(() => { /* do something */ })
+    ```
+
 
 ## JS 操作获取和设置 cookie
 
