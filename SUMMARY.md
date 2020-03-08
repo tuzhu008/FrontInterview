@@ -42,6 +42,7 @@
 ## 实现
 
 * CSS
+* JavaScript
 
 ## 算法
 
