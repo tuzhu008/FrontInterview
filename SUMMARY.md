@@ -40,12 +40,12 @@
   * [Canvas](base/others/canvas.md)
 * [重点](base/security/zhong-dian.md)
 
-## 思想
-
 ## 实现
 
 * [CSS](/code/CSS/README.md)
 * [JavaScript](/code/JavaScript/README.md)
+
+## 思想
 
 ## 算法
 
