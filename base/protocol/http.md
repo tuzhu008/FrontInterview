@@ -50,9 +50,9 @@ TODO:
 | 强缓存 | 从缓存获取 | 200（from cache\) | 否，直接从缓存读取 |
 | 协商缓存 | 从缓存获取 | 304（not modified\) | 是，通过服务器来告知缓存是否可用 |
 
-
-
 强缓存相关字段有：expired, cache-control。如果 cache-control 与 expired 同时存在的话，cache-control 优先级高于 expired
 
 协商缓存相关字段有：Last-Modified/if-Modified-since, Etag/if-None-Match
+
+
 
