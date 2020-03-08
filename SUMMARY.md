@@ -38,6 +38,7 @@
   * [SVG](base/others/svg.md)
   * [Canvas](base/others/canvas.md)
 * [ES6](/base/es6/README.md)
+  * Proxy
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
@@ -115,6 +116,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
