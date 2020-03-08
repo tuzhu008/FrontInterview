@@ -52,3 +52,9 @@ xhr.setRequestHeader('', '');
 // 发送请求
 xhr.send(null || new FormData || 'a=1&b=2' || 'json字符串');
 ```
+
+## GET 请求传参长度的误区
+
+Http 协议并未规定 GET 和 POST 的长度限制
+
+GET 长度限制是由浏览器和web 服务器做出的限制，且各有区别。

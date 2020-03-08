@@ -472,3 +472,10 @@ CSS 能对可替换元素产生的唯一影响在于，部分属性支持控制�
 * `<object>`
 * `<applet>`
 
+## 两个嵌套的 div，position 都是 absolute, 子 div 设置 top 属性，那么这个 top 是相对于父元素的那个位置定位的？
+
+border 内边缘或padding 外边缘，与盒子类型无关。
+
+## CSS 预处理器？
+
+less、sass、stylus
