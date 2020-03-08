@@ -197,6 +197,30 @@ function ajax (options) {
 }
 ```
 
+## JS 监听对象属性的改变
+
+* 在 ES5 中可以用过 `Object.defineProperty` 来实现已有属性的监听
+
+    ```js
+    Object.defineProperty(user, 'name', {
+        set: function (key, value) {}
+    });
+    ```
+
+    缺点：如果 id 不再 user 对象中，则不能监听 id 的变化
+
+* 在 ES6 中可以通过 Proxy 来实现
+
+    ```js
+    var user = new Proxy({}, {
+        set: function (target, key, value, receiver) {
+
+        }
+    })
+    ```
+
+    这样即使有属性 user 中不存在，通过 user.id 来定义同样也可以这样监听到这个属性的变化哦
+
 ## JS 操作获取和设置 cookie
 
 ## 防抖和节流
