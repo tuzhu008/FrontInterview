@@ -51,7 +51,7 @@
   * [CommonJS](thinking/modularity/commonjs.md)
   * [AMD](thinking/modularity/amd.md)
   * [CMD](thinking/modularity/cmd.md)
-  * ES6 Module
+  * [ES6 Module](thinking/modularity/es6-module.md)
 * [工程化](/thinking/engineering/README.md)
   * [Webpack](thinking/engineering/webpack.md)
   * [Gulp](thinking/engineering/gulp.md)
