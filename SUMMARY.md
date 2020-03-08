@@ -47,11 +47,11 @@
 
 ## 思想
 
-* 模块化
-* 工程化
+* [模块化](/thinking/modularity/README.md)
+* [工程化](/thinking/engineering/README.md)
   * Webpack
   * Gulp
-* 自动化
+* [自动化](/thinking/automation/README.md)
 
 ## 算法
 
@@ -111,4 +111,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
