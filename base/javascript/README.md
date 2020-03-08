@@ -282,4 +282,8 @@ JS 的垃圾回收机制有两种：标记清除、引用计数
 
 ## setTimeout、setInterval 和 requetAnimationFrame 之间的区别
 
+setTimeout 延迟执行。timeout 最小时间为 4ms，之后会将回调函数添加到事件队列中。
 
+setInterval 延迟执行。
+
+requetAnimationFrame 要求浏览器在下次重绘之前执行。回调函数执行次数通常是每秒60次，1000 / 60 ≈ 16.6 ms
