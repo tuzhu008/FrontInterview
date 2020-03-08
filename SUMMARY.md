@@ -20,7 +20,6 @@
   * [ECMA](/base/javascript/ecma.md)
   * [原型、继承](base/javascript/yuan-xing-3001-ji-cheng.md)
   * [ES6](base/javascript/es6.md)
-  * [代码](base/javascript/dai-ma.md)
 * [HTML/CSS](/base/css/README.md)
   * [CSS](base/css/css.md)
   * [CSS3](base/css/css3.md)
@@ -102,6 +101,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
