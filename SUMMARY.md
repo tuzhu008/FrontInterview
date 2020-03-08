@@ -43,7 +43,7 @@
   * [Promise](base/es6/promise.md)
   * [Symbol](base/es6/symbol.md)
   * [Generator](base/es6/generator.md)
-  * Set
+  * [Set](base/es6/set.md)
   * Map
 * [重点](base/security/zhong-dian.md)
 
