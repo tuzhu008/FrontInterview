@@ -44,6 +44,7 @@
   * [Symbol](base/es6/symbol.md)
   * [Generator](base/es6/generator.md)
   * Set
+  * Map
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
