@@ -49,6 +49,7 @@
 
 * [模块化](/thinking/modularity/README.md)
   * CommonJS
+  * AMD
 * [工程化](/thinking/engineering/README.md)
   * [Webpack](thinking/engineering/webpack.md)
   * [Gulp](thinking/engineering/gulp.md)
