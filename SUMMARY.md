@@ -46,7 +46,7 @@
 
 * [CSS](/code/CSS/README.md)
 * [JavaScript](/code/JavaScript/README.md)
-* [执行结果](code/CSS/zhi-xing-jie-guo.md)
+* [执行结果](code/zhi-xing-jie-guo.md)
 
 ## 思想
 
