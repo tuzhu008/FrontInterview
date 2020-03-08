@@ -41,6 +41,7 @@
   * Proxy
   * Module
   * [Promise](base/es6/promise.md)
+  * Symbol
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
