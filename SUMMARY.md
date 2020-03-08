@@ -39,6 +39,7 @@
   * [Canvas](base/others/canvas.md)
 * [ES6](/base/es6/README.md)
   * Proxy
+  * Module
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
