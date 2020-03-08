@@ -14,8 +14,8 @@
   * [工作原理](/base/browser/liu-lan-qi-gong-zuo-yuan-li.md)
   * [渲染过程](/base/browser/xuan-ran-guo-cheng.md)
 * [JavaScript](/base/javascript/README.md)
-  * 闭包
-  * 事件循环
+  * [闭包](base/javascript/bi-bao.md)
+  * [事件循环](base/javascript/shi-jian-xun-huan.md)
   * [原型、继承](base/javascript/yuan-xing-3001-ji-cheng.md)
   * [异步](/base/javascript/async.md)
   * [ES6](base/javascript/es6.md)
