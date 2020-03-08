@@ -48,6 +48,7 @@
 ## 思想
 
 * [模块化](/thinking/modularity/README.md)
+  * CommonJS
 * [工程化](/thinking/engineering/README.md)
   * [Webpack](thinking/engineering/webpack.md)
   * [Gulp](thinking/engineering/gulp.md)
