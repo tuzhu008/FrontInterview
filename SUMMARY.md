@@ -51,6 +51,7 @@
   * CommonJS
   * AMD
   * CMD
+  * ES6 Module
 * [工程化](/thinking/engineering/README.md)
   * [Webpack](thinking/engineering/webpack.md)
   * [Gulp](thinking/engineering/gulp.md)
