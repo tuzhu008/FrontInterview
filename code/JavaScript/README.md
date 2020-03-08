@@ -221,6 +221,20 @@ function ajax (options) {
 
     这样即使有属性 user 中不存在，通过 user.id 来定义同样也可以这样监听到这个属性的变化哦
 
+## 如何实现一个私有变量，用 getName 方法可以访问，不能直接访问
+
+* 闭包
+
+    ```js
+    function User (name) {
+        const name = name;
+        
+        this.getName = function () {
+            return name;
+        }
+    }
+    ```
+
 ## JS 操作获取和设置 cookie
 
 ## 防抖和节流
