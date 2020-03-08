@@ -50,7 +50,7 @@
 * [模块化](/thinking/modularity/README.md)
   * [CommonJS](thinking/modularity/commonjs.md)
   * [AMD](thinking/modularity/amd.md)
-  * CMD
+  * [CMD](thinking/modularity/cmd.md)
   * ES6 Module
 * [工程化](/thinking/engineering/README.md)
   * [Webpack](thinking/engineering/webpack.md)
