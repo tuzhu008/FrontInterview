@@ -38,6 +38,7 @@
   * [SVG](base/others/svg.md)
   * [Canvas](base/others/canvas.md)
 * [ES6](/base/es6/README.md)
+  * [Class](base/es6/class.md)
   * Proxy
   * Module
   * [Promise](base/es6/promise.md)
@@ -45,7 +46,6 @@
   * [Generator](base/es6/generator.md)
   * [Set](base/es6/set.md)
   * [Map](base/es6/map.md)
-  * Class
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
