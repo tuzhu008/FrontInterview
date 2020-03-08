@@ -47,6 +47,8 @@
 
 ## 思想
 
+* 模块化
+
 ## 算法
 
 * [冒泡排序](suan-fa/mao-pao-pai-xu.md)
