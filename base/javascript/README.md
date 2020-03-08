@@ -270,11 +270,11 @@ JS 的垃圾回收机制有两种：标记清除、引用计数
 
 | 判断 | == | === | Object.is |
 | :--- | :--- | :--- | :--- |
-| null 与 undefined | true | false | false |
-| `''` 等于 0 | true | false | false |
+| `null` 与 `undefined` | true | false | false |
+| `''` 等于 `0` | true | false | false |
 | `''` 不等于 `'0'` | false  | false | false |
-| `'0'` 与 0 | true | false |  |
-| `'123'` 与 123 | true | false | false  |
+| `'0'` 与 `0` | true | false |  |
+| `'123'` 与 `123` | true | false | false  |
 | `+0` 与 `-0` | true | true | false |
 | `NaN` 与 `NaN` | false | false | true |
 
