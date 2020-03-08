@@ -49,7 +49,7 @@
 
 * [模块化](/thinking/modularity/README.md)
   * [CommonJS](thinking/modularity/commonjs.md)
-  * AMD
+  * [AMD](thinking/modularity/amd.md)
   * CMD
   * ES6 Module
 * [工程化](/thinking/engineering/README.md)
