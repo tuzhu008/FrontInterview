@@ -138,6 +138,65 @@ if (!Array.prototype.uniqArray) {
 }
 ```
 
+## 实现一个 once 函数，传入函数参数只执行醒一次？
+
+```js
+function once (func) {
+    var tag = true;
+
+    return function () {
+        if (tag === true) {
+            tag = false;
+            return func.apply(null, arguments);
+        }
+    }
+}
+```
+
+## 将原生的 ajax 封装成 promise
+
+```js
+function ajax (options) {
+    const { method = 'GET', url, headers = {}, timeout = 20000, data } = options;
+    return new Promise(function (resolve, reject) {
+        const xhr = new XMLHttpRequest();
+        const headerEntries = Object.entries(headers);
+        let requestURL = url;
+        let requestBody = data;
+
+        if (method === 'GET' || method === 'HEAD') {
+            requestURL = encode(url, data);
+            requestBody = null;
+        } else {
+            requestBody = JSON.parse(data);
+        }
+
+        xhr.open(method, url);
+
+        for (let [key, value] of headerEntries) {
+            xhr.setRequestHeader(key, value);
+        }
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status !== 200) {
+                    resolve(JSON.parse(xhr.responseText));
+                } else {
+                    reject();
+                }
+                
+            }
+        }
+
+        xhr.timeout = function () {
+            reject('超时');
+        }
+
+        xhr.send(requestBody);
+    });
+}
+```
+
 ## JS 操作获取和设置 cookie
 
 ## 防抖和节流
