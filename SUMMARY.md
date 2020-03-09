@@ -3,6 +3,8 @@
 * [Introduction](README.md)
 * [First Chapter](chapter1.md)
 
+## 计算机基础
+
 ## 基础
 
 * [安全](/base/security/README.md)
@@ -53,7 +55,6 @@
 * [ES7+](base/security/es7+.md)
 * [重点](base/security/zhong-dian.md)
 
-## 计算机基础
 
 ## 实现
 
