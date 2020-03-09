@@ -119,6 +119,7 @@
 
 * Jenkins
 * Linux
+* Git
 
 ## Others
 
