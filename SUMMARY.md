@@ -127,8 +127,8 @@
 ## Others
 
 * [设计模式](/others/design_mode.md)
-* [TDD、BDD](/others/tdd.md)
 * [函数式编程](/others/functional.md)
+* [TDD、BDD](/others/tdd.md)
 * [面向对象](/others/oop.md)
 * [测试](/others/test.md)
 * [Restful](others/restful.md)
