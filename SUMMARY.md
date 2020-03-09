@@ -48,7 +48,7 @@
   * [Symbol](base/es6/symbol.md)
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
-* ES7+
+* [ES7+](base/security/es7+.md)
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
