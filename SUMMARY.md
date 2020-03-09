@@ -118,6 +118,7 @@
 ## 运维
 
 * Jenkins
+* Linux
 
 ## Others
 
