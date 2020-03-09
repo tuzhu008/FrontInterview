@@ -40,7 +40,7 @@
 * [ES6](/base/es6/README.md)
   * [Set](base/es6/set.md)
   * [Map](base/es6/map.md)
-  * async
+  * [async](base/es6/async.md)
   * [Class](base/es6/class.md)
   * Proxy
   * Module
