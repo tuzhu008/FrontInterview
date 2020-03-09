@@ -112,6 +112,7 @@
 
 * MySql
 * MongoDB
+* Redis
 
 ## Flutter
 
