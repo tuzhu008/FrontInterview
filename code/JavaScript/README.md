@@ -277,6 +277,40 @@ function ajax (options) {
     sleep(500).next().value.then(() => { /* do something */ })
     ```
 
+## 把多维数组变成一维数组的方法？
+
+* 递归
+* reduce
+
+    ```js
+    function flatten (arr) {
+        return arr.reduce((acc, curr) => {
+            const subArr = Array.isArray(curr) ? flatten(curr) : curr;
+            return acc.concat(subArr)
+        }, []);
+    }
+    ```
+* toString
+
+    ```js
+    function flatten (arr) {
+        return arr.toString().split(',');
+    }
+    ```
+
+    只适合数组元素为数字
+
+* ES6 解构
+
+    ```js
+    function flatten (arr) {
+        while (arr.som((item) => Array.isArray(item))) {
+            arr = [].concat(...arr);
+        }
+
+        return arr;
+    }
+    ```
 
 ## JS 操作获取和设置 cookie
 
