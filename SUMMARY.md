@@ -22,6 +22,7 @@
   * [ECMA](/base/javascript/ecma.md)
   * [Babel](/base/javascript/babel.md)
 * [HTML/CSS](/base/css/README.md)
+  * [DOM](base/css/dom.md)
   * [CSS](base/css/css.md)
   * [CSS3](base/css/css3.md)
   * [HTML](base/css/html.md)
@@ -33,7 +34,6 @@
   * [HTML5](base/css/html5.md)
     * [新增元素](base/css/html5/xin-zeng-yuan-su.md)
   * [BFC/IFC](base/css/bfcifc.md)
-  * DOM
 * [其他](/base/others/README.md)
   * [WebGL](base/others/webgl.md)
   * [SVG](base/others/svg.md)
