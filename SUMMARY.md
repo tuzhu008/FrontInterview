@@ -120,6 +120,7 @@
 * Jenkins
 * Linux
 * Git
+* [CI](others/ci.md)
 
 ## Others
 
@@ -128,7 +129,6 @@
 * [设计模式](/others/design_mode.md)
 * [面向对象](/others/oop.md)
 * [测试](/others/test.md)
-* [CI](others/ci.md)
 * [Restful](others/restful.md)
 
 ## Company
