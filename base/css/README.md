@@ -216,6 +216,10 @@ TODO:
 
 可以在父元素层面阻止时间向子元素传播，可以代替子元素执行某些操作。
 
+## 事件模型是什么，DOM0 和 DOM2 级有什么区别，DOM 的分级是什么？
+
+// TODO:
+
 ## 参考文档
 
 [MDN: HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)

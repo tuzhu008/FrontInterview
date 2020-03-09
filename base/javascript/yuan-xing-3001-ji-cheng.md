@@ -23,3 +23,13 @@
 ```
 
 ## 了解 作用域和原型链嘛？实现一个原型链
+
+## 原型链的顶端，Object 的原型？Object 原型的原型是什么？
+
+Object.prototype
+
+* Object 原型的原型
+
+  `Object.prototype.__proto__ === null`
+
+`Object.constructor === Function`
