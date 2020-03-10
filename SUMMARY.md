@@ -25,7 +25,7 @@
   * [作用域链](/base/javascript/scopeChain.md)
   * [创建对象](/base/javascript/createObject.md)
   * [原型](/base/javascript/prototype.md)
-  * [事件循环](base/javascript/shi-jian-xun-huan.md)
+  * [事件循环](/base/javascript/eventLoop.md)
   * [异步](/base/javascript/async.md)
   * [Typescript](/base/javascript/typescript.md)
   * [ECMA](/base/javascript/ecma.md)
