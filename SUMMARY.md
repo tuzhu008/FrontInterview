@@ -30,7 +30,6 @@
   * [异步](/base/javascript/async.md)
   * [Typescript](/base/javascript/typescript.md)
   * [ECMA](/base/javascript/ecma.md)
-  * 原型
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
   * [CSS](base/css/css.md)
