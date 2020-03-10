@@ -23,8 +23,9 @@
 * [JavaScript](/base/javascript/README.md)
   * [闭包](base/javascript/bi-bao.md)
   * [作用域链](/base/javascript/scopeChain.md)
-  * [事件循环](base/javascript/shi-jian-xun-huan.md)
+  * 创建对象
   * [原型、继承](base/javascript/yuan-xing-3001-ji-cheng.md)
+  * [事件循环](base/javascript/shi-jian-xun-huan.md)
   * [异步](/base/javascript/async.md)
   * [Typescript](/base/javascript/typescript.md)
   * [ECMA](/base/javascript/ecma.md)
@@ -147,6 +148,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
