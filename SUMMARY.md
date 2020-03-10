@@ -29,7 +29,7 @@
   * [异步](/base/javascript/async.md)
   * [Typescript](/base/javascript/typescript.md)
   * [ECMA](/base/javascript/ecma.md)
-  * 继承
+  * [继承](/base/javascript/extends.md)
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
   * [CSS](base/css/css.md)
@@ -148,4 +148,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
