@@ -24,12 +24,12 @@
   * [闭包](base/javascript/bi-bao.md)
   * [作用域链](/base/javascript/scopeChain.md)
   * [创建对象](/base/javascript/createObject.md)
+  * 原型
   * [原型、继承](base/javascript/yuan-xing-3001-ji-cheng.md)
   * [事件循环](base/javascript/shi-jian-xun-huan.md)
   * [异步](/base/javascript/async.md)
   * [Typescript](/base/javascript/typescript.md)
   * [ECMA](/base/javascript/ecma.md)
-  * [Babel](/base/javascript/babel.md)
   * 原型
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
