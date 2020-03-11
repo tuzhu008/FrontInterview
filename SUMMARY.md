@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [First Chapter](chapter1.md)
+* [重点](/base/security/keypoint.md)
 
 ## 计算机基础
 
@@ -60,7 +61,6 @@
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
 * [ES7+](base/security/es7+.md)
-* [重点](/base/security/keypoint.md)
 
 ## 实现
 
@@ -151,6 +151,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
