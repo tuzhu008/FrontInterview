@@ -3,7 +3,7 @@
 ## 索引
 
 * [Introduction](README.md)
-* [重点](/base/security/keypoint.md)
+* [重点](/keypoint.md)
 * 名词
 
 ## 计算机基础
@@ -154,4 +154,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
