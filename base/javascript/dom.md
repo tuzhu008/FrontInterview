@@ -4,3 +4,12 @@ DOM 即文档对象模型，是 Document Object Model 的简称。它是针对 X
 
 DOM 把整个页面映射为一个多层节点结构。
 
+## DOM 级别
+
+DOM1 由两个模块组成：
+
+* DOM Core
+* Dom HTML
+
+
+
