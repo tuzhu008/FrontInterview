@@ -2,8 +2,8 @@
 
 | 题目描述 | 地址 |
 | :--- | :--- |
-| 继承 |  |
-| 作用域链 |  |
+| [继承](/base/javascript/extends.md) |  |
+| [作用域链](//base/javascript/scopeChain.md) |  |
 | 原型、原型链 |  |
 | 闭包 |  |
 | Http |  |
