@@ -60,7 +60,7 @@
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
 * [ES7+](base/security/es7+.md)
-* [重点](base/security/zhong-dian.md)
+* [重点](/base/security/keypoint.md)
 
 ## 实现
 
