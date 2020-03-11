@@ -14,8 +14,6 @@
 * 编译原理
 * 数据结构
 
-## 技术延伸
-
 ## 基础
 
 * [安全](/base/security/README.md)
@@ -63,7 +61,6 @@
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
 * [ES7+](base/security/es7+.md)
-* [Typescript](/base/javascript/typescript.md)
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
@@ -71,6 +68,10 @@
 * [CSS](/code/CSS/README.md)
 * [JavaScript](/code/JavaScript/README.md)
 * [执行结果](code/zhi-xing-jie-guo.md)
+
+## 技术延伸
+
+* [Typescript](/base/javascript/typescript.md)
 
 ## 思想
 
