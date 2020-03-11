@@ -33,7 +33,7 @@
   * [异步](/base/javascript/async.md)
   * [this](base/javascript/this.md)
   * [DOM](base/javascript/dom.md)
-  * BOM
+  * [BOM](base/javascript/bom.md)
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
   * [CSS](base/css/css.md)
