@@ -4,7 +4,7 @@
 
 * [Introduction](README.md)
 * [重点](/keypoint.md)
-* [名词]((/noun.md))
+* [名词](/noun.md)
 
 ## 计算机基础
 
