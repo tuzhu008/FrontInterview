@@ -4,6 +4,7 @@
 | :--- | :--- | :--- |
 | CSS | Cascading Style Sheet | 层叠样式表 |
 | DOM | Document Object Model | 文档对象模型 |
+| Ajax |  |  |
 
 
 
