@@ -34,6 +34,7 @@
   * [this](base/javascript/this.md)
   * [DOM](base/javascript/dom.md)
   * [BOM](base/javascript/bom.md)
+  * 严格模式
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
   * [CSS](base/css/css.md)
