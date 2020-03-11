@@ -2,7 +2,6 @@
 
 ## 索引
 
-* [Introduction](README.md)
 * [重点](/base/security/keypoint.md)
 
 ## 计算机基础
