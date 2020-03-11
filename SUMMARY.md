@@ -28,8 +28,8 @@
   * [继承](/base/javascript/extends.md)
   * [事件循环](/base/javascript/eventLoop.md)
   * [异步](/base/javascript/async.md)
+  * this
   * [Typescript](/base/javascript/typescript.md)
-  * [ECMA](/base/javascript/ecma.md)
   * this
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
