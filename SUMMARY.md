@@ -29,7 +29,6 @@
   * [事件循环](/base/javascript/eventLoop.md)
   * [异步](/base/javascript/async.md)
   * this
-  * [Typescript](/base/javascript/typescript.md)
   * this
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
@@ -62,6 +61,7 @@
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
 * [ES7+](base/security/es7+.md)
+* [Typescript](/base/javascript/typescript.md)
 * [重点](base/security/zhong-dian.md)
 
 ## 实现
