@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
 * [重点](/base/security/keypoint.md)
 
 ## 计算机基础
