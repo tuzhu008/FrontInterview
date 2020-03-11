@@ -151,8 +151,6 @@ function expandAroundCenter (s, left, right) {
 
 ### Manachers 算法
 
-个人认为，该算法是
-
 ```js
 function longestPalindrome (s) {
   if (s == null || s.length <= 1) {
