@@ -64,24 +64,3 @@
 * 字符串和布尔值进行比较，进行比较的而两个数据同时转换为数字再比较
 * `null` == `undefined`，`null` !== `undefined`
 * 数组和字符串比较时，数组会转换成字符串再比较
-
-
-
-1. 当 bonusStatus == 3 时，需要一个文本描述，以提示用户当前暂停分红原因 
-
-2. 垒多多有一个分红规则。
-
-由于以上两点，接口调整如下：
-
-* 修改
-
-  * 获取师傅分红统计
-
-    接口：http://test-portal.xiujiadian.com/master/dms/getMasterBonusStatisticsByMasterId
-
-    调整返回数据字段名称：bonusRules 调整为 stopReason
-
-
-* 新增
-
-  * 获取垒多多分红规则
