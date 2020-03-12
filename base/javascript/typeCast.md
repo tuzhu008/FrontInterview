@@ -27,6 +27,8 @@
 | `"0"` | 0 | 0 | 0 | 0 |
 | `"1"` | 1 | 1 | 1 | 1 |
 | `"1aa"` | NaN | NaN | 1 | 1 |
+| `"1.11aa"` | NaN | NaN | 1 | 1.11 |
+| object | 1. valueOf 2. toString | 同`+` | NaN | NaN |
 
 ## 相等性判断
 
