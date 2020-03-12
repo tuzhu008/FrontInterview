@@ -21,11 +21,11 @@
 | null | 0 | 0 | NaN | NaN |
 | undefined | NaN | NaN | NaN | NaN |
 | NaN | NaN | NaN | NaN | NaN |
-| `"0"` | 0 | 0 | 0 |  |
-| `"1"` | 1 | 1 | 1 |  |
-| `"1aa"` | NaN | NaN | 1 |  |
-| true | 1 | 1 | NaN |  |
-| false | 0 | 0 | NaN |  |
+| `"0"` | 0 | 0 | 0 | 0 |
+| `"1"` | 1 | 1 | 1 | 1 |
+| `"1aa"` | NaN | NaN | 1 | 1 |
+| true | 1 | 1 | NaN | NaN |
+| false | 0 | 0 | NaN | NaN |
 
 ## 相等性判断
 
