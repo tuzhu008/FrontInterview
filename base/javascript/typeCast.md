@@ -16,8 +16,8 @@
 
 ## 数值转换
 
-| 用例 | `+`运算符 | Number | parseInt |  |
-| :--- | :--- | :--- | :--- | :--- |
+| 用例 | `+`运算符 | Number | parseInt | parseFloat |
+| :--- | :---: | :---: | :---: | :---: |
 | null | 0 | 0 | NaN |  |
 | undefined | NaN | NaN | NaN |  |
 | NaN | NaN | NaN | NaN |  |
