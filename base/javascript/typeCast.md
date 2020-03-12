@@ -2,17 +2,17 @@
 
 | 用例 | Number | String | Boolean |
 | :--- | :---: | :---: | :---: |
-| null | 0 | null | false |
-| undefined | NaN |  | false |
-| NaN |  |  | false |
-| true |  |  | false |
-| false |  |  | false |
-| 0 |  |  | false |
-| 1 |  |  | true |
-| `""` |  |  | false |
-| `"0"` |  |  | false |
-| `"1"` |  |  | true |
-| `"1aa"` |  |  | true |
+| null | 0 | `"null"` | false |
+| undefined | NaN | `"undefined"` | false |
+| NaN | NaN | `"NaN"` | false |
+| true | 1 | `"true"` | false |
+| false | 0 | `"false"` | false |
+| 0 |  | `"0"` | false |
+| 1 |  | `"1"` | true |
+| `""` | 0 |  | false |
+| `"0"` | 0 |  | false |
+| `"1"` | 1 |  | true |
+| `"1aa"` | 1 |  | true |
 
 ## 数值转换
 
