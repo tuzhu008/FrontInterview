@@ -31,6 +31,8 @@
 | `"1.11aa"` | NaN | NaN | 1 | 1.11 |
 | object | 1. valueOf 2. toString | 同`+` | NaN | NaN |
 
+* 一元 `+` 操作符的操作与 `Number()` 函数相同
+
 ## 相等性判断
 
 ## `==`、`===` 和 `Object.is` 之间的区别
