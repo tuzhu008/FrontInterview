@@ -32,7 +32,7 @@
 ## `==`、`===` 和 `Object.is` 之间的区别
 
 | 判断 | == | === | Object.is |
-| :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: |
 | `null` 与 `undefined` | true | false | false |
 | `''` 等于 `0` | true | false | false |
 | `''` 不等于 `'0'` | false | false | false |
