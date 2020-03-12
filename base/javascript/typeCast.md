@@ -20,7 +20,7 @@
 | :--- | :---: | :---: | :---: |
 | null | 0 | 0 | NaN |
 | undefined | NaN | NaN | NaN |
-| NaN | NaN | NaN |  |
+| NaN | NaN | NaN | NaN |
 | `"0"` | 0 | 0 | 0 |
 | `"1"` | 1 | 1 | 1 |
 | `"1aa"` | NaN | NaN | 1 |
