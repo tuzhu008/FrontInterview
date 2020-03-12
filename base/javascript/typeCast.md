@@ -16,16 +16,16 @@
 
 ## 数值转换
 
-| 用例 | `+`运算符 | Number | parseInt |
-| :--- | :---: | :---: | :---: |
-| null | 0 | 0 | NaN |
-| undefined | NaN | NaN | NaN |
-| NaN | NaN | NaN | NaN |
-| `"0"` | 0 | 0 | 0 |
-| `"1"` | 1 | 1 | 1 |
-| `"1aa"` | NaN | NaN | 1 |
-| true | 1 | 1 | NaN |
-| false | 0 | 0 | NaN |
+| 用例 | `+`运算符 | Number | parseInt |  |
+| :--- | :--- | :--- | :--- | :--- |
+| null | 0 | 0 | NaN |  |
+| undefined | NaN | NaN | NaN |  |
+| NaN | NaN | NaN | NaN |  |
+| `"0"` | 0 | 0 | 0 |  |
+| `"1"` | 1 | 1 | 1 |  |
+| `"1aa"` | NaN | NaN | 1 |  |
+| true | 1 | 1 | NaN |  |
+| false | 0 | 0 | NaN |  |
 
 ## 相等性判断
 
