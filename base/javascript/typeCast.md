@@ -5,6 +5,8 @@
 | null |  |  | false |
 | undefined |  |  | false |
 | NaN |  |  | false |
+| true |  |  | false |
+| false |  |  | false |
 | 0 |  |  | false |
 | 1 |  |  | true |
 | `""` |  |  | false |
@@ -16,7 +18,14 @@
 
 | 用例 | `+`运算符 | Number | paseInt |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| null |  |  |  |
+| undefined |  |  |  |
+| NaN |  |  |  |
+| `"0"` |  |  |  |
+| `"1"` |  |  |  |
+| `"1aa"` |  |  |  |
+| true |  |  |  |
+| false |  |  |  |
 
 ## 相等性判断
 
