@@ -2,8 +2,8 @@
 
 | 用例 | Number | String | Boolean |
 | :--- | :---: | :---: | :---: |
-| null |  |  | false |
-| undefined |  |  | false |
+| null | 0 | null | false |
+| undefined | NaN |  | false |
 | NaN |  |  | false |
 | true |  |  | false |
 | false |  |  | false |
