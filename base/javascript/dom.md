@@ -70,3 +70,19 @@ function getScreenPos () {
 * `screenLeft` 和 `screenTop` 在 IE、Safari、Opera、Chrome 中有效
 
 * Firefox 支持 `screenX` 和 `screenY` 中有效，同时 Safari、Chrome 也支持
+
+## location 对象
+
+location 对象提供了与当前窗口中加载的文档有关的信息，还提供了一些导航信息。
+
+location 对象既是 window 对象的属性，也是 document 对象的属性。
+
+```js
+window.location === document.location // true
+```
+
+location 对象将 URL 解析为独立的片段，让开发人员可以通过不同的属性访问这些片段。
+
+## history 对象
+
+## navigator 对象
