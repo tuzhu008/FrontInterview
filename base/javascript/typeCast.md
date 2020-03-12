@@ -18,8 +18,8 @@
 
 | 用例 | `+`运算符 | Number | parseInt | parseFloat |
 | :--- | :---: | :---: | :---: | :---: |
-| null | 0 | 0 | NaN |  |
-| undefined | NaN | NaN | NaN |  |
+| null | 0 | 0 | NaN | NaN |
+| undefined | NaN | NaN | NaN | NaN |
 | NaN | NaN | NaN | NaN |  |
 | `"0"` | 0 | 0 | 0 |  |
 | `"1"` | 1 | 1 | 1 |  |
