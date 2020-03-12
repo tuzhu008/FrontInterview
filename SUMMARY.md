@@ -35,6 +35,7 @@
   * [DOM](base/javascript/dom.md)
   * [BOM](base/javascript/bom.md)
   * [严格模式](/base/javascript/strict.md)
+  * 类型转换
 * [HTML/CSS](/base/css/README.md)
   * [DOM](base/css/dom.md)
   * [CSS](base/css/css.md)
@@ -156,6 +157,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
