@@ -6,6 +6,7 @@
 | undefined |  |  | false |
 | 0 |  |  | false |
 | 1 |  |  | true |
+| `""` |  |  | false |
 | `"0"` |  |  | false |
 | `"1"` |  |  | true |
 
