@@ -44,4 +44,29 @@ DOM 把整个页面映射为一个多层节点结构。
   * DOM3 也对 DOM 核心进行了扩展，开始支持 XML 1.0 规范。
 
 
+## 其他
 
+在全局环境中声明的变量和直接在 window 对象上定义属性有一点区别：全局变量不能通过 delete 删除，而直接在 window 对象上定义的属性可以。
+
+```js
+var age = 10;
+window.name = 'wahaha';
+
+delete window.age; // < ie9 报错、false
+delete window.name; // true
+```
+
+获取窗口位置
+
+```js
+function getScreenPos () {
+  return {
+    left: typeof window.screenLeft === 'number' ? window.screenLeft : window.screenX, 
+    top: typeof window.screenTop === 'number' ? window.screenTop : window.screenY
+  };
+}
+```
+
+* `screenLeft` 和 `screenTop` 在 IE、Safari、Opera、Chrome 中有效
+
+* Firefox 支持 `screenX` 和 `screenY` 中有效，同时 Safari、Chrome 也支持

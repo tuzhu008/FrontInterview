@@ -2,6 +2,22 @@
 
 * 数字的八进制字面量在严格模式下无效，会导致支持的 JavaScript 引擎抛出错误。
 
+* 严格模式对如何使用 arguments 对象做出了一些限制。
+
+  * 使用 `arguments[index]` 的方式赋值会变得无效
+
+    ```js
+    function doAdd (num1, num2) {
+      "use strict";
+      arguments[1] = 10;
+      console.log(arguments[1] + num2);
+    }
+
+    doAdd(1); // NaN 
+    ```
+  
+  * 重写 `arguments` 的值回导致语法错误
+
 ## 什么是 'use strict;'？使用它的好处和坏处分别是什么？
 
 ES5 添加了第二种运行模式，严格模式，这种模式使得 Javascript 在更严格的条件下运行。
