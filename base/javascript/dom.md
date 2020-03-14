@@ -49,8 +49,8 @@ DOM 把整个页面映射为一个多层节点结构。
 | Document | 9 | null | `#document` |
 | ELement | 1 | null | 元素标签名 |
 | Text | 3 | 节点包含的文本 | `#text` |
-| Comment |  |  |  |
-| CDATASection |  |  |  |
+| Comment | 8 | 注释的内容 | `#comment` |
+| CDATASection | 4 |  | `#cdata-section` |
 | DocumentType |  |  |  |
 | DocumentFragment |  |  |  |
 
@@ -138,7 +138,10 @@ document.getElementById()
 document.getElementsByClass()
 document.getElementsByTagName() // 返回一个 HTMLCollection 对象
 document.getElementsByName() // 返回一个 HTMLCollection 对象
+
 document.createElement()
+document.createTextNode()
+document.createComment()
 ```
 
 ```js
@@ -166,7 +169,35 @@ element.setAtrribute()
 element.removeAtrribute()
 ```
 
-## 
+## Text 类型
 
+```js
+textNode.data
+textNode.noValue
 
+textNode.appendData()
+textNode.deleteData()
+textNode.insertData()
+textNode.replaceData()
+textNode.splitText()
+textNode.subStringData()
+```
 
+## Comment 类型
+
+Comment 与 Text 继承自相同的基类
+
+```js
+textNode.data
+textNode.noValue
+
+textNode.appendData()
+textNode.deleteData()
+textNode.insertData()
+textNode.replaceData()
+textNode.subStringData()
+```
+
+## CDATASection 类型
+
+CDATASection 类型只针对基于 XML 的文档，表示 CDATA 区域。CDATASection 继承自 Text 类型。
