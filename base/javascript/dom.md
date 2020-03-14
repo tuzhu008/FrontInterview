@@ -47,7 +47,14 @@ DOM 把整个页面映射为一个多层节点结构。
 
 | 类型 |  |
 | :--- | :--- |
-|  |  |
+| Node |  |
+| Document |  |
+| ELement |  |
+| Text |  |
+| Comment |  |
+| CDATASection |  |
+| DocumentType |  |
+| DocumentFragment|  |
 
 ## Node
 
