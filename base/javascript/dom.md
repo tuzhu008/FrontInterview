@@ -44,8 +44,8 @@ DOM 把整个页面映射为一个多层节点结构。
   * DOM3 也对 DOM 核心进行了扩展，开始支持 XML 1.0 规范。
 
 | 类型 | nodeType | nodeValue |
-| :--- | :--- | :--- |
-| Node |  |  |
+| :--- | :---: | :---: |
+| Node | 1 |  |
 | Document |  |  |
 | ELement |  |  |
 | Text |  |  |
