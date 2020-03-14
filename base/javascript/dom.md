@@ -50,9 +50,9 @@ DOM 把整个页面映射为一个多层节点结构。
 | ELement | 1 | null | 元素标签名 |
 | Text | 3 | 节点包含的文本 | `#text` |
 | Comment | 8 | 注释的内容 | `#comment` |
-| CDATASection | 4 |  | `#cdata-section` |
-| DocumentType |  |  |  |
-| DocumentFragment |  |  |  |
+| CDATASection | 4 | 区域中的内容 | `#cdata-section` |
+| DocumentType | 10 | null |  |
+| DocumentFragment | 11 | null | `#cdata-fragment` |
 
 ## Node
 
