@@ -43,16 +43,16 @@ DOM 把整个页面映射为一个多层节点结构。
 
   * DOM3 也对 DOM 核心进行了扩展，开始支持 XML 1.0 规范。
 
-| 类型 | nodeType | nodeValue |
-| :--- | :---: | :---: |
-| Node | 1 |  |
-| Document |  |  |
-| ELement |  |  |
-| Text |  |  |
-| Comment |  |  |
-| CDATASection |  |  |
-| DocumentType |  |  |
-| DocumentFragment |  |  |
+| 类型 | nodeType | nodeValue | nodeName |
+| :--- | :--- | :--- | :--- |
+| Node | 1 | null |  |
+| Document | 9 | null |  |
+| ELement |  |  |  |
+| Text |  |  |  |
+| Comment |  |  |  |
+| CDATASection |  |  |  |
+| DocumentType |  |  |  |
+| DocumentFragment |  |  |  |
 
 ## Node
 
