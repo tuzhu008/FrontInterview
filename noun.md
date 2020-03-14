@@ -6,6 +6,7 @@
 | DOM | Document Object Model | 文档对象模型 |
 | BOM | Browser Object Model | 浏览器对象模型 |
 | AJAX | Asynchronous JavaScript and XML | 异步的 JavaScript 和 XML |
+| HTML | Hypertext Markup Language | 超文本标记语言 |
 
 
 
