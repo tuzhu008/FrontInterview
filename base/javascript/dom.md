@@ -45,6 +45,9 @@ DOM 把整个页面映射为一个多层节点结构。
 
 
 
+| 类型 |  |
+| :--- | :--- |
+|  |  |
 
 ## Node
 
@@ -84,10 +87,9 @@ document.constructor === HTMLDocument // true
 document instanceof Document // true
 
 document === window.document // true
-
 ```
 
-**访问 `<html>` 元素：**
+**访问 **`<html>`** 元素：**
 
 ```js
 ducoment.documentElement // 指向 html 元素
@@ -96,7 +98,7 @@ ducoment.documentElement === document.childNodes[0] // true
 ducoment.documentElement === document.firstChild // true
 ```
 
-**访问 `<body>` 元素：**
+**访问 **`<body>`** 元素：**
 
 ```js
 document.body
@@ -114,7 +116,6 @@ document.doctype
 
 ```js
 document.title
-
 ```
 
 ```js
@@ -161,3 +162,6 @@ element.removeAtrribute()
 ```
 
 ## 
+
+
+
