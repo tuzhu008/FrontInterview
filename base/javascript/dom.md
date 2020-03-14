@@ -46,7 +46,7 @@ DOM 把整个页面映射为一个多层节点结构。
 | 类型 | nodeType | nodeValue | nodeName |
 | :--- | :--- | :--- | :--- |
 | Node | 1 | null |  |
-| Document | 9 | null |  |
+| Document | 9 | null | `#document` |
 | ELement |  |  |  |
 | Text |  |  |  |
 | Comment |  |  |  |
