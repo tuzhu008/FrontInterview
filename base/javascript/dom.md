@@ -53,14 +53,15 @@ DOM 把整个页面映射为一个多层节点结构。
 | CDATASection | 4 | 区域中的内容 | `#cdata-section` |
 | DocumentType | 10 | null |  |
 | DocumentFragment | 11 | null | `#cdata-fragment` |
+| Attr | 11 | 特性的值 | 特性的名字 |
 
 ## Node
 
 ```js
 someNode.childNodes
 someNode.parentNode
-someNode.previousNode
-someNode.nextNode
+someNode.previousSibling
+someNode.nextSibling
 someNode.firstChild
 someNode.lastChild
 someNode.ownDocument
@@ -142,6 +143,8 @@ document.getElementsByName() // 返回一个 HTMLCollection 对象
 document.createElement()
 document.createTextNode()
 document.createComment()
+document.createDocumentFragment()
+document.createAttribute()
 ```
 
 ```js
@@ -201,3 +204,97 @@ textNode.subStringData()
 ## CDATASection 类型
 
 CDATASection 类型只针对基于 XML 的文档，表示 CDATA 区域。CDATASection 继承自 Text 类型。
+
+
+## DucomentType
+
+## Attr
+
+```js
+attrNode.name
+textNode.value
+textNode.spacified
+```
+
+## DOM 扩展
+
+```js
+document.querySelector()
+document.querySelectorAll()
+
+element.querySelector()
+element.querySelectorAll()
+```
+
+```js
+document.childElementCount
+document.firstElementChild
+document.lastElementChild
+document.previousElementSibling
+document.nextElementSibling
+```
+
+**HTML 5**
+
+```js
+element.classList
+element.classList.add()
+element.classList.contains()
+element.classList.remove()
+element.classList.toggle()
+
+element.innerHTML
+element.outerHTML
+
+element.insertAdjacentHTML()
+
+element.scrollIntoView()
+
+element.children
+element.contains()
+```
+
+```js
+document.head
+document.charset
+document.defaultCharset
+document.dataset
+document.activeElement
+document.hasFocus()
+document.readyState // loading、complete
+document.compatMode // 标准：CSS1Compat、混杂：BackCompat
+```
+
+## DOM2、DOM3
+
+DOM2 3 扩展了 DOM API，以满足更多操作 XML 的需求，同时提供更好的错误处理及特性检测能力。
+
+* 增加命名空间以及相应的方法
+
+  命名空间用于避免 XML 文档的元素或属性发生冲突，以达到不同文档混合的目的。
+
+  ```js
+  // DOM2
+  document.createElementNS()
+  document.createAttributeNS()
+  document.getElementsByTagNameNS()
+
+  // DOM3
+  document.isDefaultNamespace()
+  document.lookupNamespaceURI()
+  document.lookupPrefix()
+  ```
+
+  ```js
+  element.hasAttributeNS()
+  element.getAttributeNS()
+  element.setAttributeNS()
+  element.removeAttributeNS()
+  element.getAttributeNodeNS()
+  element.setAttributeNodeNS()
+  element.getElementsByTagNameNS()
+  ```
+
+* 针对样式的 API
+
+  HTML 的 3 种样式：`<link>`、`<style>`、`style` 属性
