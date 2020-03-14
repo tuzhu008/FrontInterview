@@ -43,3 +43,121 @@ DOM 把整个页面映射为一个多层节点结构。
 
   * DOM3 也对 DOM 核心进行了扩展，开始支持 XML 1.0 规范。
 
+
+
+
+## Node
+
+```js
+someNode.childNodes
+someNode.parentNode
+someNode.previousNode
+someNode.nextNode
+someNode.firstChild
+someNode.lastChild
+someNode.ownDocument
+
+someNode.hasChildNodes()
+
+// 支持子节点的节点类型，操作子节点
+someNode.appendChild()
+someNode.insertBefore()
+someNode.replaceChild()
+someNode.removeChild()
+
+// 所有节点类型都支持
+someNode.cloneNode(deep: boolean)
+someNode.normalize()
+```
+
+## Document 类型
+
+JavaScript 通过 Document 类型来表示文档。
+
+`document` 是 HTMLDocument 的实例，HTMLDocument 继承自 Document
+
+`document` 是 `window` 对象的属性
+
+```js
+document.constructor === HTMLDocument // true
+
+document instanceof Document // true
+
+document === window.document // true
+
+```
+
+**访问 `<html>` 元素：**
+
+```js
+ducoment.documentElement // 指向 html 元素
+
+ducoment.documentElement === document.childNodes[0] // true
+ducoment.documentElement === document.firstChild // true
+```
+
+**访问 `<body>` 元素：**
+
+```js
+document.body
+```
+
+**访问 DocumentType：**
+
+浏览器实现不一
+
+```js
+document.doctype
+```
+
+**访问 title**
+
+```js
+document.title
+
+```
+
+```js
+document.URL
+document.domain
+document.referrer
+```
+
+这三个中只有 `domain` 是可以修改的，但出于安全考虑，这个值只允许设置为 `URL` 中出现的域
+
+**查找元素：**
+
+```js
+document.getElementById()
+document.getElementsByClass()
+document.getElementsByTagName() // 返回一个 HTMLCollection 对象
+document.getElementsByName() // 返回一个 HTMLCollection 对象
+document.createElement()
+```
+
+```js
+document.links
+document.images
+document.anchors
+document.forms
+```
+
+## Element 类型
+
+Element 类型用于表现 XML 和 HTML 元素。
+
+所有的 HTML 元素都是 HTMLElement 的实例或子实例，HTMLElement 继承自 Element。
+
+```js
+element.id
+element.className
+element.title
+element.lang
+element.dir
+
+element.getAtrribute()
+element.setAtrribute()
+element.removeAtrribute()
+```
+
+## 
