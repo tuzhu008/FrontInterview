@@ -298,3 +298,12 @@ DOM2 3 扩展了 DOM API，以满足更多操作 XML 的需求，同时提供更
 * 针对样式的 API
 
   HTML 的 3 种样式：`<link>`、`<style>`、`style` 属性
+
+  DOM2 增加了对 `style` 属性的访问和设置
+
+* 标准化事件 API
+
+  ```js
+  element.addEventListener()
+  element.removeEventListener()
+  ```
