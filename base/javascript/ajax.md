@@ -80,6 +80,10 @@ CORS 背后的基本思想，就是使用自定义的 HTTP 头部让浏览器与
   Access-Control-Allow-Orig: https://www.test.com
   ```
 
+  如果没有这个响应头，或者这个头部的源信息不匹配，浏览器就会驳回请求。
+
+请求和响应都不包含 cookie 信息。
+
 ## Ajax 的过程是怎样的
 
 1. 创建 XMLHttpRequest 对象，也就是创建一个异步调用对象
