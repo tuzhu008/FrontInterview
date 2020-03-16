@@ -10,8 +10,6 @@ IE7+ 支持原生的 XMLHttpRequest 对象。
 
 XHR 需要遵守同源策略，只能向同一个域中使用相同端口和协议的 URL 发送请求。
 
-
-
 readystate
 
 | 取值 | 描述 | 触发行为 |
