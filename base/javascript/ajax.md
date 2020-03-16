@@ -185,3 +185,7 @@ img.src = 'http://www.examole.com/1e332132';
 * 只能发送 GET 请求
  
 * 无法访问服务器的响应文本
+
+### JSONP
+
+JSONP
