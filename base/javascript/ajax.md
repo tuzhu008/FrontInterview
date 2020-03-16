@@ -16,7 +16,7 @@ XHR 需要遵守同源策略，只能向同一个域中使用相同端口和协�
 
 * send
 
-* abord
+* abort
 
 * setRequestHeader
 
@@ -36,9 +36,22 @@ readystate
 | 3 | 接收 | 已接收到部分响应数据 |
 | 5 | 完成 | 接收到全部响应数据，数据处于可用状态 |
 
-## Ajax 的交互模型？
 
-## 同步和异步的区别？
+## 事件
+
+* readystatechange
+* timeout
+* load
+
+其他事件：
+
+* loadstart
+* progress
+* error
+* abort
+* loadend
+
+## Ajax 的交互模型？
 
 ## 如何解决跨域问题?
 
@@ -101,5 +114,27 @@ GET 长度限制是由浏览器和web 服务器做出的限制，且各有区别
 * 设置Header：`Cache-Control: no-cache`
 * URL 拼接随机参数
 
+## urlEndoce
 
+```js
+function urlEncode(data) {
+  var _urlEncode = function(param, key, encode) {
+    if (param == null) {
+      return '';
+    }
+    var paramStr = '';
+    var type = typeof param;
+    if (type == 'string' || type == 'number' || type == 'boolean') {
+      paramStr += '&' + key + '=' + ((encode == null || encode) ? encodeURIComponent(param) : param);
+    } else {
+      for (var i in param) {
+        var k = key == null ? i: key + (param instanceof Array ? '[' + i + ']' : '.' + i);
+        paramStr += _urlEncode(param[i], k, encode);
+      }
+    }
+    return paramStr;
+  }
 
+  return _urlEncode(data).slice(1);
+}
+```
