@@ -8,6 +8,7 @@
 | AJAX | Asynchronous JavaScript and XML | 异步的 JavaScript 和 XML |
 | HTML | Hypertext Markup Language | 超文本标记语言 |
 | JSON | JavaScript Object Notation | JavaScript 对象表示法 |
+| CORS | Cross-Origin Resource Sharing | 跨域资源共享 |
 
 
 
