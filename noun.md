@@ -9,6 +9,8 @@
 | HTML | Hypertext Markup Language | 超文本标记语言 |
 | JSON | JavaScript Object Notation | JavaScript 对象表示法 |
 | CORS | Cross-Origin Resource Sharing | 跨域资源共享 |
+| CSRF | Cross-Site Request Forgery | 跨站点请求伪造 |
+| XSS | Cross-Site Scripting | 跨站脚本 |
 
 
 
