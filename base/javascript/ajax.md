@@ -1,6 +1,8 @@
 # Ajax
 
-Asynchronous JavaScript And XML。
+Asynchronous JavaScript And XML 的简称。
+
+这一技术能够向服务器请求额外的数据而无需卸载页面，会带来更高的用户体验。
 
 ## Ajax 的交互模型？
 
