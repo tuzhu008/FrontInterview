@@ -11,15 +11,12 @@
 | CORS | Cross-Origin Resource Sharing | 跨域资源共享 |
 | JSONP | JSON with padding | 填充式 JSON 或参数式 JSON |
 
-
-
 ## 安全
 
 | 简称 | 全称 | 中文名称 |
 | :--- | :--- | :--- |
 | CSRF | Cross-Site Request Forgery | 跨站点请求伪造 |
 | XSS | Cross-Site Scripting | 跨站脚本 |
-
 
 
 
