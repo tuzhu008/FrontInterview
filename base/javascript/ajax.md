@@ -14,6 +14,7 @@ XHR 需要遵守同源策略，只能向同一个域中使用相同端口和协�
 
 * open
 * send
+* abord
 * setRequestHeader
 
 readystate
