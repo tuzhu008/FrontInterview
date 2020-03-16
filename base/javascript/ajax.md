@@ -1,5 +1,7 @@
 # Ajax
 
+Asynchronous JavaScript And XML。
+
 ## Ajax 的交互模型？
 
 ## 同步和异步的区别？
@@ -64,3 +66,6 @@ GET 长度限制是由浏览器和web 服务器做出的限制，且各有区别
 * 设置Header：`If-Modified-Since: 0`
 * 设置Header：`Cache-Control: no-cache`
 * URL 拼接随机参数
+
+
+
