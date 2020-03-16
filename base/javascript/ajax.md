@@ -8,6 +8,8 @@ Ajax 技术的核心是 XMLHttpRequest 对象，简称 XHR。XHR 为向服务器
 
 IE7+ 支持原生的 XMLHttpRequest 对象。
 
+XHR 需要遵守同源策略，只能向同一个域中使用相同端口和协议的 URL 发送请求。
+
 ## Ajax 的交互模型？
 
 ## 同步和异步的区别？
