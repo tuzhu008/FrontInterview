@@ -166,7 +166,7 @@ CORS 背后的基本思想，就是使用自定义的 HTTP 头部让浏览器与
 Access-Control-Allow-Credentials: true
 ```
 
-## 图像 Ping
+### 图像 Ping
 
 图像 Ping 是与服务器进行简单、单向的跨域服务通信的一种方式。
 
