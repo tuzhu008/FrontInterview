@@ -188,4 +188,39 @@ img.src = 'http://www.examole.com/1e332132';
 
 ### JSONP
 
-JSONP
+JSONP 是 JSON with padding 的简写。
+
+**原理：**利用 `<script>` 能从任何网页中加载脚本，且不用担心跨域的特性。
+
+JSONP 看起来与 JSON 差不多，只不过是被包含在函数调用中的 JSON：
+
+```js
+callback({ "name": "wahaha" });
+```
+
+JSONP 由两部分组成：回调函数和数据。
+
+* 回调函数：当响应到来时应该在页面中调用的函数，回调函数的名字一般是在请求中指定的
+  
+* 数据：传入回调函数的 JSON 数据
+
+```js
+var script = document.createElement('script');
+script.src = 'http://www.examole.com/dasda?callback=handleRequst';
+document.body.appendChild(script);
+```
+
+**优点：**能够直接访问响应文本，直接在浏览器和服务器间进行双向通信。
+
+**缺点：**
+
+* 安全：JSONP 是从其他域中加载代码执行，有可能含有恶意代码。
+ 
+* 不易确认请求状态
+
+
+### Comet
+
+Comet 是服务器向页面推送数据的技术。
+
+实现 Comet 的方式：**长轮询**和**流**
