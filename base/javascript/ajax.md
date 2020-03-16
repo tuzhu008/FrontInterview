@@ -224,3 +224,9 @@ document.body.appendChild(script);
 Comet 是服务器向页面推送数据的技术。
 
 实现 Comet 的方式：**长轮询**和**流**
+
+### WebSocket
+
+同源策略对 WebSocket 不适用。至于是否会与某个域中的页面通信，则完全取决于服务器。
+
+WebSocket 只能通过连接发送纯文本数据，所以对于复杂的数据结构，在通过连接发送之前必须进行序列化。
