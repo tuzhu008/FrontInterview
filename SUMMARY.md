@@ -34,7 +34,7 @@
   * [this](base/javascript/this.md)
   * [DOM](base/javascript/dom.md)
   * [BOM](base/javascript/bom.md)
-  * [Ajax](/base/css/ajax.md)
+  * [Ajax](/base/javascript/ajax.md)
   * [严格模式](/base/javascript/strict.md)
   * [类型转换](/base/javascript/typeCast.md)
 * [HTML/CSS](/base/css/README.md)
