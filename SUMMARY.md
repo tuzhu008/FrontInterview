@@ -34,13 +34,13 @@
   * [this](base/javascript/this.md)
   * [DOM](base/javascript/dom.md)
   * [BOM](base/javascript/bom.md)
+  * [Ajax](base/css/ajax.md)
   * [严格模式](/base/javascript/strict.md)
   * [类型转换](/base/javascript/typeCast.md)
 * [HTML/CSS](/base/css/README.md)
   * [CSS](base/css/css.md)
   * [CSS3](base/css/css3.md)
   * [HTML](base/css/html.md)
-  * [Ajax](base/css/ajax.md)
   * [存储](base/css/storage.md)
   * [兼容性](base/css/jian-rong-xing.md)
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
@@ -160,6 +160,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
