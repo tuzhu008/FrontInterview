@@ -51,39 +51,6 @@ readystate
 * abort
 * loadend
 
-## Ajax 的交互模型？
-
-## 如何解决跨域问题?
-
-jsonp
-
-iframe
-
-window.name、window.postMessage
-
-代理
-
-### CORS
-
-CORS 是 Cross-Origin Resource Sharing 的简称。它定义了在必须访问跨源资源时，浏览器与服务器应该如何沟通。
-
-CORS 背后的基本思想，就是使用自定义的 HTTP 头部让浏览器与服务器进行沟通，从而决定请求或者响应是应该成功，还是应该失败。
-
-* 为请求添加 `Origin` 头部，其中包含请求页面的源信息
-
-  ```
-  Origin: https://www.test.com
-  ```
-* 服务器如果认为这个请求可以接受，就在 `Access-Control-Allow-Origin` 响应头部中慧发相同源信息
-
-  ```
-  Access-Control-Allow-Orig: https://www.test.com
-  ```
-
-  如果没有这个响应头，或者这个头部的源信息不匹配，浏览器就会驳回请求。
-
-请求和响应都不包含 cookie 信息。
-
 ## Ajax 的过程是怎样的
 
 1. 创建 XMLHttpRequest 对象，也就是创建一个异步调用对象
@@ -159,3 +126,62 @@ function urlEncode(data) {
   return _urlEncode(data).slice(1);
 }
 ```
+
+## Ajax 的交互模型？
+
+## 如何解决跨域问题?
+
+jsonp
+
+iframe
+
+window.name、window.postMessage
+
+代理
+
+### CORS
+
+CORS 是 Cross-Origin Resource Sharing 的简称。它定义了在必须访问跨源资源时，浏览器与服务器应该如何沟通。
+
+CORS 背后的基本思想，就是使用自定义的 HTTP 头部让浏览器与服务器进行沟通，从而决定请求或者响应是应该成功，还是应该失败。
+
+* 为请求添加 `Origin` 头部，其中包含请求页面的源信息
+
+  ```
+  Origin: https://www.test.com
+  ```
+* 服务器如果认为这个请求可以接受，就在 `Access-Control-Allow-Origin` 响应头部中慧发相同源信息
+
+  ```
+  Access-Control-Allow-Orig: https://www.test.com
+  ```
+
+  如果没有这个响应头，或者这个头部的源信息不匹配，浏览器就会驳回请求。
+
+请求和响应都不包含 cookie 信息。
+
+默认情况喜爱，跨源请求不提供凭据。跨源请求设置 `withCreDentials` 为 `true`，可以指定某个请求应该发送凭证。如何服务器接受带凭据的请求，会用下面的 HTTP 头部来响应。
+
+```
+Access-Control-Allow-Credentials: true
+```
+
+## 图像 Ping
+
+图像 Ping 是与服务器进行简单、单向的跨域服务通信的一种方式。
+
+**原理：**利用 `<img>` 能从任何网页中加载图像，且不用担心跨域的特性。
+
+```js
+var img = new Image();
+img.onload = img.onload = function () {
+  alert('onload');
+}
+img.src = 'http://www.examole.com/1e332132';
+```
+
+**缺点：**
+
+* 只能发送 GET 请求
+ 
+* 无法访问服务器的响应文本
