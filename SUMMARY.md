@@ -122,7 +122,7 @@
 
 ## Java
 
-* 基础
+* [基础](/java/README.md)
 
 ## 数据库
 
@@ -160,4 +160,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
