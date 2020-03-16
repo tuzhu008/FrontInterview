@@ -4,7 +4,7 @@ Asynchronous JavaScript And XML 的简称。
 
 这一技术能够向服务器请求额外的数据而无需卸载页面，会带来更高的用户体验。
 
-Ajax 技术的核心是 XMLHttpRequest 对象，简称 XHR。
+Ajax 技术的核心是 XMLHttpRequest 对象，简称 XHR。XHR 为向服务器发送请求和解析服务器提供了流畅的接口。
 
 ## Ajax 的交互模型？
 
