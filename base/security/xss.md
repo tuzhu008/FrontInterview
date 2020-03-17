@@ -82,6 +82,22 @@ XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型
 
 * 防范 `javascript:` 等非法模式的链接
 
+* HTTP-only Cookie: 禁止 JavaScript 读取某些敏感 Cookie，攻击者完成 XSS 注入后也无法窃取此 Cookie。
+
+* 验证码：防止脚本冒充用户提交危险操作。
+
+* 利用模板引擎
+
+* 避免内联事件
+
+* 避免拼接 HTML
+
+* 时刻保持警惕
+
+* 增加攻击难度，降低攻击后果
+
+* 主动检测和发现
+
 ## 参考
 
 * [https://segmentfault.com/a/1190000016551188](https://segmentfault.com/a/1190000016551188)
