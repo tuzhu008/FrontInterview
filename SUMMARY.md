@@ -45,8 +45,6 @@
   * [兼容性](base/css/jian-rong-xing.md)
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
   * [HTML 全局属性](base/css/html-quan-ju-shu-xing.md)
-  * [HTML5](base/css/html5.md)
-    * [新增元素](base/css/html5/xin-zeng-yuan-su.md)
   * [BFC/IFC](base/css/bfcifc.md)
 * [其他](/base/others/README.md)
   * [WebGL](base/others/webgl.md)
@@ -65,6 +63,8 @@
   * [Symbol](base/es6/symbol.md)
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
+* [HTML5](base/css/html5.md)
+  * [新增元素](base/css/html5/xin-zeng-yuan-su.md)
 * [ES7+](base/security/es7+.md)
 
 ## 实现
@@ -160,6 +160,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
