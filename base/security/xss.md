@@ -20,3 +20,9 @@ XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型
 
 
 
+## 参考
+
+* [https://segmentfault.com/a/1190000016551188](https://segmentfault.com/a/1190000016551188)
+
+
+
