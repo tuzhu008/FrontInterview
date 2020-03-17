@@ -63,8 +63,8 @@
   * [Symbol](base/es6/symbol.md)
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
-* [HTML5](base/css/html5.md)
-  * [新增元素](base/css/html5/xin-zeng-yuan-su.md)
+* [HTML5](base/html5.md)
+  * [新增元素](base/html5/xin-zeng-yuan-su.md)
 * [ES7+](base/security/es7+.md)
 
 ## 实现
