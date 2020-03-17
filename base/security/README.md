@@ -22,9 +22,9 @@
 
 ##### HTTP劫持、页面劫持的原理、防御措施
 
-
-
 ##### csp 是什么，xss 与 csrf 是什么，原理以及预防
+
+##### 谈谈 XSS 防御，以及 Content-Security-Policy 细节
 
 
 
