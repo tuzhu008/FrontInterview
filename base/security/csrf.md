@@ -24,7 +24,7 @@ CSRF通常从第三方网站发起，被攻击的网站无法防止攻击发生�
 
 * 提交时要求附加本域才能获取的信息
 
-* CSRF Token
+  * CSRF Token
 
-* 双重Cookie验证
+  * 双重Cookie验证
 
