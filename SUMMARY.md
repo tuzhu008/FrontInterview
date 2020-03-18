@@ -59,7 +59,7 @@
   * [Map](base/es6/map.md)
   * [async](base/es6/async.md)
   * [class](base/es6/class.md)
-  * Proxy
+  * [Proxy](base/es6/proxy.md)
   * Module
   * [Promise](base/es6/promise.md)
   * [Symbol](base/es6/symbol.md)
