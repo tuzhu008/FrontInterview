@@ -1,5 +1,7 @@
 # this
 
+
+
 this 对象是在运行时基于函数的执行环境绑定的：
 
 * 在全局函数中，this 等于 window
@@ -60,3 +62,4 @@ object.getName(); // My Object
 `(object.getName)()` 虽然加上了括号之后就好像在引用一个函数，但是 `this` 得到了维持，因为 `object.getName` 和 `(object.getName)` 的定义是相同的。
 
 `(object.getName = object.getName)()` 先执行了一条赋值语句，然后再调用赋值后的结果。因为这个表达式的值是函数本身，所以 `this` 的值不能得到维持。
+
