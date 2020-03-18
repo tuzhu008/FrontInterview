@@ -58,7 +58,7 @@
   * [Set](base/es6/set.md)
   * [Map](base/es6/map.md)
   * [async](base/es6/async.md)
-  * [Class](base/es6/class.md)
+  * [class](base/es6/class.md)
   * Proxy
   * Module
   * [Promise](base/es6/promise.md)
