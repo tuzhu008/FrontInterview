@@ -28,9 +28,9 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
 * construct
 
-   用于拦截 `new` 命令
+  用于拦截 `new` 命令
 
-   `construct` 方法返回的必须是一个对象，否则会报错。
+  `construct` 方法返回的必须是一个对象，否则会报错。
 
 * deleteProperty
 
@@ -57,7 +57,6 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
   用于拦截 `Object.defineProperty` 操作。
 
 * preventExtensions
-
 
 * getPrototypeOf
 
@@ -89,6 +88,7 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
 * apply
 
-
 * construct
+
+
 
