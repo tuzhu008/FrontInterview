@@ -41,3 +41,8 @@ ES6 规定，默认的 `Iterator` 接口部署在数据结构的 `Symbol.iterato
 * 函数的 arguments 对象
 
 * NodeList 对象
+
+## 调用
+
+
+
