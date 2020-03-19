@@ -65,6 +65,7 @@
   * [Symbol](base/es6/symbol.md)
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
+  * Iterator
 * [HTML5](base/html5.md)
   * [新增元素](base/html5/xin-zeng-yuan-su.md)
   * [Api](base/html5/api.md)
