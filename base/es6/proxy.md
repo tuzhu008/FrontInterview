@@ -38,6 +38,15 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
 * ownKeys
 
+  用来拦截对象自身属性的读取操作。具体来说，拦截以下操作：
+
+  * `Object.getOwnPropertyNames()`
+
+  * `Object.getOwnPropertySymbols()`
+
+  * `Object.keys()`
+
+  * `for...in`
 
 * getOwnPropertyDescriptor
 
@@ -52,7 +61,7 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
 * getPrototypeOf
 
-  主要用来拦截获取对象原型。具体来说，拦截下面这些操作。
+  主要用来拦截获取对象原型。具体来说，拦截下面这些操作：
 
   * `Object.prototype.__proto__`
 
@@ -64,11 +73,19 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
   * `instanceof`
 
+  `getPrototypeOf` 方法的返回值必须是对象或者null，否则报错。
+
+  另外，如果目标对象不可扩展（non-extensible）， `getPrototypeOf` 方法必须返回目标对象的原型对象。
+
 * isExtensible
 
+  拦截 `Object.isExtensible` 操作。
+
+  该方法只能返回布尔值，否则返回值会被自动转为布尔值。
+
+  它的返回值必须与目标对象的 `isExtensible` 属性保持一致，否则就会抛出错误。
 
 * setPrototypeOf
-
 
 * apply
 
