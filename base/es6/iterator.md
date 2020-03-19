@@ -21,3 +21,23 @@ Iterator 的遍历过程：
 4. 不断调用指针对象的 `next` 方法，直到它指向数据结构的结束位置。
 
 一种数据结构只要部署了 `Iterator` 接口，我们就称这种数据结构是“可遍历的”（iterable）。
+
+ES6 规定，默认的 `Iterator` 接口部署在数据结构的 `Symbol.iterator` 属性，或者说，一个数据结构只要具有 `Symbol.iterator` 属性，就可以认为是“可遍历的”（iterable）。
+
+`Symbol.iterator` 属性本身是一个函数，就是当前数据结构默认的遍历器生成函数。执行这个函数，就会返回一个遍历器。
+
+原生具备 Iterator 接口的数据结构如下。
+
+* Array
+
+* Map
+
+* Set
+
+* String
+
+* TypedArray
+
+* 函数的 arguments 对象
+
+* NodeList 对象
