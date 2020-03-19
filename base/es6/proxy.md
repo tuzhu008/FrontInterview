@@ -7,15 +7,40 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 ## 可以设置的值
 
 * get
+
+
 * set
+
+
 * has
+
+
 * deleteProperty
+
+
 * ownKeys
+
+
 * getOwnPropertyDescriptor
+
+
 * defineProperty
+
+
 * preventExtensions
+
+
 * getPrototypeOf
+
+
 * isExtensible
+
+
 * setPrototypeOf
+
+
 * apply
+
+
 * construct
+
