@@ -58,6 +58,8 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
   如果目标对象自身包含不可配置的属性，则该属性必须被 `ownKeys` 方法返回，否则报错。
 
+  如果目标对象是不可扩展的（non-extensible），这时 `ownKeys` 方法返回的数组之中，必须包含原对象的所有属性，且不能包含多余的属性，否则报错。
+
 * getOwnPropertyDescriptor
 
   拦截 `Object.getOwnPropertyDescriptor()`，返回一个属性描述对象或者 `undefined`。
@@ -67,6 +69,12 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
   用于拦截 `Object.defineProperty` 操作。
 
 * preventExtensions
+
+  拦截 `Object.preventExtensions()`。
+  
+  该方法必须返回一个布尔值，否则会被自动转为布尔值。
+
+  只有目标对象**不可**扩展时（即 `Object.isExtensible(proxy)` 为 `false`），`proxy.preventExtensions` 才能返回 `true`，否则会报错。
 
 * getPrototypeOf
 
@@ -96,9 +104,9 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
 * setPrototypeOf
 
-* apply
+  主要用来拦截 `Object.setPrototypeOf` 方法。
 
-* construct
+  该方法只能返回布尔值，否则会被自动转为布尔值。
 
-
+  如果目标对象不可扩展（non-extensible），`setPrototypeOf` 方法不得改变目标对象的原型。
 
