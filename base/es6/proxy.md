@@ -48,6 +48,14 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
   * `for...in`
 
+  注意，使用 `Object.keys` 方法时，有三类属性会被 `ownKeys` 方法自动过滤，不会返回。
+
+  * 目标对象上不存在的属性
+  
+  * 属性名为 Symbol 值
+  
+  * 不可遍历（enumerable）的属性
+
 * getOwnPropertyDescriptor
 
   拦截 `Object.getOwnPropertyDescriptor()`，返回一个属性描述对象或者 `undefined`。
