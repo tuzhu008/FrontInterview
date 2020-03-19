@@ -56,6 +56,8 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
   
   * 不可遍历（enumerable）的属性
 
+  如果目标对象自身包含不可配置的属性，则该属性必须被 `ownKeys` 方法返回，否则报错。
+
 * getOwnPropertyDescriptor
 
   拦截 `Object.getOwnPropertyDescriptor()`，返回一个属性描述对象或者 `undefined`。
