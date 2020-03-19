@@ -42,7 +42,22 @@ ES6 规定，默认的 `Iterator` 接口部署在数据结构的 `Symbol.iterato
 
 * NodeList 对象
 
-## 调用
+## 调用 Iterator 接口
 
+有一些场合会默认调用 Iterator 接口：
 
+* 解构赋值
 
+* 扩展运算符
+
+* `yield*`
+
+* `for...of`
+
+* `Array.from()`
+
+* `Map(), Set(), WeakMap(), WeakSet()（比如new Map([['a',1],['b',2]])）`
+
+* `Promise.all()`
+
+* `Promise.race()`
