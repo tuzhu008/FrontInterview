@@ -160,9 +160,9 @@ vue 操作数据，jQuery 操作 dom
 
 `<slot>` 元素作为组件模板之中的内容分发插槽
 
-## 你们 vue 项目是打包了一个 js 文件，一个 css 文件，还是有多个文件？
+## vue 更新数组时触发视图更新的方法
 
-## vue更新数组时触发视图更新的方法
+`push()` `pop()` `shift()` `unshift()` `splice()` `sort()` `reverse()`
 
 ## 双向绑定原理
 
