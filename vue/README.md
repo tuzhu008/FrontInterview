@@ -111,32 +111,49 @@ Vue 生命周期：
 | :--- | :--- |
 | `v-text` | 更新元素的 `textContent` |
 | `v-html` | 更新元素的 `innerHTML` |
-| `v-show` |  |
-| `v-if` |  |
+| `v-show` | 根据表达式之真假值，切换元素的 `display` CSS 属性 |
+| `v-if` | 条件渲染 |
 | `v-else` |  |
 | `v-else-if` |  |
-| `v-for` |  |
-| `v-on` |  |
-| `v-bind` |  |
-| `v-model` |  |
+| `v-for` | 列表渲染 |
+| `v-on` | 事件绑定 |
+| `v-bind` | 数据绑定 |
+| `v-model` | 数据双向绑定 |
 | `v-slot` |  |
-| `v-pre` |  |
-| `v-cloak` |  |
-| `v-once` |  |
+| `v-pre` | 跳过这个元素和它的子元素的编译过程 |
+| `v-cloak` | 这个指令保持在元素上直到关联实例结束编译 |
+| `v-once` | 绑定只执行一次的事件 |
 
 ## vue-loader 是什么？使用它的用途有哪些？
 
 ## 为什么使用key?
 
+`key` 的特殊属性主要用在 Vue 的虚拟 DOM 算法，在新旧 nodes 对比时辨识 VNodes。
+
+如果不使用 `key`，Vue 会使用一种最大限度减少动态元素并且尽可能的尝试就地修改/复用相同类型元素的算法。
+
+而使用 `key` 时，它会基于 `key` 的变化重新排列元素顺序，并且会移除 `key` 不存在的元素。
+
+有相同父元素的子元素必须有独特的 `key`。重复的 `key` 会造成渲染错误。
+
 ## v-on可以监听多个方法吗？
+
+```html
+<!-- 对象语法 (2.4.0+) -->
+<button v-on="{ mousedown: doThis, mouseup: doThat }"></button>
+```
 
 ## 单页面应用和多页面应用区别及优缺点
 
-## vue和jQuery的区别
+## vue 和 jQuery 的区别
 
-## delete和Vue.delete删除数组的区别
+vue 操作数据，jQuery 操作 dom
 
-## SPA首屏加载慢如何解决
+## delete 和 Vue.delete 删除数组的区别
+
+删除对象的属性。如果对象是响应式的，确保删除能触发更新视图。
+
+这个方法主要用于避开 Vue 不能检测到属性被删除的限制，但是你应该很少会使用它。
 
 ## Vue-router 跳转和 location.href 有什么区别
 
