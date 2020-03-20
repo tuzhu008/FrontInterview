@@ -109,7 +109,20 @@ Vue 生命周期：
 
 | 指令 | 作用 |
 | :--- | :--- |
-|  |  |
+| `v-text` |  |
+| `v-html` |  |
+| `v-show` |  |
+| `v-if` |  |
+| `v-else` |  |
+| `v-else-if` |  |
+| `v-for` |  |
+| `v-on` |  |
+| `v-bind` |  |
+| `v-model` |  |
+| `v-slot` |  |
+| `v-pre` |  |
+| `v-cloak` |  |
+| `v-once` |  |
 
 ## vue-loader 是什么？使用它的用途有哪些？
 
