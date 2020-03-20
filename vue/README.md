@@ -2,6 +2,8 @@
 
 ## 双向绑定原理
 
+`Object.defineProperty`
+
 * 这里重点解释 虚拟 dom 和效率问题
 * 说说 vue的生命周期
 * vue的虚拟 dom 是什么？有什么影响？说说你在项目中比较你使用的 vue / javascript/jquery 的区别
