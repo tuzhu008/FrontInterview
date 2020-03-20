@@ -116,7 +116,7 @@
 
 ## Vue
 
-* [基础](vue/ji-chu.md)
+* [基础](/vue/README.md)
 * Vue3
 
 ## React
@@ -165,4 +165,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
