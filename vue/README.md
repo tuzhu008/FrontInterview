@@ -4,7 +4,23 @@
 
 ## 什么是 vue 生命周期？有什么作用？
 
-Vue
+Vue 生命周期：
+
+* beforeCreate
+
+* created
+
+* beforeMount
+
+* mounted
+
+* beforeUpdate
+
+* uopdated
+
+* beforeDestroy
+
+* destroyed
 
 [Vue 生命周期.png](/assets/VueLifecycle.png)
 
