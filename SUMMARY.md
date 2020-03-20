@@ -118,7 +118,7 @@
 
 * [基础](/vue/README.md)
 * Vue3
-* Vuex
+* [Vuex](vue/vuex.md)
 
 ## React
 
