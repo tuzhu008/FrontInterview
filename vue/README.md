@@ -42,6 +42,14 @@ Vue 生命周期：
 
   销毁之后。
 
+* activated
+
+  被 `keep-alive` 缓存的组件激活时调用。
+
+* deactivated
+
+  被 `keep-alive` 缓存的组件停用时调用。
+
 [Vue 生命周期.png](/assets/VueLifecycle.png)
 
 ## 第一次页面加载会触发哪几个钩子？
@@ -94,9 +102,9 @@ Vue 生命周期：
 
 一般来说，`v-if` 有更高的切换开销，而 `v-show` 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 `v-show` 较好；如果在运行时条件很少改变，则使用 `v-if` 较好
 
-## 如何让CSS只在当前组件中起作用？
-
 ## `<keep-alive></keep-alive>`的作用是什么?
+
+`<keep-alive>` 包裹动态组件时，会缓存不活动的组件实例，而不是销毁它们。
 
 ## 如何获取dom?
 
