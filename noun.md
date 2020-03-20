@@ -24,7 +24,7 @@
 | :--- | :--- | :--- |
 | IP | Internet Protocal | 互联网协议 |
 | TCP | Transmission Control Protocol | 传输控制协议 |
-| UDP |  |  |
+| UDP | User Datagram Protocol | 用户数据报协议 |
 
 
 
