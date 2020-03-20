@@ -159,8 +159,6 @@ vue 操作数据，jQuery 操作 dom
 
 ## 你们vue项目是打包了一个js文件，一个css文件，还是有多个文件？
 
-## Vue里面router-link在电脑上有用，在安卓上没反应怎么解决？
-
 ## Vue2中注册在router-link上事件无效解决方法
 
 ## RouterLink在IE和Firefox中不起作用（路由不跳转）的问题
