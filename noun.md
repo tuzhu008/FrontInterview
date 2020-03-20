@@ -18,9 +18,12 @@
 | CSRF | Cross-Site Request Forgery | 跨站点请求伪造 |
 | XSS | Cross-Site Scripting | 跨站脚本 |
 
-
-
 ## 网络
+
+| 简称 | 全称 | 中文名称 |
+| :--- | :--- | :--- |
+| IP | Internet Protocal | 互联网协议 |
+| XSS | Cross-Site Scripting | 跨站脚本 |
 
 
 
