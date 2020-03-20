@@ -155,8 +155,6 @@ vue 操作数据，jQuery 操作 dom
 
 这个方法主要用于避开 Vue 不能检测到属性被删除的限制，但是你应该很少会使用它。
 
-## Vue-router 跳转和 location.href 有什么区别
-
 ## vue slot
 
 ## 你们vue项目是打包了一个js文件，一个css文件，还是有多个文件？
