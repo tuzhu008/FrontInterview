@@ -8,21 +8,35 @@ Vue 生命周期：
 
 * beforeCreate
 
-
+  Vue 实例已创建，初始化事件和生命周期之后、在注入和校验之前。
 
 * created
 
+  在注入和校验之后。
+
 * beforeMount
+
+  将其挂载到 DOM 之前。
 
 * mounted
 
+  将其挂载到 DOM 之后。
+
 * beforeUpdate
+
+  更新之前。
 
 * uopdated
 
+  更新之后。
+
 * beforeDestroy
 
+  销毁之前。
+
 * destroyed
+
+  销毁之后。
 
 [Vue 生命周期.png](/assets/VueLifecycle.png)
 
