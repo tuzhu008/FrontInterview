@@ -4,7 +4,7 @@
 
 ## 什么是 vue 生命周期？有什么作用？
 
-![](/assets/VueLifecycle.png)
+[Vue 生命周期.png](/assets/VueLifecycle.png)
 
 ## 第一次页面加载会触发哪几个钩子？
 
