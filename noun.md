@@ -23,7 +23,7 @@
 | 简称 | 全称 | 中文名称 |
 | :--- | :--- | :--- |
 | IP | Internet Protocal | 互联网协议 |
-|  |  |  |
+| TCP | Transmission Control Protocol | 传输控制协议 |
 
 
 
