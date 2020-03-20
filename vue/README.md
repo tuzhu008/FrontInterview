@@ -8,6 +8,8 @@ Vue 生命周期：
 
 * beforeCreate
 
+
+
 * created
 
 * beforeMount
