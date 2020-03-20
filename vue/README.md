@@ -55,8 +55,11 @@ Vue 生命周期：
 ## 第一次页面加载会触发哪几个钩子？
 
 * beforeCreate,
+
 * created
+
 * beforeMount
+
 * mounted
 
 ## 简述每个周期具体适合哪些场景
@@ -159,25 +162,7 @@ vue 操作数据，jQuery 操作 dom
 
 ## 你们vue项目是打包了一个js文件，一个css文件，还是有多个文件？
 
-## RouterLink在IE和Firefox中不起作用（路由不跳转）的问题
-
-## params和query的区别
-
 ## vue更新数组时触发视图更新的方法
-
-## vue-router 是什么?它有哪些组件
-
-## active-class 是哪个组件的属性？
-
-## 怎么定义 vue-router 的动态路由? 怎么获取传过来的值？
-
-## $route 和 $router 的区别
-
-## vue-router的两种模式
-
-## vue-router实现路由懒加载（ 动态加载路由 ）
-
-## vuex
 
 ## 双向绑定原理
 
