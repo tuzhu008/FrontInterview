@@ -20,7 +20,7 @@
 
 ## 如何让CSS只在当前组件中起作用？
 
-## <keep-alive></keep-alive>的作用是什么?
+## `<keep-alive></keep-alive>`的作用是什么?
 
 ## 如何获取dom?
 
