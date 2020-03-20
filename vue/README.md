@@ -53,17 +53,38 @@ Vue 生命周期：
 
 ## 简述每个周期具体适合哪些场景
 
+* beforeCreate,
 
+  loading
 
-## vue获取数据在哪个周期函数
+* created
+
+  ajax
+
+* mounted
+
+  dom 操作
+
+* beforeDestroy
+
+  清理工作
+
 
 ## vue 优点
 
 ## vue父组件向子组件传递数据？
 
-## 子组件像父组件传递事件？
+* prop
 
-## v-show和v-if指令的共同点和不同点？
+* $emit
+
+* .sync
+
+* 事件中心
+
+* 状态管理器
+
+## v-show 和 v-if 指令的共同点和不同点？
 
 ## 如何让CSS只在当前组件中起作用？
 
