@@ -46,6 +46,11 @@ Vue 生命周期：
 
 ## 第一次页面加载会触发哪几个钩子？
 
+* beforeCreate,
+* created
+* beforeMount
+*  mounted
+
 ## 简述每个周期具体适合哪些场景
 
 ## vue获取数据在哪个周期函数
