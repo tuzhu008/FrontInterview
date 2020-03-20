@@ -6,7 +6,6 @@
 
 ## Vue2中注册在router-link上事件无效解决方法
 
-
 ## RouterLink在IE和Firefox中不起作用（路由不跳转）的问题
 
 ## vue-router 是什么?它有哪些组件
@@ -24,3 +23,6 @@
 ## active-class 是哪个组件的属性？
 
 ## vue-loader 是什么？使用它的用途有哪些？
+
+
+
