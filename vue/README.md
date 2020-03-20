@@ -109,8 +109,8 @@ Vue 生命周期：
 
 | 指令 | 作用 |
 | :--- | :--- |
-| `v-text` |  |
-| `v-html` |  |
+| `v-text` | 更新元素的 `textContent` |
+| `v-html` | 更新元素的 `innerHTML` |
 | `v-show` |  |
 | `v-if` |  |
 | `v-else` |  |
