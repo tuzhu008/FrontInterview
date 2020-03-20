@@ -119,7 +119,7 @@
 * [基础](/vue/README.md)
 * Vue3
 * [Vuex](vue/vuex.md)
-* Vue-Router
+* [Vue-Router](vue/vue-router.md)
 
 ## React
 
