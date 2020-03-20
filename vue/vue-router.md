@@ -4,5 +4,7 @@
 
 ## Vue里面router-link在电脑上有用，在安卓上没反应怎么解决？
 
+## Vue2中注册在router-link上事件无效解决方法
+
 
 
