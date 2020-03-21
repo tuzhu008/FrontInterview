@@ -42,6 +42,18 @@
 
 ## Vue-router 跳转和 location.href 有什么区别
 
+在某种意义上，调用 `pushState()` 与 设置 `window.location = "#foo"` 类似，二者都会在当前页面创建并激活新的历史记录。但 `pushState()` 具有如下几条优点：
+
+* 新的 URL 可以是与当前URL同源的任意URL 。相反，只有在修改哈希时，设置 window.location 才能是同一个 document。
+
+* 如果你不想改URL，就不用改。相反，设置 window.location = "#foo";在当前哈希不是 #foo 时， 才能创建新的历史记录项。
+
+* 你可以将任意数据和新的历史记录项相关联。而基于哈希的方式，要把所有相关数据编码为短字符串。 
+
+* 如果 标题 随后还会被浏览器所用到，那么这个数据是可以被使用的（哈希则不是）。
+
+* 注意 pushState() 绝对不会触发 hashchange 事件，即使新的URL与旧的URL仅哈希不同也是如此。
+
 ## Vue里面router-link在电脑上有用，在安卓上没反应怎么解决？
 
 Vue 路由在 Android 机上有问题，babel 问题，安装 babel polypill 插件解决。
