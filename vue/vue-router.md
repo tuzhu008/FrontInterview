@@ -110,6 +110,20 @@ $route 表示当前激活的路由的状态信息，包含了当前 URL 解析�
 
   * 每一次改变hash（window.location.hash），都会在浏览器的访问历史中增加一个记录
 
+  路由的改变主要由两个构成
+
+  * push
+
+    ```
+    window.location.hash = newHash;
+    ```
+
+  * replace
+
+    ```
+    window.location.replace(newURL);
+    ```
+
 * history
 
   history 模式利用了的 history 的两个接口。这两个接口为 HTML5 新增：
@@ -125,6 +139,21 @@ $route 表示当前激活的路由的状态信息，包含了当前 URL 解析�
 
   * `URL`: 所添加记录的URL
 
+  调用这两个方法，会改变地址栏 URL，并且会修改浏览器历史记录栈，但浏览器不会立即发送请求该 URL。
+
+  路由的改变主要由两个构成
+
+  * push
+
+    ```
+    history.pushState();
+    ```
+
+  * replace
+
+    ```
+    history.replaceState();
+    ```
 
 
 ## vue-router 实现路由懒加载（ 动态加载路由 ）
