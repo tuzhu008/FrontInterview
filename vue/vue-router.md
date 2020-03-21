@@ -108,7 +108,17 @@ $route 表示当前激活的路由的状态信息，包含了当前 URL 解析�
     window.addEventListener("hashchange", funcRef, false)
     ```
 
+  * 每一次改变hash（window.location.hash），都会在浏览器的访问历史中增加一个记录
+
 * history
+
+  history 模式利用了的 history 的两个接口。这两个接口为 HTML5 新增：
+
+  ```
+  window.history.pushState(stateObject, title, URL)
+  window.history.replaceState(stateObject, title, URL)
+  ```
+
 
 
 
