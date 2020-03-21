@@ -2,6 +2,12 @@
 
 ## 钩子函数 {#item-7}
 
+* beforeRouteEnter
+
+* beforeRouteUpdate
+
+* beforeRouteLeave
+
 ## Vue-router 跳转和 location.href 有什么区别
 
 ## Vue里面router-link在电脑上有用，在安卓上没反应怎么解决？
@@ -28,10 +34,5 @@
 
 **怎么定义 vue-router 的动态路由? 怎么获取传过来的值**
 
-  
-
-
 答：在 router 目录下的 index.js 文件中，对 path 属性加上 /:id，使用 router 对象的 params.id 获取。
-
-
 
