@@ -26,5 +26,12 @@
 
 ## vue-loader 是什么？使用它的用途有哪些？
 
+**怎么定义 vue-router 的动态路由? 怎么获取传过来的值**
+
+  
+
+
+答：在 router 目录下的 index.js 文件中，对 path 属性加上 /:id，使用 router 对象的 params.id 获取。
+
 
 
