@@ -48,6 +48,8 @@ Vue 路由在 Android 机上有问题，babel 问题，安装 babel polypill 插
 
 ## Vue2中注册在router-link上事件无效解决方法
 
+需要在 `@click` 后面加上 `native` 就可以了
+
 ## RouterLink在IE和Firefox中不起作用（路由不跳转）的问题
 
 ## vue-router 是什么?它有哪些组件
