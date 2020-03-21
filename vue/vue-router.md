@@ -184,7 +184,6 @@ const Baz = () => import(/* webpackChunkName: "group-foo" */ './Baz.vue')
 
 答：在 router 目录下的 index.js 文件中，对 path 属性加上 /:id，使用 router 对象的 params.id 获取。
 
-
 ## 参考
 
 https://zhuanlan.zhihu.com/p/27588422
