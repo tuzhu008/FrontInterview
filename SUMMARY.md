@@ -92,6 +92,7 @@
   * [Webpack](thinking/engineering/webpack.md)
   * [Gulp](thinking/engineering/gulp.md)
 * [自动化](/thinking/automation/README.md)
+* 架构
 
 ## 算法
 
