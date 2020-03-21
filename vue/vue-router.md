@@ -44,6 +44,8 @@
 
 ## Vue里面router-link在电脑上有用，在安卓上没反应怎么解决？
 
+Vue 路由在 Android 机上有问题，babel 问题，安装 babel polypill 插件解决。
+
 ## Vue2中注册在router-link上事件无效解决方法
 
 ## RouterLink在IE和Firefox中不起作用（路由不跳转）的问题
