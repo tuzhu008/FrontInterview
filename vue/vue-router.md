@@ -52,6 +52,8 @@ Vue 路由在 Android 机上有问题，babel 问题，安装 babel polypill 插
 
 ## vue-router 是什么?它有哪些组件
 
+
+
 ## 怎么定义 vue-router 的动态路由? 怎么获取传过来的值？
 
 ## $route 和 $router 的区别
