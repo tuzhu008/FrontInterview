@@ -52,13 +52,13 @@
 
 * 如果 标题 随后还会被浏览器所用到，那么这个数据是可以被使用的（哈希则不是）。
 
-* 注意 pushState() 绝对不会触发 hashchange 事件，即使新的URL与旧的URL仅哈希不同也是如此。
+注意 `pushState()` 绝对不会触发 `hashchange` 事件，即使新的 URL 与旧的 URL 仅哈希不同也是如此。
 
-## Vue里面router-link在电脑上有用，在安卓上没反应怎么解决？
+## Vue 里面 router-link 在电脑上有用，在安卓上没反应怎么解决？
 
 Vue 路由在 Android 机上有问题，babel 问题，安装 babel polypill 插件解决。
 
-## Vue2中注册在router-link上事件无效解决方法
+## Vue2 中注册在 router-link 上事件无效解决方法
 
 需要在 `@click` 后面加上 `native` 就可以了
 
@@ -94,11 +94,25 @@ $route 表示当前激活的路由的状态信息，包含了当前 URL 解析�
 
 ## vue-router 的两种模式
 
+“更新视图但不重新请求页面”是前端路由原理的核心之一，目前在浏览器环境中这一功能的实现主要有两种方式：
+
 * hash
+
+  URL 中 `#` 后面的部分称为 hash，可通过window.location.hash属性读取。
+
+  * hash 虽然出现在 URL 中，但不会被包括在 HTTP 请求中。它是用来指导浏览器动作的，对服务器端完全无用，因此，改变 hash 不会重新加载页面
+
+  * 可以为hash的改变添加监听事件：
+
+    ```js
+    window.addEventListener("hashchange", funcRef, false)
+    ```
 
 * history
 
-## vue-router实现路由懒加载（ 动态加载路由 ）
+
+
+## vue-router 实现路由懒加载（ 动态加载路由 ）
 
 ## active-class 是哪个组件的属性？
 
