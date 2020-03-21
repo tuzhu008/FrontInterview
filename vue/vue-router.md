@@ -50,8 +50,6 @@ Vue 路由在 Android 机上有问题，babel 问题，安装 babel polypill 插
 
 需要在 `@click` 后面加上 `native` 就可以了
 
-## RouterLink在IE和Firefox中不起作用（路由不跳转）的问题
-
 ## vue-router 是什么?它有哪些组件
 
 ## 怎么定义 vue-router 的动态路由? 怎么获取传过来的值？
