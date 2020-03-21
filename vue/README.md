@@ -88,7 +88,7 @@ computed 本质是一个惰性求值的观察者。
 
 computed 内部实现了一个惰性的 watcher,也就是 computed watcher,computed watcher 不会立刻求值,同时持有一个 dep 实例。
 
-其内部通过 this.dirty 属性标记计算属性是否需要重新求值。
+其内部通过 `this.dirty` 属性标记计算属性是否需要重新求值。
 
 当 computed 的依赖状态发生改变时,就会通知这个惰性的 watcher,
 
