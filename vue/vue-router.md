@@ -52,21 +52,45 @@ Vue 路由在 Android 机上有问题，babel 问题，安装 babel polypill 插
 
 ## vue-router 是什么?它有哪些组件
 
+Vue Router 是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌。
 
+组件：
+
+* router-link
+
+* router-view
 
 ## 怎么定义 vue-router 的动态路由? 怎么获取传过来的值？
 
+```js
+const router = new VueRouter({
+  routes: [
+    // 动态路径参数 以冒号开头
+    { path: '/user/:id', component: User }
+  ]
+})
+
+```
+
+`$route.params.id` 访问
+
 ## $route 和 $router 的区别
 
-## vue-router的两种模式
+$router 是路由实例
+
+$route 表示当前激活的路由的状态信息，包含了当前 URL 解析得到的信息，还有 URL 匹配到的路由记录 (route records)。
+
+## vue-router 的两种模式
+
+* hash
+
+* history
 
 ## vue-router实现路由懒加载（ 动态加载路由 ）
 
-## params和query的区别
-
 ## active-class 是哪个组件的属性？
 
-## vue-loader 是什么？使用它的用途有哪些？
+设置链接激活时使用的 CSS 类名。默认值可以通过路由的构造选项 `linkActiveClass` 来全局配置。
 
 **怎么定义 vue-router 的动态路由? 怎么获取传过来的值**
 
