@@ -119,6 +119,11 @@ $route 表示当前激活的路由的状态信息，包含了当前 URL 解析�
   window.history.replaceState(stateObject, title, URL)
   ```
 
+  * `stateObject`: 当浏览器跳转到新的状态时，将触发popState事件，该事件将携带这个stateObject参数的副本
+
+  * `title`: 所添加记录的标题
+
+  * `URL`: 所添加记录的URL
 
 
 
