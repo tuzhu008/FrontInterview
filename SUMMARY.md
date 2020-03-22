@@ -125,7 +125,7 @@
 ## React
 
 * [React](react/react.md)
-* Redux
+* [Redux](react/redux.md)
 * React-Native
 * Electron
 
