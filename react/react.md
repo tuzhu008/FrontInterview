@@ -76,6 +76,8 @@ React 特性
 
   此生命周期在后代组件抛出错误后被调用。 
 
+  `componentDidCatch()` 会在“提交”阶段被调用，因此允许执行副作用。 
+
 [组件生命周期图谱](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 虚拟 DOM，虚拟 DOM 的 diff 算法
