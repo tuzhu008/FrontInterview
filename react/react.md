@@ -56,11 +56,27 @@ React 特性
 
   `getSnapshotBeforeUpdate()` 在最近一次渲染输出（提交到 DOM 节点）之前调用。它使得组件能在发生更改之前从 DOM 中捕获一些信息（例如，滚动位置）。此生命周期的任何返回值将作为参数传递给 `componentDidUpdate()`。
 
-* `componentDidUpdate`：组件已经更新
+* `componentDidUpdate`
 
-**销毁阶段：**
+  `componentDidUpdate()` 会在更新后会被立即调用。首次渲染不会执行此方法。
 
-* componentWillUnmount：组件即将销毁
+**卸载阶段：**
+
+* `componentWillUnmount`
+
+  会在组件卸载及销毁之前直接调用。
+
+**错误处理：**
+
+* `static getDerivedStateFromError`
+
+  此生命周期会在后代组件抛出错误后被调用。 它将抛出的错误作为参数，并返回一个值以更新 `state`
+
+* `componentDidCatch`
+
+  此生命周期在后代组件抛出错误后被调用。 
+
+[组件生命周期图谱](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 虚拟 DOM，虚拟 DOM 的 diff 算法
 
