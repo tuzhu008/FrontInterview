@@ -106,7 +106,6 @@ Keys 是 React 用于追踪哪些列表中元素被修改、被添加或者被�
 
 当状态变更的时候，重新构造一棵新的对象树。然后用新的树和旧的树进行比较，记录两棵树差异把 2 所记录的差异应用到步骤 1 所构建的真正的 DOM 树上，视图就更新了。
 
-
 ## react diff 原理
 
 * 把树形结构按照层级分解，只比较同级元素。
@@ -119,4 +118,93 @@ Keys 是 React 用于追踪哪些列表中元素被修改、被添加或者被�
 
 * 选择性子树渲染。开发人员可以重写 shouldComponentUpdate 提高 diff 的性能。
 
+## React 中 refs 的作用是什么？
 
+Refs 是 React 提供给我们的安全访问 DOM 元素或者某个组件实例的句柄。
+
+* createRef
+
+
+  ```js
+  class MyComponent extends React.Component { 
+    constructor(props) {
+      super(props);
+      this.myRef = React.createRef();
+    }
+    render() {
+      return <div ref={ this.myRef } />;
+    }
+  }
+  ```
+
+* 回调
+
+  ```js
+  class CustomTextInput extends React.Component {
+    constructor(props) {
+      super(props);
+
+      this.textInput = null;
+    }
+
+    render () {
+      return (<input type="text" ref={ el => this.textInput = el } />);
+    }
+  }
+  ```
+
+  ```js
+  function CustomTextInput(props) {
+    return (
+      <div>
+        <input ref={props.inputRef} />
+      </div>
+    );
+  }
+
+  class Parent extends React.Component {
+    render() {
+      return (
+        <CustomTextInput
+          inputRef={el => this.inputElement = el}
+        />
+      );
+    }
+  }
+  ```
+
+* useRef
+
+  该方式只能在函数式组件中使用
+
+  ```js
+  function MyInput () {
+    const inputRef = React.useRef(null);
+    return (<input type="text" ref={ inputRef } />);
+  }
+  ```
+
+* forwardRef
+
+  ```js
+  const CustomTextInput = React.forwardRef(props, ref) {
+    return (
+      <div>
+        <input ref={ ref } />
+      </div>
+    );
+  }
+
+  class Parent extends React.Component {
+    constructor (props) {
+      super(props);
+
+      this.ref = React.createRef();
+    }
+    render() {
+      return (
+        <CustomTextInput ref={ this.ref } />
+      );
+    }
+  }
+  ```
