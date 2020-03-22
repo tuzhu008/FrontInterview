@@ -27,3 +27,5 @@ Router 用于定义多个路由，当用户定义特定的 URL 时，如果此 U
 * 无需手动设置历史值：在 React Router v4 中，我们要做的就是将路由包装在 `<BrowserRouter>` 组件中。
 
 * 包是分开的：共有三个包，分别用于 Web、Native 和 Core。这使我们应用更加紧凑。基于类似的编码风格很容易进行切换。
+
+## React Router与常规路由有何不同？
