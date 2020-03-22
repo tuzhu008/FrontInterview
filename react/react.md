@@ -207,3 +207,67 @@ Refs 是 React 提供给我们的安全访问 DOM 元素或者某个组件实例
     }
   }
   ```
+
+## 类组件(Class component)和函数式组件(Functional component)之间有何不同
+
+* 类组件不仅允许你使用更多额外的功能，如组件自身的状态和生命周期钩子，也能使组件直接访问 store 并维持状态。
+
+* 当组件仅是接收 props，并将组件自身渲染到页面时，该组件就是一个 '无状态组件(stateless component)'，可以使用一个纯函数来创建这样的组件。这种组件也被称为哑组件(dumb components)或展示组件
+
+* 函数式组件没有实例
+
+但现在可以使用各种 Hook 突破这些限制，函数式组件可以拥有状态，拥有 ref 等等
+
+## 何为受控组件(controlled component)
+
+在 HTML 中，表单元素（如`<input>`、 `<textarea>` 和 `<select>`）之类的表单元素通常自己维护 `state`，并根据用户输入进行更新。而在 React 中，可变状态（mutable state）通常保存在组件的 `state` 属性中，并且只能通过使用 `setState()` 来更新。
+
+我们可以把两者结合起来，使 React 的 `state` 成为“唯一数据源”。渲染表单的 React 组件还控制着用户输入过程中表单发生的操作。被 React 以这种方式控制取值的表单输入元素就叫做“受控组件”。
+
+## 何为高阶组件(higher order component)
+
+高阶组件本质上是一个函数，它接收其他组件作为参数，通过组合的方式，返回一个新的组件。
+
+原理上用了闭包。
+
+## 描述事件在 React 中的处理方式。
+
+为了解决跨浏览器兼容性问题，React 根据 W3C 规范来定义了合成事件。
+
+React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏览器的原生事件的跨浏览器包装器。
+
+除兼容所有浏览器外，它还拥有和浏览器原生事件相同的接口，包括 `stopPropagation()` 和 `preventDefault()`。
+
+可以使用 `nativeEvent` 属性来获取浏览器的底层事件。
+
+有趣的是，React 实际上并没有将事件附加到子节点本身。React 将使用单个事件监听器监听顶层的所有事件。这对于性能是有好处的，这也意味着在更新 DOM 时，React 不需要担心跟踪事件监听器。
+
+`SyntheticEvent` 是合并而来。这意味着 `SyntheticEvent` 对象可能会被重用，而且在事件回调函数被调用后，所有的属性都会无效。出于性能考虑，你不能通过异步访问事件。
+
+## createElement 和 cloneElement 有什么区别？
+
+* `React.createElement()`
+
+  ```js
+  React.cloneElement(
+    type,
+    [props],
+    [...children]
+  );
+  ```
+
+  JSX 语法就是用 `React.createElement()` 来构建 React 元素的。
+  
+  它接受三个参数，第一个参数可以是一个标签名。如 div、span，或者 React 组件。第二个参数为传入的属性。第三个以及之后的参数，皆作为组件的子组件。
+
+* cloneElement
+
+  ```js
+  React.cloneElement(
+    element,
+    [props],
+    [...children]
+  );
+  ```
+
+  以 element 元素为样板克隆并返回新的 React 元素。返回元素的 props 是将新的 props 与原始元素的 props 浅层合并后的结果。新的子元素将取代现有的子元素，而来自原始元素的 key 和 ref 将被保留。
