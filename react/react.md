@@ -44,9 +44,19 @@ React 特性
 
   组件接受到新属性或者新状态的时候（可以返回 false，接收数据后不更新，阻止 render 调用，后面的函数不会被继续执行了）
 
-* `componentWillUpdate`：组件即将更新不能修改属性和状态
+* `componentWillUpdate`
+
+  组件即将更新不能修改属性和状态
+
+  现名为 `UNSAFE_componentWillUpdate`，已过时，不该使用
 
 * `render`：组件重新描绘
+
+* `getSnapshotBeforeUpdate`
+
+  `getSnapshotBeforeUpdate()` 在最近一次渲染输出（提交到 DOM 节点）之前调用。
+  它使得组件能在发生更改之前从 DOM 中捕获一些信息（例如，滚动位置）。
+  此生命周期的任何返回值将作为参数传递给 `componentDidUpdate()`。
 
 * `componentDidUpdate`：组件已经更新
 
