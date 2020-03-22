@@ -6,29 +6,49 @@ React 特性
 
 ## 组件生命周期
 
-**初始化阶段：**
+**挂载阶段：**
 
-* getDefaultProps：获取实例的默认属性
+当组件实例被创建并插入 DOM 中时，其生命周期调用顺序如下：
 
-* getInitialState：获取每个实例的初始化状态
+* `constructor()`：获取实例的默认属性
 
-* componentWillMount：组件即将被装载、渲染到页面上
+* `static getDerivedStateFromProps()`
 
-* render：组件在这里生成虚拟的 DOM 节点
+  会在调用 `render` 方法之前调用，并且在初始挂载及后续更新时都会被调用。它应返回一个对象来更新 `state`，如果返回 `null` 则不更新任何内容。
 
-* componentDidMount：组件真正在被装载之后
+  此方法适用于罕见的用例，即 `state` 的值在任何时候都取决于 `props`。
 
-**运行中状态：**
+* `componentWillMount`：组件即将被装载、渲染到页面上
 
-* componentWillReceiveProps：组件将要接收到属性的时候调用
+  现在名字也叫 `UNSAFE_componentWillMount()`，该方法虽然在 17 上仍然可以使用，但已过时，在未来会被删除。
 
-* shouldComponentUpdate：组件接受到新属性或者新状态的时候（可以返回 false，接收数据后不更新，阻止 render 调用，后面的函数不会被继续执行了）
+  有一个常见的误解是，在 `componentWillMount` 中获取数据可以避免第一次渲染为空的状态。实际上，这是不对的，因为 React 总是在 `componentWillMount` 之后立即执行 render。如果在 `componentWillMount` 触发时数据不可用，那么第一次 `render` 仍然会显示加载的状态，而不管你在哪里初始化获取数据。这就是为什么在绝大多数情况下，将获取数据移到 `componentDidMount` 没有明显效果的原因。
 
-* componentWillUpdate：组件即将更新不能修改属性和状态
+* `render`：组件在这里生成虚拟的 DOM 节点
 
-* render：组件重新描绘
+* `componentDidMount`：组件真正在被装载之后
 
-* componentDidUpdate：组件已经更新
+  会在组件挂载后（插入 DOM 树中）立即调用。
+
+  依赖于 DOM 节点的初始化应该放在这里。如需通过网络请求获取数据，此处是实例化请求的好地方。
+
+  这个方法是比较适合添加订阅的地方。如果添加了订阅，请不要忘记在 `componentWillUnmount()` 里取消订阅
+
+**更新：**
+
+当组件的 props 或 state 发生变化时会触发更新。组件更新的生命周期调用顺序如下：
+
+* `static getDerivedStateFromProps()`
+
+* `shouldComponentUpdate`
+
+  组件接受到新属性或者新状态的时候（可以返回 false，接收数据后不更新，阻止 render 调用，后面的函数不会被继续执行了）
+
+* `componentWillUpdate`：组件即将更新不能修改属性和状态
+
+* `render`：组件重新描绘
+
+* `componentDidUpdate`：组件已经更新
 
 **销毁阶段：**
 
