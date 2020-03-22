@@ -1,6 +1,6 @@
 # React
 
-## 什么是React？
+## 什么是 React？
 
 * React 是 Facebook 在 2011 年开发的前端 JavaScript 库。
 
@@ -19,6 +19,18 @@
 * 它可以进行服务器端渲染。
 
 * 以写 js 方式构建应用
+
+## React 的一些主要优点
+
+* 它提高了应用的性能
+
+* 可以方便地在客户端和服务器端使用
+
+* 由于 JSX，代码的可读性很好
+
+* React 很容易与 Meteor，Angular 等其他框架集成
+
+* 使用React，编写UI测试用例变得非常容易
 
 React 特性
 
