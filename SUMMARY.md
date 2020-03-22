@@ -126,7 +126,7 @@
 
 * [React](react/react.md)
 * [Redux](react/redux.md)
-* React Router
+* [React Router](react/react-router.md)
 * React-Native
 * Electron
 
