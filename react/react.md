@@ -124,7 +124,6 @@ Refs 是 React 提供给我们的安全访问 DOM 元素或者某个组件实例
 
 * createRef
 
-
   ```js
   class MyComponent extends React.Component { 
     constructor(props) {
