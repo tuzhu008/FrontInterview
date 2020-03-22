@@ -65,7 +65,7 @@ Store 是一个 JavaScript 对象，它可以保存程序的状态，并提供�
 
 ## Redux 与 Flux 有何不同？
 
-| Redux | Flux |
+| Flux | Redux |
 | :--- | :--- |
 | Store 包含状态和更改逻辑 | Store 和更改逻辑是分开的 |
 | 有多个 Store | 只有一个 Store |
@@ -73,4 +73,6 @@ Store 是一个 JavaScript 对象，它可以保存程序的状态，并提供�
 | 有单一调度器 | 没有调度器的概念 |
 | React 组件订阅 store | 容器组件是有联系的 |
 | 状态是可变的 | 状态是不可改变的 |
+
+
 
