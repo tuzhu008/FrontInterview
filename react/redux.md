@@ -28,15 +28,15 @@ Redux 是当今最热门的前端开发库之一。它是 JavaScript 程序的�
 
 ## Redux 遵循的三个原则是什么？
 
-* 单一事实来源
+* **单一事实来源**
 
   整个应用的状态存储在单个 store 中的对象/状态树里。单一状态树可以更容易地跟踪随时间的变化，并调试或检查应用程序。
 
-* 状态是只读的
+* **状态是只读的**
 
   改变状态的唯一方法是去触发一个动作。动作是描述变化的普通 JS 对象。就像 state 是数据的最小表示一样，该操作是对数据更改的最小表示。
 
-* 使用纯函数进行更改
+* **使用纯函数进行更改**
 
   为了指定状态树如何通过操作进行转换，你需要纯函数。纯函数是那些返回值仅取决于其参数值的函数。
 
@@ -110,3 +110,26 @@ Store 是一个 JavaScript 对象，它可以保存程序的状态，并提供�
 
 
 
+## API
+
+**顶级 API**
+
+* `createStore(reducer, [preloadedState], [enhancer])`
+
+* `combineReducers(reducers) `
+
+* `applyMiddleware(...middlewares) `
+
+* `bindActionCreators(actionCreators, dispatch)`
+
+* `compose(...functions) `
+
+**Store API**
+
+* `getState()`
+
+* `dispatch(action)`
+
+* `subscribe(listener)`
+
+* `replaceReducer(nextReducer)`
