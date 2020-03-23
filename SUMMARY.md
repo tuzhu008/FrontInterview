@@ -25,7 +25,7 @@
 * [浏览器](/base/browser/README.md)
   * [工作原理](/base/browser/liu-lan-qi-gong-zuo-yuan-li.md)
   * [渲染过程](/base/browser/xuan-ran-guo-cheng.md)
-  * 回流、重绘
+  * [回流、重绘](base/browser/hui-liu-3001-zhong-hui.md)
 * [JavaScript](/base/javascript/README.md)
   * [闭包](base/javascript/bi-bao.md)
   * [作用域链](/base/javascript/scopeChain.md)
