@@ -108,21 +108,20 @@ Store 是一个 JavaScript 对象，它可以保存程序的状态，并提供�
 
   Redux 准确地说明了代码的组织方式，这使得代码在团队使用时更加一致和简单。
 
-
-
 ## API
 
 **顶级 API**
 
 * `createStore(reducer, [preloadedState], [enhancer])`
 
-* `combineReducers(reducers) `
+* 
+* `combineReducers(reducers)`
 
-* `applyMiddleware(...middlewares) `
+* `applyMiddleware(...middlewares)`
 
 * `bindActionCreators(actionCreators, dispatch)`
 
-* `compose(...functions) `
+* `compose(...functions)`
 
 **Store API**
 
@@ -133,3 +132,6 @@ Store 是一个 JavaScript 对象，它可以保存程序的状态，并提供�
 * `subscribe(listener)`
 
 * `replaceReducer(nextReducer)`
+
+
+
