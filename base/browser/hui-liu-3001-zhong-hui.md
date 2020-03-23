@@ -23,3 +23,36 @@
 * 页面一开始渲染的时候（这肯定避免不了）
 
 * 浏览器的窗口尺寸变化（因为回流是根据视口的大小来计算元素的位置和大小的）
+
+**注意：回流一定会触发重绘，而重绘不一定会回流**
+
+根据改变的范围和程度，渲染树中或大或小的部分需要重新计算，有些改变会触发整个页面的重排，比如，滚动条出现的时候或者修改了根节点。
+
+## 减少回流和重绘
+
+由于重绘和重排可能代价比较昂贵，因此最好就是可以减少它的发生次数。为了减少发生次数，我们可以合并多次对DOM和样式的修改，然后一次处理掉。考虑这个例子：
+
+```js
+const el = document.getElementById('test');
+el.style.padding = '5px';
+el.style.borderLeft = '1px';
+el.style.borderRight = '2px';
+```
+
+例子中，有三个样式属性被修改了，每一个都会影响元素的几何结构，引起回流。当然，大部分现代浏览器都对其做了优化，因此，只会触发一次重排。但是如果在旧版的浏览器或者在上面代码执行的时候，有其他代码访问了布局信息(上文中的会触发回流的布局信息)，那么就会导致三次重排。
+
+因此，我们可以合并所有的改变然后依次处理，比如我们可以采取以下的方式：
+
+* 使用cssText
+
+  ```js
+  const el = document.getElementById('test');
+  el.style.cssText += 'border-left: 1px; border-right: 2px; padding: 5px;';
+  ```
+
+* 修改CSS的class
+
+  ```js
+  const el = document.getElementById('test');
+  el.className += ' active';
+  ```
