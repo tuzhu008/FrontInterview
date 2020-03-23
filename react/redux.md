@@ -114,8 +114,11 @@ Store 是一个 JavaScript 对象，它可以保存程序的状态，并提供�
 
 * `createStore(reducer, [preloadedState], [enhancer])`
 
-* 
+  创建 Store 实例
+
 * `combineReducers(reducers)`
+
+  将多个 reducer 函数合并为一个根 reducer
 
 * `applyMiddleware(...middlewares)`
 
