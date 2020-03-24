@@ -111,6 +111,7 @@
 * [回文](suan-fa/hui-wen.md)
   * [构造回文](/suan-fa/plalindrome/gou-zao-hui-wen.md)
   * [最大回文](suan-fa/plalindrome/zui-da-hui-wen.md)
+* 斐波拉契数列
 
 ## Node
 
