@@ -11,3 +11,13 @@
 **原因：**闭包函数的作用域链中引用了另一个函数的活动对象（变量对象）。
 
 闭包所保存的是整个变量对象，而不是某个特殊变量。
+
+```js
+function animalFactory (name) {
+  return function () {
+    return name;
+  }
+}
+
+animalFactory('dog')() // dog
+```
