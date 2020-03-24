@@ -29,6 +29,10 @@ SubType.prototype.getSubValue = function () {
 ```js
 function SuperType () {
   this.colors = ['red', 'green'];
+
+  this.getColors = function () {
+    return this.colors;
+  }
 }
 
 function SubType () {
