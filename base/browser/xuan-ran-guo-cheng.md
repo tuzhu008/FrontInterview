@@ -4,7 +4,7 @@
 
 浏览器是多进程的
 
-* Browser 进程
+* Browser 进程   
 
   浏览器主进程，只有一个。作用：
 
@@ -332,11 +332,9 @@ console.log(5);
 5
 4
 1
-
 ```
 
 `new Promise` 里的函数是直接执行的算做主程序里，而且 `.then` 后面的才会放到微任务中。
-
 
 另外，请注意下 Promise 的 polyfill 与官方版本的区别：
 
@@ -366,7 +364,7 @@ timerFunc = () => {
 
 不过，现在的Vue（2.5+）的nextTick实现移除了Mutation Observer的方式（据说是兼容性原因），取而代之的是使用MessageChannel（当然，默认情况仍然是Promise，不支持才兼容的）。
 
-MessageChannel属于宏任务，优先级是：setImmediate->MessageChannel->setTimeout，所以Vue（2.5+）内部的nextTick与2.4及之前的实现是不一样的，需要注意下。
+MessageChannel属于宏任务，优先级是：setImmediate-&gt;MessageChannel-&gt;setTimeout，所以Vue（2.5+）内部的nextTick与2.4及之前的实现是不一样的，需要注意下。
 
 ## 参考
 
