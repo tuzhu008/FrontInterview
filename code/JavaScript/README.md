@@ -153,50 +153,6 @@ function once (func) {
 }
 ```
 
-## 将原生的 ajax 封装成 promise
-
-```js
-function ajax (options) {
-    const { method = 'GET', url, headers = {}, timeout = 20000, data } = options;
-    return new Promise(function (resolve, reject) {
-        const xhr = new XMLHttpRequest();
-        const headerEntries = Object.entries(headers);
-        let requestURL = url;
-        let requestBody = data;
-
-        if (method === 'GET' || method === 'HEAD') {
-            requestURL = encode(url, data);
-            requestBody = null;
-        } else {
-            requestBody = JSON.parse(data);
-        }
-
-        xhr.open(method, url);
-
-        for (let [key, value] of headerEntries) {
-            xhr.setRequestHeader(key, value);
-        }
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status !== 200) {
-                    resolve(JSON.parse(xhr.responseText));
-                } else {
-                    reject();
-                }
-
-            }
-        }
-
-        xhr.timeout = function () {
-            reject('超时');
-        }
-
-        xhr.send(requestBody);
-    });
-}
-```
-
 ## JS 监听对象属性的改变
 
 * 在 ES5 中可以用过 `Object.defineProperty` 来实现已有属性的监听
