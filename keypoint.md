@@ -8,7 +8,7 @@
 | [闭包](/base/javascript/bi-bao.md) |  |
 | Http |  |
 | 浏览器渲染 |  |
-| Ajax |  |
+| [Ajax](//base/javascript/ajax.md) |  |
 | [跨域](//base/javascript/ajax.md) |  |
 | [安全](//base/security/README.md) |  |
 | [Event Loop](//base/javascript/eventLoop.md) |  |
