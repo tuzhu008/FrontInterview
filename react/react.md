@@ -365,3 +365,7 @@ React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏�
 * 内存浪费严重
 
 * 由于循环依赖性，组件模型需要围绕 models 和 views 进行创建
+
+## React 如何管理事件
+
+## React Fiber
