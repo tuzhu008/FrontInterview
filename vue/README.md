@@ -254,3 +254,6 @@ vue 操作数据，jQuery 操作 dom
 
 ## vue-loader 是什么？使用它的用途有哪些？
 
+## 像vue-router，vuex他们都是作为vue插件，请说一下他们分别都是如何在vue中生效的？
+
+通过 vue 的插件系统，用 `vue.mixin` 混入到全局，在每个组件的生命周期的某个阶段注入组件实例。

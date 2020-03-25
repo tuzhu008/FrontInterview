@@ -368,4 +368,10 @@ React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏�
 
 ## React 如何管理事件
 
+* React事件使用了事件委托的机制，一般事件委托的作用都是为了减少页面的注册事件数量，减少内存开销，优化浏览器性能，React这么做也是有这么一个目的，除此之外，也是为了能够更好的管理事件，实际上，React中所有的事件最后都是被委托到了 document这个顶级DOM上
+
+* 既然所有的事件都被委托到了 document上，那么肯定有一套管理机制，所有的事件都是以一种先进先出的队列方式进行触发与回调
+
+* 既然都已经接管事件了，那么不对事件做些额外的事情未免有些浪费，于是 React中就存在了自己的 合成事件(SyntheticEvent)，合成事件由对应的 EventPlugin负责合成，不同类型的事件由不同的 plugin合成，例如 SimpleEvent Plugin、TapEvent Plugin等
+
 ## React Fiber
