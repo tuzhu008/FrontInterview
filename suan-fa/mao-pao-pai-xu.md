@@ -10,15 +10,14 @@
 
 ```js
 function sort (arr) {
-  for (let i = 1; i < arr.length; i++) {
-    let curr = arr[i];
-    let j = i;
-
-    for (j; curr < arr[j - 1]; j--) {
-      arr[j] = arr[j - 1];
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0, len = arr.length - 1 - i; j < len; j++) {
+      if (arr[j + 1] < arr[j]) {
+        let temp = arr[j + 1];
+        arr[j + 1] = arr[j];
+        arr[j] = temp;
+      }
     }
-
-    arr[j] = curr;
   }
 
   return arr;
