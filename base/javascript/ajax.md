@@ -36,7 +36,6 @@ readystate
 | 3 | 接收 | 已接收到部分响应数据 |
 | 5 | 完成 | 接收到全部响应数据，数据处于可用状态 |
 
-
 ## 事件
 
 * readystatechange
@@ -150,10 +149,11 @@ CORS 背后的基本思想，就是使用自定义的 HTTP 头部让浏览器与
   ```
   Origin: https://www.test.com
   ```
+
 * 服务器如果认为这个请求可以接受，就在 `Access-Control-Allow-Origin` 响应头部中慧发相同源信息
 
   ```
-  Access-Control-Allow-Orig: https://www.test.com
+  Access-Control-Allow-Origin: https://www.test.com
   ```
 
   如果没有这个响应头，或者这个头部的源信息不匹配，浏览器就会驳回请求。
@@ -183,7 +183,7 @@ img.src = 'http://www.examole.com/1e332132';
 **缺点：**
 
 * 只能发送 GET 请求
- 
+
 * 无法访问服务器的响应文本
 
 ### JSONP
@@ -201,7 +201,7 @@ callback({ "name": "wahaha" });
 JSONP 由两部分组成：回调函数和数据。
 
 * 回调函数：当响应到来时应该在页面中调用的函数，回调函数的名字一般是在请求中指定的
-  
+
 * 数据：传入回调函数的 JSON 数据
 
 ```js
@@ -215,9 +215,8 @@ document.body.appendChild(script);
 **缺点：**
 
 * 安全：JSONP 是从其他域中加载代码执行，有可能含有恶意代码。
- 
-* 不易确认请求状态
 
+* 不易确认请求状态
 
 ### Comet
 
@@ -230,3 +229,4 @@ Comet 是服务器向页面推送数据的技术。
 同源策略对 WebSocket 不适用。至于是否会与某个域中的页面通信，则完全取决于服务器。
 
 WebSocket 只能通过连接发送纯文本数据，所以对于复杂的数据结构，在通过连接发送之前必须进行序列化。
+
