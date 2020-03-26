@@ -4,6 +4,8 @@
 
 ## 算法动画演示
 
+![](/assets/选择排序.jpeg)
+
 ## 实现
 
 ### JavaScript
