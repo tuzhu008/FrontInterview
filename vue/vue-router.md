@@ -184,6 +184,10 @@ const Baz = () => import(/* webpackChunkName: "group-foo" */ './Baz.vue')
 
 ## history 和 hash 模式的区别
 
+* history 模式利用了 html5 的新 API `pushState` 和 `replaceState`，这两个参数会修改浏览器的访问栈，只会改变 URL，但并不会引起页面刷新。
+
+* hash 模式使用浏览器修改 hash 不用导致页面刷新的原理，通过监听 `hashChange` 事件作出响应。
+
 ## 页面如何随路由变化
 
 ## 参考
