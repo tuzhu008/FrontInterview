@@ -174,10 +174,10 @@
   * [中介者模式](/others/DesignPatterns/Mediator.md)
   * [备忘录模式](/others/DesignPatterns/Memento.md)
   * [观察者模式](/others/DesignPatterns/Observer.md)
-  * 状态模式
-  * 策略模式
-  * 模板方法模式
-  * 访问者模式
+  * [状态模式](/others/DesignPatterns/State.md)
+  * [策略模式](/others/DesignPatterns/Strategy.md)
+  * [模板方法模式](/others/DesignPatterns/TemplateMethod.md)
+  * [访问者模式](/others/DesignPatterns/Visitor.md)
 * [函数式编程](/others/functional.md)
 * [TDD、BDD](/others/tdd.md)
 * [面向对象](/others/oop.md)
