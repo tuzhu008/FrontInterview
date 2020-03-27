@@ -10,7 +10,7 @@
 
 * [原型模式（Prototype）](//others/DesignPatterns/Prototype.md)
 
-* [单列模式（Singleton）](/单例)
+* [单列模式（Singleton）](///others/DesignPatterns/Singleton.md)
 
 **结构型：**
 
