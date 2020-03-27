@@ -12,15 +12,18 @@
 
 ```js
 function sort (arr) {
-  for (let i = 1; i < arr.length; i++) {
-    let curr = arr[i];
+  for (let i = 1, len = arr.length; i < len; i++) {
+    const tmp = arr[i];
     let j = i;
 
-    for (j; curr < arr[j - 1]; j--) {
+    while (j > 0 && tmp < arr[j - 1]) {
       arr[j] = arr[j - 1];
+      j--;
     }
 
-    arr[j] = curr;
+    if (i !== j) {
+      arr[j] = tmp;
+    }
   }
 
   return arr;
