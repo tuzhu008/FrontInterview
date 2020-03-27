@@ -107,7 +107,7 @@
 * [计数排序](suan-fa/ji-shu-pai-xu.md)
 * [基数排序](/suan-fa/RadixSort.md)
 * [桶排序](suan-fa/tong-pai-xu.md)
-* 外部排序
+* [外部排序](suan-fa/wai-bu-pai-xu.md)
 * [回文](suan-fa/hui-wen.md)
   * [构造回文](/suan-fa/plalindrome/gou-zao-hui-wen.md)
   * [最大回文](suan-fa/plalindrome/zui-da-hui-wen.md)
@@ -196,6 +196,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
-
 
