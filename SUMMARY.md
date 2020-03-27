@@ -155,6 +155,7 @@
 ## Others
 
 * [设计模式](/others/design_mode.md)
+  * 工厂
 * [函数式编程](/others/functional.md)
 * [TDD、BDD](/others/tdd.md)
 * [面向对象](/others/oop.md)
