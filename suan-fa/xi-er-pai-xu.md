@@ -14,13 +14,18 @@
 
 ```js
 function sort (arr) {
-  for (let gap = parseInt(arr.length / 2); gap > 0; gap = parseInt(gap / 2)) {
-    for (let i = gap; i < arr.length; i++) {
-      let tmp = arr[i];
+  const getGap = (value) => parseInt(value / 2);
+
+  for (let gap = getGap(arr.length); gap > 0; gap = getGap(gap)) {
+    for (let i = gap, len = arr.length; i < len; i++) {
+      const tmp = arr[i];
       let j = i;
-      for (j; j >= gap && tmp < arr[j - gap]; j -= gap) {
+
+      while (j > gap && tmp < arr[j - gap]) {
         arr[j] = arr[j - gap];
+        j -= gap;
       }
+
       arr[j] = tmp;
     }
   }
