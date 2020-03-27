@@ -154,26 +154,26 @@
 
 ## Others
 
-* [设计模式](/others/design_mode.md)
-  * 抽象工厂模式
-  * 构建者模式
-  * 工厂方法模式
-  * 原型模式
-  * 单列模式
-  * 适配器模式
-  * 桥接模式
-  * 组合模式
-  * 装饰着模式
-  * 外观模式
-  * 享元模式
-  * 代理模式
-  * 职责链模式
-  * 命名模式
-  * 解释器模式
-  * 迭代器模式
-  * 中介者模式
-  * 备忘录模式
-  * 观察者模式
+* [设计模式](/others/DesignPatterns/README.md)
+  * [抽象工厂模式](/others/DesignPatterns/AbstractFactory.md)
+  * [构建者模式](/others/DesignPatterns/Builder.md)
+  * [工厂方法模式](/others/DesignPatterns/FactoryMethod.md)
+  * [原型模式](/others/DesignPatterns/Prototype.md)
+  * [单列模式](/others/DesignPatterns/Singleton.md)
+  * [适配器模式](/others/DesignPatterns/Adapter.md)
+  * [桥接模式](/others/DesignPatterns/Bridge.md)
+  * [组合模式](/others/DesignPatterns/Compositor.md)
+  * [装饰着模式](/others/DesignPatterns/Decorator.md)
+  * [外观模式](/others/DesignPatterns/Facade.md)
+  * [享元模式](/others/DesignPatterns/Flyweight.md)
+  * [代理模式](/others/DesignPatterns/Proxy.md)
+  * [职责链模式](/others/DesignPatterns/ChianOfResponsibility.md)
+  * [命名模式](/others/DesignPatterns/Command.md)
+  * [解释器模式](/others/DesignPatterns/Interpreter.md)
+  * [迭代器模式](/others/DesignPatterns/Iterator.md)
+  * [中介者模式](/others/DesignPatterns/Mediator.md)
+  * [备忘录模式](/others/DesignPatterns/Memento.md)
+  * [观察者模式](/others/DesignPatterns/Observer.md)
   * 状态模式
   * 策略模式
   * 模板方法模式
@@ -196,4 +196,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
