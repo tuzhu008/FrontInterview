@@ -159,7 +159,7 @@
   * [构建者模式](/others/DesignPatterns/Builder.md)
   * [工厂方法模式](/others/DesignPatterns/FactoryMethod.md)
   * [原型模式](/others/DesignPatterns/Prototype.md)
-  * [单列模式](/others/DesignPatterns/Singleton.md)
+  * [单列模式](//others/DesignPatterns/Singleton.md)
   * [适配器模式](/others/DesignPatterns/Adapter.md)
   * [桥接模式](/others/DesignPatterns/Bridge.md)
   * [组合模式](/others/DesignPatterns/Compositor.md)
@@ -196,4 +196,6 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
+
+
 
