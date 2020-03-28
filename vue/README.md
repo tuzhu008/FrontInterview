@@ -257,3 +257,252 @@ vue 操作数据，jQuery 操作 dom
 ## 像vue-router，vuex他们都是作为vue插件，请说一下他们分别都是如何在vue中生效的？
 
 通过 vue 的插件系统，用 `vue.mixin` 混入到全局，在每个组件的生命周期的某个阶段注入组件实例。
+
+## 对于Vue是一套渐进式框架的理解
+
+给多少材料干多少活儿
+
+## vue.js 的两个核心是什么？
+
+* 数据驱动
+
+* 组件系统
+
+## vue 常用的修饰符
+
+**时间修饰符：**
+
+* .stop
+
+* .prevent
+
+* .capture
+
+* .self
+
+* .once
+
+* .passive
+
+5、v-on可以监听多个方法吗？
+
+6、vue中 key 值的作用
+
+7、vue-cli工程升级vue版本
+
+8、vue事件中如何使用event对象？
+
+9、$nextTick的使用
+
+10、Vue 组件中 data 为什么必须是函数
+
+11、v-for 与 v-if 的优先级
+
+12、vue中子组件调用父组件的方法
+
+13、vue中 keep-alive 组件的作用
+
+14、vue中如何编写可复用的组件？
+
+15、什么是vue生命周期和生命周期钩子函数？
+
+16、vue生命周期钩子函数有哪些？
+
+17、vue如何监听键盘事件中的按键？
+
+18、vue更新数组时触发视图更新的方法
+
+19、vue中对象更改检测的注意事项
+
+20、解决非工程化项目初始化页面闪动问题
+
+21、v-for产生的列表，实现active的切换
+
+22、v-model语法糖的组件中的使用
+
+23、十个常用的自定义过滤器
+
+24、vue等单页面应用及其优缺点
+
+25、什么是vue的计算属性？
+
+26、vue-cli提供的几种脚手架模板
+
+27、vue父组件如何向子组件中传递数据？
+
+28、vue-cli开发环境使用全局常量
+
+29、vue-cli生产环境使用全局常量
+
+30、vue弹窗后如何禁止滚动条滚动？
+
+31、计算属性的缓存和方法调用的区别
+
+32、vue-cli中自定义指令的使用
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+vue-router
+1、vue-router如何响应 路由参数 的变化？
+
+2、完整的 vue-router 导航解析流程
+
+3、vue-router有哪几种导航钩子（ 导航守卫 ）？
+
+4、vue-router的几种实例方法以及参数传递
+
+5、vue-router的动态路由匹配以及使用
+
+6、vue-router如何定义嵌套路由？
+
+7、<router-link></router-link>组件及其属性
+
+8、vue-router实现路由懒加载（ 动态加载路由 ）
+
+9、vue-router路由的两种模式
+
+10、history路由模式与后台的配合
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+vuex
+1、什么是vuex？
+
+2、使用vuex的核心概念
+
+3、vuex在vue-cli中的应用
+
+4、组件中使用 vuex 的值和修改值的地方？
+
+5、在vuex中使用异步修改
+
+6、pc端页面刷新时实现vuex缓存
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+http请求
+1、Promise对象是什么？
+
+2、axios、fetch与ajax有什么区别？
+
+3、什么是JS的同源策略和跨域问题？
+
+4、如何解决跨域问题？
+
+5、vue-cli中如何使用JSON数据模拟？
+
+6、vue-cli中http请求的统一管理。
+
+7、axios有什么特点？
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+UI样式
+1、.vue组件的scoped属性的作用
+
+2、如何让CSS只在当前组件中起作用？
+
+3、vue-cli中常用的UI组件库
+
+4、如何适配移动端？【 经典 】
+
+5、移动端常用媒体查询的使用
+
+6、垂直居中对齐
+
+7、vue-cli中如何使用背景图片？
+
+8、使用表单禁用时移动端样式问题
+
+9、多种类型文本超出隐藏问题
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+常用功能
+1、vue中如何实现tab切换功能？
+
+2、vue中如何利用 keep-alive 标签实现某个组件缓存功能？
+
+3、vue中实现切换页面时为左滑出效果
+
+4、vue中父子组件如何相互调用方法？
+
+5、vue中央事件总线的使用
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+混合开发
+1、vue如何调用 原生app 提供的方法？
+
+2、原生app 调用 vue 提供的方法，并将值传递到 .vue 组件中
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+生产环境
+1、vue打包命令是什么？
+
+2、vue打包后会生成哪些文件？
+
+3、如何配置 vue 打包生成文件的路径？
+
+4、vue如何优化首屏加载速度？
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+MVVM设计模式
+1、MVC、MVP与MVVM模式
+
+2、MVC、MVP与MVVM的区别
+
+3、常见的实现MVVM几种方式
+
+4、Object.defineProperty()方法
+
+5、实现一个自己的MVVM（原理剖析）
+
+6、 ES6中类和定义
+
+7、JS中的文档碎片
+
+8、解构赋值
+
+9、Array.from与Array.reduce
+
+10、递归的使用
+
+11、Obj.keys()与Obj.defineProperty
+
+12、发布-订阅模式
+
+13、实现MVVM的思路分析
+
+参考答案： https://www.kancloud.cn/hanxu...
+
+源码剖析
+1、vue内部与运行机制：
+
+Vue.js 全局运行机制
+响应式系统的基本原理
+什么是 Virtual DOM？
+如何编译template 模板？
+diff算法
+批量异步更新策略及 nextTick 原理？
+proxy代理？
+2、vuex工作原理详解
+
+Vue.mixin
+Vue.use
+参考答案： https://www.kancloud.cn/hanxu...
+
+深入拓展
+1、vue开发命令 npm run dev 输入后的执行过程
+
+2、vue的服务器端渲染
+
+3、从零写一个npm安装包
+
+4、vue-cli中常用到的加载器
+
+5、webpack的特点
+
+参考答案： https://www.kancloud.cn/hanxu...
