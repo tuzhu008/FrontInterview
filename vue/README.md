@@ -100,14 +100,14 @@ computed 内部实现了一个惰性的 watcher,也就是 computed watcher,compu
 
 computed watcher 通过 this.dep.subs.length 判断有没有订阅者,
 
-有的话,会重新计算,然后对比新旧值,如果变化了,会重新渲染。 (Vue 想确保不仅仅是计算属性依赖的值发生变化，而是当计算属性最终计算的值发生变化时才会触发渲染 watcher 重新渲染，本质上是一种优化。)
+有的话,会重新计算,然后对比新旧值,如果变化了,会重新渲染。 \(Vue 想确保不仅仅是计算属性依赖的值发生变化，而是当计算属性最终计算的值发生变化时才会触发渲染 watcher 重新渲染，本质上是一种优化。\)
 
-没有的话,仅仅把 this.dirty = true。 (当计算属性依赖于其他数据时，属性并不会立即重新计算，只有之后其他地方需要读取属性的时候，它才会真正计算，即具备 lazy（懒计算）特性。)
+没有的话,仅仅把 this.dirty = true。 \(当计算属性依赖于其他数据时，属性并不会立即重新计算，只有之后其他地方需要读取属性的时候，它才会真正计算，即具备 lazy（懒计算）特性。\)
 
 ## 谈一谈 nextTick 的原理
 
 * 线程
-  
+
   GUI、JS 引擎线程、事件触发线程、定时线程、http 线程
 
 * 执行栈
@@ -201,7 +201,7 @@ Proxy 不仅可以定义 getter 和 setter，还可以针对其他一些操作�
 
 ## 为什么使用key?
 
-key 是给每一个 vnode 的唯一 id，依靠 key,我们的 diff 操作可以更准确、更快速 (对于简单列表页渲染来说 diff 节点也更快,但会产生一些隐藏的副作用,比如可能不会产生过渡效果,或者在某些节点有绑定数据（表单）状态，会出现状态错位。)
+key 是给每一个 vnode 的唯一 id，依靠 key,我们的 diff 操作可以更准确、更快速 \(对于简单列表页渲染来说 diff 节点也更快,但会产生一些隐藏的副作用,比如可能不会产生过渡效果,或者在某些节点有绑定数据（表单）状态，会出现状态错位。\)
 
 `key` 的特殊属性主要用在 Vue 的虚拟 DOM 算法，在新旧 nodes 对比时辨识 VNodes。
 
@@ -284,6 +284,10 @@ vue 操作数据，jQuery 操作 dom
 
 * .passive
 
+| 修饰符 | 作用 |
+| :--- | :--- |
+|  |  |
+
 5、v-on可以监听多个方法吗？
 
 6、vue中 key 值的作用
@@ -340,9 +344,9 @@ vue 操作数据，jQuery 操作 dom
 
 32、vue-cli中自定义指令的使用
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-vue-router
+vue-router  
 1、vue-router如何响应 路由参数 的变化？
 
 2、完整的 vue-router 导航解析流程
@@ -363,9 +367,9 @@ vue-router
 
 10、history路由模式与后台的配合
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-vuex
+vuex  
 1、什么是vuex？
 
 2、使用vuex的核心概念
@@ -378,9 +382,9 @@ vuex
 
 6、pc端页面刷新时实现vuex缓存
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-http请求
+http请求  
 1、Promise对象是什么？
 
 2、axios、fetch与ajax有什么区别？
@@ -395,9 +399,9 @@ http请求
 
 7、axios有什么特点？
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-UI样式
+UI样式  
 1、.vue组件的scoped属性的作用
 
 2、如何让CSS只在当前组件中起作用？
@@ -416,9 +420,9 @@ UI样式
 
 9、多种类型文本超出隐藏问题
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-常用功能
+常用功能  
 1、vue中如何实现tab切换功能？
 
 2、vue中如何利用 keep-alive 标签实现某个组件缓存功能？
@@ -429,16 +433,16 @@ UI样式
 
 5、vue中央事件总线的使用
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-混合开发
+混合开发  
 1、vue如何调用 原生app 提供的方法？
 
 2、原生app 调用 vue 提供的方法，并将值传递到 .vue 组件中
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-生产环境
+生产环境  
 1、vue打包命令是什么？
 
 2、vue打包后会生成哪些文件？
@@ -447,16 +451,16 @@ UI样式
 
 4、vue如何优化首屏加载速度？
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-MVVM设计模式
+MVVM设计模式  
 1、MVC、MVP与MVVM模式
 
 2、MVC、MVP与MVVM的区别
 
 3、常见的实现MVVM几种方式
 
-4、Object.defineProperty()方法
+4、Object.defineProperty\(\)方法
 
 5、实现一个自己的MVVM（原理剖析）
 
@@ -470,31 +474,31 @@ MVVM设计模式
 
 10、递归的使用
 
-11、Obj.keys()与Obj.defineProperty
+11、Obj.keys\(\)与Obj.defineProperty
 
 12、发布-订阅模式
 
 13、实现MVVM的思路分析
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-源码剖析
+源码剖析  
 1、vue内部与运行机制：
 
-Vue.js 全局运行机制
-响应式系统的基本原理
-什么是 Virtual DOM？
-如何编译template 模板？
-diff算法
-批量异步更新策略及 nextTick 原理？
-proxy代理？
+Vue.js 全局运行机制  
+响应式系统的基本原理  
+什么是 Virtual DOM？  
+如何编译template 模板？  
+diff算法  
+批量异步更新策略及 nextTick 原理？  
+proxy代理？  
 2、vuex工作原理详解
 
-Vue.mixin
-Vue.use
-参考答案： https://www.kancloud.cn/hanxu...
+Vue.mixin  
+Vue.use  
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
 
-深入拓展
+深入拓展  
 1、vue开发命令 npm run dev 输入后的执行过程
 
 2、vue的服务器端渲染
@@ -505,4 +509,5 @@ Vue.use
 
 5、webpack的特点
 
-参考答案： https://www.kancloud.cn/hanxu...
+参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
+
