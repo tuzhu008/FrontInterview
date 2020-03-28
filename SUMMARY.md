@@ -125,6 +125,8 @@
 * [Vue3](vue/vue3.md)
 * [Vuex](vue/vuex.md)
 * [Vue-Router](vue/vue-router.md)
+* Vue-loader
+* Vue-CLI
 
 ## React
 
