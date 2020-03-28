@@ -17,6 +17,7 @@
 | :--- | :--- | :--- |
 | CSRF | Cross-Site Request Forgery | 跨站点请求伪造 |
 | XSS | Cross-Site Scripting | 跨站脚本 |
+| DDoS | Distributed Denial of Service |  |
 
 ## 网络
 
