@@ -272,21 +272,14 @@ vue 操作数据，jQuery 操作 dom
 
 **事件修饰符：**
 
-* .stop
-
-* .prevent
-
-* .capture
-
-* .self
-
-* .once
-
-* .passive
-
 | 修饰符 | 作用 |
 | :--- | :--- |
-|  |  |
+| .stop |  |
+| .prevent |  |
+| .capture |  |
+| .self |  |
+| .once |  |
+| .passive |  |
 
 5、v-on可以监听多个方法吗？
 
