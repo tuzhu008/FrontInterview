@@ -324,6 +324,46 @@ vue 操作数据，jQuery 操作 dom
 
 8、vue事件中如何使用event对象？
 
+* 作为处理函数默认参数
+
+  ```html
+  <div id="example-2">
+    <!-- `greet` 是在下面定义的方法名 -->
+    <button v-on:click="greet">Greet</button>
+  </div>
+  ```
+
+  ```js
+  methods: {
+    greet: function (event) {
+      alert('Hello ' + this.name + '!')
+      if (event) {
+        alert(event.target.tagName)
+      }
+    }
+  }
+  ```
+
+* 显示传递
+
+  ```html
+  <button v-on:click="warn('Form cannot be submitted yet.', $event)">
+    Submit
+  </button>
+  ```
+
+  ```js
+  methods: {
+    warn: function (message, event) {
+      // 现在我们可以访问原生事件对象
+      if (event) {
+        event.preventDefault()
+      }
+      alert(message)
+    }
+  }
+  ```
+
 9、$nextTick的使用
 
 10、Vue 组件中 data 为什么必须是函数
