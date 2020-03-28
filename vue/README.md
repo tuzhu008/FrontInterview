@@ -274,12 +274,12 @@ vue 操作数据，jQuery 操作 dom
 
 | 修饰符 | 作用 |
 | :--- | :--- |
-| .stop |  |
-| .prevent |  |
-| .capture |  |
-| .self |  |
-| .once |  |
-| .passive |  |
+| .stop | 阻止事件继续传播，作用同 `event.stopPropagation()` |
+| .prevent | 阻止默认行为，作用同 `event.preventDefault()` |
+| .capture | 添加事件监听器时使用事件捕获模式 |
+| .self | 只当在 `event.target` 是当前元素自身时触发处理函数 |
+| .once | 事件只会触发一次 |
+| .passive | 指示 `addEventListener` 添加的处理函数永远也不会调用 `event.preventDefault`，就算调用，也会失效   |
 
 **按键修饰符：**
 
