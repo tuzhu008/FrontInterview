@@ -285,6 +285,20 @@ vue 操作数据，jQuery 操作 dom
 
 | 修饰符 | 作用 |
 | :--- | :--- |
+| .enter |  |
+| .tab |  |
+| .delete |  |
+| .esc |  |
+| .space |  |
+| .up |  |
+| .down |  |
+| .left |  |
+| .right|  |
+
+**系统修饰符：**
+
+| 修饰符 | 作用 |
+| :--- | :--- |
 | .ctrl |  |
 | .alt |  |
 | .shift |  |
