@@ -320,9 +320,7 @@ vue 操作数据，jQuery 操作 dom
 | .keyCode |  |
 | .sync |  |
 
-7、vue-cli工程升级vue版本
-
-8、vue事件中如何使用event对象？
+## vue事件中如何使用event对象？
 
 * 作为处理函数默认参数
 
@@ -364,98 +362,105 @@ vue 操作数据，jQuery 操作 dom
   }
   ```
 
-9、$nextTick的使用
+## Vue 组件中 data 为什么必须是函数
 
-10、Vue 组件中 data 为什么必须是函数
+确保每个组件实例都有一个不同的数据源，使用对象的形式的，所有的实例会共享同一数据源。
 
-11、v-for 与 v-if 的优先级
+## v-for 与 v-if 的优先级
 
-12、vue中子组件调用父组件的方法
+当 `v-if` 与 `v-for` 一起使用时，`v-for` 具有比 `v-if` 更高的优先级。
 
-13、vue中 keep-alive 组件的作用
+## vue中子组件调用父组件的方法
 
-14、vue中如何编写可复用的组件？
+子组件实例含有一个指向父组件实例的属性 `$parent`
 
-15、什么是vue生命周期和生命周期钩子函数？
+## vue中如何编写可复用的组件？
 
-16、vue生命周期钩子函数有哪些？
+* 全局
 
-17、vue如何监听键盘事件中的按键？
+  `Vue.component`
 
-18、vue更新数组时触发视图更新的方法
+* 局部
 
-19、vue中对象更改检测的注意事项
+  ```js
+  var ComponentOne = {};
+  ```
 
-20、解决非工程化项目初始化页面闪动问题
+## vue中对象更改检测的注意事项
 
-21、v-for产生的列表，实现active的切换
+* 数组
 
-22、v-model语法糖的组件中的使用
+  数组方法中，只有 `push`、`pop`、`shift`、`unshift`、`splice`、`sort`、`reverse` 这些方法修改数组时，能有响应效果。
 
-23、十个常用的自定义过滤器
+  使用索引修改、修改数组长度等都无效，因此需要改用其他方式实现。
 
-24、vue等单页面应用及其优缺点
+* 对象
 
-25、什么是vue的计算属性？
+  Vue 无法检测到对象属性的添加和删除。
 
-26、vue-cli提供的几种脚手架模板
+  使用 `Vue.set` 设置响应属性。 
 
-27、vue父组件如何向子组件中传递数据？
+## 解决非工程化项目初始化页面闪动问题
 
-28、vue-cli开发环境使用全局常量
+这个闪动问题是由于实例还没准备完毕导致， 使用 `v-cloak` 指令和 CSS 规则如 `[v-cloak] { display: none }` 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。
 
-29、vue-cli生产环境使用全局常量
+## v-model语法糖的组件中的使用
 
-30、vue弹窗后如何禁止滚动条滚动？
+`v-model` 是 `v-bind:value` 和 `v-on:input` 的语法糖
 
-31、计算属性的缓存和方法调用的区别
+## vue等单页面应用及其优缺点
 
-32、vue-cli中自定义指令的使用
+优点：
 
-参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
+1. 分离前后端关注点，前端负责界面显示，后端负责数据存储和计算，各司其职，不会把前后端的逻辑混杂在一起；
 
-vue-router  
-1、vue-router如何响应 路由参数 的变化？
+2. 减轻服务器压力，服务器只用出数据就可以，不用管展示逻辑和页面合成，吞吐能力会提高几倍；
 
-2、完整的 vue-router 导航解析流程
+3. 效果类似桌面应用，用户体验好。
 
-3、vue-router有哪几种导航钩子（ 导航守卫 ）？
+缺点：
 
-4、vue-router的几种实例方法以及参数传递
+* 不利于 SEO
 
-5、vue-router的动态路由匹配以及使用
+* 首次加载慢
 
-6、vue-router如何定义嵌套路由？
+## 什么是 vue 的计算属性？
 
-7、`<router-link></router-link>`组件及其属性
+vue 的三大数据来源之一，用以对数据进行加工，具有响应式的特点，惰性求值，只有在其它依赖数据变化时才进行计算，计算结果会进行缓存。
 
-8、vue-router实现路由懒加载（ 动态加载路由 ）
+## vue父组件如何向子组件中传递数据？
 
-9、vue-router路由的两种模式
+`props`、`Vuex`、`provide/inject`
 
-10、history路由模式与后台的配合
+## vue 弹窗后如何禁止滚动条滚动？
 
-参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
+* 阻止所有滚动
 
-vuex  
-1、什么是vuex？
+  在弹窗组件上使用 `@touchmove.prevent`
 
-2、使用vuex的核心概念
+* 阻止文档滚动
 
-3、vuex在vue-cli中的应用
-
-4、组件中使用 vuex 的值和修改值的地方？
-
-5、在vuex中使用异步修改
-
-6、pc端页面刷新时实现vuex缓存
-
-参考答案： [https://www.kancloud.cn/hanxu](https://www.kancloud.cn/hanxu)...
+  ```js
+  const scrollHandler = (() => {
+    let mo;
+    return {
+      stop () {
+        mo = function (e) {
+          e.preventDefault();
+        };
+        document.body.style.overflow = 'hidden';
+        document.addEventListener("touchmove", mo);
+      },
+      /***取消滑动限制***/
+      resume () {
+        document.body.style.overflow = ''; //出现滚动条
+        document.removeEventListener("touchmove", mo);
+      }
+    }
+  })()
+  ```
 
 http请求  
-1、Promise对象是什么？
-
-2、axios、fetch与ajax有什么区别？
 
 3、什么是JS的同源策略和跨域问题？
 
