@@ -317,6 +317,8 @@ vue 操作数据，jQuery 操作 dom
 | 修饰符 | 作用 |
 | :--- | :--- |
 | .exact |  |
+| .keyCode |  |
+| .sync |  |
 
 
 
