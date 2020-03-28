@@ -320,12 +320,6 @@ vue 操作数据，jQuery 操作 dom
 | .keyCode |  |
 | .sync |  |
 
-
-
-5、v-on可以监听多个方法吗？
-
-6、vue中 key 值的作用
-
 7、vue-cli工程升级vue版本
 
 8、vue事件中如何使用event对象？
