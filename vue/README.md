@@ -355,7 +355,7 @@ vue-router
 
 6、vue-router如何定义嵌套路由？
 
-7、<router-link></router-link>组件及其属性
+7、`<router-link></router-link>`组件及其属性
 
 8、vue-router实现路由懒加载（ 动态加载路由 ）
 
