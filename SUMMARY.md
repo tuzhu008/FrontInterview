@@ -33,7 +33,6 @@
   * [原型](/base/javascript/prototype.md)
   * [创建对象](/base/javascript/createObject.md)
   * [继承](/base/javascript/extends.md)
-  * Aibee
   * [事件循环](/base/javascript/eventLoop.md)
   * [异步](/base/javascript/async.md)
   * [this](base/javascript/this.md)
@@ -202,4 +201,4 @@
 * [XiaoMi](Company/xiaomi.md)
 * [饿了么](Company/e-le-yao.md)
 * [快手](Company/kuai-shou.md)
-
+* Aibee
