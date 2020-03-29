@@ -200,9 +200,25 @@ const Baz = () => import(/* webpackChunkName: "group-foo" */ './Baz.vue')
 
 * router.beforeEach
 
+  ```js
+  router.beforeEach((to, from, next) => {
+    /* 必须调用 `next` */
+  })
+  ```
+
 * router.beforeResolve
 
+  ```js
+  router.beforeResolve((to, from, next) => {
+    /* 必须调用 `next` */
+  })
+  ```
+
 * router.afterEach
+
+  ```js
+  router.afterEach((to, from) => {})
+  ```
 
 * router.push
 
