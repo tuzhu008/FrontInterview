@@ -40,9 +40,10 @@
 | 题目描述 | 地址 |
 | :--- | :--- |
 | MVVM | [简书：浅谈 MVC、MVP 和 MVVM 架构模式](https://www.jianshu.com/p/ebd2c5914d20) |
-| [浏览器渲染](//base/browser/xuan-ran-guo-cheng.md) | [How Browsers Work][1]   |
+| [浏览器渲染](//base/browser/xuan-ran-guo-cheng.md) | [How Browsers Work][1]、 [How Browsers Work2][2]  |
 | [Event Loop](//base/javascript/eventLoop.md) |  |
 | [安全](//base/security/README.md) |  |
 
 
 [1]: https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+[2]: http://taligarsiel.com/Projects/howbrowserswork1.htm#The_rendering_engine
