@@ -307,3 +307,11 @@ DOM2 3 扩展了 DOM API，以满足更多操作 XML 的需求，同时提供更
   element.addEventListener()
   element.removeEventListener()
   ```
+
+## DocumentFragment
+
+`DocumentFragment` 是一个 DOM 节点，当它被插入 DOM 时候，它将被其子元素给替代，也就是说，`DocumentFragment` 其实是一个虚拟的节点。
+
+`DocumentFragment` 节点不属于 DOM 的一部分，所以在对其子元素进行操作的不会导致重排。
+
+通常我们使用 `document.createDocumentFragment()` 来创建一个空的 `DocumentFragment`。
