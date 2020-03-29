@@ -196,19 +196,55 @@ const Baz = () => import(/* webpackChunkName: "group-foo" */ './Baz.vue')
 
 3、vue-router有哪几种导航钩子（ 导航守卫 ）？
 
-4、vue-router的几种实例方法以及参数传递
+## vue-router的几种实例方法以及参数传递
 
-5、vue-router的动态路由匹配以及使用
+* router.beforeEach
 
-6、vue-router如何定义嵌套路由？
+* router.beforeResolve
 
-7、`<router-link></router-link>`组件及其属性
+* router.afterEach
 
-8、vue-router实现路由懒加载（ 动态加载路由 ）
+* router.push
 
-9、vue-router路由的两种模式
+* router.replace
 
-10、history路由模式与后台的配合
+* router.go
+
+* router.back
+
+* router.forward
+
+* router.getMatchedComponents
+
+* router.resolve
+
+* router.addRoutes
+
+* router.onReady
+
+* router.onError
+
+## `<router-link></router-link>`组件及其属性
+
+  * to
+
+  * replace
+
+  * tag
+
+  * append
+
+  * exact
+
+  * active-class
+
+  * event
+
+  * exact-active-class
+
+## vue-router实现路由懒加载（ 动态加载路由 ）
+
+使用 Vue 的异步组件和 Webpack 的代码分割功能实现路由的懒加载
 
 ## 参考
 
