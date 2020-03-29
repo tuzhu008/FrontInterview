@@ -196,7 +196,7 @@ const Baz = () => import(/* webpackChunkName: "group-foo" */ './Baz.vue')
 
 3、vue-router有哪几种导航钩子（ 导航守卫 ）？
 
-## vue-router的几种实例方法以及参数传递
+## vue-router 的几种实例方法以及参数传递
 
 * router.beforeEach
 
