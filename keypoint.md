@@ -39,6 +39,7 @@
 
 | 题目描述 | 地址 |
 | :--- | :--- |
+| MVVM | [简书：浅谈 MVC、MVP 和 MVVM 架构模式](https://www.jianshu.com/p/ebd2c5914d20) |
 | [浏览器渲染](//base/browser/xuan-ran-guo-cheng.md) |  |
 | [Event Loop](//base/javascript/eventLoop.md) |  |
 | [安全](//base/security/README.md) |  |
