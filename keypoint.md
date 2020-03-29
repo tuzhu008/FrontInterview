@@ -32,8 +32,8 @@
 
 | 题目描述 | 地址 |
 | :--- | :--- |
-| XSS |  |
-| CSRF |  |
+| [XSS](/base/security/xss.md) |  |
+| [CSRF](/base/security/csrf.md) |  |
 
 ## 其他
 
