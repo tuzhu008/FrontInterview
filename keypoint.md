@@ -45,7 +45,5 @@
 | [安全](//base/security/README.md) |  |
 
 
-[Google][]
-
 [Google]: http://google.com/
 [1]: https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
