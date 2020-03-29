@@ -222,23 +222,71 @@ const Baz = () => import(/* webpackChunkName: "group-foo" */ './Baz.vue')
 
 * router.push
 
+  ```js
+  router.push(location, onComplete?, onAbort?)
+
+  router.push(location).then(onComplete).catch(onAbort)
+  ```
+
 * router.replace
+
+  ```js
+  router.replace(location, onComplete?, onAbort?)
+
+  router.replace(location).then(onComplete).catch(onAbort)
+  ```
 
 * router.go
 
+  ```js
+  router.go(n)
+  ```
+
 * router.back
+
+  ```js
+  router.back()
+  ```
 
 * router.forward
 
+  ```js
+  router.forward()
+  ```
+
 * router.getMatchedComponents
+
+  ```js
+  const matchedComponents: Array<Component> = router.getMatchedComponents(location?)
+  ```
 
 * router.resolve
 
+  ```js
+  const resolved: {
+    location: Location;
+    route: Route;
+    href: string;
+  } = router.resolve(location, current?, append?)
+  ```
+
 * router.addRoutes
+
+  ```js
+  router.addRoutes(routes: Array<RouteConfig>)
+  ```
 
 * router.onReady
 
+  ```js
+  router.onReady(callback, [errorCallback])
+  ```
+
 * router.onError
+
+  ```js
+  router.onError(callback)
+  ```
 
 ## `<router-link></router-link>`组件及其属性
 
