@@ -123,7 +123,7 @@
 ## Vue
 
 * [基础](/vue/README.md)
-* 原理
+* [原理](vue/yuan-li.md)
 * [Vue3](vue/vue3.md)
 * [Vuex](vue/vuex.md)
 * [Vue-Router](vue/vue-router.md)
