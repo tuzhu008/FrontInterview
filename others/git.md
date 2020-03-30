@@ -12,6 +12,10 @@
 
 ## 在 Git 中提交的命令是什么？
 
+```
+git commit -a
+```
+
 ## 什么是 Git 中的“裸存储库”？
 
 ## Git 是用什么语言编写的？
@@ -48,4 +52,5 @@
 
 ## 参考
 
-https://segmentfault.com/a/1190000019315509?utm_source=tag-newest
+[https://segmentfault.com/a/1190000019315509?utm\_source=tag-newest](https://segmentfault.com/a/1190000019315509?utm_source=tag-newest)
+
