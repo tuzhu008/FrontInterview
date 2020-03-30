@@ -154,7 +154,7 @@
 
 * Jenkins
 * Linux
-* Git
+* [Git](others/git.md)
 * [CI](others/ci.md)
 
 ## Others
