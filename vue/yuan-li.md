@@ -29,6 +29,78 @@ vdom是通过snabbdom.js库实现的,大概过程有以下三步：
 * diff（利用diff算法，比较oldVnode和newVnode之间有什么变化）
 * patch（把这些变化用打补丁的方式更新到真实dom上去）
 
+```js
+function sameVnode(oldVnode, vnode){
+  return vnode.key === oldVnode.key && vnode.sel === oldVnode.sel
+}
+```
+
+
+
+* **patch**: 
+
+```js
+function patch(oldVnode, vnode) {
+  if (sameVnode(oldVnode, vnode)) {
+    patchVnode(oldVnode, vnode)
+  } else {
+    const oEl = oldVnode.el;
+    let parentEle = api.parentNode(oEl);
+    createEle(vnode);
+    if (parentEle !== null) {
+      api.insertBefore(parentEle, vnode.el, api.nextSibling(oEl));
+      api.removeChild(parentEle, oldVnode.el);
+      oldVnode = null
+    }
+  }
+  return vnode
+}
+```
+
+* sameVnode
+
+  ```js
+  function sameVnode(oldVnode, vnode){
+    return vnode.key === oldVnode.key && vnode.sel === oldVnode.sel
+  }
+  ``
+
+* patchNode
+
+  ```js
+  patchVnode (oldVnode, vnode) {
+      const el = vnode.el = oldVnode.el
+      let i, oldCh = oldVnode.children, ch = vnode.children
+      if (oldVnode === vnode) return
+      if (oldVnode.text !== null && vnode.text !== null && oldVnode.text !== vnode.text) {
+          api.setTextContent(el, vnode.text)
+      }else {
+          updateEle(el, vnode, oldVnode)
+          if (oldCh && ch && oldCh !== ch) {
+              updateChildren(el, oldCh, ch)
+          }else if (ch){
+              createEle(vnode) //create el's children dom
+          }else if (oldCh){
+              api.removeChildren(el)
+          }
+      }
+  }
+  ```
+
+  节点的比较有5种情况：
+
+  1、if (oldVnode === vnode)，他们的引用一致，可以认为没有变化。
+
+  2、if(oldVnode.text !== null && vnode.text !== null && oldVnode.text !== vnode.text)，文本节点的比较，需要修改，则会调用Node.textContent = vnode.text。
+
+  3、if( oldCh && ch && oldCh !== ch ), 两个节点都有子节点，而且它们不一样，这样我们会调用updateChildren函数比较子节点，这是diff的核心，后边会讲到。
+
+  4、else if (ch)，只有新的节点有子节点，调用createEle(vnode)，vnode.el已经引用了老的dom节点，createEle函数会在老dom节点上添加子节点。
+
+  5、else if (oldCh)，新节点没有子节点，老节点有子节点，直接删除老节点。
+
+  遍历子节点：子节点其实是一个数组，是否首尾遍历的方式判断是否相等并检查顺序，不符合的情况下，会在 hash 表中通过 key 查找，找到则复用，没找到则创建新元素
+
 proxy代理？
 
 2、vuex工作原理详解
