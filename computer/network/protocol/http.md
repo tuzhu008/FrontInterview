@@ -25,6 +25,8 @@
 * 4xx 客户端错误状态码，服务器无法处理该请求 404 not found
 * 5xx 服务器内部错误状态码，服务器处理请求出错
 
+[https://www.runoob.com/http/http-status-codes.html](https://www.runoob.com/http/http-status-codes.html)
+
 ## Http协议由什么组成?
 
 请求报文包括三部分:
