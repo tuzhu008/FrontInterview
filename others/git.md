@@ -56,6 +56,10 @@ Git使用 C 语言编写。 GIT 很快，C 语言通过减少运行时的开销�
 
 `git fetch`也用于相同的目的，但它的工作方式略有不同。当你执行`git fetch`时，它会从所需的分支中提取所有新提交，并将其存储在本地存储库中的新分支中。如果要在目标分支中反映这些更改，必须在`git fetch`之后执行`git merge`。只有在对目标分支和获取的分支进行合并后才会更新目标分支。为了方便起见，请记住以下等式：
 
+```js
+git pull = git fetch + git merge
+```
+
 ## git中的“staging area”或“index”是什么？
 
 ## 什么是 git stash?
