@@ -45,6 +45,8 @@
 
 * 响应内容实体
 
+https://www.jianshu.com/p/9fa58c432e08
+
 ## http2 和 http 有什么区别？
 
 ## cache-control
