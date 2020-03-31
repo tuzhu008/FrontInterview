@@ -4,9 +4,39 @@
 
 Vue.js 全局运行机制
 
-响应式系统的基本原理
+## 响应式系统的基本原理
 
-什么是 Virtual DOM？
+使用 `Object.defineProperty()` 来设置一个对象的属性描述，其中包括 getter 和 setter 方法。
+
+每个组件实例都对应一个 watcher 实例，它会在组件渲染的过程中把“接触”过的数据属性记录为依赖。之后当依赖项的 setter 触发时，会通知 watcher，从而使它关联的组件重新渲染。
+
+## 什么是 Virtual DOM？
+
+真实 DOM 的 JavaScript 对象表示。
+
+虚拟 DOM 通过创建一个包含 `children` 属性的 VNode 实例来描述一个真实的 DOM 节点。
+
+这些虚拟节点与其 `children` 属性之间的引用关系，构成了一个虚拟 DOM 的树状结构。
+
+```js
+export interface VNode {
+  tag?: string;
+  data?: VNodeData;
+  children?: VNode[];
+  text?: string;
+  elm?: Node;
+  ns?: string;
+  context?: Vue;
+  key?: string | number;
+  componentOptions?: VNodeComponentOptions;
+  componentInstance?: Vue;
+  parent?: VNode;
+  raw?: boolean;
+  isStatic?: boolean;
+  isRootInsert: boolean;
+  isComment: boolean;
+}
+```
 
 如何编译template 模板？
 
@@ -27,8 +57,21 @@ vdom是通过snabbdom.js库实现的,大概过程有以下三步：
 * patch（把这些变化用打补丁的方式更新到真实dom上去）
 
 ```js
-function sameVnode(oldVnode, vnode){
-  return vnode.key === oldVnode.key && vnode.sel === oldVnode.sel
+function sameVnode (a, b) {
+  return (
+    a.key === b.key && (
+      (
+        a.tag === b.tag &&
+        a.isComment === b.isComment &&
+        isDef(a.data) === isDef(b.data) &&
+        sameInputType(a, b)
+      ) || (
+        isTrue(a.isAsyncPlaceholder) &&
+        a.asyncFactory === b.asyncFactory &&
+        isUndef(b.asyncFactory.error)
+      )
+    )
+  )
 }
 ```
 
