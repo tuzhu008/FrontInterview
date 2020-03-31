@@ -8,6 +8,26 @@ webpack 主要是基于入口的模块化打包器，通过各种 loader 和插�
 
 ## 有哪些常见的Loader？他们是解决什么问题的？
 
+* vue-loader
+
+  加载和转译 Vue 组件
+
+* url-loader
+
+  像 file loader 一样工作，但如果文件小于限制，可以返回 data URL
+
+  比如 图片、音频、视频、字体文件
+
+* babel-loader
+
+  加载 ES2015+ 代码，然后使用 Babel 转译为 ES5
+
+* ts-loader
+
+* raw-loader 加载文件原始内容（utf-8）
+
+* file-loader 将文件发送到输出文件夹，并返回（相对）URL
+
 有哪些常见的Plugin？他们是解决什么问题的？
 Loader和Plugin的不同？
 webpack的构建流程是什么?从读取配置到输出文件这个过程尽量说全
