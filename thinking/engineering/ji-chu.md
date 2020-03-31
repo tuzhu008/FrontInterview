@@ -159,14 +159,68 @@ Webpack 的运行流程是一个串行的过程，从启动到结束会依次执
 
 用webpack优化前端性能是指优化webpack的输出结果，让打包的最终结果在浏览器运行快速高效。
 
-* 压缩代码。删除多余的代码、注释、简化代码的写法等等方式。可以利用webpack的UglifyJsPlugin和ParallelUglifyPlugin来压缩JS文件， 利用cssnano（css-loader?minimize）来压缩css
+* 图片合并
+
+* 代码压缩、混淆、合并。删除多余的代码、注释、简化代码的写法等等方式。可以利用webpack的UglifyJsPlugin和ParallelUglifyPlugin来压缩JS文件， 利用cssnano（css-loader?minimize）来压缩css
 
 * 利用CDN加速。在构建过程中，将引用的静态资源路径修改为CDN上对应的路径。可以利用webpack对于output参数和各loader的publicPath参数来修改资源路径
 
 * 删除死代码（Tree Shaking）。将代码中永远不会走到的片段删除掉。可以通过在启动webpack时追加参数--optimize-minimize来实现
-提取公共代码。
+
+* 提取公共代码。
 
 如何提高webpack的构建速度？
-怎么配置单页应用？怎么配置多页应用？
-npm打包时需要注意哪些？如何利用webpack来更好的构建？
-如何在vue项目中实现按需加载？
+
+* 多入口情况下，使用CommonsChunkPlugin来提取公共代码
+
+* 通过externals配置来提取常用库
+
+* 利用DllPlugin和DllReferencePlugin预编译资源模块 通过DllPlugin来对那些我们引用但是绝对不会修改的npm包来进行预编译，再通过DllReferencePlugin将预编译的模块加载进来。
+
+* 使用Happypack 实现多线程加速编译
+
+* 使用webpack-uglify-parallel来提升uglifyPlugin的压缩速度。 原理上webpack-uglify-parallel采用了多核并行压缩来提升压缩速度
+
+* 使用Tree-shaking和Scope Hoisting来剔除多余代码
+
+## 怎么配置单页应用？怎么配置多页应用？
+
+单页应用可以理解为webpack的标准模式，直接在entry中指定单页应用的入口即可，这里不再赘述
+
+多页应用的话，可以使用webpack的 AutoWebPlugin来完成简单自动化的构建，但是前提是项目的目录结构必须遵守他预设的规范。 多页应用中要注意的是：
+
+* 每个页面都有公共的代码，可以将这些代码抽离出来，避免重复的加载。比如，每个页面都引用了同一套css样式表
+
+* 随着业务的不断扩展，页面可能会不断的追加，所以一定要让入口的配置足够灵活，避免每次添加新页面还需要修改构建配置
+
+## npm打包时需要注意哪些？如何利用webpack来更好的构建？
+
+Npm是目前最大的 JavaScript 模块仓库，里面有来自全世界开发者上传的可复用模块。你可能只是JS模块的使用者，但是有些情况你也会去选择上传自己开发的模块。 关于NPM模块上传的方法可以去官网上进行学习，这里只讲解如何利用webpack来构建。
+
+NPM模块需要注意以下问题：
+
+
+* 要支持CommonJS模块化规范，所以要求打包后的最后结果也遵守该规则。
+
+* Npm模块使用者的环境是不确定的，很有可能并不支持ES6，所以打包的最后结果应该是采用ES5编写的。并且如果ES5是经过转换的，请最好连同SourceMap一同上传。
+
+* Npm包大小应该是尽量小（有些仓库会限制包大小）
+
+* 发布的模块不能将依赖的模块也一同打包，应该让用户选择性的去自行安装。这样可以避免模块应用者再次打包时出现底层模块被重复打包的情况。
+
+* UI组件类的模块应该将依赖的其它资源文件，例如.css文件也需要包含在发布的模块里。
+
+基于以上需要注意的问题，我们可以对于webpack配置做以下扩展和优化：
+
+
+* CommonJS模块化规范的解决方案： 设置output.libraryTarget='commonjs2'使输出的代码符合CommonJS2 模块化规范，以供给其它模块导入使用
+
+* 输出ES5代码的解决方案：使用babel-loader把 ES6 代码转换成 ES5 的代码。再通过开启devtool: 'source-map'输出SourceMap以发布调试。
+
+* Npm包大小尽量小的解决方案：Babel 在把 ES6 代码转换成 ES5 代码时会注入一些辅助函数，最终导致每个输出的文件中都包含这段辅助函数的代码，造成了代码的冗余。解决方法是修改.babelrc文件，为其加入transform-runtime插件
+
+* 不能将依赖模块打包到NPM模块中的解决方案：使用externals配置项来告诉webpack哪些模块不需要打包。
+
+* 对于依赖的资源文件打包的解决方案：通过css-loader和extract-text-webpack-plugin来实现
+
+## 如何在vue项目中实现按需加载？
