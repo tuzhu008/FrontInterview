@@ -155,7 +155,17 @@ Webpack 的运行流程是一个串行的过程，从启动到结束会依次执
 
 * 最后一步，当 HMR 失败后，回退到 live reload 操作，也就是进行浏览器刷新来获取最新打包代码。
 
-如何利用webpack来优化前端性能？（提高性能和体验）
+## 如何利用webpack来优化前端性能？（提高性能和体验）
+
+用webpack优化前端性能是指优化webpack的输出结果，让打包的最终结果在浏览器运行快速高效。
+
+* 压缩代码。删除多余的代码、注释、简化代码的写法等等方式。可以利用webpack的UglifyJsPlugin和ParallelUglifyPlugin来压缩JS文件， 利用cssnano（css-loader?minimize）来压缩css
+
+* 利用CDN加速。在构建过程中，将引用的静态资源路径修改为CDN上对应的路径。可以利用webpack对于output参数和各loader的publicPath参数来修改资源路径
+
+* 删除死代码（Tree Shaking）。将代码中永远不会走到的片段删除掉。可以通过在启动webpack时追加参数--optimize-minimize来实现
+提取公共代码。
+
 如何提高webpack的构建速度？
 怎么配置单页应用？怎么配置多页应用？
 npm打包时需要注意哪些？如何利用webpack来更好的构建？
