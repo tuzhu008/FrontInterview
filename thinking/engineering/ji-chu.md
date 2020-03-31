@@ -42,6 +42,8 @@ dev:
 
 * webpack.HotModuleReplacementPlugin
 
+  启用热替换模块(Hot Module Replacement)，也被称为 HMR。
+
 * webpack.NamedModulesPlugin
 
 * webpack.NoEmitOnErrorsPlugin
