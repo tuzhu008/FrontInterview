@@ -93,6 +93,7 @@
 * [工程化](/thinking/engineering/README.md)
   * [Webpack](thinking/engineering/webpack.md)
   * [Gulp](thinking/engineering/gulp.md)
+  * [基础](thinking/engineering/ji-chu.md)
 * [自动化](/thinking/automation/README.md)
 * [架构](thinking/architecture/README.md)
 * Flux
