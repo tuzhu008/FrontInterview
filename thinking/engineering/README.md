@@ -38,7 +38,13 @@
 
 > 所以我很赞同这句话：与其费尽心思地告诉别人要遵守某种规则，以规避某种痛苦，倒不如从工具层面就消灭这种痛苦。
 
-从工具层面，社区又创造出Shadow DOM、CSS in JS和CSS Modules三种解决方案。Shadow DOM是WebComponents的标准。它能解决全局污染问题，但目前很多浏览器不兼容，对我们来说还很久远；CSS in JS是彻底抛弃CSS，使用JS或JSON来写样式。这种方法很激进，不能利用现有的CSS技术，而且处理伪类等问题比较困难；CSS Modules仍然使用CSS，只是让JS来管理依赖。它能够最大化地结合CSS生态和JS模块化能力，目前来看是最好的解决方案。Vue的scoped style也算是一种。
+从工具层面，社区又创造出Shadow DOM、CSS in JS和 CSS Modules 三种解决方案。
+
+* Shadow DOM 是 WebComponents 的标准。它能解决全局污染问题，但目前很多浏览器不兼容，对我们来说还很久远；
+
+* CSS in JS是彻底抛弃CSS，使用JS或JSON来写样式。这种方法很激进，不能利用现有的CSS技术，而且处理伪类等问题比较困难；
+
+* CSS Modules仍然使用CSS，只是让JS来管理依赖。它能够最大化地结合CSS生态和JS模块化能力，目前来看是最好的解决方案。Vue的scoped style也算是一种。
 
 ### 资源的模块化
 
