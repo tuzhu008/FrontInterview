@@ -24,11 +24,56 @@ webpack 主要是基于入口的模块化打包器，通过各种 loader 和插�
 
 * ts-loader
 
+* scss-loader
+
+* vue-style-loader
+
 * raw-loader 加载文件原始内容（utf-8）
 
 * file-loader 将文件发送到输出文件夹，并返回（相对）URL
 
-有哪些常见的Plugin？他们是解决什么问题的？
+https://www.webpackjs.com/loaders/
+
+## 有哪些常见的Plugin？他们是解决什么问题的？
+
+dev:
+
+* webpack.DefinePlugin
+
+* webpack.HotModuleReplacementPlugin
+
+* webpack.NamedModulesPlugin
+
+* webpack.NoEmitOnErrorsPlugin
+
+* HtmlWebpackPlugin
+
+* SkeletonWebpackPlugin
+
+prod:
+
+* webpack.DefinePlugin
+
+* UglifyJsPlugin
+
+* ExtractTextPlugin
+
+* OptimizeCSSPlugin
+
+* HtmlWebpackPlugin
+
+* webpack.HashedModuleIdsPlugin
+
+* webpack.optimize.ModuleConcatenationPlugin
+
+* webpack.optimize.CommonsChunkPlugin
+
+* CopyWebpackPlugin
+
+* CompressionWebpackPlugin
+
+* BundleAnalyzerPlugin
+
 Loader和Plugin的不同？
 webpack的构建流程是什么?从读取配置到输出文件这个过程尽量说全
 是否写过Loader和Plugin？描述一下编写loader或plugin的思路？
