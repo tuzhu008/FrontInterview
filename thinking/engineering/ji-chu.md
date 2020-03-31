@@ -40,6 +40,8 @@ dev:
 
 * webpack.DefinePlugin
 
+  DefinePlugin 允许创建一个在编译时可以配置的全局常量。
+
 * webpack.HotModuleReplacementPlugin
 
   启用热替换模块(Hot Module Replacement)，也被称为 HMR。
