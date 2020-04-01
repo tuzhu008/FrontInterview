@@ -32,7 +32,7 @@ webpack 主要是基于入口的模块化打包器，通过各种 loader 和插�
 
 * file-loader 将文件发送到输出文件夹，并返回（相对）URL
 
-https://www.webpackjs.com/loaders/
+[https://www.webpackjs.com/loaders/](https://www.webpackjs.com/loaders/)
 
 ## 有哪些常见的Plugin？他们是解决什么问题的？
 
@@ -44,7 +44,7 @@ dev:
 
 * webpack.HotModuleReplacementPlugin
 
-  启用热替换模块(Hot Module Replacement)，也被称为 HMR。
+  启用热替换模块\(Hot Module Replacement\)，也被称为 HMR。
 
 * webpack.NamedModulesPlugin
 
@@ -52,7 +52,7 @@ dev:
 
 * webpack.NoEmitOnErrorsPlugin
 
-  在编译出现错误时，使用 NoEmitOnErrorsPlugin 来跳过输出阶段。这样可以确保输出资源不会包含错误。对于所有资源，统计资料(stat)的 emitted 标识都是 false。
+  在编译出现错误时，使用 NoEmitOnErrorsPlugin 来跳过输出阶段。这样可以确保输出资源不会包含错误。对于所有资源，统计资料\(stat\)的 emitted 标识都是 false。
 
 * HtmlWebpackPlugin
 
@@ -88,7 +88,7 @@ dev:
 
 * webpack.optimize.CommonsChunkPlugin
 
-  CommonsChunkPlugin 插件，是一个可选的用于建立一个独立文件(又称作 chunk)的功能，这个文件包括多个入口 chunk 的公共模块。
+  CommonsChunkPlugin 插件，是一个可选的用于建立一个独立文件\(又称作 chunk\)的功能，这个文件包括多个入口 chunk 的公共模块。
 
 * CopyWebpackPlugin
 
@@ -104,16 +104,15 @@ dev:
 
 ## Loader和Plugin的不同？
 
-loader 用于对模块的源代码进行转换。loader 可以使你在 import 或"加载"模块时预处理文件。因此，loader 类似于其他构建工具中“任务(task)”，并提供了处理前端构建步骤的强大方法。loader 可以将文件从不同的语言（如 TypeScript）转换为 JavaScript，或将内联图像转换为 data URL。loader 甚至允许你直接在 JavaScript 模块中 import CSS文件！
+loader 用于对模块的源代码进行转换。loader 可以使你在 import 或"加载"模块时预处理文件。因此，loader 类似于其他构建工具中“任务\(task\)”，并提供了处理前端构建步骤的强大方法。loader 可以将文件从不同的语言（如 TypeScript）转换为 JavaScript，或将内联图像转换为 data URL。loader 甚至允许你直接在 JavaScript 模块中 import CSS文件！
 
 插件是 webpack 的支柱功能。webpack 自身也是构建于，你在 webpack 配置中用到的相同的插件系统之上！
 
 Plugins 目的在于解决 loader 无法实现的其他事。从打包优化和压缩，到重新定义环境变量，功能强大到可以用来处理各种各样的任务。webpack提供了很多开箱即用的插件：CommonChunkPlugin主要用于提取第三方库和公共模块，避免首屏加载的bundle文件，或者按需加载的bundle文件体积过大，导致加载时间过长，是一把优化的利器。而在多页面应用中，更是能够为每个页面间的应用程序共享代码创建bundle。
 
-
 ## webpack的构建流程是什么?从读取配置到输出文件这个过程尽量说全
-Webpack 的运行流程是一个串行的过程，从启动到结束会依次执行以下流程：
 
+Webpack 的运行流程是一个串行的过程，从启动到结束会依次执行以下流程：
 
 * 初始化参数：从配置文件和 Shell 语句中读取与合并参数，得出最终的参数；
 
@@ -131,9 +130,7 @@ Webpack 的运行流程是一个串行的过程，从启动到结束会依次执
 
 * 在以上过程中，Webpack 会在特定的时间点广播出特定的事件，插件在监听到感兴趣的事件后会执行特定的逻辑，并且插件可以调用 Webpack 提供的 API 改变 Webpack 的运行结果。
 
-
 ## 是否写过Loader和Plugin？描述一下编写loader或plugin的思路？
-
 
 ## webpack的热更新是如何做到的？说明其原理？
 
@@ -199,7 +196,6 @@ Npm是目前最大的 JavaScript 模块仓库，里面有来自全世界开发�
 
 NPM模块需要注意以下问题：
 
-
 * 要支持CommonJS模块化规范，所以要求打包后的最后结果也遵守该规则。
 
 * Npm模块使用者的环境是不确定的，很有可能并不支持ES6，所以打包的最后结果应该是采用ES5编写的。并且如果ES5是经过转换的，请最好连同SourceMap一同上传。
@@ -212,7 +208,6 @@ NPM模块需要注意以下问题：
 
 基于以上需要注意的问题，我们可以对于webpack配置做以下扩展和优化：
 
-
 * CommonJS模块化规范的解决方案： 设置output.libraryTarget='commonjs2'使输出的代码符合CommonJS2 模块化规范，以供给其它模块导入使用
 
 * 输出ES5代码的解决方案：使用babel-loader把 ES6 代码转换成 ES5 的代码。再通过开启devtool: 'source-map'输出SourceMap以发布调试。
@@ -224,3 +219,6 @@ NPM模块需要注意以下问题：
 * 对于依赖的资源文件打包的解决方案：通过css-loader和extract-text-webpack-plugin来实现
 
 ## 如何在vue项目中实现按需加载？
+
+
+
