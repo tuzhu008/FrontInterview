@@ -2,9 +2,9 @@
 
 我们可以把会话劫持攻击分为两种类型：
 
-1）中间人攻击(Man In The Middle，简称MITM)，
+* 中间人攻击(Man In The Middle，简称MITM)，
 
-2）注射式攻击（Injection）；
+* 注射式攻击（Injection）；
 
 并且，还可以把会话劫持攻击分为两种形式：
 
