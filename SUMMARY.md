@@ -144,7 +144,7 @@
 ## Java
 
 * [基础](/java/README.md)
-* SpringMVC
+* [SpringMVC](java/springmvc.md)
 
 ## 数据库
 
