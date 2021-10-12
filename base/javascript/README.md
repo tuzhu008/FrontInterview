@@ -1,17 +1,5 @@
 # JavaScript
 
-## 判断一个变量是数组有几种方式？
-
-* `instanceof`，原型判断，写法：`变量 instanceof Array`
-
-* `__proto__`，原型判断，写法：`变量.__proto__ === Array.prototype`
-
-* `constructor`，原型判断，写法：`变量.constructor === Array`
-
-* `Object.prototype.toString`，通过object类型的副属性class去判断的其中函数的class是Function，结果是`[object Function]`， 普通的对象是Object，结果是`[object Object]`，写法：`Object.prototype.toString.call(变量) === '[object Array]'`
-
-* `Array.isArray`，es6 新增的方法，写法：`Array.isArray(变量)`
-
 ## null 和 undefined 的区别
 
 * 意义不同
@@ -257,4 +245,18 @@ new 绑定：如果函数或者方法调用前带有换剪子 new, 它就构成�
 ## 暂时性死区
 
 `let` `const` 关键字声明的变量不会有 `var` 的变量提升，必须先声明后使用。
+
+## 判断一个变量是数组有几种方式？
+
+* `instanceof`，原型判断，写法：`变量 instanceof Array`
+
+* `__proto__`，原型判断，写法：`变量.__proto__ === Array.prototype`
+
+* `constructor`，原型判断，写法：`变量.constructor === Array`
+
+* `Object.prototype.toString`，通过object类型的副属性class去判断的其中函数的class是Function，结果是`[object Function]`， 普通的对象是Object，结果是`[object Object]`，写法：`Object.prototype.toString.call(变量) === '[object Array]'`
+
+* `Array.isArray`，es6 新增的方法，写法：`Array.isArray(变量)`
+
+
 
