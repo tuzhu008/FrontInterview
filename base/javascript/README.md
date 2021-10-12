@@ -332,5 +332,20 @@ axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js �
 7. Automatic transforms for JSON data（自动转换json数据）
 8. Client side support for protecting against XSRF（客户端支持自动防止XSRF）
 
+## 什么是跨域？如何处理？
+
+当一个请求url的**协议、域名、端口**三者之间任意一个与当前页面url不同即为跨域。
+
+> 出于浏览器的同源策略限制。同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说Web是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。同源策略会阻止一个域的javascript脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（protocol），主机（host）和端口号（port）。
+
+**非同源限制：**
+
+1. 无法读取非同源网页的 Cookie、LocalStorage 和 IndexedDB
+2. 无法接触非同源网页的 DOM
+3. 无法向非同源地址发送 AJAX 请求
+
+  
+
+
 
 
