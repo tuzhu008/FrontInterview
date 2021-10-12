@@ -10,6 +10,13 @@
 * 使用 css3 计算的方式居中元素 `calc` ，例如：left: `calc(50% - 元素固定宽度)`;
 * 使用弹性盒(`display：flex`)，`display: flex;justify-content: center;align-items: center;`
 
+## 如何把行内元素转成块级元素， 有多少种方式？
+
+* 使用 `display: block`
+* 使用 `float`
+* 使用 `position`（`absolute` 和 `fixed`）
+
+
 ## CSS 有什么特殊性？（优先级、计算特殊值）
 
 优先级：
