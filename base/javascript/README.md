@@ -258,5 +258,9 @@ new 绑定：如果函数或者方法调用前带有换剪子 new, 它就构成�
 
 * `Array.isArray`，es6 新增的方法，写法：`Array.isArray(变量)`
 
+## JS中如何区别Object 和 Array？
+
+`typeof` 一般测试基本类型（Undefined、Null、Boolean、Number、String\)，对引用类型（数组，对象，函数），数组和对象返回object，函数引用类型返回 `Function`。`typeof` 对于区分数组和对象是没有用的。
+
 
 
