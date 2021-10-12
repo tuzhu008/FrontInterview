@@ -1,5 +1,19 @@
 # JavaScript
 
+
+
+## 判断一个变量是数组有几种方式？
+
+* `instanceof `，原型判断，写法：`变量 instanceof Array`
+
+* `__proto__`，原型判断，写法：`变量.__proto__ === Array.prototype`
+
+* `constructor`，原型判断，写法：`变量.constructor === Array`
+
+* `Object.prototype.toString`，通过object类型的副属性class去判断的其中函数的class是Function，结果是`[object Function]`， 普通的对象是Object，结果是`[object Object]`，写法：`Object.prototype.toString.call(变量) === '[object Array]'`
+
+* Array.isArray，es6新增的方法，写法：Array.isArray\(变量\)
+
 ## null 和 undefined 的区别
 
 * 意义不同
@@ -176,7 +190,6 @@ JavaScript 具有自动垃圾收集机制，也就是说，执行环境会负责
 
 用于标识无用变量的策略可能会因实现而异。
 
-
 ### 回收机制
 
 JS 的垃圾回收机制有两种：标记清除、引用计数
@@ -219,8 +232,6 @@ JS 的垃圾回收机制有两种：标记清除、引用计数
 > [几种垃圾回收算法](https://www.jianshu.com/p/a8a04fd00c3c)  
 > [V8 之旅： 垃圾回收器](http://newhtml.net/v8-garbage-collection/)
 
-
-
 ## setTimeout、setInterval 和 requetAnimationFrame 之间的区别
 
 setTimeout 延迟执行。timeout 最小时间为 4ms，之后会将回调函数添加到事件队列中。
@@ -248,3 +259,4 @@ new 绑定：如果函数或者方法调用前带有换剪子 new, 它就构成�
 ## 暂时性死区
 
 `let` `const` 关键字声明的变量不会有 `var` 的变量提升，必须先声明后使用。
+
