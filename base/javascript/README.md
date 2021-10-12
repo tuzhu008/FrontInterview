@@ -346,11 +346,11 @@ axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js �
 
 **解决方法：**
 
-1、**设置 document.domain 解决无法读取非同源网页的 Cookie问题**
+**1、设置 document.domain 解决无法读取非同源网页的 Cookie问题**
 
 > 因为浏览器是通过 document.domain 属性来检查两个页面是否同源，因此只要通过设置相同的document.domain，两个页面就可以共享Cookie（此方案仅限主域相同，子域不同的跨域应用场景。）
 
-2、**跨文档通信 API：window.postMessage\(\)**
+**2、跨文档通信 API：window.postMessage\(\)**
 
 > 调用postMessage方法实现父窗口 [http://test1.com](https://link.zhihu.com/?target=http%3A//test1.com) 向子窗口 [http://test2.com](https://link.zhihu.com/?target=http%3A//test2.com) 发消息（子窗口同样可以通过该方法发送消息给父窗口），它可用于解决以下方面的问题：  
 > 1.页面和其打开的新窗口的数据传递  
@@ -376,6 +376,16 @@ window.addEventListener('message', function (e) {
   console.log(e.data);   // e.data   发送的消息
 },false);
 ```
+
+**3、JSONP**
+
+> JSONP 是服务器与客户端跨源通信的常用方法。最大特点就是简单适用，兼容性好（兼容低版本IE），缺点是只支持get请求，不支持post请求。
+>
+> 核心思想：网页通过添加一个&lt;script&gt;元素，向服务器请求 JSON 数据，服务器收到请求后，将数据放在一个指定名字的回调函数的参数位置传回来。
+
+**4、CORS**
+
+
 
 
 
