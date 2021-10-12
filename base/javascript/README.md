@@ -385,7 +385,11 @@ window.addEventListener('message', function (e) {
 
 **4、CORS**
 
-
+> CORS 是跨域资源分享（Cross-Origin Resource Sharing）的缩写。它是 W3C 标准，属于跨源 AJAX 请求的根本解决方法。
+>
+> 普通跨域请求：只需服务器端设置 Access-Control-Allow-Origin
+>
+> 带cookie跨域请求：前后端都需要进行设置（根据xhr.withCredentials字段判断是否带有cookie）
 
 
 
