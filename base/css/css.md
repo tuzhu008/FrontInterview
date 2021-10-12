@@ -1,5 +1,15 @@
 # CSS
 
+## HTML中居中的方式
+
+* `text-align: center` 方式，水平居中块级元素中的行内元素，如 `inline`，`inline-block`
+* `margin: 0 auto` 方式，这种对齐方式要求内部元素是块级元素，并且不能脱离文档流（如设置`position: absolute`）,否则无效。
+* `display: table-cell`，配合 `width`，`text-align: center`, `vertical-align: middle` 让大小不固定元素垂直居中,这个方式将要对其的元素设置成为一个`td`，`float`、`absolute` 等属性都会影响它的实现，不响应 `margin` 属性;
+* 垂直居中，行内元素的垂直居中把 `height` 和 `line-height` 的值设置成一样的即可。
+* 使用 css3 的 `translate` 水平垂直居中元素 ，设置 `top：50%`，`left：50%`，然后使用 `transform` 来向左向上偏移半个内元素的宽和高。
+* 使用 css3 计算的方式居中元素 `calc` ，例如：left: `calc(50% - 元素固定宽度)`;
+* 使用弹性盒(`display：flex`)，`display: flex;justify-content: center;align-items: center;`
+
 ## CSS 有什么特殊性？（优先级、计算特殊值）
 
 优先级：

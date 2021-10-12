@@ -21,3 +21,6 @@ function animalFactory (name) {
 
 animalFactory('dog')() // dog
 ```
+
+
+

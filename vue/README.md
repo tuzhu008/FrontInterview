@@ -279,7 +279,7 @@ vue 操作数据，jQuery 操作 dom
 | .capture | 添加事件监听器时使用事件捕获模式 |
 | .self | 只当在 `event.target` 是当前元素自身时触发处理函数 |
 | .once | 事件只会触发一次 |
-| .passive | 指示 `addEventListener` 添加的处理函数永远也不会调用 `event.preventDefault`，就算调用，也会失效   |
+| .passive | 指示 `addEventListener` 添加的处理函数永远也不会调用 `event.preventDefault`，就算调用，也会失效 |
 
 **按键修饰符：**
 
@@ -293,7 +293,7 @@ vue 操作数据，jQuery 操作 dom
 | .up |  |
 | .down |  |
 | .left |  |
-| .right|  |
+| .right |  |
 
 **系统修饰符：**
 
@@ -398,7 +398,7 @@ vue 操作数据，jQuery 操作 dom
 
   Vue 无法检测到对象属性的添加和删除。
 
-  使用 `Vue.set` 设置响应属性。 
+  使用 `Vue.set` 设置响应属性。
 
 ## 解决非工程化项目初始化页面闪动问题
 
@@ -479,3 +479,6 @@ vue 的三大数据来源之一，用以对数据进行加工，具有响应式�
 * 服务端渲染
 
 ## 服务端渲染
+
+
+

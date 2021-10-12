@@ -52,12 +52,6 @@
   * [重绘和重排](base/css/zhong-hui-he-zhong-pai.md)
   * [HTML 全局属性](base/css/html-quan-ju-shu-xing.md)
   * [BFC/IFC](base/css/bfcifc.md)
-* [其他](/base/others/README.md)
-  * [WebGL](base/others/webgl.md)
-  * [SVG](base/others/svg.md)
-  * [Canvas](base/others/canvas.md)
-  * PWA
-  * OpenGL
 * [ES6](/base/es6/README.md)
   * [Set](base/es6/set.md)
   * [Map](base/es6/map.md)
@@ -70,6 +64,12 @@
   * [Generator](base/es6/generator.md)
   * [Reflect](base/es6/reflect.md)
   * [Iterator](base/es6/iterator.md)
+* [其他](/base/others/README.md)
+  * [WebGL](base/others/webgl.md)
+  * [SVG](base/others/svg.md)
+  * [Canvas](base/others/canvas.md)
+  * PWA
+  * OpenGL
 * [HTML5](base/html5.md)
   * [新增元素](base/html5/xin-zeng-yuan-su.md)
   * [Api](base/html5/api.md)
