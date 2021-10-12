@@ -314,5 +314,23 @@ new 绑定：如果函数或者方法调用前带有换剪子 new, 它就构成�
 * **冒泡阶段：**
   从目标节点传导回window对象（从底层传回上层），称为“冒泡阶段”（bubbling phase）。事件代理即是利用事件冒泡的机制把里层所需要响应的事件绑定到外层。
 
+## axios 原理
+
+axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。axios可以用在浏览器和 node.js 中是因为，它会自动判断当前环境是什么，如果是浏览器，就会基于XMLHttpRequests实现axios。如果是node.js环境，就会基于node内置核心模块http实现axios。
+
+* XMLHttpRequest 是浏览器内置的一个对象，它为客户端提供了在客户端和服务器之间传输数据的功能。
+* process 对象是node内置的一个全局变量，提供有关信息，控制当前 Node.js 进程。通过判断process是否存在，来判断是否是node环境。
+
+**特征：**
+
+1. Make XMLHttpRequests from the browser（从浏览器发起XMLHttpRequests请求）
+2. Make http requests from node.js（从node.js发起http请求）
+3. Supports the Promise API（支持PromiseAPI）
+4. Intercept request and response（拦截请求和响应）
+5. Transform request and response data（转换请求和响应数据）
+6. Cancel requests（取消请求）
+7. Automatic transforms for JSON data（自动转换json数据）
+8. Client side support for protecting against XSRF（客户端支持自动防止XSRF）
+
 
 
