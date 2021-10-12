@@ -262,5 +262,56 @@ new 绑定：如果函数或者方法调用前带有换剪子 new, 它就构成�
 
 `typeof` 一般测试基本类型（Undefined、Null、Boolean、Number、String\)，对引用类型（数组，对象，函数），数组和对象返回object，函数引用类型返回 `Function`。`typeof` 对于区分数组和对象是没有用的。
 
+* 通过 ES6 中的 `Array.isArray` 来识别
+
+  ```
+  Array.isArray([])  //true
+  Array.isArray({})  //false
+  ```
+
+* 通过 ES6 中的 `instanceof` 来识别
+  ```
+  [] instanceof Array   //true
+  {} instanceof Array   //false
+  ```
+
+* 通过 ES6 中的 `constructor` 来识别
+  ```
+  [].constructor === Array
+  [].constructor === Object
+  ```
+
+通过 ES6 中的 `Array.isArray` 来识别
+
+* 通过 ES6 中的 `Array.isArray` 来识别
+
+* ```
+  [] instanceof Array   //true
+  {} instanceof Array   //false
+  ```
+
+通过 ES6 中的 `Array.isArray` 来识别
+
+* 通过 ES6 中的 `Array.isArray` 来识别
+
+* ```
+  [] instanceof Array   //true
+  {} instanceof Array   //false
+  ```
+* 
+
+
+通过 ES6 中的 `Array.isArray` 来识别
+
+* 通过 ES6 中的 `Array.isArray` 来识别
+
+* ```
+  [] instanceof Array   //true
+  {} instanceof Array   //false
+  ```
+* 
+* 
+
+
 
 
