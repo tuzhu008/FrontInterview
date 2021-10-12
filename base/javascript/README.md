@@ -344,8 +344,19 @@ axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js �
 2. 无法接触非同源网页的 DOM
 3. 无法向非同源地址发送 AJAX 请求
 
-  
+**解决方法：**
 
+1. **设置document.domain解决无法读取非同源网页的 Cookie问题**
+
+> 因为浏览器是通过document.domain属性来检查两个页面是否同源，因此只要通过设置相同的document.domain，两个页面就可以共享Cookie（此方案仅限主域相同，子域不同的跨域应用场景。）
+
+**2.跨文档通信 API：window.postMessage\(\)**
+
+> 调用postMessage方法实现父窗口 [http://test1.com](https://link.zhihu.com/?target=http%3A//test1.com) 向子窗口 [http://test2.com](https://link.zhihu.com/?target=http%3A//test2.com) 发消息（子窗口同样可以通过该方法发送消息给父窗口），它可用于解决以下方面的问题：
+> 1.页面和其打开的新窗口的数据传递
+> 2.多窗口之间消息传递
+> 3.页面与嵌套的iframe消息传递
+> 4.上面三个场景的跨域数据传递
 
 
 
