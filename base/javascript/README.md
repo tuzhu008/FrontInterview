@@ -361,9 +361,20 @@ axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js �
 ```js
 // 父窗口打开一个子窗口
 var openWindow = window.open('http://test2.com', 'title');
- 
+
 // 父窗口向子窗口发消息(第一个参数代表发送的内容，第二个参数代表接收消息窗口的url)
 openWindow.postMessage('Nice to meet you!', 'http://test2.com');
+```
+
+调用message事件，监听对方发送的消息
+
+```js
+// 监听 message 消息
+window.addEventListener('message', function (e) {
+  console.log(e.source); // e.source 发送消息的窗口
+  console.log(e.origin); // e.origin 消息发向的网址
+  console.log(e.data);   // e.data   发送的消息
+},false);
 ```
 
 
