@@ -269,48 +269,33 @@ new 绑定：如果函数或者方法调用前带有换剪子 new, 它就构成�
   Array.isArray({})  //false
   ```
 
-* 通过 ES6 中的 `instanceof` 来识别
+* 通过  `instanceof` 来识别
+
   ```
   [] instanceof Array   //true
   {} instanceof Array   //false
   ```
 
-* 通过 ES6 中的 `constructor` 来识别
+* 通过 `constructor` 来识别
+
   ```
   [].constructor === Array
   [].constructor === Object
   ```
 
-通过 ES6 中的 `Array.isArray` 来识别
+* 通过  `Object.prototype.toString.call` 来识别
 
-* 通过 ES6 中的 `Array.isArray` 来识别
-
-* ```
-  [] instanceof Array   //true
-  {} instanceof Array   //false
+  ```
+  Object.prototype.toString.call([])   //["object Array"]
+  Object.prototype.toString.call({})   //["object Object"]
   ```
 
-通过 ES6 中的 `Array.isArray` 来识别
+* 通过 `isPrototypeOf()` 函数来识别
 
-* 通过 ES6 中的 `Array.isArray` 来识别
-
-* ```
-  [] instanceof Array   //true
-  {} instanceof Array   //false
   ```
-* 
-
-
-通过 ES6 中的 `Array.isArray` 来识别
-
-* 通过 ES6 中的 `Array.isArray` 来识别
-
-* ```
-  [] instanceof Array   //true
-  {} instanceof Array   //false
+  Array.prototype.isPrototypeOf(arr) //true表示是数组，false不是数组
   ```
-* 
-* 
+
 
 
 
