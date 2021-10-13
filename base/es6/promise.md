@@ -2,8 +2,6 @@
 
 ## promise原理
 
-
-
 Promise 有三种状态：
 
 * pending：进行中
@@ -232,6 +230,12 @@ MyPromise = (function () {
   }
 })();
 ```
+
+
+
+## 参考
+
+1、[https://zhuanlan.zhihu.com/p/58428287](https://zhuanlan.zhihu.com/p/58428287)
 
 
 
