@@ -1,5 +1,9 @@
 # Promise
 
+## promise原理
+
+
+
 Promise 有三种状态：
 
 * pending：进行中
