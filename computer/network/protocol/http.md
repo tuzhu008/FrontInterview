@@ -34,13 +34,7 @@
 | 501 | Not Implemented | 服务器不支持请求的功能，无法完成请求 |
 | 503 | Service Unavailable | 由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中 |
 
-## http 状态码有哪些？分别代表什么意思？
 
-* 1xx 信息性状态码，表示服务器接收到请求，正在处理
-* 2xx 成功状态码，标示服务器正确处理完请求
-* 3xx 重定向状态码，标示请求的资源位置发生改变，需要重新请求，301 永久重定向，302 临时重定向
-* 4xx 客户端错误状态码，服务器无法处理该请求 404 not found
-* 5xx 服务器内部错误状态码，服务器处理请求出错
 
 [https://www.runoob.com/http/http-status-codes.html](https://www.runoob.com/http/http-status-codes.html)
 
