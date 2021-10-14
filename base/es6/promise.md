@@ -16,6 +16,8 @@ Promise 有三种状态：
 
 ## 实现一个
 
+以下示例已通过所有测试用例：
+
 ```js
 // 先定义三个常量表示状态
 var PENDING = 'pending';
@@ -118,11 +120,11 @@ class MyPromise {
       const length = promiseList.length;
 
       let count = 0;
-  
+
       if (length === 0) {
         return resolve(result);
       }
-  
+
       promiseList.forEach(function (promise, index) {
         MyPromise.resolve(promise).then(function (value) {
           count++;
@@ -135,7 +137,7 @@ class MyPromise {
         });
       });
     });
-  
+
     return resPromise;
   }
 
@@ -277,6 +279,4 @@ module.exports = MyPromise;
 ## 参考
 
 1、[https://zhuanlan.zhihu.com/p/58428287](https://zhuanlan.zhihu.com/p/58428287)
-
-
 
