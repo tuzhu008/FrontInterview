@@ -2,9 +2,9 @@
 
 ## promise原理
 
-Promise 的核心原理其实就是一个发布订阅模式，通过两个队列来缓存成功的回调（`onResolve`）和失败的回调（`onReject`）。
+promise 的核心原理其实就是一个发布订阅模式，通过两个队列来缓存成功的回调（`onResolve`）和失败的回调（`onReject`）。
 
-Promise 有三种状态：
+promise 有三种状态：
 
 * `pending`：进行中
 
@@ -14,7 +14,7 @@ Promise 有三种状态：
 
 一旦状态改变，就不会再变，任何时候都可以得到这个结果。
 
-
+promise 提供了一个 `then` 方法用来访问其当前或最终值或理由。`then` 也会返回一个 promise，因此可以进行链式调用。
 
 ## 实现一个
 
