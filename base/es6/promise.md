@@ -257,7 +257,7 @@ class MyPromise {
   finally = (fn) => {
     return this.then((value) => {
       return MyPromise.resolve(fn()).then(() => value);
-    }, () => {
+    }, (error) => {
       return MyPromise.resolve(fn()).then(() => {
         throw error;
       });
