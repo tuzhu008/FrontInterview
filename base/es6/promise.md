@@ -282,3 +282,5 @@ module.exports = MyPromise;
 
 1、[https://zhuanlan.zhihu.com/p/58428287](https://zhuanlan.zhihu.com/p/58428287)
 
+2、[https://github.com/promises-aplus/promises-tests](https://github.com/promises-aplus/promises-tests)
+
