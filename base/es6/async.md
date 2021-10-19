@@ -2,6 +2,8 @@
 
 `async` 函数是 `Generator` 函数的语法糖。
 
+async/await 的本身是基于Promise的。
+
 实际上 async 函数对 Generator 函数的改进，体现在一下四点：
 
 * async 函数自带执行器，所以执行方式和普通函数的执行方式一样。
