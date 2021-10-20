@@ -91,15 +91,13 @@ function wrap(innerFn, outerFn, self, tryLocsList) {
 }
 ```
 
-
-
 generator 变量可以简化为：
 
 ```js
 var generator = {
   __invoke(method, arg) {
     // do something
-    
+
     var value = context.done ? undefined : gen$(context);
 
     return {
@@ -114,8 +112,6 @@ var generator = {
 }
 ```
 
-
-
 context 变量可以简化为：
 
 ```js
@@ -127,12 +123,6 @@ var context = {
     this.done = true
   }
 }
-```
-
-`makeInvokeMethod` 可以简化为：
-
-```
-
 ```
 
 
