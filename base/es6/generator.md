@@ -36,3 +36,104 @@ function* demo() {
 
 调用 Generator 函数和调用普通函数一样，在函数名后面加上`()`即可，但是 Generator 函数不会像普通函数一样立即执行，而是返回一个指向内部状态对象的指针，所以要调用遍历器对象Iterator 的 `next` 方法，指针就会从函数头部或者上一次停下来的地方开始执行。
 
+示例：
+
+```js
+function *gen(){
+  yield 1;
+  yield 2;
+  yield 3;
+}
+```
+
+经过 Babel 编译后：
+
+```js
+var _marked = /*#__PURE__*/regeneratorRuntime.mark(gen);
+
+function gen() {
+  return regeneratorRuntime.wrap(function gen$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return 1;
+
+        case 2:
+          _context.next = 4;
+          return 2;
+
+        case 4:
+          _context.next = 6;
+          return 3;
+
+        case 6:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked);
+}
+```
+
+```js
+function wrap(innerFn, outerFn, self, tryLocsList) {
+  // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+  var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+  var generator = Object.create(protoGenerator.prototype);
+  var context = new Context(tryLocsList || []);
+
+  // The ._invoke method unifies the implementations of the .next,
+  // .throw, and .return methods.
+  generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+  return generator;
+}
+```
+
+
+
+generator 变量可以简化为：
+
+```js
+var generator = {
+  __invoke(method, arg) {
+    // do something
+    
+    var value = context.done ? undefined : gen$(context);
+
+    return {
+      value,
+      done: context.done
+    };
+  },
+
+  next(arg) {
+    return this.__invoke('next', arg);
+  }
+}
+```
+
+
+
+context 变量可以简化为：
+
+```js
+var context = {
+  next:0,
+  prev: 0,
+  done: false,
+  stop: function stop () {
+    this.done = true
+  }
+}
+```
+
+`makeInvokeMethod` 可以简化为：
+
+```
+
+```
+
+
+
