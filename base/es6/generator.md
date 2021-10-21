@@ -108,6 +108,10 @@ function wrap(innerFn, outerFn, self, tryLocsList) {
 }
 ```
 
+从上面来看，`outerFn` 也就是 `_marked` ，即绑定了一系列原型后的 `genFun`。
+
+
+
 generator 变量可以简化为：
 
 ```js
