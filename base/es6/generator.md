@@ -76,6 +76,23 @@ function gen() {
 }
 ```
 
+mark：
+
+```js
+exports.mark = function(genFun) {
+  if (Object.setPrototypeOf) {
+    Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+  } else {
+    genFun.__proto__ = GeneratorFunctionPrototype;
+    define(genFun, toStringTagSymbol, "GeneratorFunction");
+  }
+  genFun.prototype = Object.create(Gp);
+  return genFun;
+};
+```
+
+`mark` 方法向 `genFun` 绑定了一系列原型。
+
 ```js
 function wrap(innerFn, outerFn, self, tryLocsList) {
   // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
