@@ -376,9 +376,9 @@ React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏�
 
 ## React Fiber
 
-## component和PureComponent区别？
+## component 和 PureComponent区别？
 
-Component 是类组件的基类， 在React.Component的子类中有个必须定义的 render\(\) 函数。
+Component 是类组件的基类， 在 React.Component 的子类中有个必须定义的 render\(\) 函数。
 
 `React.PureComponent` 继承自 `React.Component` ，并实现了其`shouldComponentUpdate` 方法，该方法对比 `prop` 和 `state` 进行浅层的对比方以决定是否更新。而 `React.Component`并未实现 该方法。
 
