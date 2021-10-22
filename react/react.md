@@ -54,7 +54,7 @@ JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式
 
 浏览器只能处理 JavaScript 对象，而不能读取常规 JavaScript 对象中的 JSX。所以为了使浏览器能够读取 JSX，首先，需要用像 Babel 这样的 JSX 转换器将 JSX 文件转换为 JavaScript 对象，然后再将其传给浏览器。
 
-##  React 中 render() 的作用
+## React 中 render\(\) 的作用
 
 每个 React 组件强制要求必须有一个 `render()`。它返回一个 React 元素，是原生 DOM 组件的表示。如果需要渲染多个 HTML 元素，则必须将它们组合在一个封闭标记内，例如 `<form>`、`<group>`、`<div>` 等。此函数必须保持纯净，即必须每次调用时都返回相同的结果。
 
@@ -270,17 +270,17 @@ Refs 是 React 提供给我们的安全访问 DOM 元素或者某个组件实例
   }
   ```
 
-## 类组件(Class component)和函数式组件(Functional component)之间有何不同
+## 类组件\(Class component\)和函数式组件\(Functional component\)之间有何不同
 
 * 类组件不仅允许你使用更多额外的功能，如组件自身的状态和生命周期钩子，也能使组件直接访问 store 并维持状态。
 
-* 当组件仅是接收 props，并将组件自身渲染到页面时，该组件就是一个 '无状态组件(stateless component)'，可以使用一个纯函数来创建这样的组件。这种组件也被称为哑组件(dumb components)或展示组件
+* 当组件仅是接收 props，并将组件自身渲染到页面时，该组件就是一个 '无状态组件\(stateless component\)'，可以使用一个纯函数来创建这样的组件。这种组件也被称为哑组件\(dumb components\)或展示组件
 
 * 函数式组件没有实例
 
 但现在可以使用各种 Hook 突破这些限制，函数式组件可以拥有状态，拥有 ref 等等
 
-## 何为受控组件(controlled component)
+## 何为受控组件\(controlled component\)
 
 在 HTML 中，表单元素（如`<input>`、 `<textarea>` 和 `<select>`）之类的表单元素通常自己维护 `state`，并根据用户输入进行更新。而在 React 中，可变状态（mutable state）通常保存在组件的 `state` 属性中，并且只能通过使用 `setState()` 来更新。
 
@@ -313,7 +313,7 @@ React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏�
   ```
 
   JSX 语法就是用 `React.createElement()` 来构建 React 元素的。
-  
+
   它接受三个参数，第一个参数可以是一个标签名。如 div、span，或者 React 组件。第二个参数为传入的属性。第三个以及之后的参数，皆作为组件的子组件。
 
 * cloneElement
@@ -334,7 +334,7 @@ React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏�
 
 * 函数式组件
 
-## 何为高阶组件(higher order component)
+## 何为高阶组件\(higher order component\)
 
 高阶组件本质上是一个函数，它接收其他组件作为参数，通过组合的方式，返回一个新的组件。
 
@@ -372,11 +372,27 @@ React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏�
 
 * 既然所有的事件都被委托到了 document上，那么肯定有一套管理机制，所有的事件都是以一种先进先出的队列方式进行触发与回调
 
-* 既然都已经接管事件了，那么不对事件做些额外的事情未免有些浪费，于是 React中就存在了自己的 合成事件(SyntheticEvent)，合成事件由对应的 EventPlugin负责合成，不同类型的事件由不同的 plugin合成，例如 SimpleEvent Plugin、TapEvent Plugin等
+* 既然都已经接管事件了，那么不对事件做些额外的事情未免有些浪费，于是 React中就存在了自己的 合成事件\(SyntheticEvent\)，合成事件由对应的 EventPlugin负责合成，不同类型的事件由不同的 plugin合成，例如 SimpleEvent Plugin、TapEvent Plugin等
 
 ## React Fiber
+
+## component和PureComponent区别？
+
+Component 是class组件的根基，类组件一切始于Component ，在React.Component的子类中有个必须定义的 render\(\) 函数。
+
+`React.PureComponent` 与 `React.Component` 很相似。两者的区别在于 `React.Component `并未实现 `shouldComponentUpdate()`，而 `React.PureComponent` 中以浅层对比 `prop` 和 `state` 的方式来实现了该函数。
+
+如果赋予 React 组件相同的 props 和 state，render\(\) 函数会渲染相同的内容，那么在某些情况下使用 React.PureComponent 可提高性能。
+
+> 注意
+>
+> React.PureComponent 中的 shouldComponentUpdate\(\) 仅作对象的浅层比较。如果对象中包含复杂的数据结构，则有可能因为无法检查深层的差别，产生错误的比对结果。仅在你的 props 和 state 较为简单时，才使用 React.PureComponent，或者在深层数据结构发生变化时调用 forceUpdate\(\) 来确保组件被正确地更新。你也可以考虑使用 immutable 对象加速嵌套数据的比较。
+>
+> 此外，React.PureComponent 中的 shouldComponentUpdate\(\) 将跳过所有子组件树的 prop 更新。因此，请确保所有子组件也都是“纯”的组件。
+
 
 
 ## 参考
 
-https://segmentfault.com/a/1190000018604138
+[https://segmentfault.com/a/1190000018604138](https://segmentfault.com/a/1190000018604138)
+
