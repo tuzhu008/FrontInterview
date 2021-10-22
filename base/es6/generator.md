@@ -2,7 +2,7 @@
 
 Generator 函数是 ES6 提供的一种异步编程解决方案，语法行为与传统函数完全不同。
 
-执行 Generator 函数会返回一个遍历器对象。
+执行生成器函数会返回一个 Generator 对象。
 
 ```js
 function* myGenerator () {
@@ -109,8 +109,6 @@ function wrap(innerFn, outerFn, self, tryLocsList) {
 ```
 
 从上面来看，`outerFn` 也就是 `_marked` ，即绑定了一系列原型后的 `genFun`。
-
-
 
 generator 变量可以简化为：
 
