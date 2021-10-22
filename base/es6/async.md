@@ -97,5 +97,7 @@ function _gen() {
 }
 ```
 
+可以看到，编译产出部分，包含了与 [Generator](/base/es6/generator.md) 中相同的部分，足可以见 async 其实是 Generator 的语法糖。
 
+`_asyncToGenerator` 和 `asyncGeneratorStep` 为这个Generator 提供了一个自动的执行器。并最终返回一个 Promise 实例。
 
