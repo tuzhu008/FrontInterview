@@ -378,9 +378,9 @@ React 中的事件处理程序将传递 `SyntheticEvent` 的实例，它是浏�
 
 ## component和PureComponent区别？
 
-Component 是class组件的根基，类组件一切始于Component ，在React.Component的子类中有个必须定义的 render\(\) 函数。
+Component 是类组件的基类， 在React.Component的子类中有个必须定义的 render\(\) 函数。
 
-`React.PureComponent` 与 `React.Component` 很相似。两者的区别在于 `React.Component`并未实现 `shouldComponentUpdate()`，而 `React.PureComponent` 中以浅层对比 `prop` 和 `state` 的方式来实现了该函数。
+`React.PureComponent` 继承自 `React.Component` ，并实现了其`shouldComponentUpdate` 方法，该方法对比 `prop` 和 `state` 进行浅层的对比方以决定是否更新。而 `React.Component`并未实现 该方法。
 
 如果赋予 React 组件相同的 `props` 和 `state`，`render()` 函数会渲染相同的内容，那么在某些情况下使用 `React.PureComponent` 可提高性能。
 
