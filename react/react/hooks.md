@@ -21,10 +21,27 @@ useEffect(() => {
 
 ### 如何用 useEffect 实现 class 组件的生命周期
 
-1. useEffect实现componentDidMount的效果：
-   ```js
+1. useEffect实现 `componentDidMount` 的效果：
 
+   ```js
+    useEffect(() => {
+      
+    }, []);
    ```
 
+2. useEffect 实现 `componentWillUnMount` 的效果：
 
+  ```js
+  useEffect(() => {
+    // 该函数如 `componentWillUnMount` 在组件即将卸载时调用
+    return () => {};
+  }, []);
+  ```
 
+3. 实现 `componentDidUpdate`:
+
+  ```js
+  useEffect(() => {
+    // user.id 变化时
+  }, [user.id]);
+  ```
