@@ -25,23 +25,39 @@ useEffect(() => {
 
    ```js
     useEffect(() => {
-      
+
     }, []);
    ```
 
 2. useEffect 实现 `componentWillUnMount` 的效果：
 
-  ```js
-  useEffect(() => {
+   ```js
+   useEffect(() => {
     // 该函数如 `componentWillUnMount` 在组件即将卸载时调用
     return () => {};
-  }, []);
-  ```
+   }, []);
+   ```
 
 3. 实现 `componentDidUpdate`:
 
-  ```js
-  useEffect(() => {
+   ```js
+   useEffect(() => {
     // user.id 变化时
-  }, [user.id]);
-  ```
+   }, [user.id]);
+   ```
+
+## useMemo 与 useCallback 区别？
+
+共同点：
+
+* 都接收两个参数，且第一个均为函数，第二个为依赖数据组成的数组
+* 对于依赖数据的处理行为一致，都会在依赖数据发生变化时才重新计算。
+
+不同点：
+
+* 返回值不同。`useMemo` 的返回值是传入的回调函数运行后的返回值；而 `useCallback` 则是返回传入的回调函数。
+
+
+
+
+
