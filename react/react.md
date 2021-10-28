@@ -390,6 +390,8 @@ Component 是类组件的基类， 在 React.Component 的子类中有个必须�
 >
 > 此外，`React.PureComponent` 中的 `shouldComponentUpdate()` 将跳过所有子组件树的 `prop` 更新。因此，请确保所有子组件也都是“纯”的组件。
 
+## 
+
 ## 参考
 
 [https://segmentfault.com/a/1190000018604138](https://segmentfault.com/a/1190000018604138)
