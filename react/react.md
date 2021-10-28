@@ -390,7 +390,7 @@ Component 是类组件的基类， 在 React.Component 的子类中有个必须�
 >
 > 此外，`React.PureComponent` 中的 `shouldComponentUpdate()` 将跳过所有子组件树的 `prop` 更新。因此，请确保所有子组件也都是“纯”的组件。
 
-## React题，setState是异步还是同步？
+## setState 是异步还是同步？
 有时表现出异步，有时表现出同步：
 
 * `setState` 只在合成事件和钩子函数中是“异步”的，在原生事件和 `setTimeout` 中都是同步的。
