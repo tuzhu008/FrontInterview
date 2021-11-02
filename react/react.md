@@ -190,91 +190,13 @@ Keys 是 React 用于追踪哪些列表中元素被修改、被添加或者被�
 
 Refs 是 React 提供给我们的安全访问 DOM 元素或者某个组件实例的句柄。
 
-* createRef
+* createRef。
 
-  ```js
-  class MyComponent extends React.Component { 
-    constructor(props) {
-      super(props);
-      this.myRef = React.createRef();
-    }
-    render() {
-      return <div ref={ this.myRef } />;
-    }
-  }
-  ```
+* 回调。回调的唯一参数为组件实例或者 Dom 元素。
 
-* 回调
+* useRef。 一个 React Hook，该方式只能在函数式组件中使用。
 
-  ```js
-  class CustomTextInput extends React.Component {
-    constructor(props) {
-      super(props);
-
-      this.textInput = null;
-    }
-
-    render () {
-      return (<input type="text" ref={ el => this.textInput = el } />);
-    }
-  }
-  ```
-
-  ```js
-  function CustomTextInput(props) {
-    return (
-      <div>
-        <input ref={props.inputRef} />
-      </div>
-    );
-  }
-
-  class Parent extends React.Component {
-    render() {
-      return (
-        <CustomTextInput
-          inputRef={el => this.inputElement = el}
-        />
-      );
-    }
-  }
-  ```
-
-* useRef
-
-  该方式只能在函数式组件中使用
-
-  ```js
-  function MyInput () {
-    const inputRef = React.useRef(null);
-    return (<input type="text" ref={ inputRef } />);
-  }
-  ```
-
-* forwardRef
-
-  ```js
-  const CustomTextInput = React.forwardRef(props, ref) {
-    return (
-      <div>
-        <input ref={ ref } />
-      </div>
-    );
-  }
-
-  class Parent extends React.Component {
-    constructor (props) {
-      super(props);
-
-      this.ref = React.createRef();
-    }
-    render() {
-      return (
-        <CustomTextInput ref={ this.ref } />
-      );
-    }
-  }
-  ```
+* forwardRef。转发 Ref。
 
 ## 类组件\(Class component\)和函数式组件\(Functional component\)之间有何不同
 
