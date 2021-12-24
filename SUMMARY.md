@@ -58,7 +58,7 @@
   * [async](base/es6/async.md)
   * [class](base/es6/class.md)
   * [Proxy](base/es6/proxy.md)
-  * Module
+  * [Module](base/es6/module.md)
   * [Promise](base/es6/promise.md)
   * [Symbol](base/es6/symbol.md)
   * [Generator](base/es6/generator.md)
@@ -196,7 +196,7 @@
 * 深入理解计算机系统
 * 图解 http
 * 编程珠玑
-* 算法(第四版)
+* 算法\(第四版\)
 * 代码整洁之道
 * 设计模式之禅
 * 大话设计模式
