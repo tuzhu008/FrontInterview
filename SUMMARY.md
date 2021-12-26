@@ -13,8 +13,8 @@
     * [Http](/computer/network/protocol/http.md)
     * [WebScocket](/computer/network/protocol/webscocket.md)
     * [TCP/UDP](/computer/network/protocol/tcpudp.md)
-* 操作系统
-* 编译原理
+* [操作系统](computer/network/cao-zuo-xi-tong.md)
+* [编译原理](computer/network/bian-yi-yuan-li.md)
 * [数据结构](computer/network/shu-ju-jie-gou.md)
 
 ## 基础
