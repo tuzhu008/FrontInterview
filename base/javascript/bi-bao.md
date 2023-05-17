@@ -2,6 +2,19 @@
 
 闭包（closure）是一个函数以及其捆绑的周边环境状态（lexical environment，词法环境）的引用的组合。换而言之，闭包让开发者可以从内部函数访问外部函数的作用域。在 JavaScript 中，闭包会随着函数的创建而被同时创建。
 
+## 产生闭包的条件
+
+1. 函数嵌套
+
+  ```js
+  function animalFactory (name) {
+    return function () {
+      return name;
+    }
+  }
+
+  animalFactory('dog')() // dog
+  ```
 
 ## 产生原因
 
@@ -14,20 +27,6 @@
 **原因：**闭包函数的作用域链中引用了另一个函数的活动对象（变量对象）。
 
 闭包所保存的是**整个变量对象**，而不是某个特殊变量。
-
-```js
-function animalFactory (name) {
-  return function () {
-    return name;
-  }
-}
-
-animalFactory('dog')() // dog
-```
-
-## 产生闭包的条件
-
-1. 函数嵌套
 
 
 
