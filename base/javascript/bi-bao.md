@@ -6,15 +6,15 @@
 
 1. 函数嵌套
 
-  ```js
-  function animalFactory (name) {
-    return function () {
-      return name;
+    ```js
+    function animalFactory (name) {
+      return function () {
+        return name;
+      }
     }
-  }
 
-  animalFactory('dog')() // dog
-  ```
+    animalFactory('dog')() // dog
+    ```
 
 ## 产生原因
 
