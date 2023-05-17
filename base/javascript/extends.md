@@ -141,5 +141,21 @@ SubType.prototype.sayAge = function () {
 }
 ```
 
+## 类继承
+
+```js
+class Parent {
+  sayHi() {
+    console.log('Hi');
+  }
+}
+
+class Child extends Parent {
+  sayHello() {
+    console.log('Hello');
+  }
+}
+```
+
 
 
