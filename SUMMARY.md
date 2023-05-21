@@ -79,6 +79,7 @@
 
 * [CSS](/code/CSS/README.md)
 * [JavaScript](/code/JavaScript/README.md)
+  * [new](/code/JavaScript/new.md)
   * [call、apply、bind](/code/JavaScript/call-apply-bind.md)
 * [执行结果](code/zhi-xing-jie-guo.md)
 
