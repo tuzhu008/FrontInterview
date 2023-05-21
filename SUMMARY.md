@@ -9,6 +9,9 @@
 ## 计算机基础
 
 * [网络](/computer/network/README.md)
+  * [DNS解析](/computer/network/dns.md)
+  * [分层网络](/computer/network/layer.md)
+  * [三次握手、四次挥手](/computer/network/shake-wave-hands.md)
   * [协议](/computer/network/protocol/README.md)
     * [Http](/computer/network/protocol/http.md)
     * [WebScocket](/computer/network/protocol/webscocket.md)
@@ -111,6 +114,9 @@
   * [基础](thinking/engineering/ji-chu.md)
 * [自动化](/thinking/automation/README.md)
 * [架构](thinking/architecture/README.md)
+  * 设计原则
+  * [mvc](thinking/architecture/mvc.md)
+  * [mvvm](thinking/architecture/mvvm.md)
 * Flux
 
 ## 算法
