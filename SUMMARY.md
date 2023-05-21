@@ -34,6 +34,7 @@
   * [回流、重绘](base/browser/hui-liu-3001-zhong-hui.md)
   * [垃圾回收](base/browser/gc.md)
   * [缓存机制](base/browser/cache.md)
+  * [浏览器并行下载量](base/browser/number-of-concurrent.md)
 * [JavaScript](/base/javascript/README.md)
   * [数据类型](base/javascript/datatype.md)
   * [闭包](base/javascript/bi-bao.md)
