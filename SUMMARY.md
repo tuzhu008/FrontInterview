@@ -9,7 +9,7 @@
 ## 计算机基础
 
 * [网络](/computer/network/README.md)
-  * [DNS解析](/computer/network/dns.md)
+  * [DNS解析](/computer/network/dns/README.md)
   * [分层网络](/computer/network/layer.md)
   * [三次握手、四次挥手](/computer/network/shake-wave-hands.md)
   * [协议](/computer/network/protocol/README.md)
