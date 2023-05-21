@@ -1,5 +1,33 @@
 # CSS
 
+## 盒子模型
+
+CSS3 中的盒模型有以下两种：
+  * 标准盒模型
+
+    只包含 content
+
+  * IE（替代）盒模型。
+
+    border + padding + conten
+
+可以通过 box-sizing 来改变元素的盒子模型。
+
+## CSS 有什么特殊性？（优先级、计算特殊值）
+
+优先级：
+
+* 同类型，同级别的样式后者先于前者
+* 根据权重计算
+* 具体的 > 泛化的
+* 近的 > 远的（内联样式 > 内部样式表 > 外联样式表）
+
+  * 内联样式：`style` 属性
+  * 内部样式表：`link` 标签
+  * 外联样式表）：在外部样式表中 `@import` 的样式，因为 `@import` 总是像代码加在样式表头部，按照声明顺序
+
+* 内联 `!important` > `!important` > 内联
+
 ## HTML中居中的方式
 
 * `text-align: center` 方式，水平居中块级元素中的行内元素，如 `inline`，`inline-block`
@@ -45,28 +73,6 @@
 | `::first-letter` | `p::first-letter` | 选择每个 `<p>` 元素的首字母。
 | `::first-line` | `p::first-line` | 选择每个 `<p>` 元素的首行。
 | `::selection` | `p::selection` | 选择用户选择的元素部分。
-
-
-## CSS 有什么特殊性？（优先级、计算特殊值）
-
-优先级：
-
-* 同类型，同级别的样式后者先于前者
-* 根据权重计算
-* 具体的 > 泛化的
-* 近的 > 远的（内联样式 > 内部样式表 > 外联样式表）
-
-  * 内联样式：`style` 属性
-  * 内部样式表：`link` 标签
-  * 外联样式表）：在外部样式表中 `@import` 的样式，因为 `@import` 总是像代码加在样式表头部，按照声明顺序
-
-* 内联 `!important` > `!important` > 内联
-
-
-## 介绍一下盒子模型？
-
-1. 盒子模型：margin、border、padding、content
-2. 有两种：IE 盒子模型、标准 W3C 盒子模型；IE 的 content 部分包括了 border 和 padding。CSS3 中可以通过 `box-sizing` 进行设置
 
 ## CSS 的选择符有哪些？优先级算法如何计算？CSS3 新增伪类有哪些？
 
