@@ -32,6 +32,7 @@
   * [垃圾回收](base/browser/gc.md)
   * [缓存机制](base/browser/cache.md)
 * [JavaScript](/base/javascript/README.md)
+  * [数据类型](base/javascript/datatype.md)
   * [闭包](base/javascript/bi-bao.md)
   * [作用域链](/base/javascript/scopeChain.md)
   * [原型](/base/javascript/prototype.md)
