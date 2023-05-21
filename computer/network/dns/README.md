@@ -61,3 +61,19 @@ DNS 客户端进行域名 [http://www.tsinghua.edu.cn](https://link.zhihu.com/?t
 8. **本地域名服务器**向 [http://tsinghua.edu.cn](https://link.zhihu.com/?target=http%3A//tsinghua.edu.cn) 域名服务器查询 [http://www.tsinghua.edu.cn](https://link.zhihu.com/?target=http%3A//www.tsinghua.edu.cn) 主机的 IP 地址；
 9. [http://tsinghua.edu.cn](https://link.zhihu.com/?target=http%3A//tsinghua.edu.cn)**域名服务器**查询数据库，发现有主机域名记录，于是给本地域名服务器返回 [http://www.tsinghua.edu.cn](https://link.zhihu.com/?target=http%3A//www.tsinghua.edu.cn) 对应的 IP 地址；
 10. 最后**本地域名服务器**将 [http://www.tsinghua.edu.cn](https://link.zhihu.com/?target=http%3A//www.tsinghua.edu.cn) 的 IP 地址返回给客户端，整个解析过程完成。
+
+## DNS 解析方式
+
+DNS解析流程分为递归查询和迭代查询，DNS客户端和本地名称服务器是递归，而本地名称服务器和其他名称服务器之间是迭代。
+
+### 递归
+
+递归查询是以本地名称服务器为中心查询，递归查询是默认方式。
+
+![递归](/computer/network/dns/digui.png)
+
+### 迭代
+
+迭代查询是以DNS客户端，也就是客户机器为中心查询。
+
+![迭代](/computer/network/dns/digui.png)
