@@ -30,6 +30,7 @@
   * [渲染过程](/base/browser/xuan-ran-guo-cheng.md)
   * [回流、重绘](base/browser/hui-liu-3001-zhong-hui.md)
   * [垃圾回收](base/browser/gc.md)
+  * [缓存机制](base/browser/cache.md)
 * [JavaScript](/base/javascript/README.md)
   * [闭包](base/javascript/bi-bao.md)
   * [作用域链](/base/javascript/scopeChain.md)
