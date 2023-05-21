@@ -16,7 +16,7 @@
     doAdd(1); // NaN 
     ```
   
-  * 重写 `arguments` 的值回导致语法错误
+  * 重写 `arguments` 的值会导致语法错误
 
 * `setTimeout` 调用的代码都是在全局作用域中执行的，因此函数中 `this` 的值在非严格模式下为 `window`，在严格模式下为 `undefined`
 

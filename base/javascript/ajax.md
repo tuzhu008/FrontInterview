@@ -14,9 +14,15 @@ XHR 需要遵守同源策略，只能向同一个域中使用相同端口和协�
 
 * open
 
+  初始化一个请求。
+
 * send
 
+  发送请求。如果请求是异步的（默认），那么该方法将在请求发送后立即返回。
+
 * abort
+
+  如果请求已被发出，则立刻中止请求。
 
 * setRequestHeader
 
@@ -24,17 +30,21 @@ XHR 需要遵守同源策略，只能向同一个域中使用相同端口和协�
 
 * getResponseHeader
 
+  返回包含指定响应头的字符串，如果响应尚未收到或响应中不存在该报头，则返回 null。
+
 * getAllResponseHeaders
+
+  以字符串的形式返回所有用 CRLF 分隔的响应头，如果没有收到响应，则返回 null。
 
 readystate
 
 | 取值 | 描述 | 触发行为 |
 | :--- | :--- | :--- |
-| 0 | 未初始化 | 尚未调用 `open()` 方法 |
-| 1 | 启动 | 已调用 `open()`，尚未调用 `send()` |
-| 2 | 发送 | 已调用 `send()`，但尚未接收到响应 |
-| 3 | 接收 | 已接收到部分响应数据 |
-| 5 | 完成 | 接收到全部响应数据，数据处于可用状态 |
+| 0 | `UNSENT` | 代理被创建，尚未调用 `open()` 方法 |
+| 1 | `OPENED` | 已调用 `open()`，尚未调用 `send()` |
+| 2 | `HEADERS_RECEIVED` | `send()` 方法已经被调用，并且响应头部和状态已经可获得。 |
+| 3 | `LOADING` | 已接收到部分响应数据 |
+| 4 | `DONE` | 接收到全部响应数据，数据处于可用状态 |
 
 ## 事件
 
@@ -135,6 +145,8 @@ jsonp
 iframe
 
 window.name、window.postMessage
+
+window.domain
 
 代理
 
@@ -256,7 +268,7 @@ function ajax (options) {
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status !== 200) {
+                if (xhr.status === 200) {
                     resolve(JSON.parse(xhr.responseText));
                 } else {
                     reject();

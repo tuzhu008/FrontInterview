@@ -39,7 +39,7 @@ var object = {
   }
 };
 
-alert(object.getNameFunc()()); // 非严格模式下弹出 The window
+alert(object.getNameFunc()()); // 非严格模式下弹出 My Object
 ```
 
 再来看下面几种情况：
@@ -50,13 +50,13 @@ var name = 'The window';
 var object = {
   name: 'My Object',
   getName: function () {
-    return that.name;
+    return this.name;
   }
 };
 
 object.getName(); // My Object
 (object.getName)(); // My Object
-(object.getName = object.getName)(); // My Object
+(object.getName = object.getName)(); // The window
 ```
 
 `(object.getName)()` 虽然加上了括号之后就好像在引用一个函数，但是 `this` 得到了维持，因为 `object.getName` 和 `(object.getName)` 的定义是相同的。
