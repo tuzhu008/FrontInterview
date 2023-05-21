@@ -29,6 +29,7 @@
   * [工作原理](/base/browser/liu-lan-qi-gong-zuo-yuan-li.md)
   * [渲染过程](/base/browser/xuan-ran-guo-cheng.md)
   * [回流、重绘](base/browser/hui-liu-3001-zhong-hui.md)
+  * [垃圾回收](base/browser/gc.md)
 * [JavaScript](/base/javascript/README.md)
   * [闭包](base/javascript/bi-bao.md)
   * [作用域链](/base/javascript/scopeChain.md)
@@ -81,6 +82,8 @@
 * [JavaScript](/code/JavaScript/README.md)
   * [new](/code/JavaScript/new.md)
   * [call、apply、bind](/code/JavaScript/call-apply-bind.md)
+  * [promise](/code/JavaScript/promise.md)
+  * [async/await](/code/JavaScript/async-await.md)
 * [执行结果](code/zhi-xing-jie-guo.md)
 
 ## 技术延伸
