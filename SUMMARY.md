@@ -85,6 +85,12 @@
   * [call、apply、bind](/code/JavaScript/call-apply-bind.md)
   * [promise](/code/JavaScript/promise.md)
   * [async/await](/code/JavaScript/async-await.md)
+  * [instanceof](/code/JavaScript/instanceof.md)
+  * [array.reduce](/code/JavaScript/reduce.md)
+  * [深拷贝](/code/JavaScript/deep-clone.md)
+  * [防抖](/code/JavaScript/debounce.md)
+  * [节流](/code/JavaScript/throttle.md)
+  * [数组扁平化](/code/JavaScript/flat.md)
 * [执行结果](code/zhi-xing-jie-guo.md)
 
 ## 技术延伸
