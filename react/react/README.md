@@ -1,5 +1,9 @@
 # React
 
+setState 为何是异步的
+
+JSX
+
 ## 什么是 React？
 
 * React 是 Facebook 在 2011 年开发的前端 JavaScript 库。

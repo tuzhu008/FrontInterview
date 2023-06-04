@@ -1,5 +1,17 @@
 # Hooks
 
+## 类组件生命周期与 hooks
+
+* getDerivedStateFromProps
+
+* componentDidMount
+
+* shouldComponentUpdate
+
+* componentDidUpdate
+
+* componentWillUnmount
+
 ## useEffect
 
 ### 函数组件中如何执行异步请求操作？
