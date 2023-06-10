@@ -336,6 +336,8 @@ function dispatchEventsForPlugins(
 }
 ```
 
+### 构建事件队列
+
 在事件提取阶段，`extractEvents` 会调用各个事件插件的 `extractEvents` 的方法进行不同事件的提取。事件提取的目标在于，构建一个 `dispatchQueue` 队列。
 
 为了实现不同的行为，这些事件插件间的事件可能有重合。
@@ -631,7 +633,9 @@ function shouldPreventMouseEvent(
 }
 ```
 
-事件队列的执行：
+### 处理事件队列
+
+在处理事件队列时，会根据事件所处阶段（捕获和冒泡）对时间队列进行有序（反向遍历和正向遍历）的处理。
 
 ```js
 
