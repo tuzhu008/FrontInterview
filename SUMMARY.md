@@ -94,6 +94,8 @@
   * [fiber](react/react/fiber.md)
   * [生命周期](react/react/lifecycle.md)
   * [事件系统](react/react/event.md)
+  * [jsx](react/react/jsx.md)
+  * [优化手段](react/react/optimization.md)
 * [Redux](react/redux.md)
 * [React Router](react/react-router.md)
 * React-Native

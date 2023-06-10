@@ -1,6 +1,6 @@
 # React
 
-setState 为何是异步的
+setState 为何是异步的，批量更新
 
 JSX
 
