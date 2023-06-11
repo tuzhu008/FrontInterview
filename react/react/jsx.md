@@ -1,3 +1,5 @@
+JSX 是 Javascript XML 的简称。
+
 JSX 是一个 JavaScript 的语法扩展，其具有 JavaScript 的全部功能，用于创建 React 元素。
 
 JSX 以声明式的方式描述了视图。
@@ -156,6 +158,16 @@ jsx 对象上没有优先级、状态、effectTag 等标记，这些标记在 Fi
 jsx 是 `React.createElement` 的语法糖，jsx 通过 babel 转化成 `React.createElement` 函数，`React.createElement` 执行之后返回 jsx 对象，也叫virtual-dom，也可成为 React 元素。
 
 在初次渲染时，React 利用 `createFiberFromTypeAndProps` 将 React 元素转换为 fiber 和current Fiber进行对比形成workInProgress Fiber
+
+## 问题
+
+### 什么是 JSX？
+
+JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式比较像是模版语言，但事实上完全是在 JavaScript 内部实现的。元素是构成 React 应用的最小单位，JSX 就是用来声明 React 当中的元素，React 使用 JSX 来描述用户界面。
+
+### 为什么浏览器无法读取JSX？
+
+浏览器只能处理 JavaScript 对象，而不能读取常规 JavaScript 对象中的 JSX。所以为了使浏览器能够读取 JSX，首先，需要用像 Babel 这样的 JSX 转换器将 JSX 文件转换为 JavaScript 对象，然后再将其传给浏览器。
 
 
 
