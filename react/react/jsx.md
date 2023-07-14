@@ -167,8 +167,9 @@ JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式
 
 ### 为什么浏览器无法读取JSX？
 
-浏览器只能处理 JavaScript 对象，而不能读取常规 JavaScript 对象中的 JSX。所以为了使浏览器能够读取 JSX，首先，需要用像 Babel 这样的 JSX 转换器将 JSX 文件转换为 JavaScript 对象，然后再将其传给浏览器。
+JSX 并不是有效的 JavaScript 代码，浏览器没有内置读取和理解 JSX 的功能。
 
+需要将 JSX 编译成浏览器可以理解的 JavaScript 代码。
 
 
 

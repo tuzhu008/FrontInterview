@@ -89,6 +89,7 @@
 ## React
 
 * [React](react/react/README.md)
+  * [setState](react/react/setState.md)
   * [context](react/react/context.md)
   * [hooks](react/react/hooks.md)
   * [fiber](react/react/fiber.md)
@@ -141,7 +142,7 @@
   * [基础](thinking/engineering/ji-chu.md)
 * [自动化](/thinking/automation/README.md)
 * [架构](thinking/architecture/README.md)
-  * 设计原则
+  * [设计原则](thinking/architecture/philosophy.md)
   * [mvc](thinking/architecture/mvc.md)
   * [mvvm](thinking/architecture/mvvm.md)
 * Flux
