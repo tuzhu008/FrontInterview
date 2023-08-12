@@ -2,7 +2,9 @@
 
 **创建型：**
 
-* [抽象工厂模式（Abstract Factory）](//others/DesignPatterns/AbstractFactory.md)[迭代器模式](//others/DesignPatterns/Iterator.md)
+* [抽象工厂模式（Abstract Factory）](//others/DesignPatterns/AbstractFactory.md)
+
+* [迭代器模式](//others/DesignPatterns/Iterator.md)
 
 * [构建者模式（Builder）](//others/DesignPatterns/Builder.md)
 
@@ -10,7 +12,7 @@
 
 * [原型模式（Prototype）](//others/DesignPatterns/Prototype.md)
 
-* [单列模式（Singleton）](///others/DesignPatterns/Singleton.md)
+* [单例模式（Singleton）](///others/DesignPatterns/Singleton.md)
 
 **结构型：**
 
@@ -20,7 +22,7 @@
 
 * [组合模式（Compositor）](//others/DesignPatterns/Compositor.md)
 
-* [装饰着模式（Decorator）](//others/DesignPatterns/Decorator.md)
+* [装饰器模式（Decorator）](//others/DesignPatterns/Decorator.md)
 
 * [外观模式（Facade）](//others/DesignPatterns/Facade.md)
 
@@ -28,11 +30,11 @@
 
 * [代理模式（Proxy）](//others/DesignPatterns/Proxy.md)
 
-**行为：**
+**行为型：**
 
 * [职责链模式（Chian of Responsibility）](//others/DesignPatterns/ChianOfResponsibility.md)
 
-* [命名模式（Command）](//others/DesignPatterns/Command.md)
+* [命令模式（Command）](//others/DesignPatterns/Command.md)
 
 * [解释器模式（Interpreter）](//others/DesignPatterns/Interpreter.md)
 
