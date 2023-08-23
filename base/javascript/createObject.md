@@ -152,7 +152,7 @@ function SpecialArray () {
 
 ## 稳妥构造函数模式
 
-不适用 `new` 和 `this` 的寄生模式。
+不使用 `new` 和 `this` 的寄生模式。
 
 ```js
 function Person (name, age, job) {

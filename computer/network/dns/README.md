@@ -76,4 +76,4 @@ DNS解析流程分为递归查询和迭代查询，DNS客户端和本地名称�
 
 迭代查询是以DNS客户端，也就是客户机器为中心查询。
 
-![迭代](/computer/network/dns/digui.png)
+![迭代](/computer/network/dns/diedai.png)
