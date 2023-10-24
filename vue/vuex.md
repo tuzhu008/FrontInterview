@@ -1,5 +1,18 @@
 # Vuex
 
+## Vuex 有哪几种属性？
+
+有五种，分别是 State、 Getter、Mutation 、Action、 Module
+
+
+| 属性 | 描述 |
+| :--- | :--- |
+| state | 基本数据(数据源存放地) |
+| getters | 从基本数据派生出来的数据 |
+| mutations | 提交更改数据的方法，同步 |
+| actions | 像一个装饰器，包裹 mutations，使之可以异步。 |
+| modules | 模块化 Vuex |
+
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。
 
 它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
@@ -35,9 +48,7 @@ Vue.mixin({
 * getters
 
 
-## 
-
-vuex  
+vuex
 1、什么是vuex？
 
 2、使用vuex的核心概念

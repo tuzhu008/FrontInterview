@@ -8,47 +8,20 @@ Vue 实例从创建到销毁的过程，就是生命周期。
 
 Vue 生命周期：
 
-* beforeCreate
+| 生命周期 | 描述 |
+| :--- | :--- |
+| beforeCreate | Vue 实例已创建，初始化事件和生命周期之后、在注入和校验之前。 |
+| created | 在注入和校验之后。这时候数据、数据等都已注入实例。实例初始化完成。 |
+| beforeMount | 编译模板之后，将其挂载到 DOM 之前。 |
+| mounted | 执行 render 函数，将渲染出来的内容，将其挂载到 DOM 之后。 |
+| beforeUpdate | 更新之前。 |
+| updated | 更新之后。 |
+| beforeDestroy | 销毁之前。 |
+| destroyed | 销毁之后。 |
+| activated | 被 `keep-alive` 缓存的组件激活时调用。 |
+| deactivated | 被 `keep-alive` 缓存的组件停用时调用。 |
 
-  Vue 实例已创建，初始化事件和生命周期之后、在注入和校验之前。
-
-* created
-
-  在注入和校验之后。这时候数据、数据等都已注入实例。实例初始化完成。
-
-* beforeMount
-
-  编译模板之后，将其挂载到 DOM 之前。
-
-* mounted
-
-  执行 render 函数，将渲染出来的内容，将其挂载到 DOM 之后。
-
-* beforeUpdate
-
-  更新之前。
-
-* updated
-
-  更新之后。
-
-* beforeDestroy
-
-  销毁之前。
-
-* destroyed
-
-  销毁之后。
-
-* activated
-
-  被 `keep-alive` 缓存的组件激活时调用。
-
-* deactivated
-
-  被 `keep-alive` 缓存的组件停用时调用。
-
-[Vue 生命周期.png](/assets/VueLifecycle.png)
+![Vue 生命周期.png](/assets/VueLifecycle.png)
 
 ## 第一次页面加载会触发哪几个钩子？
 
@@ -84,7 +57,41 @@ Vue 生命周期：
 
 Vue 采用高效的 diff 算法来比较虚拟 dom 的改变，将其生成真实的 DOM 树，然后插入文档中。
 
-## vue 优点
+## Vue 组件间通信有哪几种方式？
+
+Vue 组件间通信是面试常考的知识点之一，这题有点类似于开放题，你回答出越多方法当然越加分，表明你对 Vue 掌握的越熟练。Vue 组件间通信只要指以下 3 类通信：父子组件通信、隔代组件通信、兄弟组件通信，下面我们分别介绍每种通信方式且会说明此种方法可适用于哪类组件间通信。
+
+* props / $emit  适用 父子组件通信
+
+  这种方法是 Vue 组件的基础，相信大部分同学耳闻能详，所以此处就不举例展开介绍。
+
+* ref 与 $parent / $children 适用 父子组件通信
+
+  ref：如果在普通的 DOM 元素上使用，引用指向的就是 DOM 元素；如果用在子组件上，引用就指向组件实例
+
+  $parent / $children：访问父 / 子实例
+
+* EventBus （$emit / $on）  适用于 父子、隔代、兄弟组件通信
+
+  这种方法通过一个空的 Vue 实例作为中央事件总线（事件中心），用它来触发事件和监听事件，从而实现任何组件间的通信，包括父子、隔代、兄弟组件。
+
+* $attrs/$listeners 适用于 隔代组件通信
+
+  $attrs：包含了父作用域中不被 prop 所识别 (且获取) 的特性绑定 ( class 和 style 除外 )。当一个组件没有声明任何 prop 时，这里会包含所有父作用域的绑定 ( class 和 style 除外 )，并且可以通过 v-bind="$attrs" 传入内部组件。通常配合 inheritAttrs 选项一起使用。
+
+  $listeners：包含了父作用域中的 (不含 .native 修饰器的)  v-on 事件监听器。它可以通过 v-on="$listeners" 传入内部组件
+
+* provide / inject 适用于 隔代组件通信
+
+  祖先组件中通过 provider 来提供变量，然后在子孙组件中通过 inject 来注入变量。 provide / inject API 主要解决了跨级组件间的通信问题，不过它的使用场景，主要是子组件获取上级组件的状态，跨级组件间建立了一种主动提供与依赖注入的关系。
+
+* Vuex  适用于 父子、隔代、兄弟组件通信
+  
+  Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。“store” 基本上就是一个容器，它包含着你的应用中大部分的状态 ( state )。
+
+  Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。
+
+  改变 store 中的状态的唯一途径就是显式地提交  (commit) mutation。这样使得我们可以方便地跟踪每一个状态的变化。
 
 ## computed 实现原理
 
@@ -238,20 +245,6 @@ vue 操作数据，jQuery 操作 dom
 
 `push()` `pop()` `shift()` `unshift()` `splice()` `sort()` `reverse()`
 
-## 双向绑定原理
-
-`Object.defineProperty`
-
-* 这里重点解释 虚拟 dom 和效率问题
-
-* 说说 vue 的生命周期
-
-* vue 的虚拟 dom 是什么？有什么影响？说说你在项目中比较你使用的 vue / javascript/jquery 的区别
-
-* vue 比较 jquery 有什么优势和劣势？
-
-* 说说你对 reatc 和 angular 的了解和看法？
-
 ## vue-loader 是什么？使用它的用途有哪些？
 
 ## 像vue-router，vuex他们都是作为vue插件，请说一下他们分别都是如何在vue中生效的？
@@ -368,7 +361,14 @@ vue 操作数据，jQuery 操作 dom
 
 ## v-for 与 v-if 的优先级
 
-当 `v-if` 与 `v-for` 一起使用时，`v-for` 具有比 `v-if` 更高的优先级。
+当 `v-if` 与 `v-for` 一起使用时，具有下列两种情况：
+
+v2: `v-for` 具有比 `v-if` 更高的优先级。
+
+v3: `v-if` 具有比 `v-for` 更高的优先级。
+
+为避免产生歧义，因此应该避免将 `v-if` 和 `v-for` 放在一起使用。
+
 
 ## vue中子组件调用父组件的方法
 
@@ -482,3 +482,24 @@ vue 的三大数据来源之一，用以对数据进行加工，具有响应式�
 
 
 
+## Vue 中 computed 和 watch 有什么区别？
+
+最大的却别是设计理念，适用场景上的区别。 从设计模式的角度来讲，computed 是适配器模式，watch 则是观察者模式。
+
+计算属性 computed：
+
+* 支持缓存，只有依赖数据发生变化时，才会重新进行计算函数；
+* 计算属性内不支持异步操作；
+* 计算属性的函数中都有一个 get(默认具有，获取计算属性)和 set(手动添加，设置计算属性)方法；
+* 计算属性是自动监听依赖值的变化，从而动态返回内容。
+
+侦听属性 watch：
+
+* 不支持缓存，只要数据发生变化，就会执行侦听函数；
+* 侦听属性内支持异步操作；
+* 侦听属性的值可以是一个对象，接收 handler 回调，deep，immediate 三个属性；
+* 监听是一个过程，在监听的值变化时，可以触发一个回调，并做一些其他事情。
+
+## 参考
+
+[vue-interview](https://github.com/57code/vue-interview)

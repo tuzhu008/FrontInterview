@@ -141,6 +141,7 @@
   * [Gulp](thinking/engineering/gulp.md)
   * [基础](thinking/engineering/ji-chu.md)
 * [自动化](/thinking/automation/README.md)
+  * [自动化测试](/thinking/automation/test.md)
 * [架构](thinking/architecture/README.md)
   * [设计原则](thinking/architecture/philosophy.md)
   * [mvc](thinking/architecture/mvc.md)
@@ -172,8 +173,12 @@
 
 ## Vue
 
-* [基础](/vue/README.md)
-* [原理](vue/yuan-li.md)
+* [vue](/vue/README.md)
+  * [xxx](vue/yuan-li/README.md)
+  * [双向绑定](vue/core/shuang-xiang-bang-ding.md)
+  * [模板编译](vue/core/template.md)
+  * [依赖收集](vue/core/dep-collection.md)
+  * [diff 算法](vue/core/diff.md)
 * [Vue3](vue/vue3.md)
 * [Vuex](vue/vuex.md)
 * [Vue-Router](vue/vue-router.md)
