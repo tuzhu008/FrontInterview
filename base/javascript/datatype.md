@@ -41,6 +41,10 @@
 | Function | "function" |
 | 其他任何对象 | "object" |
 
+#### typeof为什么对null错误的显示
+
+这只是 JS 存在的一个悠久 Bug。在 JS 的最初版本中使用的是 32 位系统，为了性能考虑使用低位存储变量的类型信息，000 开头代表是对象然而 null 表示为全零，所以将它错误的判断为 object
+
 ### intanceof
 判断对象
 ### Object.prototype.toString.call

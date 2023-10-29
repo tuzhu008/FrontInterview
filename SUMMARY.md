@@ -54,6 +54,7 @@
   * [Ajax](/base/javascript/ajax.md)
   * [严格模式](/base/javascript/strict.md)
   * [类型转换](/base/javascript/typeCast.md)
+  * [表达式和运算符](/base/javascript/expression-and-operator.md)
 * [HTML/CSS](/base/css/README.md)
   * [CSS](base/css/css.md)
   * [CSS3](base/css/css3.md)
@@ -85,6 +86,10 @@
   * [新增元素](base/html5/xin-zeng-yuan-su.md)
   * [Api](base/html5/api.md)
 * [ES7+](base/es7+.md)
+
+## 深入
+  * [JavaScript](/deep//javascript/README.md)
+    * [预编译](/deep//javascript/precompile.md)
 
 ## React
 
@@ -262,3 +267,6 @@
 * [快手](Company/kuai-shou.md)
 * [Aibee](Company/aibee.md)
 
+## 笔试题
+
+* [javascript](/sience/js/README.md)
