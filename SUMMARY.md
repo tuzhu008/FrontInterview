@@ -65,6 +65,7 @@
   * [HTML 全局属性](base/css/html-quan-ju-shu-xing.md)
   * [BFC/IFC](base/css/bfcifc.md)
 * [ES6](/base/es6/README.md)
+  * [let、const](base/es6/let-const.md)
   * [Set](base/es6/set.md)
   * [Map](base/es6/map.md)
   * [async](base/es6/async.md)
