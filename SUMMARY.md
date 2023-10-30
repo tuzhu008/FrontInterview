@@ -98,7 +98,7 @@
   * [setState](react/react/setState.md)
   * [context](react/react/context.md)
   * [hooks](react/react/hooks.md)
-  * [fiber](react/react/fiber.md)
+  * [fiber](react/react/Fiber.md)
   * [生命周期](react/react/lifecycle.md)
   * [事件系统](react/react/event.md)
   * [jsx](react/react/jsx.md)

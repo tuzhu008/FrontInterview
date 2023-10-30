@@ -29,6 +29,7 @@
 * useId
 * useSyncExternalStore
 * useImperativeHandle
+* use
 
 ## useEffect
 
