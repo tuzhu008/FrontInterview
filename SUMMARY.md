@@ -94,8 +94,7 @@
 
 ## React
 
-* [React](react/react/README.md)
-  * [setState](react/react/setState.md)
+* [React基础](react/react/README.md)
   * [context](react/react/context.md)
   * [hooks](react/react/hooks.md)
   * [fiber](react/react/Fiber.md)
@@ -103,7 +102,13 @@
   * [事件系统](react/react/event.md)
   * [jsx](react/react/jsx.md)
   * [diff 算法](react/react/diff.md)
+  * [服务端渲染](/react/react/server-render.md)
   * [优化手段](react/react/optimization.md)
+* [React Core](react/core//README.md)
+  * [setState](react/core/setState.md)
+  * [渲染阶段](react/core/render-phase.md)
+  * [提交阶段](react/core/commit-phase.md)
+
 * [Redux](react/redux.md)
 * [React Router](react/react-router.md)
 * React-Native
@@ -136,6 +141,10 @@
 
 ## 思想
 
+* 基础
+  * [模块](thinking/base/module.md)
+  * [组件](thinking/base/component.md)
+  * [CS模型](thinking/base/client-server.md)
 * [模块化](/thinking/modularity/README.md)
   * [CommonJS](thinking/modularity/commonjs.md)
   * [AMD](thinking/modularity/amd.md)

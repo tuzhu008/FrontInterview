@@ -8,13 +8,15 @@ Fiber 是 React 16 中的新协调引擎。它的主要目标是支持虚拟 DOM
 
 * 协调（reconciliation）
 
-  React 是一个用于构建用户界面的 JavaScript 库。其核心是跟踪组件状态更改并将更新状态投影到屏幕的机制。在 React 中，我们将这个过程称为和解。
+  React 是一个用于构建用户界面的 JavaScript 库。其核心是跟踪组件状态更改并将更新状态投影到屏幕的机制。在 React 中，我们将这个过程称为协调。
 
   协调是 React 用来将一棵树与另一棵树进行比较以确定哪些部分需要更改的算法。
 
   协调是通常理解为“虚拟 DOM”背后的算法。高级描述是这样的：当你渲染一个 React 应用程序时，会生成一个描述应用程序的节点树并保存在内存中。然后将此树刷新到渲染环境 — 例如，对于浏览器应用程序，它被转换为一组 DOM 操作。当应用程序更新时（通常通过 setState ），会生成一个新树。新树与上一个树不同，以计算更新呈现的应用所需的操作。
 
-  update，更新用于呈现 React 应用程序的数据的更改。
+* 更新（update）
+
+  更新用于呈现 React 应用程序的数据的更改。
 
 * 调度（scheduling）
 
@@ -54,7 +56,7 @@ Fiber 是 React 16 中的新协调引擎。它的主要目标是支持虚拟 DOM
 - 增量更新
 - 暂停、中止、重用、分配优先级
 
-### 数据结构
+### 多角度看 Fiber
 
 * 架构角度
 
@@ -64,8 +66,8 @@ Fiber 是 React 16 中的新协调引擎。它的主要目标是支持虚拟 DOM
   Fiber 遍历算法从过去的依赖内置堆栈的同步递归模型，变成了具有链表和指针的异步模型。
   因为不依赖堆栈，遍历可以在任意地方中断，然后再恢复，只需要记录中断的位置即可。
 
-  Fiber 是堆栈的重新实现，专门用于 React 组件。您可以将单个光纤视为虚拟堆栈帧。
-  重新实现堆栈的优势在于，可以将堆栈帧保存在内存中，并随时随地执行它们。这对于实现我们的日程安排目标至关重要。
+  Fiber 是堆栈的重新实现，专门用于 React 组件。您可以将单个 fiber 视为虚拟堆栈帧。
+  重新实现堆栈的优势在于，可以将堆栈帧保存在内存中，并随时随地执行它们。这对于实现我们的调度目标至关重要。
   除了调度之外，手动处理堆栈帧还可以释放并发性和错误边界等功能的潜力
 
   PS：一个堆栈帧存储了一个堆内存地址，也就保存了一组数据。就如内置的堆栈帧，在 JS 同步递归时，保存了所有函数的执行环境。
@@ -76,7 +78,42 @@ Fiber 是 React 16 中的新协调引擎。它的主要目标是支持虚拟 DOM
 
 * 数据结构
 
-  从数据结构来讲，fiber 是一个普通的 javascript 对象，它用以表示一个React 元素。光纤节点有效地保存组件的状态、props 和它呈现到的底层 DOM 元素。
+  从数据结构来讲，fiber 是一个普通的 javascript 对象，它用以表示一个React 元素。
+  
+  每一个 fiber 节点不仅保存了组件相关的静态数据：
+
+  ```js
+    // Fiber对应组件的类型 Function/Class/Host...
+  this.tag = tag;
+  // key属性
+  this.key = key;
+  // 大部分情况同type，某些情况不同，比如FunctionComponent使用React.memo包裹
+  this.elementType = null;
+  // 对于 FunctionComponent，指函数本身，对于ClassComponent，指class，对于HostComponent，指DOM节点tagName
+  this.type = null;
+  // Fiber对应的真实DOM节点
+  this.stateNode = null;
+  ```
+
+  也保存着其作为工作单元的动态的数据，：
+
+  ```js
+  // 保存本次更新造成的状态改变相关信息
+  this.pendingProps = pendingProps;
+  this.memoizedProps = null;
+  this.updateQueue = null;
+  this.memoizedState = null;
+  this.dependencies = null;
+
+  this.mode = mode;
+
+  // 保存本次更新会造成的DOM操作
+  this.effectTag = NoEffect;
+  this.nextEffect = null;
+
+  this.firstEffect = null;
+  this.lastEffect = null;
+  ```
 
   可以将其视作工作单元，表示要执行的一些工作。因为所有的工作都是通过对比 fiber 中的数据而进行的的。fiber 是更新的最小单元。
 
@@ -105,7 +142,7 @@ React Fiber 遍历每个组件的渲染函数的输出，并在树中为每个 R
 
 ### 更新
 
-对于每次更新，它都会构建一个工作进行中树。它从根 fiber 开始，遍历树，直到叶节点。与初始渲染阶段不同，它不会为每个 React 元素创建一个新的 fiber。它只是使用该 React 元素的预先存在的 fiber，并在更新阶段合并来自更新元素的新数据/道具。
+对于每次更新，它都会构建一个 `workInProgress` 工作树。它从根 fiber 开始，遍历树，直到叶节点。与初始渲染阶段不同，它不会为每个 React 元素创建一个新的 fiber。它只是使用该 React 元素的预先存在的 fiber，并在更新阶段合并来自更新元素的新数据/道具。
 
 React Fiber 将更新划分为工作单元。它可以为每个工作单元分配优先级，并且能够在不需要时暂停、重用或中止工作单元。React **Fiber 将工作划分为多个工作单元**，这就是 fiber。它在多个帧中安排工作，并使用 `requestIdleCallback` 中的截止时间。每个更新都有其优先级定义，如动画，或者用户输入的优先级高于从获取的数据中呈现项目列表。Fiber 使用 `requestAnimationFrame` 进行优先级较高的更新，使用 `requestIdleCallback` 进行优先级较低的更新。因此，在安排工作时，Fiber 会检查当前更新的优先级和截止日期（帧结束后的空闲时间）。
 
@@ -120,7 +157,7 @@ React Fiber 将更新划分为工作单元。它可以为每个工作单元分�
 
 ## 阶段
 
-完成工作有两个阶段：渲染和提交。
+`complete` 工作有两个阶段：渲染和提交。
 
 ### 渲染阶段
 
@@ -128,13 +165,17 @@ React Fiber 将更新划分为工作单元。它可以为每个工作单元分�
 
 实际的树遍历和截止时间的使用发生在此阶段。这是 Fiber 的内部逻辑，因此在此阶段对 Fiber 树所做的更改对用户不可见。因此，Fiber 可以暂停、中止或划分多个帧的工作。
 
-我们可以把这个阶段称为协调阶段。Fiber 从 fiber 树的根部穿过并处理每个 fiber。为每个工作单元调用 [workLoop][workLoop] 函数以执行工作。我们可以将这项工作的处理分为两个步骤：开始和完成。
+我们可以把这个阶段称为协调阶段。Fiber 从 fiber 树的根部开始遍历，并处理每个 fiber。为每个工作单元调用 [workLoop][workLoop] 函数以执行工作。我们可以将这项工作的处理分为两个步骤：开始和完成。
+
+PS: 每个工作单元，Fiber 架构将一个完整的 React fiber 树的遍历工作根据需要切分为更小的部分，这部分是以一个保存在内存里 fiber 的引用作为标记的。`workLoop` 就是不断去检查存储该引用的变量是否为空来达到循环的目的。
+
+fix: 每个工作单元就是一个 fiber?
 
 - 开始步骤
 
   如果你从 React 代码库中找到 `workLoop` 函数，它会调用 `performUnitOfWork`，它将 `nextUnitOfWork` 作为参数。它只不过是将要执行的工作单元。`performUnitOfWork` 函数在内部调用 `beginWork` 函数。这是在 fiber 上进行实际工作的地方，而执行工作单元正是迭代发生的地方。
 
-  在 [`beginWork`][beginWork] 函数中，如果 fiber 没有任何待处理的工作，程序将会跳过此 fiber，因此不会进入开始阶段。这就是在遍历树时，Fiber 跳过已经处理过的 fiber 并直接跳到正在等待工作的 fiber 上的方式。如果您看到大的 `beginWork` 函数代码块，我们将找到一个调用相应 fiber 更新函数的 `switch` 块，具体取决于 fiber `tag`。就像主机组件的 updateHostComponent 一样。这些函数更新 fiber。
+  在 [`beginWork`][beginWork] 函数中，如果 fiber 没有任何待处理的工作，程序将会跳过此 fiber，因此不会进入开始阶段。这就是在遍历树时，Fiber 跳过已经处理过的 fiber 并直接跳到正在等待工作的 fiber 上的方式。如果您看到大的 `beginWork` 函数代码块，我们将找到一个调用相应 fiber 更新函数的 `switch` 块，具体取决于 fiber `tag`。就像主机组件的 `updateHostComponent` 一样。这些函数更新 fiber。
 
   `beginWork` 函数返回子 fiber（如果有）或 null（如果没有子 fiber）。`performUnitOfWork` 函数保持迭代并调用子 fiber，直到到达叶节点。对于叶节点，`beginWork` 返回 `null`，因为没有任何子节点，并且 `performUnitOfWork` 函数调用 `completeUnitOfWork` 函数。
 
@@ -166,7 +207,7 @@ React Fiber 将更新划分为工作单元。它可以为每个工作单元分�
 
 在此阶段调用的函数是 [`completeRoot`](https://github.com/facebook/react/blob/95a313ec0b957f71798a69d8e83408f40e76765b/packages/react-reconciler/src/ReactFiberScheduler.js#L2306)。
 
-在这里，workInProgress 树成为当前树，因为它用于呈现UI。实际的 DOM 更新（如插入、更新、删除和对生命周期方法的调用）或与 ref 相关的更新发生在效果列表中存在的节点上。
+在这里，workInProgress 树成为当前树，因为它用于呈现UI。 
 
 提交阶段又被划分为几个子阶段：
 1. before mutation phase
@@ -344,5 +385,8 @@ export type Fiber = {
 
 [The how and why on React’s usage of linked list in Fiber to walk the component’s tree](https://indepth.dev/posts/1007/the-how-and-why-on-reacts-usage-of-linked-list-in-fiber-to-walk-the-components-tree)
 
+[React 技术揭秘](https://react.iamkasong.com/#%E5%AF%BC%E5%AD%A6%E8%A7%86%E9%A2%91)
+
 [beginWork]: https://github.com/facebook/react/blob/f765f022534958bcf49120bf23bc1aa665e8f651/packages/react-reconciler/src/ReactFiberBeginWork.js#L1076
 [workLoop]: https://github.com/facebook/react/blob/f765f022534958bcf49120bf23bc1aa665e8f651/packages/react-reconciler/src/ReactFiberScheduler.js#L1136
+
