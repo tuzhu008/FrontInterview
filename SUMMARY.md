@@ -114,6 +114,20 @@
 * React-Native
 * Electron
 
+## Vue
+
+* [vue](/vue/README.md)
+  * [xxx](vue/yuan-li/README.md)
+  * [双向绑定](vue/core/shuang-xiang-bang-ding.md)
+  * [模板编译](vue/core/template.md)
+  * [依赖收集](vue/core/dep-collection.md)
+  * [diff 算法](vue/core/diff.md)
+* [Vue3](vue/vue3.md)
+* [Vuex](vue/vuex.md)
+* [Vue-Router](vue/vue-router.md)
+* Vue-loader
+* Vue-CLI
+
 ## 刷题
 * [JavaScript](/question/javascript/README.md)
   * [执行结果](/question/javascript/q1/README.md)
@@ -186,19 +200,6 @@
 * MQ
 * npm
 
-## Vue
-
-* [vue](/vue/README.md)
-  * [xxx](vue/yuan-li/README.md)
-  * [双向绑定](vue/core/shuang-xiang-bang-ding.md)
-  * [模板编译](vue/core/template.md)
-  * [依赖收集](vue/core/dep-collection.md)
-  * [diff 算法](vue/core/diff.md)
-* [Vue3](vue/vue3.md)
-* [Vuex](vue/vuex.md)
-* [Vue-Router](vue/vue-router.md)
-* Vue-loader
-* Vue-CLI
 
 ## Java
 
