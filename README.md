@@ -30,8 +30,6 @@
 
 [http://www.imooc.com/article/details/id/286054](http://www.imooc.com/article/details/id/286054)
 
-
-
 ## 原因
 
 想做的、能做的与公司业务和架构矛盾
@@ -43,3 +41,6 @@
 [MDN: Web开发技术](https://developer.mozilla.org/zh-CN/docs/Web)
 [MDN: CSS（层叠样式表）](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
 [小林coding](https://www.xiaolincoding.com/)
+
+[javascript-questions](https://github.com/lydiahallie/javascript-questions)
+[US-FE](https://us-fe.github.io/question/implement-curry.html)

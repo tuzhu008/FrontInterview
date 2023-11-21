@@ -106,8 +106,8 @@
   * [优化手段](react/react/optimization.md)
 * [React Core](react/core//README.md)
   * [setState](react/core/setState.md)
-  * [渲染阶段](react/core/render-phase.md)
-  * [提交阶段](react/core/commit-phase.md)
+  * [渲染阶段](react/core/render-phase/README.md)
+  * [提交阶段](react/core/commit-phase/README.md)
 
 * [Redux](react/redux.md)
 * [React Router](react/react-router.md)
@@ -169,6 +169,10 @@
     * [tree shaking](thinking/engineering/webpack/tree-shaking.md)
   * [Gulp](thinking/engineering/gulp.md)
   * [基础](thinking/engineering/ji-chu.md)
+  * [包管理](thinking/engineering/package-manage/README.md)
+    * [npm](thinking/engineering/package-manage/npm/README.md)
+    * [yarn](thinking/engineering/package-manage/yarn/README.md)
+    * [pnpm](thinking/engineering/package-manage/pnpm/README.md)
 * [自动化](/thinking/automation/README.md)
   * [自动化测试](/thinking/automation/test.md)
 * [架构](thinking/architecture/README.md)
@@ -176,6 +180,8 @@
   * [mvc](thinking/architecture/mvc.md)
   * [mvvm](thinking/architecture/mvvm.md)
 * Flux
+* TDD
+* DDD
 
 ## 算法
 
@@ -220,6 +226,10 @@
 * Linux
 * [Git](others/git.md)
 * [CI](others/ci.md)
+
+## 测试
+
+* [A/B Test]()
 
 ## Others
 
