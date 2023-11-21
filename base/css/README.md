@@ -220,6 +220,12 @@ TODO:
 
 // TODO:
 
+## flex 和 grid 的区别
+
+flex 是一维布局系统，适合做局部布局，比如导航栏组件。
+
+grid 是二维布局系统，通常用于整个页面的规划。
+
 ## 参考文档
 
 [MDN: HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)

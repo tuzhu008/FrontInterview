@@ -257,6 +257,9 @@
 * [面向对象](/others/oop.md)
 * [测试](/others/test.md)
 * [Restful](others/restful.md)
+* [GraphQL](others/GraphQL.md)
+* [SEO](others/seo.md)
+* [国际化](others/i18n.md)
 
 ## 书籍
 
