@@ -17,3 +17,39 @@ webpack是一个前端打包器，帮助开发者将js模块（各种类型的�
 * 配置资源的按需引入（第三方组件库）
 * 配置splitChunks来进行按需加载（根据）
 * 设置CDN优化
+
+## webpack 的打包流程是什么样的
+
+## webpack 是用来做什么的，原理是什么
+
+## webpack 中的 loader 的作用是什么
+
+## 有没有自己写过一个webpack的loader
+
+## webpack 中plugin的作用是什么，有没有自己写过
+
+## 使用 webpack 时如何优化项目体积
+
+## webpack 中什么是 HMR，原理是什么
+
+## 使用 webpack 打包时，如何更好地利用 long term cache
+
+## 随着 http2 的发展，webpack 有没有更好的打包方案
+
+## 对于已经 import 但未实际使用的模块使用 webpack 还会对它打包吗？
+
+## 使用 webpack 如何分包
+
+## webpack 的 runtime 做了什么事情
+
+## webpack 中的 code spliting 是如何动态加载 chunk 的？
+
+## 打包器(webpack/rollup) 如何将打包后的 js 资源注入 html 中
+
+## 打包器(webpack/rollup) 如何加载 json、image 等非 Javascript 资源
+
+## 打包器(webpack/rollup) 如何加载 style 样式资源
+
+## 如何提升 webpack 构建资源的速度
+
+## webpack 中是如何处理 new URL 资源的
