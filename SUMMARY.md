@@ -89,8 +89,11 @@
 * [ES7+](base/es7+.md)
 
 ## 深入
-  * [JavaScript](/deep//javascript/README.md)
-    * [预编译](/deep//javascript/precompile.md)
+  * [JavaScript](/deep/javascript/README.md)
+    * [预编译](/deep/javascript/precompile.md)
+  * [前端性能](/deep/performance/README.md)
+    * [性能]()
+    * [性能优化](/deep/performance/optimization.md)
 
 ## React
 
@@ -260,6 +263,8 @@
 * [GraphQL](others/GraphQL.md)
 * [SEO](others/seo.md)
 * [国际化](others/i18n.md)
+* [微前端](others/micro-front/README.md)
+  * [qiankun](others/micro-front/qiankun.md)
 
 ## 书籍
 
