@@ -265,6 +265,8 @@
 * [国际化](others/i18n.md)
 * [微前端](others/micro-front/README.md)
   * [qiankun](others/micro-front/qiankun.md)
+  * [micro app](others/micro-front/micro-app.md)
+  * [single spa](others/micro-front/single-spa.md)
 
 ## 书籍
 
