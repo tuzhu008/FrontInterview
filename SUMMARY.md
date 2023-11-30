@@ -19,9 +19,22 @@
 * [操作系统](computer/network/cao-zuo-xi-tong.md)
 * [编译原理](computer/network/bian-yi-yuan-li.md)
 * [数据结构](computer/data-structure/README.md)
-  * [链表](computer/data-structure/linked-list.md)
-  * [堆栈](computer/data-structure/stack.md)
+  * [堆](computer/data-structure/heap.md)
+  * [栈](computer/data-structure/stack.md)
+  * [图](computer/data-structure/graph.md)
+  * [树](computer/data-structure/tree.md)
+    * [二叉树](computer/data-structure/binary-tree.md)
+    * [三叉树](computer/data-structure/queue.md)
+  * [数组](computer/data-structure/arry.md)
   * [队列](computer/data-structure/queue.md)
+  * [链表](computer/data-structure/linked-list.md)
+    * [单向链表](computer/data-structure/linked-list.md)
+    * [双向链表](computer/data-structure/linked-list.md)
+    * [循环链表](computer/data-structure/linked-list.md)
+  * [Hash](computer/data-structure/hash.md)
+    * [Hash Map](computer/data-structure/queue.md)
+    * [Hash Table](computer/data-structure/queue.md)
+
 
 ## 基础
 
