@@ -3,6 +3,22 @@
 
 ## 常见类型
 
+* string
+* number
+* boolean
+* Array || []
+* any
+* Function
+* Union Types
+* interface
+* type
+* null
+* undefined
+* enum
+* bigint
+* symbol
+* Tuple Types 元组类型
+
 
 ## `type` 和 `interface` 的区别
 
