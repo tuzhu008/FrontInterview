@@ -1,3 +1,26 @@
+# React diff
+
+* diff 算法的核心——复用
+
+* 把树形结构按照层级分解，只比较同级元素。
+
+* 使用 `key` 和 `elementType` 作为最重要的对比条件。
+
+  * React 只会匹配相同 class 的 component（这里面的 class 指的是组件的名字）
+
+* 选择性子树渲染。开发人员可以重写 shouldComponentUpdate 提高 diff 的性能。
+
+
+## 时机
+
+调用 `render` 生成由 ReactElement 组成的 vdom 的树状结构。
+
+将 vdom 转换为 fiber 的过程称为 reconcile。
+
+diff 则发生在 reconcile 阶段。
+
+diff 实际是将 vdom 与 currentFiber 做对比，最后生成 workInProgress Fiber 树。
+
 ## 数据关系
 
 ### fiber 与组件实例的关系

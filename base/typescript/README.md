@@ -1,6 +1,9 @@
 # Typesript
 
 
+## 常见类型
+
+
 ## `type` 和 `interface` 的区别
 
 * `interface` 可以重复声明，`type` 不行继承方式不一样

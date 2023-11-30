@@ -226,6 +226,35 @@ flex 是一维布局系统，适合做局部布局，比如导航栏组件。
 
 grid 是二维布局系统，通常用于整个页面的规划。
 
+## 移动端 meta viewport=device
+
+设置视口的宽度为设备的宽度，并可以指定初始的缩放比例，以及是否允许用户缩放等。
+
+
+```html
+<meta
+  name="viewport"
+  content="
+    width=device-width,  // 设置viewport的宽等于屏幕宽
+    initial-scale=1.0,  // 初始缩放为1
+    maximum-scale=1.0,
+    user-scalable=no,  // 不允许用户手动缩放
+    viewport-fit=cover // 缩放以填充满屏幕
+    "
+>
+```
+
+## 移动端 1px
+
+| 方案 | 优点 | 缺点 |
+|:---- | :---- | :---- |
+| 直接写0.5px | 代码简单 | IOS及Android老设备不支持 |
+| 用图片代替边框 | 全机型兼容 | 修改颜色及不支持圆角 |
+| background渐变 | 全机型兼容 | 代码多及不支持圆角 |
+| box-shadow模拟边框实现 |  全机型兼容 | 有边框和虚影无法实现 |
+| 伪元素先放大后缩小 | 简单实用  | 缺点不明显 |
+| 设置viewport解决问题  | 一套代码适用所有页面 | 缺点不明显 |
+
 ## 参考文档
 
 [MDN: HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)

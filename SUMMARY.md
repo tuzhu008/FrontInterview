@@ -111,6 +111,8 @@
   * [setState](react/core/setState.md)
   * [渲染阶段](react/core/render-phase/README.md)
   * [提交阶段](react/core/commit-phase/README.md)
+* 版本
+  * [React 18](react/version/18.md)
 * [Redux](react/redux.md)
 * [React Router](react/react-router.md)
 * [Next.js](react/next/README.md)
