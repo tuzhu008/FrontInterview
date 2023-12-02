@@ -105,8 +105,10 @@
   * [JavaScript](/deep/javascript/README.md)
     * [预编译](/deep/javascript/precompile.md)
   * [前端性能](/deep/performance/README.md)
-    * [性能]()
+    * [性能指标](/deep/performance/metrics/README.md)
     * [性能优化](/deep/performance/optimization.md)
+    * [测量手段和工具](/deep/performance/tools.md)
+  * [响应式 Web 设计](/deep/responsive-web-design.md)
 
 ## React
 

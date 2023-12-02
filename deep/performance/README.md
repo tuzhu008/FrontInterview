@@ -23,3 +23,9 @@
 ## 指标
 
 [Metrics](https://web.dev/explore/metrics)
+
+## discrete actions And continuous ations
+
+discrete actions，离散事件。如 clicks, taps, and key presses。
+
+continuous ations，连续事件。如 scrolling，zooming。
