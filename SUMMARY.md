@@ -284,6 +284,7 @@
   * [qiankun](others/micro-front/qiankun.md)
   * [micro app](others/micro-front/micro-app.md)
   * [single spa](others/micro-front/single-spa.md)
+  * [方案对比](others/micro-front/compare.md)
 
 ## 书籍
 

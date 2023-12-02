@@ -29,3 +29,8 @@
 discrete actions，离散事件。如 clicks, taps, and key presses。
 
 continuous ations，连续事件。如 scrolling，zooming。
+
+
+## 参考
+
+https://godbasin.github.io/front-end-playground/front-end-basic/performance/front-end-performance-optimization.html

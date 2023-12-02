@@ -110,7 +110,7 @@ https://twitter.com/anniesullie/status/1491399685961293828?s=20&t=Qj_nzSRZD0_c-H
 | Use 103 Early Hints for render-critical resources | ✅ |  |  |  |  |  |  |  |  |
 | Platform-specific guidance | ✅ |  |  |  |  |  |  |  |  |
 | Hosting, hosting, hosting | ✅ |  |  |  |  |  |  |  |  |
-| HAlways include `width` and `height size attributes on your images and video elements |  |  |  |  |  |  | ✅ |  |  |
+| Always include `width` and `height size attributes on your images and video elements |  |  |  |  |  |  | ✅ |  |  |
 | Statically reserve space for late-loading content |  |  |  |  |  |  | ✅ |  |  |
 | Avoid placing late-loading content near the top of the viewport  |  |  |  |  |  |  | ✅ |  |  |
 | Avoid inserting new content without a user interaction  |  |  |  |  |  |  | ✅ |  |  |
