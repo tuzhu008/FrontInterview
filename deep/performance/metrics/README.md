@@ -42,27 +42,30 @@ https://twitter.com/anniesullie/status/1491399685961293828?s=20&t=Qj_nzSRZD0_c-H
 
 ## SI
 
+
+## 测量工具
+
 | Field Tool | TTFB | FCP | LCP | FID | TTI | TBT | CLS | INP | SI |
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|:----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | Chrome User Experience Report | ✅ | ✅ | ✅ | ✅ |  |  |  | ✅ |  |  |
 | PageSpeed Insights |  | ✅ | ✅ | ✅ |  |  |  | ✅ |  |  |
 | Search Console (Core Web Vitals report) |  | ✅ | ✅ | ✅ |  |  |  | ✅ |  |  |
 | web-vitals JavaScript library | ✅ | ✅ | ✅ | ✅ |  |  |  | ✅  |  |  |
 
-
 | Lab Tool | TTFB | FCP | LCP | FID | TTI | TBT | CLS | INP | SI |
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|:----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | Chrome DevTools | ✅ | ✅ | ✅ |  |  |  | ✅ |  |  |
 | Lighthouse |  | ✅ | ✅ |  | ✅ | ✅ | ✅ |  |  |
 | PageSpeed Insights |  | ✅ | ✅ |  |  |  | ✅ |  |  |
 | WebPageTest | ✅ |  | ✅ |  | ✅ | ✅ | ✅ |  |  |
 
-
 | JavaScript API | TTFB | FCP | LCP | FID | TTI | TBT | CLS | INP | SI |
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|:----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | Event Timing API |  |  | ✅ | ✅ |  |  |  |  |  |  |
 | Largest Contentful Paint API |  |  | ✅ |  |  |  |  |  |  |  |
 | Layout Instability API |  |  |  |  |  |  |  | ✅ |  |  |
+
+## 量化指标
 
 | Metric | Good | Need Improvement | Poor | Unit |
 |:----|:----|:----|:----|:----|
@@ -76,9 +79,10 @@ https://twitter.com/anniesullie/status/1491399685961293828?s=20&t=Qj_nzSRZD0_c-H
 | INP |  |  |  |  |
 | SI |  |  |  |  |
 
+## 优化手段
 
 | 优化手段 | TTFB | FCP | LCP | FID | TTI | TBT | CLS | INP | SI |
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|:----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | Eliminate render-blocking resources |  | ✅ |  |  |  |  |  |  |  |
 | Minify JavaScript |  |  |  |  | ✅ |  |  |  |  |
 | Minify CSS |  | ✅ |  |  |  |  |  |  |  |
