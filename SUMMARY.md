@@ -52,6 +52,7 @@
   * [缓存机制](base/browser/cache.md)
   * [浏览器并行下载量](base/browser/number-of-concurrent.md)
   * [一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？](/base/browser/url-to-page.md)
+  * [Others](/base/browser/others.md)
 * [JavaScript](/base/javascript/README.md)
   * [数据类型](base/javascript/datatype.md)
   * [闭包](base/javascript/bi-bao.md)
@@ -114,7 +115,7 @@
 
 * [React基础](react/react/README.md)
   * [context](react/react/context.md)
-  * [hooks](react/react/hooks.md)
+  * [hooks](react/react/README.md)
   * [fiber](react/react/Fiber.md)
   * [生命周期](react/react/lifecycle.md)
   * [事件系统](react/react/event.md)
