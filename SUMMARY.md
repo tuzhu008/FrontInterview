@@ -115,7 +115,7 @@
 
 * [React基础](react/react/README.md)
   * [context](react/react/context.md)
-  * [hooks](react/react/README.md)
+  * [hooks](react/react/hooks/README.md)
   * [fiber](react/react/Fiber.md)
   * [生命周期](react/react/lifecycle.md)
   * [事件系统](react/react/event.md)
