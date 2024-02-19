@@ -1,6 +1,8 @@
 
 # Webpack
 
+## webpack 是用来做什么的，原理是什么
+
 webpack是一个前端打包器，帮助开发者将js模块（各种类型的模块化规范）打包成一个或多个js脚本。webpack的工作过程可以分为依赖解析过程和代码打包过程，首先执行对应的build命令，webpack首先分析入口文件，会递归解析AST获取对应依赖，得到一个依赖图。然后为每一个模块添加包裹函数（webpack的模块化），从入口文件为起点，递归执行模块，进行拼接IIFE（立即调用函数表达式：保证了模块变量不会影响全局作用域），产出对应的bundle。
 
 ## 构建流程
@@ -44,6 +46,8 @@ Loader 本质就是一个函数。对函数中接收到的内容进行转换，�
 
 > loader 的执行顺序要注意！css 相关的loader 要按照下图来写。因为 loader 的执行顺序是从后往前、从下往上。 所以我们要用 saas-loader 来处理 sass 文件, 再把它交给 postcss-loader 加上浏览器厂商前缀。然后通过 css-loader 处理样式之间的引用逻辑。最后通过 style-loader 将它挂在到 html上
 
+### 实现
+
 ## 插件
 
 插件目的在于解决 loader 无法实现的其他事。
@@ -79,6 +83,8 @@ module.exports = ConsoleLogOnBuildWebpackPlugin;
 * Dllplugin: 动态链接库，将项目中依赖的三方模块抽离出来，单独打包
 * DllReferencePlugin: 配合 Dllplugin，通过 manifest.json 映射到相关的依赖上去
 * vue-skeleton-webpack-plugin: vue 项目实现骨架屏
+
+### 实现
 
 ## webpack中plugin和loader分别做什么？它们之间的执行顺序？
 
@@ -124,48 +130,34 @@ module.exports = ConsoleLogOnBuildWebpackPlugin;
 // TODO:
 
 ## webpack 如何优化构建体积跟速度
-## webpack常见的优化方案
 
 速度：
-  对balel设置缓存，缩小 babel-loader 的处理范围，及精准指定要处理的目录。
-  * 启用一些 loader 的缓存。
+  * 启用一些 loader 的缓存。如 babel-loader。
   * 精准配置 loader 的生效文件夹，`include` 和 `exclude`。
   * cache-loader 、HardSourceWebpackPlugin？
-  * sourcemap。根据需要配置合理的 sourcemap。
   * 针对不同的环境采用不同的配置
     * sourcemap。根据需要配置合理的 sourcemap。
-    * 代码压缩 `sourcemap。根据需要配置合理的 sourcemap。`
+    * 代码压缩
     * CSS 提取
-    * 加速依赖下载速度
-  <!-- * 加速依赖下载速度 -->
+  * 加速依赖下载速度
 
   * TODO:ignorePlugin、noParse
 
   * 多进程。尽可能利用硬件资源，多线程方式来编译代码。
 
-* 基于 esm 的tree shaking
+体积：
+* 基于 esm 的 tree shaking
 * 压缩资源（mini-css-extract-plugin，compression-webpack-plugin）
-* 提取 CSS、图片
+* 提取 CSS、图片等资源
+  * 图片等资源 base64 或独立文件
 * 配置资源的按需引入（第三方组件库）
-* 配置splitChunks来进行按需加载（根据）。按名称、位置等等。
+* 代码分割。配置splitChunks来进行按需加载（根据）。
   * 按大小、名称、位置等等。
   * 懒加载
 * 设置CDN优化
-* externals
+* externals。TODO: umd?
 
-## webpack 的打包流程是什么样的
-
-Webpack 的运行流程是一个串行的过程,从启动到结束会依次执行以下流程 :
-
-1. 初始化参数：从配置文件和 Shell 语句中读取与合并参数,得出最终的参数。
-1. 开始编译：用上一步得到的参数初始化 Compiler 对象,加载所有配置的插件,执行对象的 run 方法开始执行编译。
-1. 确定入口：根据配置中的 entry 找出所有的入口文件。
-1. 编译模块：从入口文件出发,调用所有配置的 Loader 对模块进行翻译,再找出该模块依赖的模块,再递归本步骤直到所有入口依赖的文件都经过了本步骤的处理。
-1. 完成模块编译：在经过第 4 步使用 Loader 翻译完所有模块后,得到了每个模块被翻译后的最终内容以及它们之间的依赖关系。
-1. 输出资源：根据入口和模块之间的依赖关系,组装成一个个包含多个模块的 Chunk,再把每个 Chunk 转换成一个单独的文件加入到输出列表,这步是可以修改输出内容的最后机会。
-1. 输出完成：在确定好输出内容后,根据配置确定输出的路径和文件名,把文件内容写入到文件系统。
-
-在以上过程中,Webpack 会在特定的时间点广播出特定的事件,插件在监听到感兴趣的事件后会执行特定的逻辑,并且插件可以调用 Webpack 提供的 API 改变 Webpack 的运行结果。
+## webpack常见的优化方案
 
 
 ## babel-loader、babel/preset-env、babel-polyfill、babel-transform-runtime 什么区别
@@ -178,15 +170,6 @@ Webpack 的运行流程是一个串行的过程,从启动到结束会依次执�
 
 * @babel-polyfill包 = corejs包 + regenerator包
 
-## webpack 是用来做什么的，原理是什么
-
-## webpack 中的 loader 的作用是什么
-
-## 有没有自己写过一个webpack的loader
-
-## webpack 中plugin的作用是什么，有没有自己写过
-
-## 使用 webpack 时如何优化项目体积
 
 ## webpack 中什么是 HMR，原理是什么
 
@@ -212,7 +195,5 @@ Webpack 的热更新又称热替换（Hot Module Replacement），缩写为 HMR�
 ## 打包器(webpack/rollup) 如何加载 json、image 等非 Javascript 资源
 
 ## 打包器(webpack/rollup) 如何加载 style 样式资源
-
-## 如何提升 webpack 构建资源的速度
 
 ## webpack 中是如何处理 new URL 资源的
