@@ -11,10 +11,10 @@ BFC，Block Formatting Context，块级格式化上下文。BFC 是 Web 页面�
 ### 创建 BFC
 
 * 根元素或包含根元素的元素
-* 浮动元素 float = left \| right 或 inherit\(≠null\)
-* 绝对定位元素 position = absolute 或 fixed
-* display = inline-block \| flex \| inline-flex \| table-cell 或 table-caption
-* overflow = hidden \| auto 或 scroll\(≠visible\)
+* 浮动元素 float = `left` \| `right` 或 `inherit`\(≠`null`\)
+* 绝对定位元素 position = `absolute` 或 `fixed`
+* display = `inline-block` \| `flex`, `inline-flex` \| `grid`, `inline-grid` \| `table-cell` 或 `table-caption` \| `flow-root`
+* overflow = `hidden` \| `auto` 或 `scroll`\(≠`visible`, ≠`clip`\)
 
 ### BFC 的特性
 

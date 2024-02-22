@@ -152,12 +152,6 @@ i 内容展示内容为斜体，em 表示强调的文本。
 
 语义样式标签：strong、em、ins、del、code
 
-## 实现不适用 border 画出 1px 高的线，在不同浏览器的标准模式与怪异模式下都能保持一致？
-
-```html
-<div style="width: 100%;height: 1px;background-color: black;"></div>
-```
-
 ## Label 的作用是什么，是怎么用的？
 
 `<label>` 元素（标签）表示用户界面中某个元素的说明。当用户选择该标签时，浏览器会自动将焦点转移到和标签和相关的表单控件上。

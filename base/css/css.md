@@ -477,18 +477,9 @@ CSS Sprite 俗称精灵图，或者雪碧图。来自于动漫，我们将很多
 * 瀑布式
 * 响应式
 
-## `overflow: hidden` 是否形成新的块级格式化上下文？
-
-会形成，触发了 BFC。触发 BFC 的条件有：
-
-* float 的值不为 none
-* overflow 的值不为 visible
-* dipaly 的值为 table-cell,table-caption,inline-block 中的任何一个
-* position 的值不为 relative 和 static
-
 ## `display: table;` 和 table 本身有什么区别？
 
-`display: table;` 和 table 是想对应的，区别在于，`display: table;` 的 CSS 声明能够让一个 html 元素和它的子节点像 table 元素一样，使用基于表格的 css 布局，是我们能够轻松定义一个单元格的边界，背景等央视，而不会产生因为使用 table 那样的制表标签导致的语义化问题。
+`display: table;` 和 table 是想对应的，区别在于，`display: table;` 的 CSS 声明能够让一个 html 元素和它的子节点像 table 元素一样，使用基于表格的 css 布局，使我们能够轻松定义一个单元格的边界，背景等央视，而不会产生因为使用 table 那样的制表标签导致的语义化问题。
 
 之所以现在逐渐淘汰了 table 系表格元素，是因为用 div + css 边写出来的文件比用 table 边写出来的文件小，而且 table 必须在页面完全加载后才显示，div 则是逐行显示， table 的嵌套性套多，没有 div 简洁
 
