@@ -1,6 +1,71 @@
 # React
 
-setState 为何是异步的，批量更新
+
+
+* [了解 React 中的 ErrorBoundary 吗，它有那些使用场景](../questions/ErrorBoundary.md)
+
+【Q021】React 中，cloneElement 与 createElement 各是什么，有什么区别
+【Q038】使用 react 实现一个通用的 message 组件
+【Q067】react 如何使用 render prop component 请求数据
+【Q068】React Portal 有哪些使用场景
+【Q071】react 与 vue 数组中 key 的作用是什么
+【Q092】react 中 ref 是干什么用的，有哪些使用场景
+【Q100】如何使用 react/vue 实现一个 message API
+【Q146】如果使用 SSR，可以在 created/componentWillMount 中访问 localStorage 吗
+【Q152】如何实现一个 react hook，你有没有自己写过一个
+【Q154】在 react/vue 中数组是否可以以在数组中的次序为 key
+【Q164】React 中 fiber 是用来做什么的
+【Q211】React hooks 中 useCallback 的使用场景是什么
+【Q235】useEffect 中如何使用 async/await
+【Q277】redux 解决什么问题，还有什么其他方案
+【Q367】redux 和 mobx 有什么不同
+【Q369】在 React 项目中 immutable 是优化性能的
+【Q371】在 redux 中如何发送请求
+【Q375】在 redux 中如何写一个记录状态变更的日志插件
+【Q378】React 在 setState 时发生了什么
+【Q380】如何设计一个UI组件库
+【Q403】React 中的 dom diff 算法如何从 O(n3) 优化到 O(n) 的
+【Q404】在 React 应用中如何排查性能问题
+【Q408】React 17.0 有什么变化
+【Q452】现代框架如 React、Vue 相比原生开发有什么优势
+【Q455】React/Vue 中的 router 实现原理如何
+【Q466】在 SSR 项目中如何判断当前环境时服务器端还是浏览器端
+【Q497】React.setState 是同步还是异步的
+【Q498】什么是服务器渲染 (SSR)
+【Q499】在 React 中如何实现代码分割 (code splitting)
+【Q500】在 React 中如何做好性能优化
+【Q501】在 React 中发现状态更新时卡顿，此时应该如何定位及优化
+【Q502】当多次重复点击按钮时，以下三个 Heading 是如何渲染的
+【Q539】Javascript 数组中有那些方法可以改变自身，那些不可以
+【Q552】关于 setState 以下代码的输出
+【Q590】React 中什么是合成事件
+【Q592】前端项目中有哪些副作用
+【Q593】React/Vue 中受控组件与不受控组件的区别
+【Q595】React 中监听 input 的 onChange 事件的原生事件是什么
+【Q611】React/Vue 中兄弟组件如何进行通信
+【Q612】React.memo 中是如何实现性能优化的
+【Q614】immer 的原理是什么，为什么它的性能更高
+【Q615】React.useMemo 与 React.useCallback 是如何进行性能优化的
+【Q624】同一页面三个组件请求同一个 API 发送了三次请求，如何优化
+【Q627】如何优化 React 项目的性能
+【Q653】useLayoutEffect 和 useEffect 有什么区别
+【Q659】在 React Hooks 中实现 usePreviouseValue 取上次渲染的值
+【Q699】在虚拟 DOM 中进行 diff 算法时，介绍当根据 key 对数组进行重用时的算法
+
+## 什么是 virtual DOM，它的引入带了什么好处
+
+* 跨平台。于抽象了原本的渲染过程，实现了跨平台的能力，而不仅仅局限于浏览器的 DOM，可以是安卓和 IOS 的原生组件，可以是近期很火热的小程序，也可以是各种 GUI。
+
+* 维护性。Virtual DOM 在牺牲(牺牲很关键)部分性能的前提下，增加了可维护性，这也是很多框架的通性。 
+* 效率。
+  * 实现了对 DOM 的集中化操作，在数据改变时先对虚拟 DOM 进行修改，再批量反映到真实的 DOM中
+  * 用最小的代价来更新DOM，提高效率。
+
+
+## react 中 ref 是干什么用的，有哪些使用场景
+
+* 引用 React 组件实例，dom 实例
+* 一些值需要随时间变化，却不需要响应式的数据存储。
 
 ## 什么是 React？
 

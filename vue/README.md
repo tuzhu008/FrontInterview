@@ -1,5 +1,10 @@
 # Vue
 
+* vue 中 v-if 和 v-show 的区别是什么
+* vue 中 computed 的原理是什么
+* vue-loader 的实现原理是什么
+* 
+
 ## 什么是 vue 生命周期？有什么作用？
 
 Vue 实例从创建到销毁的过程，就是生命周期。

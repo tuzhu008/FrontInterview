@@ -1,5 +1,22 @@
 # JavaScript
 
+* 在 js 中如何把类数组转化为数组
+* Array(100).map(x => 1) 结果是多少
+* 如何实现 compose 函数，进行函数合成
+* 如何实现类似 lodash.get 函数
+* js 中什么是可选链操作符，如何访问数组
+* 如何实现一个深拷贝 (cloneDeep)
+* 如何实现一个 flatMap 函数 (头条)
+* 如何实现一个 async/await
+* 如何使用 async/await 实现 Promise.all 的效果
+* 有没有遇到 js 捕捉不到异常堆栈信息的情况
+* Promise 在异步资源的生命周期 (async_hooks) 中是如何被销毁的
+* 有没有用过 Promise.allSettled() ，它是干什么的
+* 使用 js 实现一个 lru cache
+* 如何实现 Promise.race
+* '+' 与 '~' 选择器有什么不同
+* js 中在 new 的时候发生了什么
+
 ## null 和 undefined 的区别
 
 * 意义不同

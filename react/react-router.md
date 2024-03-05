@@ -1,5 +1,36 @@
 # React Router
 
+## 原理
+
+前端路由实现的本质是监听url变化，实现方式有两种：Hash 模式和 History 模式，无需刷新页面就能重新加载相应的页面。
+
+* hash只能改变#后的值，而 history 模式可以随意设置同源url；
+* hash只能添加字符串类的数据，而 history 可以通过API添加多种类型的数据；
+* hash的历史记录只显示之前的www.a.com而不会显示hash值，而history的每条记录都会进入到历史记录；
+* hash无需后端配置且兼容性好，而history需要配置index.html用于匹配不到资源的情况。
+
+### Hash 模式
+
+* 通过 `location.hash` 跳转路由
+* 通过 `hashchange` 监听路由变化
+
+```js
+window.addEventListener('hashchange', e => {
+  // do something
+});
+```
+
+### History 模式
+
+* 通过 通过 `history.pushState` 和 `history.replaceState` 跳转路由
+* 通过 `popstate` 监听路由变化，但无法监听到 history.pushState() 时的路由变化?
+
+```js
+window.addEventListener('popstate', e => {
+// do something
+});
+```
+
 ## 什么是React 路由？
 
 React 路由是一个构建在 React 之上的强大的路由库，它有助于向应用程序添加新的屏幕和流。这使 URL 与网页上显示的数据保持同步。它负责维护标准化的结构和行为，并用于开发单页 Web 应用。 React 路由有一个简单的API。

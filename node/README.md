@@ -1,5 +1,25 @@
 # Node 基础
 
+* 在 Node 应用中如何利用多核心CPU的优势
+* Node 中 cluster 的原理是什么
+* Node 中如何判断一个路径是文件还是文件夹
+* Node 如何进行进程间通信
+* 在 node 中如何监听异步资源的生命周期
+* node --max-old-space-size=4096 是什么意思
+* 如何理解 Node 的异步非阻塞IO
+* 当 Node 应用发生 gc 时，如何监控
+* Node 应用中如何查看 gc 的日志
+* 如何获取你们 Node 项目的 cpu profile 快照
+* Node 中循环引用会发生什么
+* Node 中 require 时发生了什么
+* 简述 node/v8 中的垃圾回收机制
+* node 中 exec，fork 与 spawn 有何区别
+* node 中 dns.resolve 及 dns.lookup 有什么区别
+* node 中如何查看函数异步调用栈
+* 有没有接触过 fs-extra，它是解决什么问题的
+* 在 node 中如何开启 https
+* node 中 module.exports 与 exports 有什么区别
+
 ## 如何判断当前脚本运行在浏览器还是 node 环境中？
 
 `global === window`
