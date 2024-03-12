@@ -1,5 +1,3 @@
-## 浏览器 Tab 间通信
-
 # gzip 的原理是什么，如何配置
 
 # 可以对图片开启 gzip 压缩吗，为什么
@@ -52,3 +50,18 @@ fetch 中 credentials 指什么意思，可以取什么值
 在浏览器中如何获取剪切板中内容
 
 关于 cors 的响应头有哪些
+
+## 浏览器 Tab 间通信
+
+**同源Tab**
+
+* BroadCast Channel
+* localstorage
+* Service Worker
+* Shared Worker
+* IndexedDB
+* window.open + window.opener
+
+**不同源Tab**
+
+* 通过同源的 iframe 作为桥接层

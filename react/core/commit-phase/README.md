@@ -1,5 +1,12 @@
 # 提交阶段
 
+
+提交阶段又被划分为了三个子阶段：
+
+* before mutation。
+* mutation phase。
+* layout phase。
+
 提交阶段以 `finishConcurrentRender` 为入口，
 
 ```js

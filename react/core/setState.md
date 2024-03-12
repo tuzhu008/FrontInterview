@@ -719,5 +719,5 @@ function performConcurrentWorkOnRoot(
 }
 ```
 
-这段代码调用了  `renderRootConcurrent` 来开启更新的[渲染阶段](/react/core/render-phase.md)，
-当渲染完成后，代码又调用 `finishConcurrentRender` 来开启更新的[提交阶段](/react/core/commit-phase.md)。
+这段代码调用了  `renderRootConcurrent` 来开启更新的[渲染阶段](/react/core/render-phase/README.md)，
+当渲染完成后，代码又调用 `finishConcurrentRender` 来开启更新的[提交阶段](react/core/commit-phase/README.md)。

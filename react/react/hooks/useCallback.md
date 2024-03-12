@@ -1,5 +1,9 @@
 # useCallback
 
+`useCallback` 的第一个参数会被直接返回，而不是进行包装，更不会对其进行调用。
+
+## useCallback
+
 ```js
 export function useCallback<T>(
   callback: T,

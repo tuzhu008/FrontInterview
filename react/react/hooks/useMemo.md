@@ -1,5 +1,9 @@
 # useMemo
 
+`useMemo` 的返回值是第一个参数（函数）被调用的结果，在更新时会进行惰性计算。
+
+## useMemo
+
 ```js
 export function useMemo<T>(
   create: () => T,
